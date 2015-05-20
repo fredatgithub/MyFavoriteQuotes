@@ -134,5 +134,30 @@
       <englishValue>About</englishValue>
       <frenchValue>A propos de ...</frenchValue>
     </term>
+    <term>
+      <name>All</name>
+      <englishValue>All</englishValue>
+      <frenchValue>Tout</frenchValue>
+    </term>
+    <term>
+      <name>Author</name>
+      <englishValue>Author</englishValue>
+      <frenchValue>Auteur</frenchValue>
+    </term>
+    <term>
+      <name>Quote</name>
+      <englishValue>Quote</englishValue>
+      <frenchValue>Citation</frenchValue>
+    </term>
+    <term>
+      <name>Search</name>
+      <englishValue>Search</englishValue>
+      <frenchValue>Rechercher</frenchValue>
+    </term>
+    <term>
+      <name>Add</name>
+      <englishValue>Add</englishValue>
+      <frenchValue>Ajouter</frenchValue>
+    </term>
   </terms>
 </Document>

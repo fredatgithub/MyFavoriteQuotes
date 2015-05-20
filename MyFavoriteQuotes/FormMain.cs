@@ -38,6 +38,7 @@ namespace MyFavoriteQuotes
 
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
+    List<string> ComboBoxSearchItems = new List<string>();
 
     private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -64,6 +65,33 @@ namespace MyFavoriteQuotes
       GetWindowValue();
       LoadLanguages();
       SetLanguage(Settings.Default.LastLanguageUsed);
+      LoadComboboxSearchItems(Settings.Default.LastLanguageUsed);
+      comboBoxSearch.DataSource = ComboBoxSearchItems;
+    }
+
+    private void LoadComboboxSearchItems(string lastLanguageUsed)
+    {
+      ComboBoxSearchItems = new List<string>();
+      switch (lastLanguageUsed)
+      {
+        case "English":
+          ComboBoxSearchItems.Add(languageDicoEn["All"]);
+          ComboBoxSearchItems.Add(languageDicoEn["Author"]);
+          ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
+          break;
+        case "French":
+          ComboBoxSearchItems.Add(languageDicoFr["All"]);
+          ComboBoxSearchItems.Add(languageDicoFr["Author"]);
+          ComboBoxSearchItems.Add(languageDicoFr["Quote"]);
+          break;
+        default: // English
+          ComboBoxSearchItems.Add(languageDicoEn["All"]);
+          ComboBoxSearchItems.Add(languageDicoEn["Author"]);
+          ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
+          break;
+      }
+
+      comboBoxSearch.DataSource = ComboBoxSearchItems;
     }
 
     private void LoadLanguages()
@@ -230,6 +258,21 @@ namespace MyFavoriteQuotes
       "<englishValue>About</englishValue>",
       "<frenchValue>A propos de ...</frenchValue>",
     "</term>",
+    "<term>",
+      "<name>All</name>",
+      "<englishValue>All</englishValue>",
+      "<frenchValue>Tout</frenchValue>",
+    "</term>",
+    "<term>",
+      "<name>Author</name>",
+      "<englishValue>Author</englishValue>",
+      "<frenchValue>Auteur</frenchValue>",
+    "</term>",
+    "<term>",
+      "<name>Quote</name>",
+      "<englishValue>Quote</englishValue>",
+      "<frenchValue>Citation</frenchValue>",
+    "</term>",
   "</terms>",
 "</Document>"
       };
@@ -248,6 +291,7 @@ namespace MyFavoriteQuotes
       Height = Settings.Default.WindowHeight;
       Top = Settings.Default.WindowTop < 0 ? 0 : Settings.Default.WindowTop;
       Left = Settings.Default.WindowLeft < 0 ? 0 : Settings.Default.WindowLeft;
+      tabControlMain.SelectedIndex = Settings.Default.LastTabUsed;
     }
 
     private void SaveWindowValue()
@@ -256,6 +300,8 @@ namespace MyFavoriteQuotes
       Settings.Default.WindowWidth = Width;
       Settings.Default.WindowLeft = Left;
       Settings.Default.WindowTop = Top;
+      Settings.Default.LastLanguageUsed = frenchToolStripMenuItem.Checked ? "French" : "English";
+      Settings.Default.LastTabUsed = tabControlMain.SelectedIndex;
       Settings.Default.Save();
     }
 
@@ -307,7 +353,11 @@ namespace MyFavoriteQuotes
           indexToolStripMenuItem.Text = languageDicoEn["MenuHelpIndex"];
           searchToolStripMenuItem.Text = languageDicoEn["MenuHelpSearch"];
           aboutToolStripMenuItem.Text = languageDicoEn["MenuHelpAbout"];
-
+          LoadComboboxSearchItems(myLanguage);
+          tabPageSearch.Text = languageDicoEn["Search"];
+          tabPageAdd.Text = languageDicoEn["Add"];
+          buttonSearch.Text = languageDicoEn["Search"];
+          labelSearch.Text = languageDicoEn["Search"];
           break;
         case "French":
           frenchToolStripMenuItem.Checked = true;
@@ -338,9 +388,12 @@ namespace MyFavoriteQuotes
           indexToolStripMenuItem.Text = languageDicoFr["MenuHelpIndex"];
           searchToolStripMenuItem.Text = languageDicoFr["MenuHelpSearch"];
           aboutToolStripMenuItem.Text = languageDicoFr["MenuHelpAbout"];
-
+          LoadComboboxSearchItems(myLanguage);
+          tabPageSearch.Text = languageDicoFr["Search"];
+          tabPageAdd.Text = languageDicoFr["Add"];
+          buttonSearch.Text = languageDicoFr["Search"];
+          labelSearch.Text = languageDicoFr["Search"];
           break;
-
       }
     }
   }

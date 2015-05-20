@@ -64,8 +64,14 @@
       this.tabControlMain = new System.Windows.Forms.TabControl();
       this.tabPageSearch = new System.Windows.Forms.TabPage();
       this.tabPageAdd = new System.Windows.Forms.TabPage();
+      this.textBoxSearch = new System.Windows.Forms.TextBox();
+      this.buttonSearch = new System.Windows.Forms.Button();
+      this.labelSearch = new System.Windows.Forms.Label();
+      this.comboBoxSearch = new System.Windows.Forms.ComboBox();
+      this.textBoxResult = new System.Windows.Forms.TextBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
+      this.tabPageSearch.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -336,6 +342,11 @@
       // 
       // tabPageSearch
       // 
+      this.tabPageSearch.Controls.Add(this.textBoxResult);
+      this.tabPageSearch.Controls.Add(this.comboBoxSearch);
+      this.tabPageSearch.Controls.Add(this.labelSearch);
+      this.tabPageSearch.Controls.Add(this.buttonSearch);
+      this.tabPageSearch.Controls.Add(this.textBoxSearch);
       this.tabPageSearch.Location = new System.Drawing.Point(4, 25);
       this.tabPageSearch.Name = "tabPageSearch";
       this.tabPageSearch.Padding = new System.Windows.Forms.Padding(3);
@@ -354,6 +365,47 @@
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
       // 
+      // textBoxSearch
+      // 
+      this.textBoxSearch.Location = new System.Drawing.Point(118, 43);
+      this.textBoxSearch.Name = "textBoxSearch";
+      this.textBoxSearch.Size = new System.Drawing.Size(254, 22);
+      this.textBoxSearch.TabIndex = 0;
+      // 
+      // buttonSearch
+      // 
+      this.buttonSearch.Location = new System.Drawing.Point(537, 43);
+      this.buttonSearch.Name = "buttonSearch";
+      this.buttonSearch.Size = new System.Drawing.Size(101, 23);
+      this.buttonSearch.TabIndex = 1;
+      this.buttonSearch.Text = "Search";
+      this.buttonSearch.UseVisualStyleBackColor = true;
+      // 
+      // labelSearch
+      // 
+      this.labelSearch.AutoSize = true;
+      this.labelSearch.Location = new System.Drawing.Point(29, 43);
+      this.labelSearch.Name = "labelSearch";
+      this.labelSearch.Size = new System.Drawing.Size(53, 17);
+      this.labelSearch.TabIndex = 2;
+      this.labelSearch.Text = "Search";
+      // 
+      // comboBoxSearch
+      // 
+      this.comboBoxSearch.FormattingEnabled = true;
+      this.comboBoxSearch.Location = new System.Drawing.Point(395, 43);
+      this.comboBoxSearch.Name = "comboBoxSearch";
+      this.comboBoxSearch.Size = new System.Drawing.Size(121, 24);
+      this.comboBoxSearch.TabIndex = 3;
+      // 
+      // textBoxResult
+      // 
+      this.textBoxResult.Location = new System.Drawing.Point(32, 95);
+      this.textBoxResult.Multiline = true;
+      this.textBoxResult.Name = "textBoxResult";
+      this.textBoxResult.Size = new System.Drawing.Size(606, 338);
+      this.textBoxResult.TabIndex = 4;
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,6 +423,8 @@
       this.menuStrip1.ResumeLayout(false);
       this.menuStrip1.PerformLayout();
       this.tabControlMain.ResumeLayout(false);
+      this.tabPageSearch.ResumeLayout(false);
+      this.tabPageSearch.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -414,5 +468,10 @@
     private System.Windows.Forms.TabControl tabControlMain;
     private System.Windows.Forms.TabPage tabPageSearch;
     private System.Windows.Forms.TabPage tabPageAdd;
+    private System.Windows.Forms.TextBox textBoxResult;
+    private System.Windows.Forms.ComboBox comboBoxSearch;
+    private System.Windows.Forms.Label labelSearch;
+    private System.Windows.Forms.Button buttonSearch;
+    private System.Windows.Forms.TextBox textBoxSearch;
   }
 }

@@ -63,15 +63,21 @@
       this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.tabControlMain = new System.Windows.Forms.TabControl();
       this.tabPageSearch = new System.Windows.Forms.TabPage();
-      this.tabPageAdd = new System.Windows.Forms.TabPage();
-      this.textBoxSearch = new System.Windows.Forms.TextBox();
-      this.buttonSearch = new System.Windows.Forms.Button();
-      this.labelSearch = new System.Windows.Forms.Label();
-      this.comboBoxSearch = new System.Windows.Forms.ComboBox();
       this.textBoxResult = new System.Windows.Forms.TextBox();
+      this.comboBoxSearch = new System.Windows.Forms.ComboBox();
+      this.labelSearch = new System.Windows.Forms.Label();
+      this.buttonSearch = new System.Windows.Forms.Button();
+      this.textBoxSearch = new System.Windows.Forms.TextBox();
+      this.tabPageAdd = new System.Windows.Forms.TabPage();
+      this.labelAddAuthor = new System.Windows.Forms.Label();
+      this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
+      this.labelAddQuote = new System.Windows.Forms.Label();
+      this.buttonAdd = new System.Windows.Forms.Button();
+      this.textBoxAddQuote = new System.Windows.Forms.TextBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
+      this.tabPageAdd.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -355,31 +361,21 @@
       this.tabPageSearch.Text = "Search";
       this.tabPageSearch.UseVisualStyleBackColor = true;
       // 
-      // tabPageAdd
+      // textBoxResult
       // 
-      this.tabPageAdd.Location = new System.Drawing.Point(4, 25);
-      this.tabPageAdd.Name = "tabPageAdd";
-      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPageAdd.Size = new System.Drawing.Size(903, 477);
-      this.tabPageAdd.TabIndex = 1;
-      this.tabPageAdd.Text = "Add";
-      this.tabPageAdd.UseVisualStyleBackColor = true;
+      this.textBoxResult.Location = new System.Drawing.Point(32, 95);
+      this.textBoxResult.Multiline = true;
+      this.textBoxResult.Name = "textBoxResult";
+      this.textBoxResult.Size = new System.Drawing.Size(606, 338);
+      this.textBoxResult.TabIndex = 4;
       // 
-      // textBoxSearch
+      // comboBoxSearch
       // 
-      this.textBoxSearch.Location = new System.Drawing.Point(118, 43);
-      this.textBoxSearch.Name = "textBoxSearch";
-      this.textBoxSearch.Size = new System.Drawing.Size(254, 22);
-      this.textBoxSearch.TabIndex = 0;
-      // 
-      // buttonSearch
-      // 
-      this.buttonSearch.Location = new System.Drawing.Point(537, 43);
-      this.buttonSearch.Name = "buttonSearch";
-      this.buttonSearch.Size = new System.Drawing.Size(101, 23);
-      this.buttonSearch.TabIndex = 1;
-      this.buttonSearch.Text = "Search";
-      this.buttonSearch.UseVisualStyleBackColor = true;
+      this.comboBoxSearch.FormattingEnabled = true;
+      this.comboBoxSearch.Location = new System.Drawing.Point(395, 43);
+      this.comboBoxSearch.Name = "comboBoxSearch";
+      this.comboBoxSearch.Size = new System.Drawing.Size(121, 24);
+      this.comboBoxSearch.TabIndex = 3;
       // 
       // labelSearch
       // 
@@ -390,21 +386,78 @@
       this.labelSearch.TabIndex = 2;
       this.labelSearch.Text = "Search";
       // 
-      // comboBoxSearch
+      // buttonSearch
       // 
-      this.comboBoxSearch.FormattingEnabled = true;
-      this.comboBoxSearch.Location = new System.Drawing.Point(395, 43);
-      this.comboBoxSearch.Name = "comboBoxSearch";
-      this.comboBoxSearch.Size = new System.Drawing.Size(121, 24);
-      this.comboBoxSearch.TabIndex = 3;
+      this.buttonSearch.Location = new System.Drawing.Point(537, 43);
+      this.buttonSearch.Name = "buttonSearch";
+      this.buttonSearch.Size = new System.Drawing.Size(101, 23);
+      this.buttonSearch.TabIndex = 1;
+      this.buttonSearch.Text = "Search";
+      this.buttonSearch.UseVisualStyleBackColor = true;
       // 
-      // textBoxResult
+      // textBoxSearch
       // 
-      this.textBoxResult.Location = new System.Drawing.Point(32, 95);
-      this.textBoxResult.Multiline = true;
-      this.textBoxResult.Name = "textBoxResult";
-      this.textBoxResult.Size = new System.Drawing.Size(606, 338);
-      this.textBoxResult.TabIndex = 4;
+      this.textBoxSearch.Location = new System.Drawing.Point(118, 43);
+      this.textBoxSearch.Name = "textBoxSearch";
+      this.textBoxSearch.Size = new System.Drawing.Size(254, 22);
+      this.textBoxSearch.TabIndex = 0;
+      // 
+      // tabPageAdd
+      // 
+      this.tabPageAdd.Controls.Add(this.labelAddQuote);
+      this.tabPageAdd.Controls.Add(this.buttonAdd);
+      this.tabPageAdd.Controls.Add(this.textBoxAddQuote);
+      this.tabPageAdd.Controls.Add(this.labelAddAuthor);
+      this.tabPageAdd.Controls.Add(this.textBoxAddAuthor);
+      this.tabPageAdd.Location = new System.Drawing.Point(4, 25);
+      this.tabPageAdd.Name = "tabPageAdd";
+      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPageAdd.Size = new System.Drawing.Size(903, 477);
+      this.tabPageAdd.TabIndex = 1;
+      this.tabPageAdd.Text = "Add";
+      this.tabPageAdd.UseVisualStyleBackColor = true;
+      // 
+      // labelAddAuthor
+      // 
+      this.labelAddAuthor.AutoSize = true;
+      this.labelAddAuthor.Location = new System.Drawing.Point(45, 73);
+      this.labelAddAuthor.Name = "labelAddAuthor";
+      this.labelAddAuthor.Size = new System.Drawing.Size(50, 17);
+      this.labelAddAuthor.TabIndex = 6;
+      this.labelAddAuthor.Text = "Author";
+      // 
+      // textBoxAddAuthor
+      // 
+      this.textBoxAddAuthor.Location = new System.Drawing.Point(134, 73);
+      this.textBoxAddAuthor.Name = "textBoxAddAuthor";
+      this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
+      this.textBoxAddAuthor.TabIndex = 4;
+      // 
+      // labelAddQuote
+      // 
+      this.labelAddQuote.AutoSize = true;
+      this.labelAddQuote.Location = new System.Drawing.Point(45, 137);
+      this.labelAddQuote.Name = "labelAddQuote";
+      this.labelAddQuote.Size = new System.Drawing.Size(47, 17);
+      this.labelAddQuote.TabIndex = 10;
+      this.labelAddQuote.Text = "Quote";
+      // 
+      // buttonAdd
+      // 
+      this.buttonAdd.Location = new System.Drawing.Point(541, 374);
+      this.buttonAdd.Name = "buttonAdd";
+      this.buttonAdd.Size = new System.Drawing.Size(101, 23);
+      this.buttonAdd.TabIndex = 9;
+      this.buttonAdd.Text = "Add";
+      this.buttonAdd.UseVisualStyleBackColor = true;
+      // 
+      // textBoxAddQuote
+      // 
+      this.textBoxAddQuote.Location = new System.Drawing.Point(134, 137);
+      this.textBoxAddQuote.Multiline = true;
+      this.textBoxAddQuote.Name = "textBoxAddQuote";
+      this.textBoxAddQuote.Size = new System.Drawing.Size(401, 260);
+      this.textBoxAddQuote.TabIndex = 8;
       // 
       // FormMain
       // 
@@ -425,6 +478,8 @@
       this.tabControlMain.ResumeLayout(false);
       this.tabPageSearch.ResumeLayout(false);
       this.tabPageSearch.PerformLayout();
+      this.tabPageAdd.ResumeLayout(false);
+      this.tabPageAdd.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -473,5 +528,10 @@
     private System.Windows.Forms.Label labelSearch;
     private System.Windows.Forms.Button buttonSearch;
     private System.Windows.Forms.TextBox textBoxSearch;
+    private System.Windows.Forms.Label labelAddQuote;
+    private System.Windows.Forms.Button buttonAdd;
+    private System.Windows.Forms.TextBox textBoxAddQuote;
+    private System.Windows.Forms.Label labelAddAuthor;
+    private System.Windows.Forms.TextBox textBoxAddAuthor;
   }
 }

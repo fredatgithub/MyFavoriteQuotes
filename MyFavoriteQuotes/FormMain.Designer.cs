@@ -388,9 +388,9 @@
       // 
       // buttonSearch
       // 
-      this.buttonSearch.Location = new System.Drawing.Point(537, 43);
+      this.buttonSearch.Location = new System.Drawing.Point(537, 42);
       this.buttonSearch.Name = "buttonSearch";
-      this.buttonSearch.Size = new System.Drawing.Size(101, 23);
+      this.buttonSearch.Size = new System.Drawing.Size(101, 25);
       this.buttonSearch.TabIndex = 1;
       this.buttonSearch.Text = "Search";
       this.buttonSearch.UseVisualStyleBackColor = true;
@@ -444,9 +444,9 @@
       // 
       // buttonAdd
       // 
-      this.buttonAdd.Location = new System.Drawing.Point(541, 374);
+      this.buttonAdd.Location = new System.Drawing.Point(541, 371);
       this.buttonAdd.Name = "buttonAdd";
-      this.buttonAdd.Size = new System.Drawing.Size(101, 23);
+      this.buttonAdd.Size = new System.Drawing.Size(101, 26);
       this.buttonAdd.TabIndex = 9;
       this.buttonAdd.Text = "Add";
       this.buttonAdd.UseVisualStyleBackColor = true;

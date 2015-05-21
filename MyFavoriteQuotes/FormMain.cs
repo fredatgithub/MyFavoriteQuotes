@@ -355,9 +355,12 @@ namespace MyFavoriteQuotes
           aboutToolStripMenuItem.Text = languageDicoEn["MenuHelpAbout"];
           LoadComboboxSearchItems(myLanguage);
           tabPageSearch.Text = languageDicoEn["Search"];
-          tabPageAdd.Text = languageDicoEn["Add"];
           buttonSearch.Text = languageDicoEn["Search"];
           labelSearch.Text = languageDicoEn["Search"];
+          tabPageAdd.Text = languageDicoEn["Add"];
+          buttonAdd.Text = languageDicoEn["Add"];
+          labelAddAuthor.Text = languageDicoEn["Author"];
+          labelAddQuote.Text = languageDicoEn["Quote"];
           break;
         case "French":
           frenchToolStripMenuItem.Checked = true;
@@ -390,9 +393,12 @@ namespace MyFavoriteQuotes
           aboutToolStripMenuItem.Text = languageDicoFr["MenuHelpAbout"];
           LoadComboboxSearchItems(myLanguage);
           tabPageSearch.Text = languageDicoFr["Search"];
-          tabPageAdd.Text = languageDicoFr["Add"];
           buttonSearch.Text = languageDicoFr["Search"];
           labelSearch.Text = languageDicoFr["Search"];
+          tabPageAdd.Text = languageDicoFr["Add"];
+          buttonAdd.Text = languageDicoFr["Add"];
+          labelAddAuthor.Text = languageDicoFr["Author"];
+          labelAddQuote.Text = languageDicoFr["Quote"];
           break;
       }
     }

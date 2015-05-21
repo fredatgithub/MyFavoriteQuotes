@@ -46,7 +46,7 @@ namespace MyFavoriteQuotes
       Application.Exit();
     }
 
-    private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+    private void AboutToolStripMenuItemClick(object sender, EventArgs e)
     {
       AboutBoxApplication aboutBoxApplication = new AboutBoxApplication();
       aboutBoxApplication.ShowDialog();
@@ -310,12 +310,12 @@ namespace MyFavoriteQuotes
       SaveWindowValue();
     }
 
-    private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+    private void FrenchToolStripMenuItemClick(object sender, EventArgs e)
     {
       SetLanguage(Language.French.ToString());
     }
 
-    private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+    private void EnglishToolStripMenuItemClick(object sender, EventArgs e)
     {
       SetLanguage(Language.English.ToString());
     }
@@ -401,6 +401,17 @@ namespace MyFavoriteQuotes
           labelAddQuote.Text = languageDicoFr["Quote"];
           break;
       }
+    }
+
+    private void ButtonAddClick(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ButtonSearchClick(object sender, EventArgs e)
+    {
+      textBoxResult.Text = string.Empty;
+
     }
   }
 }

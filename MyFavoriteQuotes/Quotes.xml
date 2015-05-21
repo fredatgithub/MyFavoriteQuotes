@@ -1,13 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Document>
   <DocumentVersion>
     <version>1.0</version>
   </DocumentVersion>
   <Quotes>
-    <Quote>
-      <Author>
-        
-      </Author>
+    <Author>
+      Autheur1séparé
+    </Author>
+    <Quote Author ="Author1 attribut">
+      some sentence
     </Quote>
   </Quotes>
 </Document>

@@ -69,11 +69,11 @@
       this.buttonSearch = new System.Windows.Forms.Button();
       this.textBoxSearch = new System.Windows.Forms.TextBox();
       this.tabPageAdd = new System.Windows.Forms.TabPage();
-      this.labelAddAuthor = new System.Windows.Forms.Label();
-      this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
       this.labelAddQuote = new System.Windows.Forms.Label();
       this.buttonAdd = new System.Windows.Forms.Button();
       this.textBoxAddQuote = new System.Windows.Forms.TextBox();
+      this.labelAddAuthor = new System.Windows.Forms.Label();
+      this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -284,14 +284,14 @@
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
       this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.frenchToolStripMenuItem.Text = "Français";
-      this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
+      this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItemClick);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
       this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.englishToolStripMenuItem.Text = "Anglais";
-      this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+      this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItemClick);
       // 
       // helpToolStripMenuItem
       // 
@@ -333,7 +333,7 @@
       this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
       this.aboutToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
       this.aboutToolStripMenuItem.Text = "À &propos de...";
-      this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+      this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
       // 
       // tabControlMain
       // 
@@ -394,6 +394,7 @@
       this.buttonSearch.TabIndex = 1;
       this.buttonSearch.Text = "Search";
       this.buttonSearch.UseVisualStyleBackColor = true;
+      this.buttonSearch.Click += new System.EventHandler(this.ButtonSearchClick);
       // 
       // textBoxSearch
       // 
@@ -417,22 +418,6 @@
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
       // 
-      // labelAddAuthor
-      // 
-      this.labelAddAuthor.AutoSize = true;
-      this.labelAddAuthor.Location = new System.Drawing.Point(45, 73);
-      this.labelAddAuthor.Name = "labelAddAuthor";
-      this.labelAddAuthor.Size = new System.Drawing.Size(50, 17);
-      this.labelAddAuthor.TabIndex = 6;
-      this.labelAddAuthor.Text = "Author";
-      // 
-      // textBoxAddAuthor
-      // 
-      this.textBoxAddAuthor.Location = new System.Drawing.Point(134, 73);
-      this.textBoxAddAuthor.Name = "textBoxAddAuthor";
-      this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
-      this.textBoxAddAuthor.TabIndex = 4;
-      // 
       // labelAddQuote
       // 
       this.labelAddQuote.AutoSize = true;
@@ -450,6 +435,7 @@
       this.buttonAdd.TabIndex = 9;
       this.buttonAdd.Text = "Add";
       this.buttonAdd.UseVisualStyleBackColor = true;
+      this.buttonAdd.Click += new System.EventHandler(this.ButtonAddClick);
       // 
       // textBoxAddQuote
       // 
@@ -458,6 +444,22 @@
       this.textBoxAddQuote.Name = "textBoxAddQuote";
       this.textBoxAddQuote.Size = new System.Drawing.Size(401, 260);
       this.textBoxAddQuote.TabIndex = 8;
+      // 
+      // labelAddAuthor
+      // 
+      this.labelAddAuthor.AutoSize = true;
+      this.labelAddAuthor.Location = new System.Drawing.Point(45, 73);
+      this.labelAddAuthor.Name = "labelAddAuthor";
+      this.labelAddAuthor.Size = new System.Drawing.Size(50, 17);
+      this.labelAddAuthor.TabIndex = 6;
+      this.labelAddAuthor.Text = "Author";
+      // 
+      // textBoxAddAuthor
+      // 
+      this.textBoxAddAuthor.Location = new System.Drawing.Point(134, 73);
+      this.textBoxAddAuthor.Name = "textBoxAddAuthor";
+      this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
+      this.textBoxAddAuthor.TabIndex = 4;
       // 
       // FormMain
       // 

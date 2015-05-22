@@ -447,11 +447,11 @@ namespace MyFavoriteQuotes
       //xml2.Save(Settings.Default.QuoteFileName);
       // or
       XDocument xDoc3 = XDocument.Load(Settings.Default.QuoteFileName);
-      XElement khang = (from xml3 in xDoc3.Descendants("Quotes")
+      XElement k = (from xml3 in xDoc3.Descendants("Quotes")
                         //where xml3.Attribute("Language").Value == "English"
                         select xml3).FirstOrDefault();
       XElement newNode = new XElement("Node");
-      khang.Add(newNode);
+      k.Add(newNode);
     }
 
     private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)

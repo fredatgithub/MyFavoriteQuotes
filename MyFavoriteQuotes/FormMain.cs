@@ -430,22 +430,28 @@ namespace MyFavoriteQuotes
 
       // check if the quote is not already in
       // open the quotes.xml file and add the quote
-      XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
-      XElement xml = new XElement("Quotes");
-      xml.Add(new XElement("Quote",
-        new XAttribute("Author", textBoxAddAuthor.Text),
-        new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
-        "textBoxAddQuote.Text"));
-      xml.Save(Settings.Default.QuoteFileName);
+      //XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      //XElement xml = new XElement("Quotes");
+      //xml.Add(new XElement("Quote",
+      //  new XAttribute("Author", textBoxAddAuthor.Text),
+      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
+      //  "textBoxAddQuote.Text"));
+      //xml.Save(Settings.Default.QuoteFileName);
+      //// or
+      //XDocument xDoc2 = XDocument.Load(Settings.Default.QuoteFileName);
+      //XElement xml2 = new XElement("Quotes");
+      //xml2.AddFirst(new XElement("Quote",
+      //  new XAttribute("Author", textBoxAddAuthor.Text),
+      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
+      //  textBoxAddQuote.Text));
+      //xml2.Save(Settings.Default.QuoteFileName);
       // or
-      XDocument xDoc2 = XDocument.Load(Settings.Default.QuoteFileName);
-      XElement xml2 = new XElement("Quotes");
-      xml2.AddFirst(new XElement("Quote",
-        new XAttribute("Author", textBoxAddAuthor.Text),
-        new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
-        textBoxAddQuote.Text));
-      xml2.Save(Settings.Default.QuoteFileName);
-
+      XDocument xDoc3 = XDocument.Load(Settings.Default.QuoteFileName);
+      XElement khang = (from xml3 in xDoc3.Descendants("Quotes")
+                        //where xml3.Attribute("Language").Value == "English"
+                        select xml3).FirstOrDefault();
+      XElement newNode = new XElement("Node");
+      khang.Add(newNode);
     }
 
     private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)

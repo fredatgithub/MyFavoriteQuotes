@@ -4,7 +4,7 @@
     <version>1.0</version>
   </DocumentVersion>
   <Quotes>
-    <Quote Author ="Author1 attribut">
+    <Quote Author ="Author1 attribut" Language="English">
       some sentence
     </Quote>
   </Quotes>

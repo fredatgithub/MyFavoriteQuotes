@@ -74,6 +74,7 @@
       this.textBoxAddQuote = new System.Windows.Forms.TextBox();
       this.labelAddAuthor = new System.Windows.Forms.Label();
       this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
+      this.checkBoxAddQuoteFrenchEnglish = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -282,14 +283,14 @@
       // frenchToolStripMenuItem
       // 
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
       this.frenchToolStripMenuItem.Text = "Français";
       this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItemClick);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-      this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
       this.englishToolStripMenuItem.Text = "Anglais";
       this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItemClick);
       // 
@@ -405,6 +406,7 @@
       // 
       // tabPageAdd
       // 
+      this.tabPageAdd.Controls.Add(this.checkBoxAddQuoteFrenchEnglish);
       this.tabPageAdd.Controls.Add(this.labelAddQuote);
       this.tabPageAdd.Controls.Add(this.buttonAdd);
       this.tabPageAdd.Controls.Add(this.textBoxAddQuote);
@@ -421,7 +423,7 @@
       // labelAddQuote
       // 
       this.labelAddQuote.AutoSize = true;
-      this.labelAddQuote.Location = new System.Drawing.Point(45, 137);
+      this.labelAddQuote.Location = new System.Drawing.Point(45, 143);
       this.labelAddQuote.Name = "labelAddQuote";
       this.labelAddQuote.Size = new System.Drawing.Size(47, 17);
       this.labelAddQuote.TabIndex = 10;
@@ -429,7 +431,7 @@
       // 
       // buttonAdd
       // 
-      this.buttonAdd.Location = new System.Drawing.Point(541, 371);
+      this.buttonAdd.Location = new System.Drawing.Point(541, 377);
       this.buttonAdd.Name = "buttonAdd";
       this.buttonAdd.Size = new System.Drawing.Size(101, 26);
       this.buttonAdd.TabIndex = 9;
@@ -439,7 +441,7 @@
       // 
       // textBoxAddQuote
       // 
-      this.textBoxAddQuote.Location = new System.Drawing.Point(134, 137);
+      this.textBoxAddQuote.Location = new System.Drawing.Point(134, 143);
       this.textBoxAddQuote.Multiline = true;
       this.textBoxAddQuote.Name = "textBoxAddQuote";
       this.textBoxAddQuote.Size = new System.Drawing.Size(401, 260);
@@ -460,6 +462,16 @@
       this.textBoxAddAuthor.Name = "textBoxAddAuthor";
       this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
       this.textBoxAddAuthor.TabIndex = 4;
+      // 
+      // checkBoxAddQuoteFrenchEnglish
+      // 
+      this.checkBoxAddQuoteFrenchEnglish.AutoSize = true;
+      this.checkBoxAddQuoteFrenchEnglish.Location = new System.Drawing.Point(134, 110);
+      this.checkBoxAddQuoteFrenchEnglish.Name = "checkBoxAddQuoteFrenchEnglish";
+      this.checkBoxAddQuoteFrenchEnglish.Size = new System.Drawing.Size(134, 21);
+      this.checkBoxAddQuoteFrenchEnglish.TabIndex = 11;
+      this.checkBoxAddQuoteFrenchEnglish.Text = "Quote in English";
+      this.checkBoxAddQuoteFrenchEnglish.UseVisualStyleBackColor = true;
       // 
       // FormMain
       // 
@@ -535,5 +547,6 @@
     private System.Windows.Forms.TextBox textBoxAddQuote;
     private System.Windows.Forms.Label labelAddAuthor;
     private System.Windows.Forms.TextBox textBoxAddAuthor;
+    private System.Windows.Forms.CheckBox checkBoxAddQuoteFrenchEnglish;
   }
 }

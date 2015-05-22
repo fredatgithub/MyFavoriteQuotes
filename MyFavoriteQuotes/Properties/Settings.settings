@@ -29,5 +29,8 @@
     <Setting Name="TextBoxEmptyFr" Type="System.String" Scope="User">
       <Value Profile="(Default)">Il n'y a pas de citation</Value>
     </Setting>
+    <Setting Name="QuoteFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Quotes.xml</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

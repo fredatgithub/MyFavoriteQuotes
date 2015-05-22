@@ -4,9 +4,6 @@
     <version>1.0</version>
   </DocumentVersion>
   <Quotes>
-    <Author>
-      Autheur1séparé
-    </Author>
     <Quote Author ="Author1 attribut">
       some sentence
     </Quote>

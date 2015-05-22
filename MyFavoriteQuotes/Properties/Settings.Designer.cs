@@ -130,5 +130,17 @@ namespace MyFavoriteQuotes.Properties {
                 this["TextBoxEmptyFr"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Quotes.xml")]
+        public string QuoteFileName {
+            get {
+                return ((string)(this["QuoteFileName"]));
+            }
+            set {
+                this["QuoteFileName"] = value;
+            }
+        }
     }
 }

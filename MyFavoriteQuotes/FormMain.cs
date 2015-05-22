@@ -26,6 +26,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using MyFavoriteQuotes.Properties;
+using System.Xml;
 
 namespace MyFavoriteQuotes
 {
@@ -111,6 +112,7 @@ namespace MyFavoriteQuotes
                      englishValue = node.Element("englishValue").Value,
                      frenchValue = node.Element("frenchValue").Value
                    };
+
       foreach (var i in result)
       {
         languageDicoEn.Add(i.name, i.englishValue);
@@ -361,6 +363,7 @@ namespace MyFavoriteQuotes
           buttonAdd.Text = languageDicoEn["Add"];
           labelAddAuthor.Text = languageDicoEn["Author"];
           labelAddQuote.Text = languageDicoEn["Quote"];
+          checkBoxAddQuoteFrenchEnglish.Text = languageDicoEn["CheckBoxAddQuoteEnglishFrench"];
           break;
         case "French":
           frenchToolStripMenuItem.Checked = true;
@@ -399,6 +402,7 @@ namespace MyFavoriteQuotes
           buttonAdd.Text = languageDicoFr["Add"];
           labelAddAuthor.Text = languageDicoFr["Author"];
           labelAddQuote.Text = languageDicoFr["Quote"];
+          checkBoxAddQuoteFrenchEnglish.Text = languageDicoFr["CheckBoxAddQuoteEnglishFrench"];
           break;
       }
     }
@@ -407,7 +411,7 @@ namespace MyFavoriteQuotes
     {
       if (textBoxAddAuthor.Text == string.Empty)
       {
-        
+        textBoxAddAuthor.Text = "unknown author";
       }
 
       if (textBoxAddQuote.Text == string.Empty)
@@ -423,6 +427,25 @@ namespace MyFavoriteQuotes
           return;
         }
       }
+
+      // check if the quote is not already in
+      // open the quotes.xml file and add the quote
+      XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      XElement xml = new XElement("Quotes");
+      xml.Add(new XElement("Quote",
+        new XAttribute("Author", textBoxAddAuthor.Text),
+        new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
+        "textBoxAddQuote.Text"));
+      xml.Save(Settings.Default.QuoteFileName);
+      // or
+      XDocument xDoc2 = XDocument.Load(Settings.Default.QuoteFileName);
+      XElement xml2 = new XElement("Quotes");
+      xml2.AddFirst(new XElement("Quote",
+        new XAttribute("Author", textBoxAddAuthor.Text),
+        new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
+        textBoxAddQuote.Text));
+      xml2.Save(Settings.Default.QuoteFileName);
+
     }
 
     private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)
@@ -440,6 +463,24 @@ namespace MyFavoriteQuotes
     {
       textBoxResult.Text = string.Empty;
 
+    }
+
+    private bool IsAlreadyIn(string fileName, string searchedItem)
+    {
+      bool result = false;
+      XmlTextReader reader = new XmlTextReader(fileName);
+      while (reader.Read())
+      {
+        if (reader.NodeType == XmlNodeType.Element && reader.Name == "endpoint")
+        {
+          if (reader.GetAttribute("name") == searchedItem)
+          {
+            result = true;
+          }
+        }
+      }
+
+      return result;
     }
   }
 }

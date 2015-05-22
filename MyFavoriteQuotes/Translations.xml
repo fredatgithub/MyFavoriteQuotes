@@ -159,5 +159,10 @@
       <englishValue>Add</englishValue>
       <frenchValue>Ajouter</frenchValue>
     </term>
+    <term>
+      <name>CheckBoxAddQuoteEnglishFrench</name>
+      <englishValue>Quote in English</englishValue>
+      <frenchValue>Citation en français</frenchValue>
+    </term>
   </terms>
 </Document>

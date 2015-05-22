@@ -405,7 +405,35 @@ namespace MyFavoriteQuotes
 
     private void ButtonAddClick(object sender, EventArgs e)
     {
+      if (textBoxAddAuthor.Text == string.Empty)
+      {
+        
+      }
 
+      if (textBoxAddQuote.Text == string.Empty)
+      {
+        if (frenchToolStripMenuItem.Checked)
+        {
+          DisplayMessageOk(Settings.Default.TextBoxEmptyFr, "Citation vide", MessageBoxButtons.OK);
+          return;
+        }
+        else if (englishToolStripMenuItem.Checked)
+        {
+          DisplayMessageOk(Settings.Default.TextBoxEmptyEN, "Empty quote", MessageBoxButtons.OK);
+          return;
+        }
+      }
+    }
+
+    private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)
+    {
+      DialogResult result = MessageBox.Show(this, message, title, buttons);
+      return result;
+    }
+
+    private void DisplayMessageOk(string message, string title, MessageBoxButtons buttons)
+    {
+      MessageBox.Show(this, message, title, buttons);
     }
 
     private void ButtonSearchClick(object sender, EventArgs e)

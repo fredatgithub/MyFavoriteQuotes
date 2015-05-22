@@ -106,5 +106,29 @@ namespace MyFavoriteQuotes.Properties {
                 this["LastTabUsed"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("The quote cannot be empty")]
+        public string TextBoxEmptyEN {
+            get {
+                return ((string)(this["TextBoxEmptyEN"]));
+            }
+            set {
+                this["TextBoxEmptyEN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Il n\'y a pas de citation")]
+        public string TextBoxEmptyFr {
+            get {
+                return ((string)(this["TextBoxEmptyFr"]));
+            }
+            set {
+                this["TextBoxEmptyFr"] = value;
+            }
+        }
     }
 }

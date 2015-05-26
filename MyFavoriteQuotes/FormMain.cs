@@ -471,7 +471,7 @@ namespace MyFavoriteQuotes
 
     }
 
-    private bool IsAlreadyIn(string fileName, string searchedItem)
+    private bool IsAlreadyInXml(string fileName, string searchedItem)
     {
       bool result = false;
       XmlTextReader reader = new XmlTextReader(fileName);

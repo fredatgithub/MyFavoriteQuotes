@@ -437,9 +437,14 @@ namespace MyFavoriteQuotes
       XmlElement newElement = doc.CreateElement("Quote");
       newElement.SetAttribute("Author", textBoxAddAuthor.Text);
       newElement.SetAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English");
-      newElement.InnerText = textBoxAddQuote.Text;
+      newElement.InnerText = RemoveColon(textBoxAddQuote.Text);
       root.AppendChild(newElement);
       doc.Save(Settings.Default.QuoteFileName);
+    }
+
+    private string RemoveColon(string input)
+    {
+      return input.Replace(':', ' ');
     }
 
     private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)

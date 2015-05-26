@@ -404,6 +404,7 @@
       this.textBoxSearch.Name = "textBoxSearch";
       this.textBoxSearch.Size = new System.Drawing.Size(254, 22);
       this.textBoxSearch.TabIndex = 0;
+      this.textBoxSearch.Text = "a";
       // 
       // tabPageAdd
       // 
@@ -427,7 +428,7 @@
       this.checkBoxAddQuoteFrenchEnglish.Location = new System.Drawing.Point(134, 110);
       this.checkBoxAddQuoteFrenchEnglish.Name = "checkBoxAddQuoteFrenchEnglish";
       this.checkBoxAddQuoteFrenchEnglish.Size = new System.Drawing.Size(134, 21);
-      this.checkBoxAddQuoteFrenchEnglish.TabIndex = 11;
+      this.checkBoxAddQuoteFrenchEnglish.TabIndex = 5;
       this.checkBoxAddQuoteFrenchEnglish.Text = "Quote in English";
       this.checkBoxAddQuoteFrenchEnglish.UseVisualStyleBackColor = true;
       // 

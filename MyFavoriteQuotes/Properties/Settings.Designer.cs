@@ -142,5 +142,53 @@ namespace MyFavoriteQuotes.Properties {
                 this["QuoteFileName"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("The search box cannot be empty")]
+        public string textBoxSearchEn {
+            get {
+                return ((string)(this["textBoxSearchEn"]));
+            }
+            set {
+                this["textBoxSearchEn"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("La recherche ne peut pas être vide")]
+        public string textBoxSearchFr {
+            get {
+                return ((string)(this["textBoxSearchFr"]));
+            }
+            set {
+                this["textBoxSearchFr"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Empty search")]
+        public string SearchEmptyEn {
+            get {
+                return ((string)(this["SearchEmptyEn"]));
+            }
+            set {
+                this["SearchEmptyEn"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Recherche vide")]
+        public string SearchEmptyFr {
+            get {
+                return ((string)(this["SearchEmptyFr"]));
+            }
+            set {
+                this["SearchEmptyFr"] = value;
+            }
+        }
     }
 }

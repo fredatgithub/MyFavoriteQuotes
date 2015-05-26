@@ -108,15 +108,15 @@ namespace MyFavoriteQuotes
                    where node.HasElements
                    select new
                    {
-                     name = node.Element("name").Value,
-                     englishValue = node.Element("englishValue").Value,
-                     frenchValue = node.Element("frenchValue").Value
+                     quoteValue = node.Element("name").Value,
+                     authorValue = node.Element("englishValue").Value,
+                     languageValue = node.Element("frenchValue").Value
                    };
 
       foreach (var i in result)
       {
-        languageDicoEn.Add(i.name, i.englishValue);
-        languageDicoFr.Add(i.name, i.frenchValue);
+        languageDicoEn.Add(i.quoteValue, i.authorValue);
+        languageDicoFr.Add(i.quoteValue, i.languageValue);
       }
     }
 
@@ -461,7 +461,68 @@ namespace MyFavoriteQuotes
     private void ButtonSearchClick(object sender, EventArgs e)
     {
       textBoxResult.Text = string.Empty;
+      if (textBoxSearch.Text == string.Empty)
+      {
+        DisplayMessageOk(
+          frenchToolStripMenuItem.Checked ? Settings.Default.textBoxSearchFr : Settings.Default.textBoxSearchEn,
+          frenchToolStripMenuItem.Checked ? Settings.Default.SearchEmptyFr : Settings.Default.SearchEmptyEn,
+          MessageBoxButtons.OK);
+      }
 
+      if (SearchInXmlFor(Settings.Default.QuoteFileName, textBoxSearch.Text, "a").Count != 0)
+      {
+        foreach (string item in SearchInXmlFor(Settings.Default.QuoteFileName, textBoxSearch.Text, "a"))
+        {
+          textBoxResult.Text += item + Environment.NewLine;
+        }
+      }
+      
+
+    }
+
+    private List<string> SearchInXmlFor(string filename, string searchString, string author, string language = "English")
+    {
+      List<string> result2 = new List<string>();
+      XDocument xDoc = XDocument.Load(filename);
+      var result = from node in xDoc.Descendants("Quotes")
+                   where node.HasElements
+                   where node.Name == "Quote"
+                   //where node.Element("Quote").Attribute("Author") == author
+                   //where node.Element("Quote"). == language
+                   //where node.Element("Author") == searchString
+                   select new
+                   {
+                     quoteValue = node.Element("Quote").Value,
+                     authorValue = node.Element("Quote").Attribute("Author").Value,
+                     languageValue = node.Element("Quote").Attribute("Language").Value,
+                   };
+
+      foreach (var i in result)
+      {
+        result2.Add(i.quoteValue);
+        //languageDicoEn.Add(i.quoteValue, i.authorValue);
+        //languageDicoFr.Add(i.quoteValue, i.languageValue);
+      }
+
+      return result2;
+    }
+
+    private List<string> SearchXmlFor(string filename, string searchString, string author, string language = "English")
+    {
+      List<string> result = new List<string>();
+      XmlTextReader reader = new XmlTextReader(filename);
+      while (reader.Read())
+      {
+        if (reader.NodeType == XmlNodeType.Element && reader.Name == "Quote")
+        {
+          if (reader.GetAttribute("Author").Contains(author))
+          {
+            result.Add(reader.ReadContentAsString() + Environment.NewLine);
+          }
+        }
+      }
+
+      return result;
     }
 
     private bool IsAlreadyInXml(string fileName, string searchedItem)
@@ -470,7 +531,7 @@ namespace MyFavoriteQuotes
       XmlTextReader reader = new XmlTextReader(fileName);
       while (reader.Read())
       {
-        if (reader.NodeType == XmlNodeType.Element && reader.Name == "endpoint")
+        if (reader.NodeType == XmlNodeType.Element && reader.Name == "Quote")
         {
           if (reader.GetAttribute("name") == searchedItem)
           {

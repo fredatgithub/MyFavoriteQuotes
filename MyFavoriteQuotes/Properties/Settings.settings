@@ -32,5 +32,17 @@
     <Setting Name="QuoteFileName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Quotes.xml</Value>
     </Setting>
+    <Setting Name="textBoxSearchEn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The search box cannot be empty</Value>
+    </Setting>
+    <Setting Name="textBoxSearchFr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">La recherche ne peut pas être vide</Value>
+    </Setting>
+    <Setting Name="SearchEmptyEn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Empty search</Value>
+    </Setting>
+    <Setting Name="SearchEmptyFr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Recherche vide</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

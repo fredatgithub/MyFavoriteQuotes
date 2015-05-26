@@ -429,60 +429,8 @@ namespace MyFavoriteQuotes
       }
 
       // check if the quote is not already in
+      // TODO code
       // open the quotes.xml file and add the quote
-      //XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
-      //XElement xml = new XElement("Quotes");
-      //xml.Add(new XElement("Quote",
-      //  new XAttribute("Author", textBoxAddAuthor.Text),
-      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
-      //  "textBoxAddQuote.Text"));
-      //xml.Save(Settings.Default.QuoteFileName);
-      //// or
-      //XDocument xDoc2 = XDocument.Load(Settings.Default.QuoteFileName);
-      //XElement xml2 = new XElement("Quotes");
-      //xml2.AddFirst(new XElement("Quote",
-      //  new XAttribute("Author", textBoxAddAuthor.Text),
-      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
-      //  textBoxAddQuote.Text));
-      //xml2.Save(Settings.Default.QuoteFileName);
-      // or
-      //XDocument xDoc3 = XDocument.Load(Settings.Default.QuoteFileName);
-      //XElement k = (from xml3 in xDoc3.Descendants("Quotes")
-      //                  //where xml3.Attribute("Language").Value == "English"
-      //                  select xml3).FirstOrDefault();
-      //k.AddFirst(new XElement("Quote",
-      //  new XAttribute("Author", textBoxAddAuthor.Text),
-      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
-      //  textBoxAddQuote.Text));
-      //xDoc3.AddFirst(new XElement("Quote",
-      //  new XAttribute("Author", textBoxAddAuthor.Text),
-      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
-      //  textBoxAddQuote.Text));
-      //xDoc3.Save(Settings.Default.QuoteFileName);
-
-      //XmlDocument originalXml = new XmlDocument();
-      //originalXml.Load(Settings.Default.QuoteFileName);
-      //XmlNode quotes = originalXml.SelectSingleNode("Quotes");
-      //XmlNode newSub = originalXml.CreateNode(XmlNodeType.Element, "Quote", null);
-      //XmlAttribute xa = originalXml.CreateAttribute("Author");
-      //xa.Value = "author10";
-      //XmlAttribute xb = originalXml.CreateAttribute("Language");
-      //xb.Value = "English";
-      //newSub.Attributes.Append(xa);
-      //newSub.Attributes.Append(xb);
-      //newSub.Value = "another quote";
-      //quotes.AppendChild(newSub);
-      //originalXml.Save(Settings.Default.QuoteFileName);
-
-      //XmlDocument doc = new XmlDocument();
-      //doc.Load(Settings.Default.QuoteFileName);
-      //XmlNode root = doc.FirstChild;
-      //string ns = root.GetNamespaceOfPrefix("bk");
-      //XmlNode attr = doc.CreateNode(XmlNodeType.Attribute, "quote", ns);
-      //attr.Value = "nouvelle phrase";
-      //root.Attributes.SetNamedItem(attr);
-      //doc.Save(Settings.Default.QuoteFileName);
-
       XmlDocument doc = new XmlDocument();
       doc.Load(Settings.Default.QuoteFileName);
       XmlNode root = doc.DocumentElement;

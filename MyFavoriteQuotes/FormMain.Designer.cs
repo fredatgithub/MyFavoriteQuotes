@@ -69,12 +69,12 @@
       this.buttonSearch = new System.Windows.Forms.Button();
       this.textBoxSearch = new System.Windows.Forms.TextBox();
       this.tabPageAdd = new System.Windows.Forms.TabPage();
+      this.checkBoxAddQuoteFrenchEnglish = new System.Windows.Forms.CheckBox();
       this.labelAddQuote = new System.Windows.Forms.Label();
       this.buttonAdd = new System.Windows.Forms.Button();
       this.textBoxAddQuote = new System.Windows.Forms.TextBox();
       this.labelAddAuthor = new System.Windows.Forms.Label();
       this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
-      this.checkBoxAddQuoteFrenchEnglish = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -283,14 +283,14 @@
       // frenchToolStripMenuItem
       // 
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.frenchToolStripMenuItem.Text = "Français";
       this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItemClick);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-      this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.englishToolStripMenuItem.Text = "Anglais";
       this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItemClick);
       // 
@@ -369,6 +369,7 @@
       this.textBoxResult.Name = "textBoxResult";
       this.textBoxResult.Size = new System.Drawing.Size(606, 338);
       this.textBoxResult.TabIndex = 4;
+      this.textBoxResult.Text = "test1";
       // 
       // comboBoxSearch
       // 
@@ -420,6 +421,16 @@
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
       // 
+      // checkBoxAddQuoteFrenchEnglish
+      // 
+      this.checkBoxAddQuoteFrenchEnglish.AutoSize = true;
+      this.checkBoxAddQuoteFrenchEnglish.Location = new System.Drawing.Point(134, 110);
+      this.checkBoxAddQuoteFrenchEnglish.Name = "checkBoxAddQuoteFrenchEnglish";
+      this.checkBoxAddQuoteFrenchEnglish.Size = new System.Drawing.Size(134, 21);
+      this.checkBoxAddQuoteFrenchEnglish.TabIndex = 11;
+      this.checkBoxAddQuoteFrenchEnglish.Text = "Quote in English";
+      this.checkBoxAddQuoteFrenchEnglish.UseVisualStyleBackColor = true;
+      // 
       // labelAddQuote
       // 
       this.labelAddQuote.AutoSize = true;
@@ -446,6 +457,7 @@
       this.textBoxAddQuote.Name = "textBoxAddQuote";
       this.textBoxAddQuote.Size = new System.Drawing.Size(401, 260);
       this.textBoxAddQuote.TabIndex = 8;
+      this.textBoxAddQuote.Text = "test1";
       // 
       // labelAddAuthor
       // 
@@ -462,16 +474,6 @@
       this.textBoxAddAuthor.Name = "textBoxAddAuthor";
       this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
       this.textBoxAddAuthor.TabIndex = 4;
-      // 
-      // checkBoxAddQuoteFrenchEnglish
-      // 
-      this.checkBoxAddQuoteFrenchEnglish.AutoSize = true;
-      this.checkBoxAddQuoteFrenchEnglish.Location = new System.Drawing.Point(134, 110);
-      this.checkBoxAddQuoteFrenchEnglish.Name = "checkBoxAddQuoteFrenchEnglish";
-      this.checkBoxAddQuoteFrenchEnglish.Size = new System.Drawing.Size(134, 21);
-      this.checkBoxAddQuoteFrenchEnglish.TabIndex = 11;
-      this.checkBoxAddQuoteFrenchEnglish.Text = "Quote in English";
-      this.checkBoxAddQuoteFrenchEnglish.UseVisualStyleBackColor = true;
       // 
       // FormMain
       // 

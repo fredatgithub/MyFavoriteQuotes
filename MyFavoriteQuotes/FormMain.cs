@@ -446,12 +446,52 @@ namespace MyFavoriteQuotes
       //  textBoxAddQuote.Text));
       //xml2.Save(Settings.Default.QuoteFileName);
       // or
-      XDocument xDoc3 = XDocument.Load(Settings.Default.QuoteFileName);
-      XElement k = (from xml3 in xDoc3.Descendants("Quotes")
-                        //where xml3.Attribute("Language").Value == "English"
-                        select xml3).FirstOrDefault();
-      XElement newNode = new XElement("Node");
-      k.Add(newNode);
+      //XDocument xDoc3 = XDocument.Load(Settings.Default.QuoteFileName);
+      //XElement k = (from xml3 in xDoc3.Descendants("Quotes")
+      //                  //where xml3.Attribute("Language").Value == "English"
+      //                  select xml3).FirstOrDefault();
+      //k.AddFirst(new XElement("Quote",
+      //  new XAttribute("Author", textBoxAddAuthor.Text),
+      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
+      //  textBoxAddQuote.Text));
+      //xDoc3.AddFirst(new XElement("Quote",
+      //  new XAttribute("Author", textBoxAddAuthor.Text),
+      //  new XAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English"),
+      //  textBoxAddQuote.Text));
+      //xDoc3.Save(Settings.Default.QuoteFileName);
+
+      //XmlDocument originalXml = new XmlDocument();
+      //originalXml.Load(Settings.Default.QuoteFileName);
+      //XmlNode quotes = originalXml.SelectSingleNode("Quotes");
+      //XmlNode newSub = originalXml.CreateNode(XmlNodeType.Element, "Quote", null);
+      //XmlAttribute xa = originalXml.CreateAttribute("Author");
+      //xa.Value = "author10";
+      //XmlAttribute xb = originalXml.CreateAttribute("Language");
+      //xb.Value = "English";
+      //newSub.Attributes.Append(xa);
+      //newSub.Attributes.Append(xb);
+      //newSub.Value = "another quote";
+      //quotes.AppendChild(newSub);
+      //originalXml.Save(Settings.Default.QuoteFileName);
+
+      //XmlDocument doc = new XmlDocument();
+      //doc.Load(Settings.Default.QuoteFileName);
+      //XmlNode root = doc.FirstChild;
+      //string ns = root.GetNamespaceOfPrefix("bk");
+      //XmlNode attr = doc.CreateNode(XmlNodeType.Attribute, "quote", ns);
+      //attr.Value = "nouvelle phrase";
+      //root.Attributes.SetNamedItem(attr);
+      //doc.Save(Settings.Default.QuoteFileName);
+
+      XmlDocument doc = new XmlDocument();
+      doc.Load(Settings.Default.QuoteFileName);
+      XmlNode root = doc.DocumentElement;
+      XmlElement newElement = doc.CreateElement("Quote");
+      newElement.SetAttribute("Author", textBoxAddAuthor.Text);
+      newElement.SetAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English");
+      newElement.InnerText = textBoxAddQuote.Text;
+      root.AppendChild(newElement);
+      doc.Save(Settings.Default.QuoteFileName);
     }
 
     private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)

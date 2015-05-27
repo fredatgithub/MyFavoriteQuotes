@@ -103,8 +103,8 @@ namespace MyFavoriteQuotes
       }
 
       // read the translation file and feed the language
-      XDocument xDoc = XDocument.Load(Settings.Default.LanguageFileName);
-      var result = from node in xDoc.Descendants("term")
+      XDocument xmlDoc = XDocument.Load(Settings.Default.LanguageFileName);
+      var result = from node in xmlDoc.Descendants("term")
                    where node.HasElements
                    select new
                    {
@@ -475,9 +475,11 @@ namespace MyFavoriteQuotes
           MessageBoxButtons.OK);
       }
 
-      if (SearchInXmlFor(Settings.Default.QuoteFileName, textBoxSearch.Text, "a").Count != 0)
+      List<string> searchedResult = new List<string>();
+      searchedResult = SearchInXmlFor(Settings.Default.QuoteFileName, textBoxSearch.Text, "a");
+      if (searchedResult.Count != 0)
       {
-        foreach (string item in SearchInXmlFor(Settings.Default.QuoteFileName, textBoxSearch.Text, "a"))
+        foreach (string item in searchedResult)
         {
           textBoxResult.Text += item + Environment.NewLine;
         }
@@ -486,11 +488,47 @@ namespace MyFavoriteQuotes
       {
         DisplayMessage("No result were found.", "No result", MessageBoxButtons.OK);
       }
-      
+
+      searchedResult = null;
 
     }
 
     private List<string> SearchInXmlFor(string filename, string searchedString, string author, string language = "English")
+    {
+      List<string> result2 = new List<string>();
+      XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      var result = from node in xDoc.Descendants("Quote")
+                   where node.HasElements
+                   select new
+                   {
+                     authorValue = node.Element("Author").Value,
+                     languageValue = node.Element("Language").Value,
+                     quoteValue = node.Element("QuoteValue").Value
+                   };
+
+      foreach (var i in result)
+      {
+        result2.Add(i.quoteValue + " - " + i.authorValue);
+      }
+
+      //XDocument xDoc = XDocument.Load(filename);
+      //var result = from node in xDoc.Descendants("Quotes")
+      //             where node.HasElements
+      //             where node.Name == "Quote"
+      //             //where node.Element("Quote").Attribute("Author") == author
+      //             //where node.Element("Quote"). == language
+      //             //where node.Element("Author") == searchString
+      //             select new
+      //             {
+      //               quoteValue = node.Element("Quote").Value,
+      //               authorValue = node.Element("Quote").Attribute("Author").Value,
+      //               languageValue = node.Element("Quote").Attribute("Language").Value,
+      //             };
+
+      return result2;
+    }
+
+    private List<string> SearchInXmlFor2(string filename, string searchedString, string author, string language = "English")
     {
       List<string> result2 = new List<string>();
       XDocument xDoc = XDocument.Load(filename);

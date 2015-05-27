@@ -364,10 +364,10 @@
       // 
       // textBoxResult
       // 
-      this.textBoxResult.Location = new System.Drawing.Point(32, 95);
+      this.textBoxResult.Location = new System.Drawing.Point(32, 144);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
-      this.textBoxResult.Size = new System.Drawing.Size(606, 338);
+      this.textBoxResult.Size = new System.Drawing.Size(606, 289);
       this.textBoxResult.TabIndex = 4;
       this.textBoxResult.Text = "test1";
       // 

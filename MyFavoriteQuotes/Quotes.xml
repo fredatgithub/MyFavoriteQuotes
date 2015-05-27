@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Quotes>
-    <Quote Author ="Author1" Language="English">some sentence</Quote>
-    <Quote Author ="Author2" Language="English">some other sentence</Quote>
-    <Quote Author ="Author3" Language="French">une phrase</Quote>
-    <Quote Author ="Author4" Language="French">une autre phrase</Quote>
-
+  <Quote>
+    <Author>Author1</Author>
+    <Language>English</Language>
+    <QuoteValue>some sentence</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Author2</Author>
+    <Language>French</Language>
+    <QuoteValue>une phrase</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Author3</Author>
+    <Language>English</Language>
+    <QuoteValue>some other sentence</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Author4</Author>
+    <Language>French</Language>
+    <QuoteValue>une autre phrase</QuoteValue>
+  </Quote>
 </Quotes>

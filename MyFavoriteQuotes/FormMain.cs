@@ -434,11 +434,17 @@ namespace MyFavoriteQuotes
       XmlDocument doc = new XmlDocument();
       doc.Load(Settings.Default.QuoteFileName);
       XmlNode root = doc.DocumentElement;
-      XmlElement newElement = doc.CreateElement("Quote");
-      newElement.SetAttribute("Author", textBoxAddAuthor.Text);
-      newElement.SetAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French");
-      newElement.InnerText = RemoveColon(textBoxAddQuote.Text);
-      root.AppendChild(newElement);
+      XmlElement newQuote = doc.CreateElement("Quote");
+      XmlElement newAuthor = doc.CreateElement("Author");
+      newAuthor.InnerText = textBoxAddAuthor.Text;
+      XmlElement newLanguage = doc.CreateElement("Language");
+      newLanguage.InnerText = checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French";
+      XmlElement newQuoteValue = doc.CreateElement("QuoteValue");
+      newQuoteValue.InnerText = RemoveColon(textBoxAddQuote.Text);
+      newQuote.AppendChild(newAuthor);
+      newQuote.AppendChild(newLanguage);
+      newQuote.AppendChild(newQuoteValue);
+      root.AppendChild(newQuote);
       doc.Save(Settings.Default.QuoteFileName);
     }
 

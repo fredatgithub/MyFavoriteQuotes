@@ -476,6 +476,10 @@ namespace MyFavoriteQuotes
           textBoxResult.Text += item + Environment.NewLine;
         }
       }
+      else
+      {
+        DisplayMessage("No result were found.", "No result", MessageBoxButtons.OK);
+      }
       
 
     }

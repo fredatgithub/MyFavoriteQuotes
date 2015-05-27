@@ -436,7 +436,7 @@ namespace MyFavoriteQuotes
       XmlNode root = doc.DocumentElement;
       XmlElement newElement = doc.CreateElement("Quote");
       newElement.SetAttribute("Author", textBoxAddAuthor.Text);
-      newElement.SetAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "French" : "English");
+      newElement.SetAttribute("Language", checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French");
       newElement.InnerText = RemoveColon(textBoxAddQuote.Text);
       root.AppendChild(newElement);
       doc.Save(Settings.Default.QuoteFileName);
@@ -484,7 +484,7 @@ namespace MyFavoriteQuotes
 
     }
 
-    private List<string> SearchInXmlFor(string filename, string searchString, string author, string language = "English")
+    private List<string> SearchInXmlFor(string filename, string searchedString, string author, string language = "English")
     {
       List<string> result2 = new List<string>();
       XDocument xDoc = XDocument.Load(filename);
@@ -511,7 +511,7 @@ namespace MyFavoriteQuotes
       return result2;
     }
 
-    private List<string> SearchXmlFor(string filename, string searchString, string author, string language = "English")
+    private List<string> SearchXmlFor(string filename, string searchedString, string author, string language = "English")
     {
       List<string> result = new List<string>();
       XmlTextReader reader = new XmlTextReader(filename);

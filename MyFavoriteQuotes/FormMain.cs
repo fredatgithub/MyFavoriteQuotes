@@ -476,7 +476,8 @@ namespace MyFavoriteQuotes
       }
 
       List<string> searchedResult = new List<string>();
-      searchedResult = SearchInXmlFor(Settings.Default.QuoteFileName, textBoxSearch.Text, "a");
+      searchedResult = SearchInXmlFor(Settings.Default.QuoteFileName, 
+        textBoxSearch.Text, "a");
       if (searchedResult.Count != 0)
       {
         foreach (string item in searchedResult)
@@ -508,7 +509,11 @@ namespace MyFavoriteQuotes
 
       foreach (var i in result)
       {
-        result2.Add(i.quoteValue + " - " + i.authorValue);
+        if (i.languageValue == language)
+        {
+          result2.Add(i.quoteValue + " - " + i.authorValue);
+        }
+        
       }
 
       //XDocument xDoc = XDocument.Load(filename);

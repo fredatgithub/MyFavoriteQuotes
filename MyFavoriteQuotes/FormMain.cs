@@ -39,7 +39,13 @@ namespace MyFavoriteQuotes
 
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
-    List<string> ComboBoxSearchItems = new List<string>();
+    //List<string> ComboBoxSearchItems = new List<string>();
+    bool searchAll;
+    bool searchAuthor;
+    bool searchQuote;
+    bool languageAll;
+    bool languageEnglish;
+    bool languageFrench;
 
     private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -66,33 +72,33 @@ namespace MyFavoriteQuotes
       GetWindowValue();
       LoadLanguages();
       SetLanguage(Settings.Default.LastLanguageUsed);
-      LoadComboboxSearchItems(Settings.Default.LastLanguageUsed);
-      comboBoxSearch.DataSource = ComboBoxSearchItems;
+      //LoadComboboxSearchItems(Settings.Default.LastLanguageUsed);
+      //comboBoxSearch.DataSource = ComboBoxSearchItems;
     }
 
     private void LoadComboboxSearchItems(string lastLanguageUsed)
     {
-      ComboBoxSearchItems = new List<string>();
-      switch (lastLanguageUsed)
-      {
-        case "English":
-          ComboBoxSearchItems.Add(languageDicoEn["All"]);
-          ComboBoxSearchItems.Add(languageDicoEn["Author"]);
-          ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
-          break;
-        case "French":
-          ComboBoxSearchItems.Add(languageDicoFr["All"]);
-          ComboBoxSearchItems.Add(languageDicoFr["Author"]);
-          ComboBoxSearchItems.Add(languageDicoFr["Quote"]);
-          break;
-        default: // English
-          ComboBoxSearchItems.Add(languageDicoEn["All"]);
-          ComboBoxSearchItems.Add(languageDicoEn["Author"]);
-          ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
-          break;
-      }
+      //ComboBoxSearchItems = new List<string>();
+      //switch (lastLanguageUsed)
+      //{
+      //  case "English":
+      //    ComboBoxSearchItems.Add(languageDicoEn["All"]);
+      //    ComboBoxSearchItems.Add(languageDicoEn["Author"]);
+      //    ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
+      //    break;
+      //  case "French":
+      //    ComboBoxSearchItems.Add(languageDicoFr["All"]);
+      //    ComboBoxSearchItems.Add(languageDicoFr["Author"]);
+      //    ComboBoxSearchItems.Add(languageDicoFr["Quote"]);
+      //    break;
+      //  default: // English
+      //    ComboBoxSearchItems.Add(languageDicoEn["All"]);
+      //    ComboBoxSearchItems.Add(languageDicoEn["Author"]);
+      //    ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
+      //    break;
+      //}
 
-      comboBoxSearch.DataSource = ComboBoxSearchItems;
+      //comboBoxSearch.DataSource = ComboBoxSearchItems;
     }
 
     private void LoadLanguages()
@@ -355,7 +361,7 @@ namespace MyFavoriteQuotes
           indexToolStripMenuItem.Text = languageDicoEn["MenuHelpIndex"];
           searchToolStripMenuItem.Text = languageDicoEn["MenuHelpSearch"];
           aboutToolStripMenuItem.Text = languageDicoEn["MenuHelpAbout"];
-          LoadComboboxSearchItems(myLanguage);
+          //LoadComboboxSearchItems(myLanguage);
           tabPageSearch.Text = languageDicoEn["Search"];
           buttonSearch.Text = languageDicoEn["Search"];
           labelSearch.Text = languageDicoEn["Search"];
@@ -394,7 +400,7 @@ namespace MyFavoriteQuotes
           indexToolStripMenuItem.Text = languageDicoFr["MenuHelpIndex"];
           searchToolStripMenuItem.Text = languageDicoFr["MenuHelpSearch"];
           aboutToolStripMenuItem.Text = languageDicoFr["MenuHelpAbout"];
-          LoadComboboxSearchItems(myLanguage);
+          //LoadComboboxSearchItems(myLanguage);
           tabPageSearch.Text = languageDicoFr["Search"];
           buttonSearch.Text = languageDicoFr["Search"];
           labelSearch.Text = languageDicoFr["Search"];
@@ -594,6 +600,62 @@ namespace MyFavoriteQuotes
       }
 
       return result;
+    }
+
+    private void checkBoxSearchAll_CheckedChanged(object sender, EventArgs e)
+    {
+      searchAll = checkBoxSearchAll.Checked;
+      if (checkBoxSearchAll.Checked)
+      {
+        checkBoxSearchAuthor.Checked = true;
+        checkBoxSearchQuote.Checked = true;
+      }
+    }
+
+    private void checkBoxSearchAuthor_CheckedChanged(object sender, EventArgs e)
+    {
+      searchAuthor = checkBoxSearchAuthor.Checked;
+      if (checkBoxSearchAll.Checked && !checkBoxSearchAuthor.Checked)
+      {
+        checkBoxSearchAll.Checked = false;
+      }
+    }
+
+    private void checkBoxSearchQuote_CheckedChanged(object sender, EventArgs e)
+    {
+      searchAuthor = checkBoxSearchQuote.Checked;
+      if (checkBoxSearchAll.Checked && !checkBoxSearchQuote.Checked)
+      {
+        checkBoxSearchAll.Checked = false;
+      }
+    }
+
+    private void checkBoxLanguageAll_CheckedChanged(object sender, EventArgs e)
+    {
+      languageAll = checkBoxLanguageAll.Checked;
+      if (checkBoxLanguageAll.Checked)
+      {
+        checkBoxLanguageEnglish.Checked = true;
+        checkBoxLanguageFrench.Checked = true;
+      }
+    }
+
+    private void checkBoxLanguageEnglish_CheckedChanged(object sender, EventArgs e)
+    {
+      languageEnglish = checkBoxLanguageEnglish.Checked;
+      if (checkBoxLanguageAll.Checked && !checkBoxLanguageEnglish.Checked)
+      {
+        checkBoxLanguageAll.Checked = false;
+      }
+    }
+
+    private void checkBoxLanguageFrench_CheckedChanged(object sender, EventArgs e)
+    {
+      languageFrench = checkBoxLanguageFrench.Checked;
+      if (checkBoxLanguageAll.Checked && !checkBoxLanguageFrench.Checked)
+      {
+        checkBoxLanguageAll.Checked = false;
+      }
     }
   }
 }

@@ -427,7 +427,8 @@ namespace MyFavoriteQuotes
           DisplayMessageOk(Settings.Default.TextBoxEmptyFr, "Citation vide", MessageBoxButtons.OK);
           return;
         }
-        else if (englishToolStripMenuItem.Checked)
+        
+        if (englishToolStripMenuItem.Checked)
         {
           DisplayMessageOk(Settings.Default.TextBoxEmptyEN, "Empty quote", MessageBoxButtons.OK);
           return;

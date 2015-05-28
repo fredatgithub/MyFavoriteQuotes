@@ -82,12 +82,20 @@
       this.textBoxAddQuote = new System.Windows.Forms.TextBox();
       this.labelAddAuthor = new System.Windows.Forms.Label();
       this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
+      this.tabPageList = new System.Windows.Forms.TabPage();
+      this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.checkBox1 = new System.Windows.Forms.CheckBox();
+      this.checkBox2 = new System.Windows.Forms.CheckBox();
+      this.checkBox3 = new System.Windows.Forms.CheckBox();
+      this.textBox1 = new System.Windows.Forms.TextBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
       this.groupBoxLanguage.SuspendLayout();
       this.groupBoxSearch.SuspendLayout();
       this.tabPageAdd.SuspendLayout();
+      this.tabPageList.SuspendLayout();
+      this.groupBox1.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -349,6 +357,7 @@
       // 
       this.tabControlMain.Controls.Add(this.tabPageSearch);
       this.tabControlMain.Controls.Add(this.tabPageAdd);
+      this.tabControlMain.Controls.Add(this.tabPageList);
       this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tabControlMain.Location = new System.Drawing.Point(0, 28);
       this.tabControlMain.Name = "tabControlMain";
@@ -568,6 +577,68 @@
       this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
       this.textBoxAddAuthor.TabIndex = 4;
       // 
+      // tabPageList
+      // 
+      this.tabPageList.Controls.Add(this.groupBox1);
+      this.tabPageList.Controls.Add(this.textBox1);
+      this.tabPageList.Location = new System.Drawing.Point(4, 25);
+      this.tabPageList.Name = "tabPageList";
+      this.tabPageList.Size = new System.Drawing.Size(903, 477);
+      this.tabPageList.TabIndex = 2;
+      this.tabPageList.Text = "List";
+      this.tabPageList.UseVisualStyleBackColor = true;
+      // 
+      // groupBox1
+      // 
+      this.groupBox1.Controls.Add(this.checkBox1);
+      this.groupBox1.Controls.Add(this.checkBox2);
+      this.groupBox1.Controls.Add(this.checkBox3);
+      this.groupBox1.Location = new System.Drawing.Point(52, 33);
+      this.groupBox1.Name = "groupBox1";
+      this.groupBox1.Size = new System.Drawing.Size(606, 62);
+      this.groupBox1.TabIndex = 8;
+      this.groupBox1.TabStop = false;
+      this.groupBox1.Text = "Langage";
+      // 
+      // checkBox1
+      // 
+      this.checkBox1.AutoSize = true;
+      this.checkBox1.Location = new System.Drawing.Point(266, 22);
+      this.checkBox1.Name = "checkBox1";
+      this.checkBox1.Size = new System.Drawing.Size(84, 21);
+      this.checkBox1.TabIndex = 2;
+      this.checkBox1.Text = "Français";
+      this.checkBox1.UseVisualStyleBackColor = true;
+      // 
+      // checkBox2
+      // 
+      this.checkBox2.AutoSize = true;
+      this.checkBox2.Location = new System.Drawing.Point(108, 22);
+      this.checkBox2.Name = "checkBox2";
+      this.checkBox2.Size = new System.Drawing.Size(76, 21);
+      this.checkBox2.TabIndex = 1;
+      this.checkBox2.Text = "Anglais";
+      this.checkBox2.UseVisualStyleBackColor = true;
+      // 
+      // checkBox3
+      // 
+      this.checkBox3.AutoSize = true;
+      this.checkBox3.Location = new System.Drawing.Point(7, 22);
+      this.checkBox3.Name = "checkBox3";
+      this.checkBox3.Size = new System.Drawing.Size(62, 21);
+      this.checkBox3.TabIndex = 0;
+      this.checkBox3.Text = "Tous";
+      this.checkBox3.UseVisualStyleBackColor = true;
+      // 
+      // textBox1
+      // 
+      this.textBox1.Location = new System.Drawing.Point(52, 117);
+      this.textBox1.Multiline = true;
+      this.textBox1.Name = "textBox1";
+      this.textBox1.Size = new System.Drawing.Size(606, 187);
+      this.textBox1.TabIndex = 7;
+      this.textBox1.Text = "test1";
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -593,6 +664,10 @@
       this.groupBoxSearch.PerformLayout();
       this.tabPageAdd.ResumeLayout(false);
       this.tabPageAdd.PerformLayout();
+      this.tabPageList.ResumeLayout(false);
+      this.tabPageList.PerformLayout();
+      this.groupBox1.ResumeLayout(false);
+      this.groupBox1.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -654,5 +729,11 @@
     private System.Windows.Forms.CheckBox checkBoxLanguageFrench;
     private System.Windows.Forms.CheckBox checkBoxLanguageEnglish;
     private System.Windows.Forms.CheckBox checkBoxLanguageAll;
+    private System.Windows.Forms.TabPage tabPageList;
+    private System.Windows.Forms.GroupBox groupBox1;
+    private System.Windows.Forms.CheckBox checkBox1;
+    private System.Windows.Forms.CheckBox checkBox2;
+    private System.Windows.Forms.CheckBox checkBox3;
+    private System.Windows.Forms.TextBox textBox1;
   }
 }

@@ -75,10 +75,15 @@
       this.textBoxAddQuote = new System.Windows.Forms.TextBox();
       this.labelAddAuthor = new System.Windows.Forms.Label();
       this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
+      this.groupBoxSearch = new System.Windows.Forms.GroupBox();
+      this.checkBoxSearchAll = new System.Windows.Forms.CheckBox();
+      this.checkBoxSearchAuthor = new System.Windows.Forms.CheckBox();
+      this.checkBoxSearchQuote = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
       this.tabPageAdd.SuspendLayout();
+      this.groupBoxSearch.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -349,6 +354,7 @@
       // 
       // tabPageSearch
       // 
+      this.tabPageSearch.Controls.Add(this.groupBoxSearch);
       this.tabPageSearch.Controls.Add(this.textBoxResult);
       this.tabPageSearch.Controls.Add(this.comboBoxSearch);
       this.tabPageSearch.Controls.Add(this.labelSearch);
@@ -364,17 +370,17 @@
       // 
       // textBoxResult
       // 
-      this.textBoxResult.Location = new System.Drawing.Point(32, 144);
+      this.textBoxResult.Location = new System.Drawing.Point(32, 226);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
-      this.textBoxResult.Size = new System.Drawing.Size(606, 289);
+      this.textBoxResult.Size = new System.Drawing.Size(606, 207);
       this.textBoxResult.TabIndex = 4;
       this.textBoxResult.Text = "test1";
       // 
       // comboBoxSearch
       // 
       this.comboBoxSearch.FormattingEnabled = true;
-      this.comboBoxSearch.Location = new System.Drawing.Point(395, 43);
+      this.comboBoxSearch.Location = new System.Drawing.Point(657, 226);
       this.comboBoxSearch.Name = "comboBoxSearch";
       this.comboBoxSearch.Size = new System.Drawing.Size(121, 24);
       this.comboBoxSearch.TabIndex = 3;
@@ -402,7 +408,7 @@
       // 
       this.textBoxSearch.Location = new System.Drawing.Point(118, 43);
       this.textBoxSearch.Name = "textBoxSearch";
-      this.textBoxSearch.Size = new System.Drawing.Size(254, 22);
+      this.textBoxSearch.Size = new System.Drawing.Size(413, 22);
       this.textBoxSearch.TabIndex = 0;
       this.textBoxSearch.Text = "a";
       // 
@@ -476,6 +482,48 @@
       this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
       this.textBoxAddAuthor.TabIndex = 4;
       // 
+      // groupBoxSearch
+      // 
+      this.groupBoxSearch.Controls.Add(this.checkBoxSearchQuote);
+      this.groupBoxSearch.Controls.Add(this.checkBoxSearchAuthor);
+      this.groupBoxSearch.Controls.Add(this.checkBoxSearchAll);
+      this.groupBoxSearch.Location = new System.Drawing.Point(32, 94);
+      this.groupBoxSearch.Name = "groupBoxSearch";
+      this.groupBoxSearch.Size = new System.Drawing.Size(606, 100);
+      this.groupBoxSearch.TabIndex = 5;
+      this.groupBoxSearch.TabStop = false;
+      this.groupBoxSearch.Text = "Recherche";
+      // 
+      // checkBoxSearchAll
+      // 
+      this.checkBoxSearchAll.AutoSize = true;
+      this.checkBoxSearchAll.Location = new System.Drawing.Point(7, 22);
+      this.checkBoxSearchAll.Name = "checkBoxSearchAll";
+      this.checkBoxSearchAll.Size = new System.Drawing.Size(76, 21);
+      this.checkBoxSearchAll.TabIndex = 0;
+      this.checkBoxSearchAll.Text = "Partout";
+      this.checkBoxSearchAll.UseVisualStyleBackColor = true;
+      // 
+      // checkBoxSearchAuthor
+      // 
+      this.checkBoxSearchAuthor.AutoSize = true;
+      this.checkBoxSearchAuthor.Location = new System.Drawing.Point(108, 22);
+      this.checkBoxSearchAuthor.Name = "checkBoxSearchAuthor";
+      this.checkBoxSearchAuthor.Size = new System.Drawing.Size(72, 21);
+      this.checkBoxSearchAuthor.TabIndex = 1;
+      this.checkBoxSearchAuthor.Text = "Auteur";
+      this.checkBoxSearchAuthor.UseVisualStyleBackColor = true;
+      // 
+      // checkBoxSearchQuote
+      // 
+      this.checkBoxSearchQuote.AutoSize = true;
+      this.checkBoxSearchQuote.Location = new System.Drawing.Point(274, 22);
+      this.checkBoxSearchQuote.Name = "checkBoxSearchQuote";
+      this.checkBoxSearchQuote.Size = new System.Drawing.Size(77, 21);
+      this.checkBoxSearchQuote.TabIndex = 2;
+      this.checkBoxSearchQuote.Text = "Citation";
+      this.checkBoxSearchQuote.UseVisualStyleBackColor = true;
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -497,6 +545,8 @@
       this.tabPageSearch.PerformLayout();
       this.tabPageAdd.ResumeLayout(false);
       this.tabPageAdd.PerformLayout();
+      this.groupBoxSearch.ResumeLayout(false);
+      this.groupBoxSearch.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -551,5 +601,9 @@
     private System.Windows.Forms.Label labelAddAuthor;
     private System.Windows.Forms.TextBox textBoxAddAuthor;
     private System.Windows.Forms.CheckBox checkBoxAddQuoteFrenchEnglish;
+    private System.Windows.Forms.GroupBox groupBoxSearch;
+    private System.Windows.Forms.CheckBox checkBoxSearchAll;
+    private System.Windows.Forms.CheckBox checkBoxSearchQuote;
+    private System.Windows.Forms.CheckBox checkBoxSearchAuthor;
   }
 }

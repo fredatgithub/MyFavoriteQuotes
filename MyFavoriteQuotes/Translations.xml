@@ -164,5 +164,15 @@
       <englishValue>Quote in English</englishValue>
       <frenchValue>Citation en français</frenchValue>
     </term>
+    <term>
+      <name>SearchAll</name>
+      <englishValue>All</englishValue>
+      <frenchValue>Partout</frenchValue>
+    </term>
+  <term>
+      <name>Language</name>
+      <englishValue>Language</englishValue>
+      <frenchValue>Langage</frenchValue>
+    </term>
   </terms>
 </Document>

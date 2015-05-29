@@ -521,26 +521,25 @@ namespace MyFavoriteQuotes
       }
 
       searchedResult = null;
-
     }
 
     private List<string> SearchInMemory(string searchedString, string author, string language = "English")
     {
       List<string> result2 = new List<string>();
-      var result = from node in AllQuotes.ToList()
-                   where node.Author.ToString().Contains(author)
-                   where node.Language.ToString().Contains(language)
-                   where node.Sentence.ToString().Contains(searchedString)
-                   select node;
+      //var result = from node in AllQuotes.ToList()
+      //             where node.Author.ToString().Contains(author)
+      //             where node.Language.ToString().Contains(language)
+      //             where node.Sentence.ToString().Contains(searchedString)
+      //             select node;
 
-      //foreach (var i in result)
-      //{
-      //  if (i.languageValue == language)
-      //  {
-      //    result2.Add(i.quoteValue + " - " + i.authorValue);
-      //  }
+      foreach (var i in AllQuotes.ToList())
+      {
+        if (i.Language == language)
+        {
+          result2.Add(i.Sentence + " - " + i.Author);
+        }
 
-      //}
+      }
 
       return result2;
     }

@@ -24,7 +24,7 @@ namespace MyFavoriteQuotes
       //  result.Add(item);
       //}
       //return result;
-      return (IEnumerable<Quote>)ListOfQuotes;
+      return ListOfQuotes;
     }
   }
 }

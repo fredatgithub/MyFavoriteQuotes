@@ -24,9 +24,9 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Linq;
 using MyFavoriteQuotes.Properties;
-using System.Xml;
 
 namespace MyFavoriteQuotes
 {
@@ -40,7 +40,7 @@ namespace MyFavoriteQuotes
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
     private Quotes AllQuotes = new Quotes();
-    
+
     private bool searchAll;
     private bool searchAuthor;
     private bool searchQuote;
@@ -454,7 +454,7 @@ namespace MyFavoriteQuotes
           return;
         }
       }
-      
+
       // check if the quote is not already in
       // TODO code
       // open the quotes.xml file and add the quote
@@ -575,7 +575,7 @@ namespace MyFavoriteQuotes
         }
 
       }
-            
+
       return result2;
     }
 
@@ -697,7 +697,5 @@ namespace MyFavoriteQuotes
         checkBoxLanguageAll.Checked = false;
       }
     }
-
-
   }
 }

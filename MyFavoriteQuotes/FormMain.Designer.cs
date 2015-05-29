@@ -88,6 +88,7 @@
       this.checkBox2 = new System.Windows.Forms.CheckBox();
       this.checkBox3 = new System.Windows.Forms.CheckBox();
       this.textBox1 = new System.Windows.Forms.TextBox();
+      this.listBox1 = new System.Windows.Forms.ListBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -109,8 +110,8 @@
             this.helpToolStripMenuItem});
       this.menuStrip1.Location = new System.Drawing.Point(0, 0);
       this.menuStrip1.Name = "menuStrip1";
-      this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-      this.menuStrip1.Size = new System.Drawing.Size(911, 28);
+      this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+      this.menuStrip1.Size = new System.Drawing.Size(683, 24);
       this.menuStrip1.TabIndex = 1;
       this.menuStrip1.Text = "menuStrip1";
       // 
@@ -128,7 +129,7 @@
             this.toolStripSeparator2,
             this.quitToolStripMenuItem});
       this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-      this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+      this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
       this.fileToolStripMenuItem.Text = "&Fichier";
       // 
       // newToolStripMenuItem
@@ -136,7 +137,7 @@
       this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.newToolStripMenuItem.Name = "newToolStripMenuItem";
       this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-      this.newToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.newToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.newToolStripMenuItem.Text = "&Nouveau";
       // 
       // openToolStripMenuItem
@@ -144,57 +145,57 @@
       this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.openToolStripMenuItem.Name = "openToolStripMenuItem";
       this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-      this.openToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.openToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.openToolStripMenuItem.Text = "&Ouvrir";
       // 
       // toolStripSeparator
       // 
       this.toolStripSeparator.Name = "toolStripSeparator";
-      this.toolStripSeparator.Size = new System.Drawing.Size(244, 6);
+      this.toolStripSeparator.Size = new System.Drawing.Size(202, 6);
       // 
       // saveToolStripMenuItem
       // 
       this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
       this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-      this.saveToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.saveToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.saveToolStripMenuItem.Text = "&Enregistrer";
       // 
       // saveasToolStripMenuItem
       // 
       this.saveasToolStripMenuItem.Name = "saveasToolStripMenuItem";
-      this.saveasToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.saveasToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.saveasToolStripMenuItem.Text = "Enregistrer &sous";
       // 
       // toolStripSeparator1
       // 
       this.toolStripSeparator1.Name = "toolStripSeparator1";
-      this.toolStripSeparator1.Size = new System.Drawing.Size(244, 6);
+      this.toolStripSeparator1.Size = new System.Drawing.Size(202, 6);
       // 
       // printToolStripMenuItem
       // 
       this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.printToolStripMenuItem.Name = "printToolStripMenuItem";
       this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-      this.printToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.printToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.printToolStripMenuItem.Text = "&Imprimer";
       // 
       // printPreviewToolStripMenuItem
       // 
       this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-      this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.printPreviewToolStripMenuItem.Text = "Aperçu a&vant impression";
       // 
       // toolStripSeparator2
       // 
       this.toolStripSeparator2.Name = "toolStripSeparator2";
-      this.toolStripSeparator2.Size = new System.Drawing.Size(244, 6);
+      this.toolStripSeparator2.Size = new System.Drawing.Size(202, 6);
       // 
       // quitToolStripMenuItem
       // 
       this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-      this.quitToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.quitToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.quitToolStripMenuItem.Text = "&Quitter";
       this.quitToolStripMenuItem.Click += new System.EventHandler(this.QuitToolStripMenuItem_Click);
       // 
@@ -210,34 +211,34 @@
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
       this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-      this.editToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+      this.editToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
       this.editToolStripMenuItem.Text = "&Edition";
       // 
       // cancelToolStripMenuItem
       // 
       this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
       this.cancelToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-      this.cancelToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+      this.cancelToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
       this.cancelToolStripMenuItem.Text = "&Annuler";
       // 
       // redoToolStripMenuItem
       // 
       this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
       this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-      this.redoToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+      this.redoToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
       this.redoToolStripMenuItem.Text = "&Rétablir";
       // 
       // toolStripSeparator3
       // 
       this.toolStripSeparator3.Name = "toolStripSeparator3";
-      this.toolStripSeparator3.Size = new System.Drawing.Size(194, 6);
+      this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
       // 
       // cutToolStripMenuItem
       // 
       this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
       this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-      this.cutToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+      this.cutToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
       this.cutToolStripMenuItem.Text = "&Couper";
       // 
       // copyToolStripMenuItem
@@ -245,7 +246,7 @@
       this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
       this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-      this.copyToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+      this.copyToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
       this.copyToolStripMenuItem.Text = "Co&pier";
       // 
       // pasteToolStripMenuItem
@@ -253,18 +254,18 @@
       this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
       this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-      this.pasteToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+      this.pasteToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
       this.pasteToolStripMenuItem.Text = "Co&ller";
       // 
       // toolStripSeparator4
       // 
       this.toolStripSeparator4.Name = "toolStripSeparator4";
-      this.toolStripSeparator4.Size = new System.Drawing.Size(194, 6);
+      this.toolStripSeparator4.Size = new System.Drawing.Size(161, 6);
       // 
       // selectAllToolStripMenuItem
       // 
       this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-      this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+      this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
       this.selectAllToolStripMenuItem.Text = "Sélectio&nner tout";
       // 
       // toolsToolStripMenuItem
@@ -273,19 +274,19 @@
             this.personalizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
       this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-      this.toolsToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+      this.toolsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
       this.toolsToolStripMenuItem.Text = "&Outils";
       // 
       // personalizeToolStripMenuItem
       // 
       this.personalizeToolStripMenuItem.Name = "personalizeToolStripMenuItem";
-      this.personalizeToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+      this.personalizeToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
       this.personalizeToolStripMenuItem.Text = "&Personnaliser";
       // 
       // optionsToolStripMenuItem
       // 
       this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-      this.optionsToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+      this.optionsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
       this.optionsToolStripMenuItem.Text = "&Options";
       // 
       // languagetoolStripMenuItem
@@ -294,20 +295,20 @@
             this.frenchToolStripMenuItem,
             this.englishToolStripMenuItem});
       this.languagetoolStripMenuItem.Name = "languagetoolStripMenuItem";
-      this.languagetoolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+      this.languagetoolStripMenuItem.Size = new System.Drawing.Size(71, 20);
       this.languagetoolStripMenuItem.Text = "Language";
       // 
       // frenchToolStripMenuItem
       // 
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
       this.frenchToolStripMenuItem.Text = "Français";
       this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItemClick);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-      this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
       this.englishToolStripMenuItem.Text = "Anglais";
       this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItemClick);
       // 
@@ -320,36 +321,36 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
       this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-      this.helpToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+      this.helpToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
       this.helpToolStripMenuItem.Text = "&Aide";
       // 
       // summaryToolStripMenuItem
       // 
       this.summaryToolStripMenuItem.Name = "summaryToolStripMenuItem";
-      this.summaryToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.summaryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.summaryToolStripMenuItem.Text = "&Sommaire";
       // 
       // indexToolStripMenuItem
       // 
       this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-      this.indexToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.indexToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.indexToolStripMenuItem.Text = "&Index";
       // 
       // searchToolStripMenuItem
       // 
       this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-      this.searchToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.searchToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.searchToolStripMenuItem.Text = "&Rechercher";
       // 
       // toolStripSeparator5
       // 
       this.toolStripSeparator5.Name = "toolStripSeparator5";
-      this.toolStripSeparator5.Size = new System.Drawing.Size(172, 6);
+      this.toolStripSeparator5.Size = new System.Drawing.Size(144, 6);
       // 
       // aboutToolStripMenuItem
       // 
       this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-      this.aboutToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.aboutToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.aboutToolStripMenuItem.Text = "À &propos de...";
       this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
       // 
@@ -359,10 +360,11 @@
       this.tabControlMain.Controls.Add(this.tabPageAdd);
       this.tabControlMain.Controls.Add(this.tabPageList);
       this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tabControlMain.Location = new System.Drawing.Point(0, 28);
+      this.tabControlMain.Location = new System.Drawing.Point(0, 24);
+      this.tabControlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabControlMain.Name = "tabControlMain";
       this.tabControlMain.SelectedIndex = 0;
-      this.tabControlMain.Size = new System.Drawing.Size(911, 506);
+      this.tabControlMain.Size = new System.Drawing.Size(683, 410);
       this.tabControlMain.TabIndex = 2;
       // 
       // tabPageSearch
@@ -373,10 +375,11 @@
       this.tabPageSearch.Controls.Add(this.labelSearch);
       this.tabPageSearch.Controls.Add(this.buttonSearch);
       this.tabPageSearch.Controls.Add(this.textBoxSearch);
-      this.tabPageSearch.Location = new System.Drawing.Point(4, 25);
+      this.tabPageSearch.Location = new System.Drawing.Point(4, 22);
+      this.tabPageSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabPageSearch.Name = "tabPageSearch";
-      this.tabPageSearch.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPageSearch.Size = new System.Drawing.Size(903, 477);
+      this.tabPageSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageSearch.Size = new System.Drawing.Size(675, 384);
       this.tabPageSearch.TabIndex = 0;
       this.tabPageSearch.Text = "Search";
       this.tabPageSearch.UseVisualStyleBackColor = true;
@@ -386,9 +389,11 @@
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageFrench);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageEnglish);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageAll);
-      this.groupBoxLanguage.Location = new System.Drawing.Point(32, 162);
+      this.groupBoxLanguage.Location = new System.Drawing.Point(24, 132);
+      this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxLanguage.Name = "groupBoxLanguage";
-      this.groupBoxLanguage.Size = new System.Drawing.Size(606, 62);
+      this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxLanguage.Size = new System.Drawing.Size(454, 50);
       this.groupBoxLanguage.TabIndex = 6;
       this.groupBoxLanguage.TabStop = false;
       this.groupBoxLanguage.Text = "Langage";
@@ -396,9 +401,10 @@
       // checkBoxLanguageFrench
       // 
       this.checkBoxLanguageFrench.AutoSize = true;
-      this.checkBoxLanguageFrench.Location = new System.Drawing.Point(266, 22);
+      this.checkBoxLanguageFrench.Location = new System.Drawing.Point(200, 18);
+      this.checkBoxLanguageFrench.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxLanguageFrench.Name = "checkBoxLanguageFrench";
-      this.checkBoxLanguageFrench.Size = new System.Drawing.Size(84, 21);
+      this.checkBoxLanguageFrench.Size = new System.Drawing.Size(66, 17);
       this.checkBoxLanguageFrench.TabIndex = 2;
       this.checkBoxLanguageFrench.Text = "Français";
       this.checkBoxLanguageFrench.UseVisualStyleBackColor = true;
@@ -407,9 +413,10 @@
       // checkBoxLanguageEnglish
       // 
       this.checkBoxLanguageEnglish.AutoSize = true;
-      this.checkBoxLanguageEnglish.Location = new System.Drawing.Point(108, 22);
+      this.checkBoxLanguageEnglish.Location = new System.Drawing.Point(81, 18);
+      this.checkBoxLanguageEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxLanguageEnglish.Name = "checkBoxLanguageEnglish";
-      this.checkBoxLanguageEnglish.Size = new System.Drawing.Size(76, 21);
+      this.checkBoxLanguageEnglish.Size = new System.Drawing.Size(60, 17);
       this.checkBoxLanguageEnglish.TabIndex = 1;
       this.checkBoxLanguageEnglish.Text = "Anglais";
       this.checkBoxLanguageEnglish.UseVisualStyleBackColor = true;
@@ -418,9 +425,10 @@
       // checkBoxLanguageAll
       // 
       this.checkBoxLanguageAll.AutoSize = true;
-      this.checkBoxLanguageAll.Location = new System.Drawing.Point(7, 22);
+      this.checkBoxLanguageAll.Location = new System.Drawing.Point(5, 18);
+      this.checkBoxLanguageAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxLanguageAll.Name = "checkBoxLanguageAll";
-      this.checkBoxLanguageAll.Size = new System.Drawing.Size(62, 21);
+      this.checkBoxLanguageAll.Size = new System.Drawing.Size(50, 17);
       this.checkBoxLanguageAll.TabIndex = 0;
       this.checkBoxLanguageAll.Text = "Tous";
       this.checkBoxLanguageAll.UseVisualStyleBackColor = true;
@@ -431,9 +439,11 @@
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchQuote);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAuthor);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAll);
-      this.groupBoxSearch.Location = new System.Drawing.Point(32, 94);
+      this.groupBoxSearch.Location = new System.Drawing.Point(24, 76);
+      this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxSearch.Name = "groupBoxSearch";
-      this.groupBoxSearch.Size = new System.Drawing.Size(606, 62);
+      this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxSearch.Size = new System.Drawing.Size(454, 50);
       this.groupBoxSearch.TabIndex = 5;
       this.groupBoxSearch.TabStop = false;
       this.groupBoxSearch.Text = "Rechercher";
@@ -441,9 +451,10 @@
       // checkBoxSearchQuote
       // 
       this.checkBoxSearchQuote.AutoSize = true;
-      this.checkBoxSearchQuote.Location = new System.Drawing.Point(274, 22);
+      this.checkBoxSearchQuote.Location = new System.Drawing.Point(206, 18);
+      this.checkBoxSearchQuote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxSearchQuote.Name = "checkBoxSearchQuote";
-      this.checkBoxSearchQuote.Size = new System.Drawing.Size(77, 21);
+      this.checkBoxSearchQuote.Size = new System.Drawing.Size(61, 17);
       this.checkBoxSearchQuote.TabIndex = 2;
       this.checkBoxSearchQuote.Text = "Citation";
       this.checkBoxSearchQuote.UseVisualStyleBackColor = true;
@@ -452,9 +463,10 @@
       // checkBoxSearchAuthor
       // 
       this.checkBoxSearchAuthor.AutoSize = true;
-      this.checkBoxSearchAuthor.Location = new System.Drawing.Point(108, 22);
+      this.checkBoxSearchAuthor.Location = new System.Drawing.Point(81, 18);
+      this.checkBoxSearchAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxSearchAuthor.Name = "checkBoxSearchAuthor";
-      this.checkBoxSearchAuthor.Size = new System.Drawing.Size(72, 21);
+      this.checkBoxSearchAuthor.Size = new System.Drawing.Size(57, 17);
       this.checkBoxSearchAuthor.TabIndex = 1;
       this.checkBoxSearchAuthor.Text = "Auteur";
       this.checkBoxSearchAuthor.UseVisualStyleBackColor = true;
@@ -463,9 +475,10 @@
       // checkBoxSearchAll
       // 
       this.checkBoxSearchAll.AutoSize = true;
-      this.checkBoxSearchAll.Location = new System.Drawing.Point(7, 22);
+      this.checkBoxSearchAll.Location = new System.Drawing.Point(5, 18);
+      this.checkBoxSearchAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxSearchAll.Name = "checkBoxSearchAll";
-      this.checkBoxSearchAll.Size = new System.Drawing.Size(76, 21);
+      this.checkBoxSearchAll.Size = new System.Drawing.Size(60, 17);
       this.checkBoxSearchAll.TabIndex = 0;
       this.checkBoxSearchAll.Text = "Partout";
       this.checkBoxSearchAll.UseVisualStyleBackColor = true;
@@ -473,27 +486,30 @@
       // 
       // textBoxResult
       // 
-      this.textBoxResult.Location = new System.Drawing.Point(32, 246);
+      this.textBoxResult.Location = new System.Drawing.Point(24, 200);
+      this.textBoxResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
-      this.textBoxResult.Size = new System.Drawing.Size(606, 187);
+      this.textBoxResult.Size = new System.Drawing.Size(456, 153);
       this.textBoxResult.TabIndex = 4;
       this.textBoxResult.Text = "test1";
       // 
       // labelSearch
       // 
       this.labelSearch.AutoSize = true;
-      this.labelSearch.Location = new System.Drawing.Point(29, 43);
+      this.labelSearch.Location = new System.Drawing.Point(22, 35);
+      this.labelSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelSearch.Name = "labelSearch";
-      this.labelSearch.Size = new System.Drawing.Size(53, 17);
+      this.labelSearch.Size = new System.Drawing.Size(41, 13);
       this.labelSearch.TabIndex = 2;
       this.labelSearch.Text = "Search";
       // 
       // buttonSearch
       // 
-      this.buttonSearch.Location = new System.Drawing.Point(537, 42);
+      this.buttonSearch.Location = new System.Drawing.Point(403, 34);
+      this.buttonSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.buttonSearch.Name = "buttonSearch";
-      this.buttonSearch.Size = new System.Drawing.Size(101, 25);
+      this.buttonSearch.Size = new System.Drawing.Size(76, 20);
       this.buttonSearch.TabIndex = 1;
       this.buttonSearch.Text = "Search";
       this.buttonSearch.UseVisualStyleBackColor = true;
@@ -501,9 +517,10 @@
       // 
       // textBoxSearch
       // 
-      this.textBoxSearch.Location = new System.Drawing.Point(118, 43);
+      this.textBoxSearch.Location = new System.Drawing.Point(88, 35);
+      this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxSearch.Name = "textBoxSearch";
-      this.textBoxSearch.Size = new System.Drawing.Size(413, 22);
+      this.textBoxSearch.Size = new System.Drawing.Size(311, 20);
       this.textBoxSearch.TabIndex = 0;
       this.textBoxSearch.Text = "a";
       // 
@@ -515,10 +532,11 @@
       this.tabPageAdd.Controls.Add(this.textBoxAddQuote);
       this.tabPageAdd.Controls.Add(this.labelAddAuthor);
       this.tabPageAdd.Controls.Add(this.textBoxAddAuthor);
-      this.tabPageAdd.Location = new System.Drawing.Point(4, 25);
+      this.tabPageAdd.Location = new System.Drawing.Point(4, 22);
+      this.tabPageAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabPageAdd.Name = "tabPageAdd";
-      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPageAdd.Size = new System.Drawing.Size(903, 477);
+      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageAdd.Size = new System.Drawing.Size(675, 384);
       this.tabPageAdd.TabIndex = 1;
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
@@ -526,9 +544,10 @@
       // checkBoxAddQuoteFrenchEnglish
       // 
       this.checkBoxAddQuoteFrenchEnglish.AutoSize = true;
-      this.checkBoxAddQuoteFrenchEnglish.Location = new System.Drawing.Point(134, 110);
+      this.checkBoxAddQuoteFrenchEnglish.Location = new System.Drawing.Point(100, 89);
+      this.checkBoxAddQuoteFrenchEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxAddQuoteFrenchEnglish.Name = "checkBoxAddQuoteFrenchEnglish";
-      this.checkBoxAddQuoteFrenchEnglish.Size = new System.Drawing.Size(134, 21);
+      this.checkBoxAddQuoteFrenchEnglish.Size = new System.Drawing.Size(103, 17);
       this.checkBoxAddQuoteFrenchEnglish.TabIndex = 5;
       this.checkBoxAddQuoteFrenchEnglish.Text = "Quote in English";
       this.checkBoxAddQuoteFrenchEnglish.UseVisualStyleBackColor = true;
@@ -536,17 +555,19 @@
       // labelAddQuote
       // 
       this.labelAddQuote.AutoSize = true;
-      this.labelAddQuote.Location = new System.Drawing.Point(45, 143);
+      this.labelAddQuote.Location = new System.Drawing.Point(34, 116);
+      this.labelAddQuote.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelAddQuote.Name = "labelAddQuote";
-      this.labelAddQuote.Size = new System.Drawing.Size(47, 17);
+      this.labelAddQuote.Size = new System.Drawing.Size(36, 13);
       this.labelAddQuote.TabIndex = 10;
       this.labelAddQuote.Text = "Quote";
       // 
       // buttonAdd
       // 
-      this.buttonAdd.Location = new System.Drawing.Point(541, 377);
+      this.buttonAdd.Location = new System.Drawing.Point(406, 306);
+      this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.buttonAdd.Name = "buttonAdd";
-      this.buttonAdd.Size = new System.Drawing.Size(101, 26);
+      this.buttonAdd.Size = new System.Drawing.Size(76, 21);
       this.buttonAdd.TabIndex = 9;
       this.buttonAdd.Text = "Add";
       this.buttonAdd.UseVisualStyleBackColor = true;
@@ -554,36 +575,41 @@
       // 
       // textBoxAddQuote
       // 
-      this.textBoxAddQuote.Location = new System.Drawing.Point(134, 143);
+      this.textBoxAddQuote.Location = new System.Drawing.Point(100, 116);
+      this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxAddQuote.Multiline = true;
       this.textBoxAddQuote.Name = "textBoxAddQuote";
-      this.textBoxAddQuote.Size = new System.Drawing.Size(401, 260);
+      this.textBoxAddQuote.Size = new System.Drawing.Size(302, 212);
       this.textBoxAddQuote.TabIndex = 8;
       this.textBoxAddQuote.Text = "test1";
       // 
       // labelAddAuthor
       // 
       this.labelAddAuthor.AutoSize = true;
-      this.labelAddAuthor.Location = new System.Drawing.Point(45, 73);
+      this.labelAddAuthor.Location = new System.Drawing.Point(34, 59);
+      this.labelAddAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelAddAuthor.Name = "labelAddAuthor";
-      this.labelAddAuthor.Size = new System.Drawing.Size(50, 17);
+      this.labelAddAuthor.Size = new System.Drawing.Size(38, 13);
       this.labelAddAuthor.TabIndex = 6;
       this.labelAddAuthor.Text = "Author";
       // 
       // textBoxAddAuthor
       // 
-      this.textBoxAddAuthor.Location = new System.Drawing.Point(134, 73);
+      this.textBoxAddAuthor.Location = new System.Drawing.Point(100, 59);
+      this.textBoxAddAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxAddAuthor.Name = "textBoxAddAuthor";
-      this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
+      this.textBoxAddAuthor.Size = new System.Drawing.Size(302, 20);
       this.textBoxAddAuthor.TabIndex = 4;
       // 
       // tabPageList
       // 
+      this.tabPageList.Controls.Add(this.listBox1);
       this.tabPageList.Controls.Add(this.groupBox1);
       this.tabPageList.Controls.Add(this.textBox1);
-      this.tabPageList.Location = new System.Drawing.Point(4, 25);
+      this.tabPageList.Location = new System.Drawing.Point(4, 22);
+      this.tabPageList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabPageList.Name = "tabPageList";
-      this.tabPageList.Size = new System.Drawing.Size(903, 477);
+      this.tabPageList.Size = new System.Drawing.Size(675, 384);
       this.tabPageList.TabIndex = 2;
       this.tabPageList.Text = "List";
       this.tabPageList.UseVisualStyleBackColor = true;
@@ -593,9 +619,11 @@
       this.groupBox1.Controls.Add(this.checkBox1);
       this.groupBox1.Controls.Add(this.checkBox2);
       this.groupBox1.Controls.Add(this.checkBox3);
-      this.groupBox1.Location = new System.Drawing.Point(52, 33);
+      this.groupBox1.Location = new System.Drawing.Point(39, 27);
+      this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBox1.Name = "groupBox1";
-      this.groupBox1.Size = new System.Drawing.Size(606, 62);
+      this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBox1.Size = new System.Drawing.Size(454, 50);
       this.groupBox1.TabIndex = 8;
       this.groupBox1.TabStop = false;
       this.groupBox1.Text = "Langage";
@@ -603,9 +631,10 @@
       // checkBox1
       // 
       this.checkBox1.AutoSize = true;
-      this.checkBox1.Location = new System.Drawing.Point(266, 22);
+      this.checkBox1.Location = new System.Drawing.Point(200, 18);
+      this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBox1.Name = "checkBox1";
-      this.checkBox1.Size = new System.Drawing.Size(84, 21);
+      this.checkBox1.Size = new System.Drawing.Size(66, 17);
       this.checkBox1.TabIndex = 2;
       this.checkBox1.Text = "Français";
       this.checkBox1.UseVisualStyleBackColor = true;
@@ -613,9 +642,10 @@
       // checkBox2
       // 
       this.checkBox2.AutoSize = true;
-      this.checkBox2.Location = new System.Drawing.Point(108, 22);
+      this.checkBox2.Location = new System.Drawing.Point(81, 18);
+      this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBox2.Name = "checkBox2";
-      this.checkBox2.Size = new System.Drawing.Size(76, 21);
+      this.checkBox2.Size = new System.Drawing.Size(60, 17);
       this.checkBox2.TabIndex = 1;
       this.checkBox2.Text = "Anglais";
       this.checkBox2.UseVisualStyleBackColor = true;
@@ -623,31 +653,42 @@
       // checkBox3
       // 
       this.checkBox3.AutoSize = true;
-      this.checkBox3.Location = new System.Drawing.Point(7, 22);
+      this.checkBox3.Location = new System.Drawing.Point(5, 18);
+      this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBox3.Name = "checkBox3";
-      this.checkBox3.Size = new System.Drawing.Size(62, 21);
+      this.checkBox3.Size = new System.Drawing.Size(50, 17);
       this.checkBox3.TabIndex = 0;
       this.checkBox3.Text = "Tous";
       this.checkBox3.UseVisualStyleBackColor = true;
       // 
       // textBox1
       // 
-      this.textBox1.Location = new System.Drawing.Point(52, 117);
+      this.textBox1.Location = new System.Drawing.Point(39, 95);
+      this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBox1.Multiline = true;
       this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(606, 187);
+      this.textBox1.Size = new System.Drawing.Size(456, 153);
       this.textBox1.TabIndex = 7;
       this.textBox1.Text = "test1";
       // 
+      // listBox1
+      // 
+      this.listBox1.FormattingEnabled = true;
+      this.listBox1.Location = new System.Drawing.Point(44, 286);
+      this.listBox1.Name = "listBox1";
+      this.listBox1.Size = new System.Drawing.Size(120, 95);
+      this.listBox1.TabIndex = 9;
+
+      // 
       // FormMain
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(911, 534);
+      this.ClientSize = new System.Drawing.Size(683, 434);
       this.Controls.Add(this.tabControlMain);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
-      this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "FormMain";
       this.ShowIcon = false;
       this.Text = "My favorite quotes";
@@ -735,5 +776,6 @@
     private System.Windows.Forms.CheckBox checkBox2;
     private System.Windows.Forms.CheckBox checkBox3;
     private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.ListBox listBox1;
   }
 }

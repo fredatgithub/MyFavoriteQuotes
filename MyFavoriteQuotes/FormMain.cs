@@ -40,12 +40,12 @@ namespace MyFavoriteQuotes
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
     //List<string> ComboBoxSearchItems = new List<string>();
-    bool searchAll;
-    bool searchAuthor;
-    bool searchQuote;
-    bool languageAll;
-    bool languageEnglish;
-    bool languageFrench;
+    private bool searchAll;
+    private bool searchAuthor;
+    private bool searchQuote;
+    private bool languageAll;
+    private bool languageEnglish;
+    private bool languageFrench;
 
     private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -72,33 +72,12 @@ namespace MyFavoriteQuotes
       GetWindowValue();
       LoadLanguages();
       SetLanguage(Settings.Default.LastLanguageUsed);
-      //LoadComboboxSearchItems(Settings.Default.LastLanguageUsed);
-      //comboBoxSearch.DataSource = ComboBoxSearchItems;
+      LoadQuotes();
     }
 
-    private void LoadComboboxSearchItems(string lastLanguageUsed)
+    private void LoadQuotes()
     {
-      //ComboBoxSearchItems = new List<string>();
-      //switch (lastLanguageUsed)
-      //{
-      //  case "English":
-      //    ComboBoxSearchItems.Add(languageDicoEn["All"]);
-      //    ComboBoxSearchItems.Add(languageDicoEn["Author"]);
-      //    ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
-      //    break;
-      //  case "French":
-      //    ComboBoxSearchItems.Add(languageDicoFr["All"]);
-      //    ComboBoxSearchItems.Add(languageDicoFr["Author"]);
-      //    ComboBoxSearchItems.Add(languageDicoFr["Quote"]);
-      //    break;
-      //  default: // English
-      //    ComboBoxSearchItems.Add(languageDicoEn["All"]);
-      //    ComboBoxSearchItems.Add(languageDicoEn["Author"]);
-      //    ComboBoxSearchItems.Add(languageDicoEn["Quote"]);
-      //    break;
-      //}
-
-      //comboBoxSearch.DataSource = ComboBoxSearchItems;
+      throw new NotImplementedException();
     }
 
     private void LoadLanguages()
@@ -137,152 +116,152 @@ namespace MyFavoriteQuotes
         "</DocumentVersion>",
         "<terms>",
          "<term>",
-        "<name>MenuFile</name>",
-        "<englishValue>File</englishValue>",
-        "<frenchValue>Fichier</frenchValue>",
+           "<name>MenuFile</name>",
+           "<englishValue>File</englishValue>",
+           "<frenchValue>Fichier</frenchValue>",
         "</term>",
         "<term>",
-      "<name>MenuFileNew</name>",
-      "<englishValue>New</englishValue>",
-      "<frenchValue>Nouveau</frenchValue>",
-      "</term>",
-      "<term>",
-      "<name>MenuFileOpen</name>",
-      "<englishValue>Open</englishValue>",
-      "<frenchValue>Ouvrir</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuFileSave</name>",
-      "<englishValue>Save</englishValue>",
-      "<frenchValue>Enregistrer</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuFileSaveAs</name>",
-      "<englishValue>Save as ...</englishValue>",
-      "<frenchValue>Enregistrer sous ...</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuFilePrint</name>",
-      "<englishValue>Print ...</englishValue>",
-      "<frenchValue>Imprimer ...</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenufilePageSetup</name>",
-      "<englishValue>Page setup</englishValue>",
-      "<frenchValue>Aperçu avant impression</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenufileQuit</name>",
-      "<englishValue>Quit</englishValue>",
-      "<frenchValue>Quitter</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuEdit</name>",
-      "<englishValue>Edit</englishValue>",
-      "<frenchValue>Edition</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuEditCancel</name>",
-      "<englishValue>Cancel</englishValue>",
-      "<frenchValue>Annuler</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuEditRedo</name>",
-      "<englishValue>Redo</englishValue>",
-      "<frenchValue>Rétablir</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuEditCut</name>",
-      "<englishValue>Cut</englishValue>",
-      "<frenchValue>Couper</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuEditCopy</name>",
-      "<englishValue>Copy</englishValue>",
-      "<frenchValue>Copier</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuEditPaste</name>",
-      "<englishValue>Paste</englishValue>",
-      "<frenchValue>Coller</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuEditSelectAll</name>",
-      "<englishValue>Select All</englishValue>",
-      "<frenchValue>Sélectionner tout</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuTools</name>",
-      "<englishValue>Tools</englishValue>",
-      "<frenchValue>Outils</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuToolsCustomize</name>",
-      "<englishValue>Customize ...</englishValue>",
-      "<frenchValue>Personaliser ...</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuToolsOptions</name>",
-      "<englishValue>Options</englishValue>",
-      "<frenchValue>Options</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuLanguage</name>",
-      "<englishValue>Language</englishValue>",
-      "<frenchValue>Langage</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuLanguageEnglish</name>",
-      "<englishValue>English</englishValue>",
-      "<frenchValue>Anglais</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuLanguageFrench</name>",
-      "<englishValue>French</englishValue>",
-      "<frenchValue>Français</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuHelp</name>",
-      "<englishValue>Help</englishValue>",
-      "<frenchValue>Aide</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuHelpSummary</name>",
-      "<englishValue>Summary</englishValue>",
-      "<frenchValue>Sommaire</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuHelpIndex</name>",
-      "<englishValue>Index</englishValue>",
-      "<frenchValue>Index</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuHelpSearch</name>",
-      "<englishValue>Search</englishValue>",
-      "<frenchValue>Rechercher</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>MenuHelpAbout</name>",
-      "<englishValue>About</englishValue>",
-      "<frenchValue>A propos de ...</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>All</name>",
-      "<englishValue>All</englishValue>",
-      "<frenchValue>Tout</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>Author</name>",
-      "<englishValue>Author</englishValue>",
-      "<frenchValue>Auteur</frenchValue>",
-    "</term>",
-    "<term>",
-      "<name>Quote</name>",
-      "<englishValue>Quote</englishValue>",
-      "<frenchValue>Citation</frenchValue>",
-    "</term>",
-  "</terms>",
-"</Document>"
+          "<name>MenuFileNew</name>",
+          "<englishValue>New</englishValue>",
+          "<frenchValue>Nouveau</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuFileOpen</name>",
+          "<englishValue>Open</englishValue>",
+          "<frenchValue>Ouvrir</frenchValue>",
+          "</term>",
+        "<term>",
+          "<name>MenuFileSave</name>",
+          "<englishValue>Save</englishValue>",
+          "<frenchValue>Enregistrer</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuFileSaveAs</name>",
+          "<englishValue>Save as ...</englishValue>",
+          "<frenchValue>Enregistrer sous ...</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuFilePrint</name>",
+          "<englishValue>Print ...</englishValue>",
+          "<frenchValue>Imprimer ...</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenufilePageSetup</name>",
+          "<englishValue>Page setup</englishValue>",
+          "<frenchValue>Aperçu avant impression</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenufileQuit</name>",
+          "<englishValue>Quit</englishValue>",
+          "<frenchValue>Quitter</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuEdit</name>",
+          "<englishValue>Edit</englishValue>",
+          "<frenchValue>Edition</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuEditCancel</name>",
+          "<englishValue>Cancel</englishValue>",
+          "<frenchValue>Annuler</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuEditRedo</name>",
+          "<englishValue>Redo</englishValue>",
+          "<frenchValue>Rétablir</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuEditCut</name>",
+          "<englishValue>Cut</englishValue>",
+          "<frenchValue>Couper</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuEditCopy</name>",
+          "<englishValue>Copy</englishValue>",
+          "<frenchValue>Copier</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuEditPaste</name>",
+          "<englishValue>Paste</englishValue>",
+          "<frenchValue>Coller</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuEditSelectAll</name>",
+          "<englishValue>Select All</englishValue>",
+          "<frenchValue>Sélectionner tout</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuTools</name>",
+          "<englishValue>Tools</englishValue>",
+          "<frenchValue>Outils</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuToolsCustomize</name>",
+          "<englishValue>Customize ...</englishValue>",
+          "<frenchValue>Personaliser ...</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuToolsOptions</name>",
+          "<englishValue>Options</englishValue>",
+          "<frenchValue>Options</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuLanguage</name>",
+          "<englishValue>Language</englishValue>",
+          "<frenchValue>Langage</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuLanguageEnglish</name>",
+          "<englishValue>English</englishValue>",
+          "<frenchValue>Anglais</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuLanguageFrench</name>",
+          "<englishValue>French</englishValue>",
+          "<frenchValue>Français</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuHelp</name>",
+          "<englishValue>Help</englishValue>",
+          "<frenchValue>Aide</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuHelpSummary</name>",
+          "<englishValue>Summary</englishValue>",
+          "<frenchValue>Sommaire</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuHelpIndex</name>",
+          "<englishValue>Index</englishValue>",
+          "<frenchValue>Index</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuHelpSearch</name>",
+          "<englishValue>Search</englishValue>",
+          "<frenchValue>Rechercher</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>MenuHelpAbout</name>",
+          "<englishValue>About</englishValue>",
+          "<frenchValue>A propos de ...</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>All</name>",
+          "<englishValue>All</englishValue>",
+          "<frenchValue>Tout</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>Author</name>",
+          "<englishValue>Author</englishValue>",
+          "<frenchValue>Auteur</frenchValue>",
+        "</term>",
+        "<term>",
+          "<name>Quote</name>",
+          "<englishValue>Quote</englishValue>",
+          "<frenchValue>Citation</frenchValue>",
+        "</term>",
+      "</terms>",
+    "</Document>"
       };
       StreamWriter sw = new StreamWriter(Settings.Default.LanguageFileName);
       foreach (string item in minimumVersion)
@@ -361,7 +340,6 @@ namespace MyFavoriteQuotes
           indexToolStripMenuItem.Text = languageDicoEn["MenuHelpIndex"];
           searchToolStripMenuItem.Text = languageDicoEn["MenuHelpSearch"];
           aboutToolStripMenuItem.Text = languageDicoEn["MenuHelpAbout"];
-          //LoadComboboxSearchItems(myLanguage);
           tabPageSearch.Text = languageDicoEn["Search"];
           buttonSearch.Text = languageDicoEn["Search"];
           labelSearch.Text = languageDicoEn["Search"];
@@ -370,6 +348,15 @@ namespace MyFavoriteQuotes
           labelAddAuthor.Text = languageDicoEn["Author"];
           labelAddQuote.Text = languageDicoEn["Quote"];
           checkBoxAddQuoteFrenchEnglish.Text = languageDicoEn["CheckBoxAddQuoteEnglishFrench"];
+          groupBoxSearch.Text = languageDicoEn["Search"];
+          checkBoxSearchAll.Text = languageDicoEn["SearchAll"];
+          checkBoxSearchAuthor.Text = languageDicoEn["Author"];
+          checkBoxSearchQuote.Text = languageDicoEn["Quote"];
+          groupBoxLanguage.Text = languageDicoEn["Language"];
+          checkBoxLanguageAll.Text = languageDicoEn["LanguageAll"];
+          checkBoxLanguageEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
+          checkBoxLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
+
           break;
         case "French":
           frenchToolStripMenuItem.Checked = true;
@@ -400,7 +387,6 @@ namespace MyFavoriteQuotes
           indexToolStripMenuItem.Text = languageDicoFr["MenuHelpIndex"];
           searchToolStripMenuItem.Text = languageDicoFr["MenuHelpSearch"];
           aboutToolStripMenuItem.Text = languageDicoFr["MenuHelpAbout"];
-          //LoadComboboxSearchItems(myLanguage);
           tabPageSearch.Text = languageDicoFr["Search"];
           buttonSearch.Text = languageDicoFr["Search"];
           labelSearch.Text = languageDicoFr["Search"];
@@ -409,6 +395,15 @@ namespace MyFavoriteQuotes
           labelAddAuthor.Text = languageDicoFr["Author"];
           labelAddQuote.Text = languageDicoFr["Quote"];
           checkBoxAddQuoteFrenchEnglish.Text = languageDicoFr["CheckBoxAddQuoteEnglishFrench"];
+          groupBoxSearch.Text = languageDicoFr["Search"];
+          checkBoxSearchAll.Text = languageDicoFr["SearchAll"];
+          checkBoxSearchAuthor.Text = languageDicoFr["Author"];
+          checkBoxSearchQuote.Text = languageDicoFr["Quote"];
+          groupBoxLanguage.Text = languageDicoFr["Language"];
+          checkBoxLanguageAll.Text = languageDicoFr["LanguageAll"];
+          checkBoxLanguageEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
+          checkBoxLanguageFrench.Text = languageDicoFr["MenuLanguageFrench"];
+
           break;
       }
     }
@@ -427,7 +422,7 @@ namespace MyFavoriteQuotes
           DisplayMessageOk(Settings.Default.TextBoxEmptyFr, "Citation vide", MessageBoxButtons.OK);
           return;
         }
-        
+
         if (englishToolStripMenuItem.Checked)
         {
           DisplayMessageOk(Settings.Default.TextBoxEmptyEN, "Empty quote", MessageBoxButtons.OK);
@@ -483,7 +478,7 @@ namespace MyFavoriteQuotes
       }
 
       List<string> searchedResult = new List<string>();
-      searchedResult = SearchInXmlFor(Settings.Default.QuoteFileName, 
+      searchedResult = SearchInXmlFor(Settings.Default.QuoteFileName,
         textBoxSearch.Text, "a");
       if (searchedResult.Count != 0)
       {
@@ -520,7 +515,7 @@ namespace MyFavoriteQuotes
         {
           result2.Add(i.quoteValue + " - " + i.authorValue);
         }
-        
+
       }
 
       //XDocument xDoc = XDocument.Load(filename);
@@ -658,5 +653,7 @@ namespace MyFavoriteQuotes
         checkBoxLanguageAll.Checked = false;
       }
     }
+
+
   }
 }

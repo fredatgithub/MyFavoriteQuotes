@@ -169,10 +169,15 @@
       <englishValue>All</englishValue>
       <frenchValue>Partout</frenchValue>
     </term>
-  <term>
+    <term>
       <name>Language</name>
       <englishValue>Language</englishValue>
       <frenchValue>Langage</frenchValue>
+    </term>
+    <term>
+      <name>LanguageAll</name>
+      <englishValue>All</englishValue>
+      <frenchValue>Tous</frenchValue>
     </term>
   </terms>
 </Document>

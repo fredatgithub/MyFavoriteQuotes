@@ -39,7 +39,8 @@ namespace MyFavoriteQuotes
 
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
-    //List<string> ComboBoxSearchItems = new List<string>();
+    private Quotes AllQuotes = new Quotes();
+    
     private bool searchAll;
     private bool searchAuthor;
     private bool searchQuote;
@@ -76,6 +77,30 @@ namespace MyFavoriteQuotes
     }
 
     private void LoadQuotes()
+    {
+      // loading all quotes from the file quotes.xml
+      if (!File.Exists(Settings.Default.QuoteFileName))
+      {
+        CreateQuotesFile();
+      }
+
+      XDocument xmlDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      var result = from node in xmlDoc.Descendants("Quote")
+                   where node.HasElements
+                   select new
+                   {
+                     authorValue = node.Element("Author").Value,
+                     languageValue = node.Element("Language").Value,
+                     sentenceValue = node.Element("QuoteValue").Value
+                   };
+
+      foreach (var q in result)
+      {
+        AllQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
+      }
+    }
+
+    private void CreateQuotesFile()
     {
       throw new NotImplementedException();
     }
@@ -433,21 +458,25 @@ namespace MyFavoriteQuotes
       // check if the quote is not already in
       // TODO code
       // open the quotes.xml file and add the quote
-      XmlDocument doc = new XmlDocument();
-      doc.Load(Settings.Default.QuoteFileName);
-      XmlNode root = doc.DocumentElement;
-      XmlElement newQuote = doc.CreateElement("Quote");
-      XmlElement newAuthor = doc.CreateElement("Author");
-      newAuthor.InnerText = textBoxAddAuthor.Text;
-      XmlElement newLanguage = doc.CreateElement("Language");
-      newLanguage.InnerText = checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French";
-      XmlElement newQuoteValue = doc.CreateElement("QuoteValue");
-      newQuoteValue.InnerText = RemoveColon(textBoxAddQuote.Text);
-      newQuote.AppendChild(newAuthor);
-      newQuote.AppendChild(newLanguage);
-      newQuote.AppendChild(newQuoteValue);
-      root.AppendChild(newQuote);
-      doc.Save(Settings.Default.QuoteFileName);
+      //XmlDocument doc = new XmlDocument();
+      //doc.Load(Settings.Default.QuoteFileName);
+      //XmlNode root = doc.DocumentElement;
+      //XmlElement newQuote = doc.CreateElement("Quote");
+      //XmlElement newAuthor = doc.CreateElement("Author");
+      //newAuthor.InnerText = textBoxAddAuthor.Text;
+      //XmlElement newLanguage = doc.CreateElement("Language");
+      //newLanguage.InnerText = checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French";
+      //XmlElement newQuoteValue = doc.CreateElement("QuoteValue");
+      //newQuoteValue.InnerText = RemoveColon(textBoxAddQuote.Text);
+      //newQuote.AppendChild(newAuthor);
+      //newQuote.AppendChild(newLanguage);
+      //newQuote.AppendChild(newQuoteValue);
+      //root.AppendChild(newQuote);
+      //doc.Save(Settings.Default.QuoteFileName);
+
+      AllQuotes.Add(new Quote(textBoxAddAuthor.Text,
+        checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French"
+        , textBoxAddQuote.Text));
     }
 
     private string RemoveColon(string input)
@@ -478,8 +507,7 @@ namespace MyFavoriteQuotes
       }
 
       List<string> searchedResult = new List<string>();
-      searchedResult = SearchInXmlFor(Settings.Default.QuoteFileName,
-        textBoxSearch.Text, "a");
+      searchedResult = SearchInMemory(textBoxSearch.Text, textBoxAddAuthor.Text);
       if (searchedResult.Count != 0)
       {
         foreach (string item in searchedResult)
@@ -494,6 +522,27 @@ namespace MyFavoriteQuotes
 
       searchedResult = null;
 
+    }
+
+    private List<string> SearchInMemory(string searchedString, string author, string language = "English")
+    {
+      List<string> result2 = new List<string>();
+      var result = from node in AllQuotes.ToList()
+                   where node.Author.ToString().Contains(author)
+                   where node.Language.ToString().Contains(language)
+                   where node.Sentence.ToString().Contains(searchedString)
+                   select node;
+
+      //foreach (var i in result)
+      //{
+      //  if (i.languageValue == language)
+      //  {
+      //    result2.Add(i.quoteValue + " - " + i.authorValue);
+      //  }
+
+      //}
+
+      return result2;
     }
 
     private List<string> SearchInXmlFor(string filename, string searchedString, string author, string language = "English")
@@ -517,21 +566,7 @@ namespace MyFavoriteQuotes
         }
 
       }
-
-      //XDocument xDoc = XDocument.Load(filename);
-      //var result = from node in xDoc.Descendants("Quotes")
-      //             where node.HasElements
-      //             where node.Name == "Quote"
-      //             //where node.Element("Quote").Attribute("Author") == author
-      //             //where node.Element("Quote"). == language
-      //             //where node.Element("Author") == searchString
-      //             select new
-      //             {
-      //               quoteValue = node.Element("Quote").Value,
-      //               authorValue = node.Element("Quote").Attribute("Author").Value,
-      //               languageValue = node.Element("Quote").Attribute("Language").Value,
-      //             };
-
+            
       return result2;
     }
 

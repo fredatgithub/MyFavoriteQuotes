@@ -15,5 +15,16 @@ namespace MyFavoriteQuotes
     {
       ListOfQuotes.Add(quote);
     }
+
+    public IEnumerable<Quote> ToList()
+    {
+      //IEnumerable<Quote> result = new List<Quote>();
+      //foreach (var item in ListOfQuotes)
+      //{
+      //  result.Add(item);
+      //}
+      //return result;
+      return (IEnumerable<Quote>)ListOfQuotes;
+    }
   }
 }

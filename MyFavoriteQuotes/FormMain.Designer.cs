@@ -300,14 +300,14 @@
       // frenchToolStripMenuItem
       // 
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.frenchToolStripMenuItem.Text = "Français";
       this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItemClick);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-      this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.englishToolStripMenuItem.Text = "Anglais";
       this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItemClick);
       // 
@@ -436,7 +436,7 @@
       this.groupBoxSearch.Size = new System.Drawing.Size(606, 62);
       this.groupBoxSearch.TabIndex = 5;
       this.groupBoxSearch.TabStop = false;
-      this.groupBoxSearch.Text = "Rechercher dans";
+      this.groupBoxSearch.Text = "Rechercher";
       // 
       // checkBoxSearchQuote
       // 

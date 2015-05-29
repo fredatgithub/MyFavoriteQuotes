@@ -454,7 +454,7 @@ namespace MyFavoriteQuotes
           return;
         }
       }
-
+      
       // check if the quote is not already in
       // TODO code
       // open the quotes.xml file and add the quote
@@ -504,6 +504,16 @@ namespace MyFavoriteQuotes
           frenchToolStripMenuItem.Checked ? Settings.Default.textBoxSearchFr : Settings.Default.textBoxSearchEn,
           frenchToolStripMenuItem.Checked ? Settings.Default.SearchEmptyFr : Settings.Default.SearchEmptyEn,
           MessageBoxButtons.OK);
+      }
+
+      if (!searchAll && !searchAuthor && !searchQuote)
+      {
+        checkBoxSearchAll.Checked = true;
+      }
+
+      if (!languageAll && !languageEnglish && !languageFrench)
+      {
+        checkBoxLanguageAll.Checked = true;
       }
 
       List<string> searchedResult = new List<string>();
@@ -653,7 +663,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxSearchQuote_CheckedChanged(object sender, EventArgs e)
     {
-      searchAuthor = checkBoxSearchQuote.Checked;
+      searchQuote = checkBoxSearchQuote.Checked;
       if (checkBoxSearchAll.Checked && !checkBoxSearchQuote.Checked)
       {
         checkBoxSearchAll.Checked = false;

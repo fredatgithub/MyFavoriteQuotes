@@ -516,6 +516,11 @@ namespace MyFavoriteQuotes
         checkBoxLanguageAll.Checked = true;
       }
 
+      if (Debugger.IsAttached)
+      {
+        Debugger.Break();
+      }
+
       List<string> searchedResult = new List<string>();
       searchedResult = SearchInMemory(textBoxSearch.Text, textBoxAddAuthor.Text);
       if (searchedResult.Count != 0)

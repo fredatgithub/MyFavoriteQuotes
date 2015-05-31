@@ -458,21 +458,6 @@ namespace MyFavoriteQuotes
       // check if the quote is not already in
       // TODO code
       // open the quotes.xml file and add the quote
-      //XmlDocument doc = new XmlDocument();
-      //doc.Load(Settings.Default.QuoteFileName);
-      //XmlNode root = doc.DocumentElement;
-      //XmlElement newQuote = doc.CreateElement("Quote");
-      //XmlElement newAuthor = doc.CreateElement("Author");
-      //newAuthor.InnerText = textBoxAddAuthor.Text;
-      //XmlElement newLanguage = doc.CreateElement("Language");
-      //newLanguage.InnerText = checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French";
-      //XmlElement newQuoteValue = doc.CreateElement("QuoteValue");
-      //newQuoteValue.InnerText = RemoveColon(textBoxAddQuote.Text);
-      //newQuote.AppendChild(newAuthor);
-      //newQuote.AppendChild(newLanguage);
-      //newQuote.AppendChild(newQuoteValue);
-      //root.AppendChild(newQuote);
-      //doc.Save(Settings.Default.QuoteFileName);
 
       AllQuotes.Add(new Quote(textBoxAddAuthor.Text,
         checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French"

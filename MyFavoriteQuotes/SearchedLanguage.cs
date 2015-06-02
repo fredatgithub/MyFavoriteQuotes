@@ -24,6 +24,6 @@ namespace MyFavoriteQuotes
     NoLanguageChosen = 0,
     French = 1,
     English = 2,
-    FrenchAndEnglish = French & English // = 3
+    FrenchAndEnglish = 3 //French & English // = 3
   }
 }

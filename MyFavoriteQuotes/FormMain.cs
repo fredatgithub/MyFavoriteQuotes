@@ -285,6 +285,11 @@ namespace MyFavoriteQuotes
           "<englishValue>Quote</englishValue>",
           "<frenchValue>Citation</frenchValue>",
         "</term>",
+        "<term>",
+          "<name>CaseSensitive</name>",
+          "<englishValue>Case sensitive</englishValue>",
+          "<frenchValue>Sensible à la casse</frenchValue>",
+        "</term>",
       "</terms>",
     "</Document>"
       };
@@ -381,7 +386,7 @@ namespace MyFavoriteQuotes
           checkBoxLanguageAll.Text = languageDicoEn["LanguageAll"];
           checkBoxLanguageEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
           checkBoxLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
-
+          checkBoxCaseSensitive.Text = languageDicoEn["CaseSensitive"];
           break;
         case "French":
           frenchToolStripMenuItem.Checked = true;
@@ -428,6 +433,7 @@ namespace MyFavoriteQuotes
           checkBoxLanguageAll.Text = languageDicoFr["LanguageAll"];
           checkBoxLanguageEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
           checkBoxLanguageFrench.Text = languageDicoFr["MenuLanguageFrench"];
+          checkBoxCaseSensitive.Text = languageDicoFr["CaseSensitive"];
 
           break;
       }
@@ -507,7 +513,39 @@ namespace MyFavoriteQuotes
       }
 
       List<string> searchedResult = new List<string>();
-      searchedResult = SearchInMemory(textBoxSearch.Text, textBoxAddAuthor.Text);
+      var criteriaAuthor = SearchedCriteria.NoCriteriaChosen;
+      var criteriaLanguage = SearchedLanguage.NoLanguageChosen;
+      if (checkBoxSearchAll.Checked)
+      {
+        criteriaAuthor = SearchedCriteria.AuthorAndQuote;
+      }
+
+      if (checkBoxSearchAuthor.Checked && !checkBoxSearchQuote.Checked)
+      {
+        criteriaAuthor = SearchedCriteria.Author;
+      }
+
+      if (!checkBoxSearchAuthor.Checked && checkBoxSearchQuote.Checked)
+      {
+        criteriaAuthor = SearchedCriteria.Quote;
+      }
+
+      if (checkBoxLanguageAll.Checked)
+      {
+        criteriaLanguage = SearchedLanguage.FrenchAndEnglish;
+      }
+
+      if (checkBoxLanguageEnglish.Checked && !checkBoxLanguageFrench.Checked)
+      {
+        criteriaLanguage = SearchedLanguage.English;
+      }
+
+      if (!checkBoxLanguageEnglish.Checked && checkBoxLanguageFrench.Checked)
+      {
+        criteriaLanguage = SearchedLanguage.French;
+      }
+
+      searchedResult = SearchInMemory(textBoxSearch.Text, criteriaAuthor, criteriaLanguage);
       if (searchedResult.Count != 0)
       {
         foreach (string item in searchedResult)
@@ -523,23 +561,28 @@ namespace MyFavoriteQuotes
       searchedResult = null;
     }
 
-    private List<string> SearchInMemory(string searchedString, string author, string language = "English")
+    private List<string> SearchInMemory(string searchedString, 
+      SearchedCriteria author = SearchedCriteria.AuthorAndQuote, 
+      SearchedLanguage language = SearchedLanguage.FrenchAndEnglish)
     {
       List<string> result2 = new List<string>();
-      //var result = from node in AllQuotes.ToList()
-      //             where node.Author.ToString().Contains(author)
-      //             where node.Language.ToString().Contains(language)
-      //             where node.Sentence.ToString().Contains(searchedString)
-      //             select node;
-
-      foreach (var i in AllQuotes.ToList())
+      var result3 = from node in AllQuotes.ToList()
+                    where node.Author.ToString().Contains(author.ToString())
+                    where node.Language.ToString().Contains(language.ToString())
+                    where node.Sentence.ToString().Contains(searchedString)
+                    select node;
+      foreach (var quote in result3)
       {
-        if (i.Language == language)
-        {
-          result2.Add(i.Sentence + " - " + i.Author);
-        }
-
+        result2.Add(quote.Sentence + " - " + quote.Author);
       }
+
+      //foreach (var quote in AllQuotes.ToList())
+      //{
+      //  if (quote.Language.Contains(language.ToString()))
+      //  {
+      //    result2.Add(quote.Sentence + " - " + quote.Author);
+      //  }
+      //}
 
       return result2;
     }

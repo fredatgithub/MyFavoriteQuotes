@@ -89,6 +89,7 @@
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
+      this.checkBoxCaseSensitive = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -369,6 +370,7 @@
       // 
       // tabPageSearch
       // 
+      this.tabPageSearch.Controls.Add(this.checkBoxCaseSensitive);
       this.tabPageSearch.Controls.Add(this.groupBoxLanguage);
       this.tabPageSearch.Controls.Add(this.groupBoxSearch);
       this.tabPageSearch.Controls.Add(this.textBoxResult);
@@ -389,7 +391,7 @@
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageFrench);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageEnglish);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageAll);
-      this.groupBoxLanguage.Location = new System.Drawing.Point(32, 162);
+      this.groupBoxLanguage.Location = new System.Drawing.Point(32, 180);
       this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxLanguage.Name = "groupBoxLanguage";
       this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -401,7 +403,7 @@
       // checkBoxLanguageFrench
       // 
       this.checkBoxLanguageFrench.AutoSize = true;
-      this.checkBoxLanguageFrench.Location = new System.Drawing.Point(267, 22);
+      this.checkBoxLanguageFrench.Location = new System.Drawing.Point(275, 22);
       this.checkBoxLanguageFrench.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.checkBoxLanguageFrench.Name = "checkBoxLanguageFrench";
       this.checkBoxLanguageFrench.Size = new System.Drawing.Size(84, 21);
@@ -439,7 +441,7 @@
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchQuote);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAuthor);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAll);
-      this.groupBoxSearch.Location = new System.Drawing.Point(32, 94);
+      this.groupBoxSearch.Location = new System.Drawing.Point(32, 112);
       this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxSearch.Name = "groupBoxSearch";
       this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -486,7 +488,7 @@
       // 
       // textBoxResult
       // 
-      this.textBoxResult.Location = new System.Drawing.Point(32, 246);
+      this.textBoxResult.Location = new System.Drawing.Point(32, 264);
       this.textBoxResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
@@ -535,7 +537,7 @@
       this.tabPageAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.tabPageAdd.Name = "tabPageAdd";
       this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.tabPageAdd.Size = new System.Drawing.Size(903, 476);
+      this.tabPageAdd.Size = new System.Drawing.Size(903, 477);
       this.tabPageAdd.TabIndex = 1;
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
@@ -678,6 +680,17 @@
       this.textBoxListQuotes.TabIndex = 7;
       this.textBoxListQuotes.Text = "test1";
       // 
+      // checkBoxCaseSensitive
+      // 
+      this.checkBoxCaseSensitive.AutoSize = true;
+      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(117, 78);
+      this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
+      this.checkBoxCaseSensitive.Size = new System.Drawing.Size(123, 21);
+      this.checkBoxCaseSensitive.TabIndex = 3;
+      this.checkBoxCaseSensitive.Text = "Case Sensitive";
+      this.checkBoxCaseSensitive.UseVisualStyleBackColor = true;
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -775,5 +788,6 @@
     private System.Windows.Forms.CheckBox checkBoxListAll;
     private System.Windows.Forms.TextBox textBoxListQuotes;
     private System.Windows.Forms.ListBox listBox1;
+    private System.Windows.Forms.CheckBox checkBoxCaseSensitive;
   }
 }

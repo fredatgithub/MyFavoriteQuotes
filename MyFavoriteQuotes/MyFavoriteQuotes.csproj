@@ -64,6 +64,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quote.cs" />
     <Compile Include="Quotes.cs" />
+    <Compile Include="SearchedCriteria.cs" />
     <Compile Include="SearchedLanguage.cs" />
     <EmbeddedResource Include="AboutBoxApplication.resx">
       <DependentUpon>AboutBoxApplication.cs</DependentUpon>
@@ -97,9 +98,11 @@
   <ItemGroup>
     <Content Include="Quotes.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Translations.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -179,5 +179,10 @@
       <englishValue>All</englishValue>
       <frenchValue>Tous</frenchValue>
     </term>
+    <term>
+      <name>CaseSensitive</name>
+      <englishValue>Case sensitive</englishValue>
+      <frenchValue>Sensible à la casse</frenchValue>
+    </term>
   </terms>
 </Document>

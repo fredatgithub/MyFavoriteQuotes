@@ -572,25 +572,48 @@ namespace MyFavoriteQuotes
       result3 = from node in AllQuotes.ToList()
                 select node;
       result4 = result3;
-      if (author == SearchedCriteria.Author)
+      bool caseSensitive = checkBoxCaseSensitive.Checked;
+      if (author == SearchedCriteria.Author && caseSensitive)
       {
         result3 = from node in result3
                   where node.Author.ToString().Contains(searchedString)
                   select node;
       }
 
-      if (author == SearchedCriteria.Quote)
+      if (author == SearchedCriteria.Author && !caseSensitive)
+      {
+        result3 = from node in result3
+                  where node.Author.ToString().ToLower().Contains(searchedString.ToLower())
+                  select node;
+      }
+
+      if (author == SearchedCriteria.Quote && caseSensitive)
       {
         result3 = from node in result3
                   where node.Sentence.ToString().Contains(searchedString)
                   select node;
       }
 
-      if (author == SearchedCriteria.AuthorAndQuote)
+      if (author == SearchedCriteria.Quote && !caseSensitive)
+      {
+        result3 = from node in result3
+                  where node.Sentence.ToString().ToLower().Contains(searchedString.ToLower())
+                  select node;
+      }
+
+      if (author == SearchedCriteria.AuthorAndQuote && caseSensitive)
       {
         result3 = from node in result4
                   where (node.Sentence.ToString().Contains(searchedString)
                   || node.Author.ToString().Contains(searchedString))
+                  select node;
+      }
+
+      if (author == SearchedCriteria.AuthorAndQuote && !caseSensitive)
+      {
+        result3 = from node in result4
+                  where (node.Sentence.ToString().ToLower().Contains(searchedString.ToLower())
+                  || node.Author.ToString().ToLower().Contains(searchedString.ToLower()))
                   select node;
       }
 

@@ -77,31 +77,30 @@
       this.buttonSearch = new System.Windows.Forms.Button();
       this.textBoxSearch = new System.Windows.Forms.TextBox();
       this.tabPageAdd = new System.Windows.Forms.TabPage();
-      this.checkBoxAddQuoteFrenchEnglish = new System.Windows.Forms.CheckBox();
+      this.labelAddLanguage = new System.Windows.Forms.Label();
+      this.groupBoxAddLanguage = new System.Windows.Forms.GroupBox();
+      this.radioButtonAddLanguageFrench = new System.Windows.Forms.RadioButton();
+      this.radioButtonAddLanguageEnglish = new System.Windows.Forms.RadioButton();
       this.labelAddQuote = new System.Windows.Forms.Label();
       this.buttonAdd = new System.Windows.Forms.Button();
       this.textBoxAddQuote = new System.Windows.Forms.TextBox();
       this.labelAddAuthor = new System.Windows.Forms.Label();
       this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
       this.tabPageList = new System.Windows.Forms.TabPage();
-      this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.groupBoxListLanguage = new System.Windows.Forms.GroupBox();
       this.checkBoxListFrench = new System.Windows.Forms.CheckBox();
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
-      this.groupBoxAddLanguage = new System.Windows.Forms.GroupBox();
-      this.labelAddLanguage = new System.Windows.Forms.Label();
-      this.radioButtonAddLanguageEnglish = new System.Windows.Forms.RadioButton();
-      this.radioButtonAddLanguageFrench = new System.Windows.Forms.RadioButton();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
       this.groupBoxLanguage.SuspendLayout();
       this.groupBoxSearch.SuspendLayout();
       this.tabPageAdd.SuspendLayout();
-      this.tabPageList.SuspendLayout();
-      this.groupBox1.SuspendLayout();
       this.groupBoxAddLanguage.SuspendLayout();
+      this.tabPageList.SuspendLayout();
+      this.groupBoxListLanguage.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -543,7 +542,6 @@
       // 
       this.tabPageAdd.Controls.Add(this.labelAddLanguage);
       this.tabPageAdd.Controls.Add(this.groupBoxAddLanguage);
-      this.tabPageAdd.Controls.Add(this.checkBoxAddQuoteFrenchEnglish);
       this.tabPageAdd.Controls.Add(this.labelAddQuote);
       this.tabPageAdd.Controls.Add(this.buttonAdd);
       this.tabPageAdd.Controls.Add(this.textBoxAddQuote);
@@ -558,16 +556,47 @@
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
       // 
-      // checkBoxAddQuoteFrenchEnglish
+      // labelAddLanguage
       // 
-      this.checkBoxAddQuoteFrenchEnglish.AutoSize = true;
-      this.checkBoxAddQuoteFrenchEnglish.Location = new System.Drawing.Point(541, 121);
-      this.checkBoxAddQuoteFrenchEnglish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.checkBoxAddQuoteFrenchEnglish.Name = "checkBoxAddQuoteFrenchEnglish";
-      this.checkBoxAddQuoteFrenchEnglish.Size = new System.Drawing.Size(134, 21);
-      this.checkBoxAddQuoteFrenchEnglish.TabIndex = 5;
-      this.checkBoxAddQuoteFrenchEnglish.Text = "Quote in English";
-      this.checkBoxAddQuoteFrenchEnglish.UseVisualStyleBackColor = true;
+      this.labelAddLanguage.AutoSize = true;
+      this.labelAddLanguage.Location = new System.Drawing.Point(45, 122);
+      this.labelAddLanguage.Name = "labelAddLanguage";
+      this.labelAddLanguage.Size = new System.Drawing.Size(72, 17);
+      this.labelAddLanguage.TabIndex = 12;
+      this.labelAddLanguage.Text = "Language";
+      // 
+      // groupBoxAddLanguage
+      // 
+      this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageFrench);
+      this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageEnglish);
+      this.groupBoxAddLanguage.Location = new System.Drawing.Point(133, 101);
+      this.groupBoxAddLanguage.Name = "groupBoxAddLanguage";
+      this.groupBoxAddLanguage.Size = new System.Drawing.Size(401, 47);
+      this.groupBoxAddLanguage.TabIndex = 11;
+      this.groupBoxAddLanguage.TabStop = false;
+      // 
+      // radioButtonAddLanguageFrench
+      // 
+      this.radioButtonAddLanguageFrench.AutoSize = true;
+      this.radioButtonAddLanguageFrench.Location = new System.Drawing.Point(98, 20);
+      this.radioButtonAddLanguageFrench.Name = "radioButtonAddLanguageFrench";
+      this.radioButtonAddLanguageFrench.Size = new System.Drawing.Size(73, 21);
+      this.radioButtonAddLanguageFrench.TabIndex = 1;
+      this.radioButtonAddLanguageFrench.TabStop = true;
+      this.radioButtonAddLanguageFrench.Text = "French";
+      this.radioButtonAddLanguageFrench.UseVisualStyleBackColor = true;
+      // 
+      // radioButtonAddLanguageEnglish
+      // 
+      this.radioButtonAddLanguageEnglish.AutoSize = true;
+      this.radioButtonAddLanguageEnglish.Checked = true;
+      this.radioButtonAddLanguageEnglish.Location = new System.Drawing.Point(7, 20);
+      this.radioButtonAddLanguageEnglish.Name = "radioButtonAddLanguageEnglish";
+      this.radioButtonAddLanguageEnglish.Size = new System.Drawing.Size(75, 21);
+      this.radioButtonAddLanguageEnglish.TabIndex = 0;
+      this.radioButtonAddLanguageEnglish.TabStop = true;
+      this.radioButtonAddLanguageEnglish.Text = "English";
+      this.radioButtonAddLanguageEnglish.UseVisualStyleBackColor = true;
       // 
       // labelAddQuote
       // 
@@ -617,7 +646,7 @@
       // 
       // tabPageList
       // 
-      this.tabPageList.Controls.Add(this.groupBox1);
+      this.tabPageList.Controls.Add(this.groupBoxListLanguage);
       this.tabPageList.Controls.Add(this.textBoxListQuotes);
       this.tabPageList.Location = new System.Drawing.Point(4, 25);
       this.tabPageList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -627,19 +656,19 @@
       this.tabPageList.Text = "List";
       this.tabPageList.UseVisualStyleBackColor = true;
       // 
-      // groupBox1
+      // groupBoxListLanguage
       // 
-      this.groupBox1.Controls.Add(this.checkBoxListFrench);
-      this.groupBox1.Controls.Add(this.checkBoxListEnglish);
-      this.groupBox1.Controls.Add(this.checkBoxListAll);
-      this.groupBox1.Location = new System.Drawing.Point(52, 33);
-      this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBox1.Name = "groupBox1";
-      this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBox1.Size = new System.Drawing.Size(605, 62);
-      this.groupBox1.TabIndex = 8;
-      this.groupBox1.TabStop = false;
-      this.groupBox1.Text = "Langage";
+      this.groupBoxListLanguage.Controls.Add(this.checkBoxListFrench);
+      this.groupBoxListLanguage.Controls.Add(this.checkBoxListEnglish);
+      this.groupBoxListLanguage.Controls.Add(this.checkBoxListAll);
+      this.groupBoxListLanguage.Location = new System.Drawing.Point(52, 33);
+      this.groupBoxListLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListLanguage.Name = "groupBoxListLanguage";
+      this.groupBoxListLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListLanguage.Size = new System.Drawing.Size(827, 62);
+      this.groupBoxListLanguage.TabIndex = 8;
+      this.groupBoxListLanguage.TabStop = false;
+      this.groupBoxListLanguage.Text = "Langage";
       // 
       // checkBoxListFrench
       // 
@@ -651,6 +680,7 @@
       this.checkBoxListFrench.TabIndex = 2;
       this.checkBoxListFrench.Text = "Français";
       this.checkBoxListFrench.UseVisualStyleBackColor = true;
+      this.checkBoxListFrench.CheckedChanged += new System.EventHandler(this.checkBoxListFrench_CheckedChanged);
       // 
       // checkBoxListEnglish
       // 
@@ -662,6 +692,7 @@
       this.checkBoxListEnglish.TabIndex = 1;
       this.checkBoxListEnglish.Text = "Anglais";
       this.checkBoxListEnglish.UseVisualStyleBackColor = true;
+      this.checkBoxListEnglish.CheckedChanged += new System.EventHandler(this.checkBoxListEnglish_CheckedChanged);
       // 
       // checkBoxListAll
       // 
@@ -673,6 +704,7 @@
       this.checkBoxListAll.TabIndex = 0;
       this.checkBoxListAll.Text = "Tous";
       this.checkBoxListAll.UseVisualStyleBackColor = true;
+      this.checkBoxListAll.CheckedChanged += new System.EventHandler(this.checkBoxListAll_CheckedChanged);
       // 
       // textBoxListQuotes
       // 
@@ -680,50 +712,8 @@
       this.textBoxListQuotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxListQuotes.Multiline = true;
       this.textBoxListQuotes.Name = "textBoxListQuotes";
-      this.textBoxListQuotes.Size = new System.Drawing.Size(607, 187);
+      this.textBoxListQuotes.Size = new System.Drawing.Size(827, 328);
       this.textBoxListQuotes.TabIndex = 7;
-      // 
-      // groupBoxAddLanguage
-      // 
-      this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageFrench);
-      this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageEnglish);
-      this.groupBoxAddLanguage.Location = new System.Drawing.Point(133, 101);
-      this.groupBoxAddLanguage.Name = "groupBoxAddLanguage";
-      this.groupBoxAddLanguage.Size = new System.Drawing.Size(401, 47);
-      this.groupBoxAddLanguage.TabIndex = 11;
-      this.groupBoxAddLanguage.TabStop = false;
-      // 
-      // labelAddLanguage
-      // 
-      this.labelAddLanguage.AutoSize = true;
-      this.labelAddLanguage.Location = new System.Drawing.Point(45, 115);
-      this.labelAddLanguage.Name = "labelAddLanguage";
-      this.labelAddLanguage.Size = new System.Drawing.Size(72, 17);
-      this.labelAddLanguage.TabIndex = 12;
-      this.labelAddLanguage.Text = "Language";
-      // 
-      // radioButtonAddLanguageEnglish
-      // 
-      this.radioButtonAddLanguageEnglish.AutoSize = true;
-      this.radioButtonAddLanguageEnglish.Checked = true;
-      this.radioButtonAddLanguageEnglish.Location = new System.Drawing.Point(7, 20);
-      this.radioButtonAddLanguageEnglish.Name = "radioButtonAddLanguageEnglish";
-      this.radioButtonAddLanguageEnglish.Size = new System.Drawing.Size(75, 21);
-      this.radioButtonAddLanguageEnglish.TabIndex = 0;
-      this.radioButtonAddLanguageEnglish.TabStop = true;
-      this.radioButtonAddLanguageEnglish.Text = "English";
-      this.radioButtonAddLanguageEnglish.UseVisualStyleBackColor = true;
-      // 
-      // radioButtonAddLanguageFrench
-      // 
-      this.radioButtonAddLanguageFrench.AutoSize = true;
-      this.radioButtonAddLanguageFrench.Location = new System.Drawing.Point(98, 21);
-      this.radioButtonAddLanguageFrench.Name = "radioButtonAddLanguageFrench";
-      this.radioButtonAddLanguageFrench.Size = new System.Drawing.Size(73, 21);
-      this.radioButtonAddLanguageFrench.TabIndex = 1;
-      this.radioButtonAddLanguageFrench.TabStop = true;
-      this.radioButtonAddLanguageFrench.Text = "French";
-      this.radioButtonAddLanguageFrench.UseVisualStyleBackColor = true;
       // 
       // FormMain
       // 
@@ -750,12 +740,12 @@
       this.groupBoxSearch.PerformLayout();
       this.tabPageAdd.ResumeLayout(false);
       this.tabPageAdd.PerformLayout();
-      this.tabPageList.ResumeLayout(false);
-      this.tabPageList.PerformLayout();
-      this.groupBox1.ResumeLayout(false);
-      this.groupBox1.PerformLayout();
       this.groupBoxAddLanguage.ResumeLayout(false);
       this.groupBoxAddLanguage.PerformLayout();
+      this.tabPageList.ResumeLayout(false);
+      this.tabPageList.PerformLayout();
+      this.groupBoxListLanguage.ResumeLayout(false);
+      this.groupBoxListLanguage.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -808,7 +798,6 @@
     private System.Windows.Forms.TextBox textBoxAddQuote;
     private System.Windows.Forms.Label labelAddAuthor;
     private System.Windows.Forms.TextBox textBoxAddAuthor;
-    private System.Windows.Forms.CheckBox checkBoxAddQuoteFrenchEnglish;
     private System.Windows.Forms.GroupBox groupBoxSearch;
     private System.Windows.Forms.CheckBox checkBoxSearchAll;
     private System.Windows.Forms.CheckBox checkBoxSearchQuote;
@@ -818,7 +807,7 @@
     private System.Windows.Forms.CheckBox checkBoxLanguageEnglish;
     private System.Windows.Forms.CheckBox checkBoxLanguageAll;
     private System.Windows.Forms.TabPage tabPageList;
-    private System.Windows.Forms.GroupBox groupBox1;
+    private System.Windows.Forms.GroupBox groupBoxListLanguage;
     private System.Windows.Forms.CheckBox checkBoxListFrench;
     private System.Windows.Forms.CheckBox checkBoxListEnglish;
     private System.Windows.Forms.CheckBox checkBoxListAll;

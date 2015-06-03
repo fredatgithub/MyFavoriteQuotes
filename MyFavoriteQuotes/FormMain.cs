@@ -47,6 +47,9 @@ namespace MyFavoriteQuotes
     private bool languageAll;
     private bool languageEnglish;
     private bool languageFrench;
+    private bool listlanguageAll;
+    private bool listlanguageEnglish;
+    private bool listlanguageFrench;
 
     private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -74,6 +77,17 @@ namespace MyFavoriteQuotes
       LoadLanguages();
       SetLanguage(Settings.Default.LastLanguageUsed);
       LoadQuotes();
+      DisplayAllQuotes();
+    }
+
+    private void DisplayAllQuotes()
+    {
+      checkBoxListAll.Checked = true;
+      textBoxListQuotes.Text = string.Empty;
+      foreach (var item in AllQuotes.ToList())
+      {
+        textBoxListQuotes.Text += item.Sentence + " - " + item.Author + Environment.NewLine;
+      }
     }
 
     private void LoadQuotes()
@@ -380,7 +394,12 @@ namespace MyFavoriteQuotes
           optionsToolStripMenuItem.Text = languageDicoEn["MenuToolsOptions"];
           languagetoolStripMenuItem.Text = languageDicoEn["MenuLanguage"];
           englishToolStripMenuItem.Text = languageDicoEn["MenuLanguageEnglish"];
+          radioButtonAddLanguageEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
+          checkBoxListEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
           frenchToolStripMenuItem.Text = languageDicoEn["MenuLanguageFrench"];
+          radioButtonAddLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
+          checkBoxListFrench.Text = languageDicoEn["MenuLanguageFrench"];
+          groupBoxListLanguage.Text = languageDicoEn["MenuLanguage"];
           helpToolStripMenuItem.Text = languageDicoEn["MenuHelp"];
           summaryToolStripMenuItem.Text = languageDicoEn["MenuHelpSummary"];
           indexToolStripMenuItem.Text = languageDicoEn["MenuHelpIndex"];
@@ -393,13 +412,14 @@ namespace MyFavoriteQuotes
           buttonAdd.Text = languageDicoEn["Add"];
           labelAddAuthor.Text = languageDicoEn["Author"];
           labelAddQuote.Text = languageDicoEn["Quote"];
-          checkBoxAddQuoteFrenchEnglish.Text = languageDicoEn["CheckBoxAddQuoteEnglishFrench"];
           groupBoxSearch.Text = languageDicoEn["Search"];
           checkBoxSearchAll.Text = languageDicoEn["SearchAll"];
           checkBoxSearchAuthor.Text = languageDicoEn["Author"];
           checkBoxSearchQuote.Text = languageDicoEn["Quote"];
           groupBoxLanguage.Text = languageDicoEn["Language"];
+          labelAddLanguage.Text = languageDicoEn["Language"];
           checkBoxLanguageAll.Text = languageDicoEn["LanguageAll"];
+          checkBoxListAll.Text = languageDicoEn["LanguageAll"];
           checkBoxLanguageEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
           checkBoxLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
           checkBoxCaseSensitive.Text = languageDicoEn["CaseSensitive"];
@@ -427,7 +447,12 @@ namespace MyFavoriteQuotes
           optionsToolStripMenuItem.Text = languageDicoFr["MenuToolsOptions"];
           languagetoolStripMenuItem.Text = languageDicoFr["MenuLanguage"];
           englishToolStripMenuItem.Text = languageDicoFr["MenuLanguageEnglish"];
+          radioButtonAddLanguageEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
+          checkBoxListEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
           frenchToolStripMenuItem.Text = languageDicoFr["MenuLanguageFrench"];
+          radioButtonAddLanguageFrench.Text = languageDicoFr["MenuLanguageFrench"];
+          checkBoxListFrench.Text = languageDicoFr["MenuLanguageFrench"];
+          groupBoxListLanguage.Text = languageDicoFr["MenuLanguage"];
           helpToolStripMenuItem.Text = languageDicoFr["MenuHelp"];
           summaryToolStripMenuItem.Text = languageDicoFr["MenuHelpSummary"];
           indexToolStripMenuItem.Text = languageDicoFr["MenuHelpIndex"];
@@ -440,17 +465,17 @@ namespace MyFavoriteQuotes
           buttonAdd.Text = languageDicoFr["Add"];
           labelAddAuthor.Text = languageDicoFr["Author"];
           labelAddQuote.Text = languageDicoFr["Quote"];
-          checkBoxAddQuoteFrenchEnglish.Text = languageDicoFr["CheckBoxAddQuoteEnglishFrench"];
           groupBoxSearch.Text = languageDicoFr["Search"];
           checkBoxSearchAll.Text = languageDicoFr["SearchAll"];
           checkBoxSearchAuthor.Text = languageDicoFr["Author"];
           checkBoxSearchQuote.Text = languageDicoFr["Quote"];
           groupBoxLanguage.Text = languageDicoFr["Language"];
           checkBoxLanguageAll.Text = languageDicoFr["LanguageAll"];
+          checkBoxListAll.Text = languageDicoFr["LanguageAll"];
           checkBoxLanguageEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
           checkBoxLanguageFrench.Text = languageDicoFr["MenuLanguageFrench"];
           checkBoxCaseSensitive.Text = languageDicoFr["CaseSensitive"];
-
+          labelAddLanguage.Text = languageDicoFr["Language"];
           break;
       }
     }
@@ -482,7 +507,7 @@ namespace MyFavoriteQuotes
       // open the quotes.xml file and add the quote
 
       AllQuotes.Add(new Quote(textBoxAddAuthor.Text,
-        checkBoxAddQuoteFrenchEnglish.Checked ? "English" : "French"
+        radioButtonAddLanguageEnglish.Checked ? "English" : "French"
         , textBoxAddQuote.Text));
     }
 
@@ -796,6 +821,34 @@ namespace MyFavoriteQuotes
       if (checkBoxLanguageAll.Checked && !checkBoxLanguageFrench.Checked)
       {
         checkBoxLanguageAll.Checked = false;
+      }
+    }
+
+    private void checkBoxListAll_CheckedChanged(object sender, EventArgs e)
+    {
+      listlanguageAll = checkBoxListAll.Checked;
+      if (checkBoxListAll.Checked)
+      {
+        checkBoxListEnglish.Checked = true;
+        checkBoxListFrench.Checked = true;
+      }
+    }
+
+    private void checkBoxListEnglish_CheckedChanged(object sender, EventArgs e)
+    {
+      listlanguageEnglish = checkBoxListEnglish.Checked;
+      if (checkBoxListAll.Checked && !checkBoxListEnglish.Checked)
+      {
+        checkBoxListAll.Checked = false;
+      }
+    }
+
+    private void checkBoxListFrench_CheckedChanged(object sender, EventArgs e)
+    {
+      listlanguageFrench = checkBoxListFrench.Checked;
+      if (checkBoxListAll.Checked && !checkBoxListFrench.Checked)
+      {
+        checkBoxListAll.Checked = false;
       }
     }
   }

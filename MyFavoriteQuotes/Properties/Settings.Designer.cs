@@ -190,5 +190,101 @@ namespace MyFavoriteQuotes.Properties {
                 this["SearchEmptyFr"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SearchCaseSensitive {
+            get {
+                return ((bool)(this["SearchCaseSensitive"]));
+            }
+            set {
+                this["SearchCaseSensitive"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string textBoxSearch {
+            get {
+                return ((string)(this["textBoxSearch"]));
+            }
+            set {
+                this["textBoxSearch"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxSearchAll {
+            get {
+                return ((bool)(this["checkBoxSearchAll"]));
+            }
+            set {
+                this["checkBoxSearchAll"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxSearchAuthor {
+            get {
+                return ((bool)(this["checkBoxSearchAuthor"]));
+            }
+            set {
+                this["checkBoxSearchAuthor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxSearchQuote {
+            get {
+                return ((bool)(this["checkBoxSearchQuote"]));
+            }
+            set {
+                this["checkBoxSearchQuote"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxLanguageAll {
+            get {
+                return ((bool)(this["checkBoxLanguageAll"]));
+            }
+            set {
+                this["checkBoxLanguageAll"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxLanguageEnglish {
+            get {
+                return ((bool)(this["checkBoxLanguageEnglish"]));
+            }
+            set {
+                this["checkBoxLanguageEnglish"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxLanguageFrench {
+            get {
+                return ((bool)(this["checkBoxLanguageFrench"]));
+            }
+            set {
+                this["checkBoxLanguageFrench"] = value;
+            }
+        }
     }
 }

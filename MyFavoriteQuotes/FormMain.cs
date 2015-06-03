@@ -309,6 +309,14 @@ namespace MyFavoriteQuotes
       Top = Settings.Default.WindowTop < 0 ? 0 : Settings.Default.WindowTop;
       Left = Settings.Default.WindowLeft < 0 ? 0 : Settings.Default.WindowLeft;
       tabControlMain.SelectedIndex = Settings.Default.LastTabUsed;
+      checkBoxCaseSensitive.Checked = Settings.Default.SearchCaseSensitive;
+      textBoxSearch.Text = Settings.Default.textBoxSearch;
+      checkBoxSearchAll.Checked = Settings.Default.checkBoxSearchAll;
+      checkBoxSearchAuthor.Checked = Settings.Default.checkBoxSearchAuthor;
+      checkBoxSearchQuote.Checked = Settings.Default.checkBoxSearchQuote;
+      checkBoxLanguageAll.Checked = Settings.Default.checkBoxLanguageAll;
+      checkBoxLanguageEnglish.Checked = Settings.Default.checkBoxLanguageEnglish;
+      checkBoxLanguageFrench.Checked = Settings.Default.checkBoxLanguageFrench;
     }
 
     private void SaveWindowValue()
@@ -319,6 +327,14 @@ namespace MyFavoriteQuotes
       Settings.Default.WindowTop = Top;
       Settings.Default.LastLanguageUsed = frenchToolStripMenuItem.Checked ? "French" : "English";
       Settings.Default.LastTabUsed = tabControlMain.SelectedIndex;
+      Settings.Default.SearchCaseSensitive = checkBoxCaseSensitive.Checked;
+      Settings.Default.textBoxSearch = textBoxSearch.Text;
+      Settings.Default.checkBoxSearchAll = checkBoxSearchAll.Checked;
+      Settings.Default.checkBoxSearchAuthor = checkBoxSearchAuthor.Checked;
+      Settings.Default.checkBoxSearchQuote = checkBoxSearchQuote.Checked;
+      Settings.Default.checkBoxLanguageAll = checkBoxLanguageAll.Checked;
+      Settings.Default.checkBoxLanguageEnglish = checkBoxLanguageEnglish.Checked;
+      Settings.Default.checkBoxLanguageFrench = checkBoxLanguageFrench.Checked;
       Settings.Default.Save();
     }
 

@@ -507,10 +507,10 @@ namespace MyFavoriteQuotes
         checkBoxLanguageAll.Checked = true;
       }
 
-      if (Debugger.IsAttached)
-      {
-        Debugger.Break();
-      }
+      //if (Debugger.IsAttached)
+      //{
+      //  Debugger.Break();
+      //}
 
       List<string> searchedResult = new List<string>();
       var criteriaAuthor = SearchedCriteria.NoCriteriaChosen;
@@ -561,29 +561,58 @@ namespace MyFavoriteQuotes
       searchedResult = null;
     }
 
-    private List<string> SearchInMemory(string searchedString, 
-      SearchedCriteria author = SearchedCriteria.AuthorAndQuote, 
+    private List<string> SearchInMemory(string searchedString,
+      SearchedCriteria author = SearchedCriteria.AuthorAndQuote,
       SearchedLanguage language = SearchedLanguage.FrenchAndEnglish)
     {
       List<string> result2 = new List<string>();
-      var result3 = from node in AllQuotes.ToList()
-                    where node.Author.ToString().Contains(author.ToString())
-                    where node.Language.ToString().Contains(language.ToString())
-                    where node.Sentence.ToString().Contains(searchedString)
-                    select node;
+      IEnumerable<Quote> result3;
+      IEnumerable<Quote> result4;
+      // First we select them all and then we remove what's not selected
+      result3 = from node in AllQuotes.ToList()
+                select node;
+      result4 = result3;
+      if (author == SearchedCriteria.Author)
+      {
+        result3 = from node in result3
+                  where node.Author.ToString().Contains(searchedString)
+                  select node;
+      }
+
+      if (author == SearchedCriteria.Quote)
+      {
+        result3 = from node in result3
+                  where node.Sentence.ToString().Contains(searchedString)
+                  select node;
+      }
+
+      if (author == SearchedCriteria.AuthorAndQuote)
+      {
+        result3 = from node in result4
+                  where (node.Sentence.ToString().Contains(searchedString)
+                  || node.Author.ToString().Contains(searchedString))
+                  select node;
+      }
+
+      if (language == SearchedLanguage.English || language == SearchedLanguage.French)
+      {
+        result3 = from node in result3
+                  where node.Language.ToString().Contains(language.ToString())
+                  select node;
+      }
+      else if (language == SearchedLanguage.FrenchAndEnglish)
+      {
+        result3 = from node in result3
+                  where (node.Language.ToString().Contains(SearchedLanguage.English.ToString())
+                  || node.Language.ToString().Contains(SearchedLanguage.French.ToString()))
+                  select node;
+      }
+
       foreach (var quote in result3)
       {
         result2.Add(quote.Sentence + " - " + quote.Author);
       }
-
-      //foreach (var quote in AllQuotes.ToList())
-      //{
-      //  if (quote.Language.Contains(language.ToString()))
-      //  {
-      //    result2.Add(quote.Sentence + " - " + quote.Author);
-      //  }
-      //}
-
+      
       return result2;
     }
 

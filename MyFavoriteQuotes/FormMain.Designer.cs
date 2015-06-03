@@ -63,6 +63,7 @@
       this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.tabControlMain = new System.Windows.Forms.TabControl();
       this.tabPageSearch = new System.Windows.Forms.TabPage();
+      this.checkBoxCaseSensitive = new System.Windows.Forms.CheckBox();
       this.groupBoxLanguage = new System.Windows.Forms.GroupBox();
       this.checkBoxLanguageFrench = new System.Windows.Forms.CheckBox();
       this.checkBoxLanguageEnglish = new System.Windows.Forms.CheckBox();
@@ -89,7 +90,6 @@
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
-      this.checkBoxCaseSensitive = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -386,6 +386,17 @@
       this.tabPageSearch.Text = "Search";
       this.tabPageSearch.UseVisualStyleBackColor = true;
       // 
+      // checkBoxCaseSensitive
+      // 
+      this.checkBoxCaseSensitive.AutoSize = true;
+      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(117, 78);
+      this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
+      this.checkBoxCaseSensitive.Size = new System.Drawing.Size(123, 21);
+      this.checkBoxCaseSensitive.TabIndex = 3;
+      this.checkBoxCaseSensitive.Text = "Case Sensitive";
+      this.checkBoxCaseSensitive.UseVisualStyleBackColor = true;
+      // 
       // groupBoxLanguage
       // 
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageFrench);
@@ -415,7 +426,7 @@
       // checkBoxLanguageEnglish
       // 
       this.checkBoxLanguageEnglish.AutoSize = true;
-      this.checkBoxLanguageEnglish.Location = new System.Drawing.Point(108, 22);
+      this.checkBoxLanguageEnglish.Location = new System.Drawing.Point(143, 22);
       this.checkBoxLanguageEnglish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.checkBoxLanguageEnglish.Name = "checkBoxLanguageEnglish";
       this.checkBoxLanguageEnglish.Size = new System.Drawing.Size(76, 21);
@@ -465,7 +476,7 @@
       // checkBoxSearchAuthor
       // 
       this.checkBoxSearchAuthor.AutoSize = true;
-      this.checkBoxSearchAuthor.Location = new System.Drawing.Point(108, 22);
+      this.checkBoxSearchAuthor.Location = new System.Drawing.Point(143, 22);
       this.checkBoxSearchAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.checkBoxSearchAuthor.Name = "checkBoxSearchAuthor";
       this.checkBoxSearchAuthor.Size = new System.Drawing.Size(72, 21);
@@ -618,7 +629,7 @@
       this.listBox1.FormattingEnabled = true;
       this.listBox1.ItemHeight = 16;
       this.listBox1.Location = new System.Drawing.Point(59, 352);
-      this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.listBox1.Margin = new System.Windows.Forms.Padding(4);
       this.listBox1.Name = "listBox1";
       this.listBox1.Size = new System.Drawing.Size(159, 116);
       this.listBox1.TabIndex = 9;
@@ -679,17 +690,6 @@
       this.textBoxListQuotes.Size = new System.Drawing.Size(607, 187);
       this.textBoxListQuotes.TabIndex = 7;
       this.textBoxListQuotes.Text = "test1";
-      // 
-      // checkBoxCaseSensitive
-      // 
-      this.checkBoxCaseSensitive.AutoSize = true;
-      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(117, 78);
-      this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
-      this.checkBoxCaseSensitive.Size = new System.Drawing.Size(123, 21);
-      this.checkBoxCaseSensitive.TabIndex = 3;
-      this.checkBoxCaseSensitive.Text = "Case Sensitive";
-      this.checkBoxCaseSensitive.UseVisualStyleBackColor = true;
       // 
       // FormMain
       // 

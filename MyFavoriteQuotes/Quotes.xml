@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Quotes>
   <Quote>
-    <Author>Author1</Author>
+    <Author>Author1a</Author>
     <Language>English</Language>
-    <QuoteValue>some sentence</QuoteValue>
+    <QuoteValue>some sentence a</QuoteValue>
   </Quote>
   <Quote>
     <Author>Author2</Author>

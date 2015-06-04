@@ -785,6 +785,11 @@ namespace MyFavoriteQuotes
       {
         checkBoxSearchAll.Checked = false;
       }
+
+      if (checkBoxSearchQuote.Checked && checkBoxSearchAuthor.Checked)
+      {
+        checkBoxSearchAll.Checked = true;
+      }
     }
 
     private void checkBoxSearchQuote_CheckedChanged(object sender, EventArgs e)
@@ -793,6 +798,11 @@ namespace MyFavoriteQuotes
       if (checkBoxSearchAll.Checked && !checkBoxSearchQuote.Checked)
       {
         checkBoxSearchAll.Checked = false;
+      }
+
+      if (checkBoxSearchQuote.Checked && checkBoxSearchAuthor.Checked)
+      {
+        checkBoxSearchAll.Checked = true;
       }
     }
 
@@ -813,6 +823,11 @@ namespace MyFavoriteQuotes
       {
         checkBoxLanguageAll.Checked = false;
       }
+
+      if (checkBoxLanguageFrench.Checked && checkBoxLanguageEnglish.Checked)
+      {
+        checkBoxLanguageAll.Checked = true;
+      }
     }
 
     private void checkBoxLanguageFrench_CheckedChanged(object sender, EventArgs e)
@@ -821,6 +836,11 @@ namespace MyFavoriteQuotes
       if (checkBoxLanguageAll.Checked && !checkBoxLanguageFrench.Checked)
       {
         checkBoxLanguageAll.Checked = false;
+      }
+
+      if (checkBoxLanguageFrench.Checked && checkBoxLanguageEnglish.Checked)
+      {
+        checkBoxLanguageAll.Checked = true;
       }
     }
 

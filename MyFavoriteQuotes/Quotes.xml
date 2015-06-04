@@ -1,23 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Quotes>
   <Quote>
-    <Author>Author1a</Author>
-    <Language>English</Language>
-    <QuoteValue>some sentence a</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Author2</Author>
+    <Author>Anonyme</Author>
     <Language>French</Language>
-    <QuoteValue>une phrase</QuoteValue>
+    <QuoteValue>La culture, c'est comme la confiture, moins on en a et plus on l'étale</QuoteValue>
   </Quote>
   <Quote>
-    <Author>Author3</Author>
-    <Language>English</Language>
-    <QuoteValue>some other sentence</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Author4</Author>
+    <Author>Freddy Juhel</Author>
     <Language>French</Language>
-    <QuoteValue>une autre phrase</QuoteValue>
+    <QuoteValue>La connaissance est certitude et la certitude ne se confirme pas</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>English</Language>
+    <QuoteValue>It's impossible said pride. It's risky said experience. It's pointless said reason but give it a try whispered the heart</QuoteValue>
   </Quote>
 </Quotes>

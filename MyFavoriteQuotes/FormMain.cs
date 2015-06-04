@@ -88,6 +88,8 @@ namespace MyFavoriteQuotes
       {
         textBoxListQuotes.Text += item.Sentence + " - " + item.Author + Environment.NewLine;
       }
+
+      textBoxListQuotes.Select(0, 0);
     }
 
     private void LoadQuotes()
@@ -851,6 +853,7 @@ namespace MyFavoriteQuotes
       {
         checkBoxListEnglish.Checked = true;
         checkBoxListFrench.Checked = true;
+        DisplayAllQuotes();
       }
     }
 
@@ -865,6 +868,43 @@ namespace MyFavoriteQuotes
       if (checkBoxListFrench.Checked && checkBoxListEnglish.Checked)
       {
         checkBoxListAll.Checked = true;
+        DisplayAllQuotes();
+      }
+
+      DisplayQuotes(checkBoxListFrench.Checked, checkBoxListEnglish.Checked);
+    }
+
+    private void DisplayQuotes(bool englishChecked, bool frenchChecked)
+    {
+      List<string> result2 = new List<string>();
+      IEnumerable<Quote> result3;
+      IEnumerable<Quote> result4;
+      result3 = from node in AllQuotes.ToList()
+                select node;
+      result4 = result3;
+      if (englishChecked)
+      {
+        result3 = from node in result3
+                  where node.Language.ToString().Contains(SearchedLanguage.English.ToString())
+                  select node;
+      }
+
+      if (frenchChecked)
+      {
+        result3 = from node in result3
+                  where node.Language.ToString().Contains(SearchedLanguage.French.ToString())
+                  select node;
+      }
+
+      if (englishChecked && frenchChecked)
+      {
+        result3 = result4;
+      }
+
+      textBoxListQuotes.Text = string.Empty;
+      foreach (var quote in result3)
+      {
+        textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;
       }
     }
 

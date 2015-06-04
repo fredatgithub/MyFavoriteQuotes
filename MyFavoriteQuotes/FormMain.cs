@@ -841,6 +841,11 @@ namespace MyFavoriteQuotes
       {
         checkBoxListAll.Checked = false;
       }
+
+      if (checkBoxListFrench.Checked && checkBoxListEnglish.Checked)
+      {
+        checkBoxListAll.Checked = true;
+      }
     }
 
     private void checkBoxListFrench_CheckedChanged(object sender, EventArgs e)
@@ -849,6 +854,11 @@ namespace MyFavoriteQuotes
       if (checkBoxListAll.Checked && !checkBoxListFrench.Checked)
       {
         checkBoxListAll.Checked = false;
+      }
+
+      if (checkBoxListFrench.Checked && checkBoxListEnglish.Checked)
+      {
+        checkBoxListAll.Checked = true;
       }
     }
   }

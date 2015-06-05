@@ -160,6 +160,11 @@
       <frenchValue>Ajouter</frenchValue>
     </term>
     <term>
+      <name>ListAllQuotes</name>
+      <englishValue>List all quotes</englishValue>
+      <frenchValue>Lister toutes les citations</frenchValue>
+    </term>
+    <term>
       <name>CheckBoxAddQuoteEnglishFrench</name>
       <englishValue>Quote in English</englishValue>
       <frenchValue>Citation en français</frenchValue>

@@ -92,6 +92,7 @@
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
+      this.buttonAddCancel = new System.Windows.Forms.Button();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -409,7 +410,7 @@
       this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxLanguage.Name = "groupBoxLanguage";
       this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxLanguage.Size = new System.Drawing.Size(605, 62);
+      this.groupBoxLanguage.Size = new System.Drawing.Size(835, 62);
       this.groupBoxLanguage.TabIndex = 6;
       this.groupBoxLanguage.TabStop = false;
       this.groupBoxLanguage.Text = "Langage";
@@ -459,7 +460,7 @@
       this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxSearch.Name = "groupBoxSearch";
       this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxSearch.Size = new System.Drawing.Size(605, 62);
+      this.groupBoxSearch.Size = new System.Drawing.Size(835, 62);
       this.groupBoxSearch.TabIndex = 5;
       this.groupBoxSearch.TabStop = false;
       this.groupBoxSearch.Text = "Rechercher";
@@ -506,7 +507,7 @@
       this.textBoxResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
-      this.textBoxResult.Size = new System.Drawing.Size(607, 187);
+      this.textBoxResult.Size = new System.Drawing.Size(837, 187);
       this.textBoxResult.TabIndex = 4;
       // 
       // labelSearch
@@ -520,7 +521,7 @@
       // 
       // buttonSearch
       // 
-      this.buttonSearch.Location = new System.Drawing.Point(537, 42);
+      this.buttonSearch.Location = new System.Drawing.Point(766, 42);
       this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonSearch.Name = "buttonSearch";
       this.buttonSearch.Size = new System.Drawing.Size(101, 25);
@@ -534,12 +535,13 @@
       this.textBoxSearch.Location = new System.Drawing.Point(117, 43);
       this.textBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxSearch.Name = "textBoxSearch";
-      this.textBoxSearch.Size = new System.Drawing.Size(413, 22);
+      this.textBoxSearch.Size = new System.Drawing.Size(643, 22);
       this.textBoxSearch.TabIndex = 0;
       this.textBoxSearch.Text = "a";
       // 
       // tabPageAdd
       // 
+      this.tabPageAdd.Controls.Add(this.buttonAddCancel);
       this.tabPageAdd.Controls.Add(this.labelAddLanguage);
       this.tabPageAdd.Controls.Add(this.groupBoxAddLanguage);
       this.tabPageAdd.Controls.Add(this.labelAddQuote);
@@ -571,7 +573,7 @@
       this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageEnglish);
       this.groupBoxAddLanguage.Location = new System.Drawing.Point(133, 101);
       this.groupBoxAddLanguage.Name = "groupBoxAddLanguage";
-      this.groupBoxAddLanguage.Size = new System.Drawing.Size(401, 47);
+      this.groupBoxAddLanguage.Size = new System.Drawing.Size(733, 47);
       this.groupBoxAddLanguage.TabIndex = 11;
       this.groupBoxAddLanguage.TabStop = false;
       // 
@@ -609,7 +611,7 @@
       // 
       // buttonAdd
       // 
-      this.buttonAdd.Location = new System.Drawing.Point(541, 377);
+      this.buttonAdd.Location = new System.Drawing.Point(765, 420);
       this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonAdd.Name = "buttonAdd";
       this.buttonAdd.Size = new System.Drawing.Size(101, 26);
@@ -624,7 +626,7 @@
       this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxAddQuote.Multiline = true;
       this.textBoxAddQuote.Name = "textBoxAddQuote";
-      this.textBoxAddQuote.Size = new System.Drawing.Size(401, 250);
+      this.textBoxAddQuote.Size = new System.Drawing.Size(733, 250);
       this.textBoxAddQuote.TabIndex = 8;
       // 
       // labelAddAuthor
@@ -641,7 +643,7 @@
       this.textBoxAddAuthor.Location = new System.Drawing.Point(133, 73);
       this.textBoxAddAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxAddAuthor.Name = "textBoxAddAuthor";
-      this.textBoxAddAuthor.Size = new System.Drawing.Size(401, 22);
+      this.textBoxAddAuthor.Size = new System.Drawing.Size(733, 22);
       this.textBoxAddAuthor.TabIndex = 4;
       // 
       // tabPageList
@@ -714,6 +716,17 @@
       this.textBoxListQuotes.Name = "textBoxListQuotes";
       this.textBoxListQuotes.Size = new System.Drawing.Size(827, 328);
       this.textBoxListQuotes.TabIndex = 7;
+      // 
+      // buttonAddCancel
+      // 
+      this.buttonAddCancel.Location = new System.Drawing.Point(645, 420);
+      this.buttonAddCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.buttonAddCancel.Name = "buttonAddCancel";
+      this.buttonAddCancel.Size = new System.Drawing.Size(101, 26);
+      this.buttonAddCancel.TabIndex = 13;
+      this.buttonAddCancel.Text = "Cancel";
+      this.buttonAddCancel.UseVisualStyleBackColor = true;
+      this.buttonAddCancel.Click += new System.EventHandler(this.buttonAddCancel_Click);
       // 
       // FormMain
       // 
@@ -817,5 +830,6 @@
     private System.Windows.Forms.GroupBox groupBoxAddLanguage;
     private System.Windows.Forms.RadioButton radioButtonAddLanguageFrench;
     private System.Windows.Forms.RadioButton radioButtonAddLanguageEnglish;
+    private System.Windows.Forms.Button buttonAddCancel;
   }
 }

@@ -411,6 +411,7 @@ namespace MyFavoriteQuotes
           buttonSearch.Text = languageDicoEn["Search"];
           labelSearch.Text = languageDicoEn["Search"];
           tabPageAdd.Text = languageDicoEn["Add"];
+          tabPageList.Text = languageDicoEn["ListAllQuotes"];
           buttonAdd.Text = languageDicoEn["Add"];
           labelAddAuthor.Text = languageDicoEn["Author"];
           labelAddQuote.Text = languageDicoEn["Quote"];
@@ -464,6 +465,7 @@ namespace MyFavoriteQuotes
           buttonSearch.Text = languageDicoFr["Search"];
           labelSearch.Text = languageDicoFr["Search"];
           tabPageAdd.Text = languageDicoFr["Add"];
+          tabPageList.Text = languageDicoFr["ListAllQuotes"];
           buttonAdd.Text = languageDicoFr["Add"];
           labelAddAuthor.Text = languageDicoFr["Author"];
           labelAddQuote.Text = languageDicoFr["Quote"];
@@ -928,6 +930,12 @@ namespace MyFavoriteQuotes
       }
 
       DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
+    }
+
+    private void buttonAddCancel_Click(object sender, EventArgs e)
+    {
+      textBoxAddQuote.Text = string.Empty;
+      textBoxAddAuthor.Text = string.Empty;
     }
   }
 }

@@ -678,7 +678,7 @@ namespace MyFavoriteQuotes
       {
         result2.Add(quote.Sentence + " - " + quote.Author);
       }
-      
+
       return result2;
     }
 
@@ -871,7 +871,7 @@ namespace MyFavoriteQuotes
         DisplayAllQuotes();
       }
 
-      DisplayQuotes(checkBoxListFrench.Checked, checkBoxListEnglish.Checked);
+      DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
     }
 
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
@@ -904,7 +904,7 @@ namespace MyFavoriteQuotes
       if (!englishChecked && !frenchChecked) // nothing to display, empty list
       {
         result3 = from node in AllQuotes.ToList().Where(n => n.Sentence == "")
-                  select node; 
+                  select node;
       }
 
       textBoxListQuotes.Text = string.Empty;
@@ -926,6 +926,8 @@ namespace MyFavoriteQuotes
       {
         checkBoxListAll.Checked = true;
       }
+
+      DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
     }
   }
 }

@@ -882,16 +882,16 @@ namespace MyFavoriteQuotes
       result3 = from node in AllQuotes.ToList()
                 select node;
       result4 = result3;
-      if (englishChecked)
+      if (englishChecked && !frenchChecked)
       {
-        result3 = from node in result3
+        result3 = from node in result4
                   where node.Language.ToString().Contains(SearchedLanguage.English.ToString())
                   select node;
       }
 
-      if (frenchChecked)
+      if (frenchChecked && !englishChecked)
       {
-        result3 = from node in result3
+        result3 = from node in result4
                   where node.Language.ToString().Contains(SearchedLanguage.French.ToString())
                   select node;
       }
@@ -899,6 +899,12 @@ namespace MyFavoriteQuotes
       if (englishChecked && frenchChecked)
       {
         result3 = result4;
+      }
+
+      if (!englishChecked && !frenchChecked) // nothing to display, empty list
+      {
+        result3 = from node in AllQuotes.ToList().Where(n => n.Sentence == "")
+                  select node; 
       }
 
       textBoxListQuotes.Text = string.Empty;

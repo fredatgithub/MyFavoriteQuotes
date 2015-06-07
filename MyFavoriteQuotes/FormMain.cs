@@ -55,7 +55,9 @@ namespace MyFavoriteQuotes
     {
       if (!AllQuotes.QuoteFileSaved)
       {
-        var result = DisplayMessage("properties.settings.quoteAdded", "properties.settings.quoteAddedMsg", MessageBoxButtons.YesNo);
+        string msg1 = frenchToolStripMenuItem.Checked ? GetTranslatedString("QuoteAdded", "french") : GetTranslatedString("QuoteAddedMsg", "english");
+        string msg2 = frenchToolStripMenuItem.Checked ? GetTranslatedString("QuoteAdded", "french") : GetTranslatedString("QuoteAddedMsg", "english");
+        var result = DisplayMessage(msg1, msg2, MessageBoxButtons.YesNo);
         if (result == DialogResult.Yes)
         {
           // we save the xml file.
@@ -64,6 +66,22 @@ namespace MyFavoriteQuotes
 
       SaveWindowValue();
       Application.Exit();
+    }
+
+    private string GetTranslatedString(string index, string language)
+    {
+      string result = string.Empty;
+      switch (language.ToLower())
+      {
+        case "english":
+          result = languageDicoEn[index];
+          break;
+        case "french":
+          result = languageDicoFr[index];
+          break;
+      }
+
+      return result;
     }
 
     private void AboutToolStripMenuItemClick(object sender, EventArgs e)
@@ -529,8 +547,7 @@ namespace MyFavoriteQuotes
       // TODO code
       // open the quotes.xml file and add the quote
 
-      AllQuotes.Add(new Quote(textBoxAddAuthor.Text,
-        radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
+      AllQuotes.Add(new Quote(textBoxAddAuthor.Text, radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
       EnableDisableMenu();
     }
 
@@ -898,11 +915,8 @@ namespace MyFavoriteQuotes
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
     {
       List<string> result2 = new List<string>();
-      IEnumerable<Quote> result3;
-      IEnumerable<Quote> result4;
-      result3 = from node in AllQuotes.ToList()
-                select node;
-      result4 = result3;
+      IEnumerable<Quote> result3 = from node in AllQuotes.ToList() select node;
+      IEnumerable<Quote> result4 = result3;
       if (englishChecked && !frenchChecked)
       {
         result3 = from node in result4

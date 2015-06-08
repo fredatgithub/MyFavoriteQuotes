@@ -209,6 +209,21 @@
       <englishValue>The text is empty</englishValue>
       <frenchValue>Le texte est vide</frenchValue>
     </term>
+    <term>
+      <name>EmptyTextShort</name>
+      <englishValue>Text empty</englishValue>
+      <frenchValue>Texte vide</frenchValue>
+    </term>
+    <term>
+      <name>NoSelection</name>
+      <englishValue>No selection has been done</englishValue>
+      <frenchValue>Aucun texte n'a été sélectionné</frenchValue>
+    </term>
+    <term>
+      <name>NoSelectionShort</name>
+      <englishValue>No selection</englishValue>
+      <frenchValue>Pas de sélection</frenchValue>
+    </term>
 
   </terms>
 </Document>

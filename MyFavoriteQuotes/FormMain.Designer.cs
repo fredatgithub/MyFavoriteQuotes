@@ -738,9 +738,9 @@
       // 
       // buttonListDelete
       // 
-      this.buttonListDelete.Location = new System.Drawing.Point(52, 446);
+      this.buttonListDelete.Location = new System.Drawing.Point(52, 443);
       this.buttonListDelete.Name = "buttonListDelete";
-      this.buttonListDelete.Size = new System.Drawing.Size(75, 23);
+      this.buttonListDelete.Size = new System.Drawing.Size(92, 26);
       this.buttonListDelete.TabIndex = 9;
       this.buttonListDelete.Text = "Delete";
       this.buttonListDelete.UseVisualStyleBackColor = true;

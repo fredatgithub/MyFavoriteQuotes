@@ -55,8 +55,8 @@ namespace MyFavoriteQuotes
     {
       if (!AllQuotes.QuoteFileSaved)
       {
-        string msg1 = frenchToolStripMenuItem.Checked ? GetTranslatedString("QuoteAdded", "french") : GetTranslatedString("QuoteAddedMsg", "english");
-        string msg2 = frenchToolStripMenuItem.Checked ? GetTranslatedString("QuoteAdded", "french") : GetTranslatedString("QuoteAddedMsg", "english");
+        string msg1 = GetTranslatedString("QuoteAdded");
+        string msg2 = GetTranslatedString("QuoteAdded");
         var result = DisplayMessage(msg1, msg2, MessageBoxButtons.YesNo);
         if (result == DialogResult.Yes)
         {
@@ -481,6 +481,7 @@ namespace MyFavoriteQuotes
           checkBoxLanguageEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
           checkBoxLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
           checkBoxCaseSensitive.Text = languageDicoEn["CaseSensitive"];
+          buttonListDelete.Text = languageDicoEn["Delete"];
           break;
         case "French":
           frenchToolStripMenuItem.Checked = true;
@@ -535,6 +536,7 @@ namespace MyFavoriteQuotes
           checkBoxLanguageFrench.Text = languageDicoFr["MenuLanguageFrench"];
           checkBoxCaseSensitive.Text = languageDicoFr["CaseSensitive"];
           labelAddLanguage.Text = languageDicoFr["Language"];
+          buttonListDelete.Text = languageDicoFr["Delete"];
           break;
       }
     }
@@ -1018,11 +1020,21 @@ namespace MyFavoriteQuotes
 
     private void buttonListDelete_Click(object sender, EventArgs e)
     {
-      // buttonListDelete.Text
       if (textBoxListQuotes.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("EmptyText"));
+        DisplayMessageOk(GetTranslatedString("EmptyText"), GetTranslatedString("EmptyTextShort"), MessageBoxButtons.OK);
+        return;
       }
+
+      if (textBoxListQuotes.SelectedText.Length <= 0)
+      {
+        DisplayMessageOk(GetTranslatedString("NoSelection"), GetTranslatedString("NoSelectionShort"), MessageBoxButtons.OK);
+        return;
+      }
+
+
+
+
     }
   }
 }

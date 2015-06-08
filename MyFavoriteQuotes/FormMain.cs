@@ -84,6 +84,24 @@ namespace MyFavoriteQuotes
       return result;
     }
 
+    private string GetTranslatedString(string index)
+    {
+      string result = string.Empty;
+      string language = frenchToolStripMenuItem.Checked ? "french" : "english";
+
+      switch (language.ToLower())
+      {
+        case "english":
+          result = languageDicoEn[index];
+          break;
+        case "french":
+          result = languageDicoFr[index];
+          break;
+      }
+
+      return result;
+    }
+
     private void AboutToolStripMenuItemClick(object sender, EventArgs e)
     {
       AboutBoxApplication aboutBoxApplication = new AboutBoxApplication();
@@ -973,7 +991,38 @@ namespace MyFavoriteQuotes
 
     private void saveToolStripMenuItem_Click(object sender, EventArgs e)
     {
+      XmlDocument doc = new XmlDocument();
+      doc.Load(Settings.Default.QuoteFileName);
+      XmlNode root = doc.DocumentElement;
+      XmlElement newQuote = doc.CreateElement("Quote");
+      XmlElement newAuthor = doc.CreateElement("Author");
+      newAuthor.InnerText = textBoxAddAuthor.Text;
+      XmlElement newLanguage = doc.CreateElement("Language");
+      newLanguage.InnerText = frenchToolStripMenuItem.Checked ? "French" : "English";
+      XmlElement newQuoteValue = doc.CreateElement("QuoteValue");
+      newQuoteValue.InnerText = RemoveColon(textBoxAddQuote.Text);
+      newQuote.AppendChild(newAuthor);
+      newQuote.AppendChild(newLanguage);
+      newQuote.AppendChild(newQuoteValue);
+      root.AppendChild(newQuote);
+      doc.Save(Settings.Default.QuoteFileName);
 
+      AllQuotes.QuoteFileSaved = true;
+      EnableDisableMenu();
+    }
+
+    private void saveasToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void buttonListDelete_Click(object sender, EventArgs e)
+    {
+      // buttonListDelete.Text
+      if (textBoxListQuotes.Text == string.Empty)
+      {
+        DisplayMessageOk(GetTranslatedString("EmptyText"));
+      }
     }
   }
 }

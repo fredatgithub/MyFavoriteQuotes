@@ -199,5 +199,16 @@
       <englishValue>Quote added but not saved</englishValue>
       <frenchValue>Citation ajoutée mais pas sauvegardé</frenchValue>
     </term>
+    <term>
+      <name>Delete</name>
+      <englishValue>Delete</englishValue>
+      <frenchValue>Supprimer</frenchValue>
+    </term>
+    <term>
+      <name>EmptyText</name>
+      <englishValue>The text is empty</englishValue>
+      <frenchValue>Le texte est vide</frenchValue>
+    </term>
+
   </terms>
 </Document>

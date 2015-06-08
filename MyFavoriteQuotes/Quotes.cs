@@ -2,7 +2,7 @@
 
 namespace MyFavoriteQuotes
 {
-  class Quotes
+  internal class Quotes
   {
     public List<Quote> ListOfQuotes { get; set; }
     public bool QuoteHasBeenAdded { get; set; }

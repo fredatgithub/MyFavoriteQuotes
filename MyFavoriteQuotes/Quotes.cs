@@ -45,6 +45,23 @@ namespace MyFavoriteQuotes
       return result;
     }
 
+    public bool Remove(string sentence, string author)
+    {
+      bool result = false;
+      foreach (Quote quote in ListOfQuotes)
+      {
+        if (quote.Sentence == sentence && quote.Author == author)
+        {
+          ListOfQuotes.Remove(quote);
+          QuoteFileSaved = false;
+          result = true;
+          break;
+        }
+      }
+
+      return result;
+    }
+
     public IEnumerable<Quote> ToList()
     {
       return ListOfQuotes;

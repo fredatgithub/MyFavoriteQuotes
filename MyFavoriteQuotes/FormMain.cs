@@ -1034,23 +1034,43 @@ namespace MyFavoriteQuotes
         return;
       }
 
-      // check for selection spanning several lines
-      if (textBoxListQuotes.SelectionLength >= 0)
-      {
-        DisplayMessageOk(GetTranslatedString("NoSelection"), GetTranslatedString("NoSelectionShort"), MessageBoxButtons.OK);
-        return;
-      }
+      // check for selection spanning several lines : bad idea
+      //if (textBoxListQuotes.SelectionLength >= 140)
+      //{
+      //  MessageBox.Show(textBoxListQuotes.SelectionLength.ToString());
+      //  DisplayMessageOk(GetTranslatedString("NoSelection"), GetTranslatedString("NoSelectionShort"), MessageBoxButtons.OK);
+      //  return;
+      //}
 
       // delete the quote
-      if (AllQuotes.Remove(textBoxListQuotes.SelectedText))
+      if (AllQuotes.Remove(SeparateQuote(textBoxListQuotes.SelectedText)[0], SeparateQuote(textBoxListQuotes.SelectedText)[1]))
       {
-        DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeleted"), MessageBoxButtons.OK);
+        DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeletedShort"), MessageBoxButtons.OK);
         EnableDisableMenu();
       }
       else
       {
-        DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeleted"), MessageBoxButtons.OK);
+        DisplayMessageOk(GetTranslatedString("NoQuoteDeleted"), GetTranslatedString("NoQuoteDeletedShort"), MessageBoxButtons.OK);
       }
+    }
+
+    private static string[] SeparateQuote(string wholeQuote)
+    {
+      string[] result = new string[2];
+      if (wholeQuote.Length < 4)
+      {
+        return result;
+      }
+
+      if (!wholeQuote.Contains('-'))
+      {
+        return result;
+      }
+
+      var lastIndex = wholeQuote.LastIndexOf('-');
+      result[0] = wholeQuote.Substring(0, lastIndex - 1);
+      result[1] = wholeQuote.Substring(lastIndex + 2);
+      return result;
     }
   }
 }

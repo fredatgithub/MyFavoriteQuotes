@@ -189,5 +189,15 @@
       <englishValue>Case sensitive</englishValue>
       <frenchValue>Sensible à la casse</frenchValue>
     </term>
+    <term>
+      <name>QuoteAdded</name>
+      <englishValue>One or more quotes have been added but not saved. Do you want to save them now?</englishValue>
+      <frenchValue>Une ou plusieurs citations ont été ajoutés sans être sauvegardées. Voulez-vous les enregistrer mainteant ?</frenchValue>
+    </term>
+    <term>
+      <name>QuoteAddedMsg</name>
+      <englishValue>Quote added but not saved</englishValue>
+      <frenchValue>Citation ajoutée mais pas sauvegardé</frenchValue>
+    </term>
   </terms>
 </Document>

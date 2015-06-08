@@ -53,8 +53,35 @@ namespace MyFavoriteQuotes
 
     private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
     {
+      if (!AllQuotes.QuoteFileSaved)
+      {
+        string msg1 = frenchToolStripMenuItem.Checked ? GetTranslatedString("QuoteAdded", "french") : GetTranslatedString("QuoteAddedMsg", "english");
+        string msg2 = frenchToolStripMenuItem.Checked ? GetTranslatedString("QuoteAdded", "french") : GetTranslatedString("QuoteAddedMsg", "english");
+        var result = DisplayMessage(msg1, msg2, MessageBoxButtons.YesNo);
+        if (result == DialogResult.Yes)
+        {
+          // we save the xml file.
+        }
+      }
+
       SaveWindowValue();
       Application.Exit();
+    }
+
+    private string GetTranslatedString(string index, string language)
+    {
+      string result = string.Empty;
+      switch (language.ToLower())
+      {
+        case "english":
+          result = languageDicoEn[index];
+          break;
+        case "french":
+          result = languageDicoFr[index];
+          break;
+      }
+
+      return result;
     }
 
     private void AboutToolStripMenuItemClick(object sender, EventArgs e)
@@ -78,6 +105,13 @@ namespace MyFavoriteQuotes
       SetLanguage(Settings.Default.LastLanguageUsed);
       LoadQuotes();
       DisplayAllQuotes();
+      EnableDisableMenu();
+    }
+
+    private void EnableDisableMenu()
+    {
+      saveToolStripMenuItem.Enabled = !AllQuotes.QuoteFileSaved;
+      saveasToolStripMenuItem.Enabled = !AllQuotes.QuoteFileSaved;
     }
 
     private void DisplayAllQuotes()
@@ -114,11 +148,14 @@ namespace MyFavoriteQuotes
       {
         AllQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
       }
+
+      AllQuotes.QuoteFileSaved = true;
     }
 
     private void CreateQuotesFile()
     {
-      throw new NotImplementedException();
+      // TODO
+      AllQuotes.QuoteFileSaved = true;
     }
 
     private void LoadLanguages()
@@ -510,9 +547,8 @@ namespace MyFavoriteQuotes
       // TODO code
       // open the quotes.xml file and add the quote
 
-      AllQuotes.Add(new Quote(textBoxAddAuthor.Text,
-        radioButtonAddLanguageEnglish.Checked ? "English" : "French"
-        , textBoxAddQuote.Text));
+      AllQuotes.Add(new Quote(textBoxAddAuthor.Text, radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
+      EnableDisableMenu();
     }
 
     private string RemoveColon(string input)
@@ -621,58 +657,58 @@ namespace MyFavoriteQuotes
       if (author == SearchedCriteria.Author && caseSensitive)
       {
         result3 = from node in result3
-                  where node.Author.ToString().Contains(searchedString)
+                  where node.Author.Contains(searchedString)
                   select node;
       }
 
       if (author == SearchedCriteria.Author && !caseSensitive)
       {
         result3 = from node in result3
-                  where node.Author.ToString().ToLower().Contains(searchedString.ToLower())
+                  where node.Author.ToLower().Contains(searchedString.ToLower())
                   select node;
       }
 
       if (author == SearchedCriteria.Quote && caseSensitive)
       {
         result3 = from node in result3
-                  where node.Sentence.ToString().Contains(searchedString)
+                  where node.Sentence.Contains(searchedString)
                   select node;
       }
 
       if (author == SearchedCriteria.Quote && !caseSensitive)
       {
         result3 = from node in result3
-                  where node.Sentence.ToString().ToLower().Contains(searchedString.ToLower())
+                  where node.Sentence.ToLower().Contains(searchedString.ToLower())
                   select node;
       }
 
       if (author == SearchedCriteria.AuthorAndQuote && caseSensitive)
       {
         result3 = from node in result4
-                  where (node.Sentence.ToString().Contains(searchedString)
-                  || node.Author.ToString().Contains(searchedString))
+                  where (node.Sentence.Contains(searchedString)
+                  || node.Author.Contains(searchedString))
                   select node;
       }
 
       if (author == SearchedCriteria.AuthorAndQuote && !caseSensitive)
       {
         result3 = from node in result4
-                  where (node.Sentence.ToString().ToLower().Contains(searchedString.ToLower())
-                  || node.Author.ToString().ToLower().Contains(searchedString.ToLower()))
+                  where (node.Sentence.ToLower().Contains(searchedString.ToLower())
+                  || node.Author.ToLower().Contains(searchedString.ToLower()))
                   select node;
       }
 
       if (language == SearchedLanguage.English || language == SearchedLanguage.French)
       {
         result3 = from node in result3
-                  where node.Language.ToString().Contains(language.ToString())
+                  where node.Language.Contains(language.ToString())
                   select node;
       }
       else if (language == SearchedLanguage.FrenchAndEnglish)
       {
         result3 = from node in result3
-                  where (node.Language.ToString().Contains(SearchedLanguage.English.ToString())
-                  || node.Language.ToString().Contains(SearchedLanguage.French.ToString()))
+                  where (node.Language.Contains(SearchedLanguage.English.ToString())
+                  || node.Language.Contains(SearchedLanguage.French.ToString()))
                   select node;
       }
 
@@ -879,22 +915,19 @@ namespace MyFavoriteQuotes
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
     {
       List<string> result2 = new List<string>();
-      IEnumerable<Quote> result3;
-      IEnumerable<Quote> result4;
-      result3 = from node in AllQuotes.ToList()
-                select node;
-      result4 = result3;
+      IEnumerable<Quote> result3 = from node in AllQuotes.ToList() select node;
+      IEnumerable<Quote> result4 = result3;
       if (englishChecked && !frenchChecked)
       {
         result3 = from node in result4
-                  where node.Language.ToString().Contains(SearchedLanguage.English.ToString())
+                  where node.Language.Contains(SearchedLanguage.English.ToString())
                   select node;
       }
 
       if (frenchChecked && !englishChecked)
       {
         result3 = from node in result4
-                  where node.Language.ToString().Contains(SearchedLanguage.French.ToString())
+                  where node.Language.Contains(SearchedLanguage.French.ToString())
                   select node;
       }
 
@@ -936,6 +969,11 @@ namespace MyFavoriteQuotes
     {
       textBoxAddQuote.Text = string.Empty;
       textBoxAddAuthor.Text = string.Empty;
+    }
+
+    private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
     }
   }
 }

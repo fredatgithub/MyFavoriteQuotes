@@ -486,7 +486,7 @@ namespace MyFavoriteQuotes
 
     private void ButtonAddClick(object sender, EventArgs e)
     {
-      if (textBoxAddAuthor.Text == string.Empty)
+      if (textBoxAddAuthor.Text.Trim() == string.Empty)
       {
         textBoxAddAuthor.Text = "unknown author";
       }

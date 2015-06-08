@@ -22,14 +22,31 @@ namespace MyFavoriteQuotes
       QuoteFileSaved = false;
     }
 
+    public void Remove(Quote quote)
+    {
+      ListOfQuotes.Remove(quote);
+      QuoteFileSaved = false;
+    }
+
+    public bool Remove(string sentence)
+    {
+      bool result = false;
+      foreach (Quote quote in ListOfQuotes)
+      {
+        if (quote.Sentence == sentence)
+        {
+          ListOfQuotes.Remove(quote);
+          QuoteFileSaved = false;
+          result = true;
+          break;
+        }
+      }
+
+      return result;
+    }
+
     public IEnumerable<Quote> ToList()
     {
-      //IEnumerable<Quote> result = new List<Quote>();
-      //foreach (var item in ListOfQuotes)
-      //{
-      //  result.Add(item);
-      //}
-      //return result;
       return ListOfQuotes;
     }
   }

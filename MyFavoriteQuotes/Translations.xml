@@ -224,6 +224,25 @@
       <englishValue>No selection</englishValue>
       <frenchValue>Pas de sélection</frenchValue>
     </term>
-
+    <term>
+      <name>QuoteDeleted</name>
+      <englishValue>The quote has been deleted</englishValue>
+      <frenchValue>La citation a été supprimée</frenchValue>
+    </term>
+    <term>
+      <name>QuoteDeletedShort</name>
+      <englishValue>Quote deleted</englishValue>
+      <frenchValue>Citation Supprimée</frenchValue>
+    </term>
+    <term>
+      <name>NoQuoteDeleted</name>
+      <englishValue>No Quote found thus no deletion</englishValue>
+      <frenchValue>Pas de citation trouvée donc pas de suppression</frenchValue>
+    </term>
+    <term>
+      <name>NoQuoteDeletedShort</name>
+      <englishValue>No Quote deleted</englishValue>
+      <frenchValue>Pas de citation Supprimée</frenchValue>
+    </term>
   </terms>
 </Document>

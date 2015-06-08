@@ -1016,6 +1016,8 @@ namespace MyFavoriteQuotes
     private void saveasToolStripMenuItem_Click(object sender, EventArgs e)
     {
 
+      // TODO
+
     }
 
     private void buttonListDelete_Click(object sender, EventArgs e)
@@ -1032,9 +1034,23 @@ namespace MyFavoriteQuotes
         return;
       }
 
+      // check for selection spanning several lines
+      if (textBoxListQuotes.SelectionLength >= 0)
+      {
+        DisplayMessageOk(GetTranslatedString("NoSelection"), GetTranslatedString("NoSelectionShort"), MessageBoxButtons.OK);
+        return;
+      }
 
-
-
+      // delete the quote
+      if (AllQuotes.Remove(textBoxListQuotes.SelectedText))
+      {
+        DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeleted"), MessageBoxButtons.OK);
+        EnableDisableMenu();
+      }
+      else
+      {
+        DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeleted"), MessageBoxButtons.OK);
+      }
     }
   }
 }

@@ -200,6 +200,16 @@
       <frenchValue>Citation ajoutée mais pas sauvegardé</frenchValue>
     </term>
     <term>
+      <name>TheQuoteHasBeenAdded</name>
+      <englishValue>The quote has been added. Do you want to view it ?</englishValue>
+      <frenchValue>La citation a été ajoutée. Voulez-vous la visualiser mainteant ?</frenchValue>
+    </term>
+    <term>
+      <name>TheQuoteHasBeenAddedShort</name>
+      <englishValue>Quote added</englishValue>
+      <frenchValue>Citation ajoutée</frenchValue>
+    </term>
+    <term>
       <name>Delete</name>
       <englishValue>Delete</englishValue>
       <frenchValue>Supprimer</frenchValue>
@@ -243,6 +253,16 @@
       <name>NoQuoteDeletedShort</name>
       <englishValue>No Quote deleted</englishValue>
       <frenchValue>Pas de citation Supprimée</frenchValue>
+    </term>
+    <term>
+      <name>EmptyQuote</name>
+      <englishValue>The quote is empty</englishValue>
+      <frenchValue>La citation est vide</frenchValue>
+    </term>
+    <term>
+      <name>EmptyQuoteShort</name>
+      <englishValue>Empty quote</englishValue>
+      <frenchValue>Citation vide</frenchValue>
     </term>
   </terms>
 </Document>

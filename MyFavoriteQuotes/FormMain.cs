@@ -550,25 +550,33 @@ namespace MyFavoriteQuotes
 
       if (textBoxAddQuote.Text == string.Empty)
       {
-        if (frenchToolStripMenuItem.Checked)
-        {
-          DisplayMessageOk(Settings.Default.TextBoxEmptyFr, "Citation vide", MessageBoxButtons.OK);
-          return;
-        }
-
-        if (englishToolStripMenuItem.Checked)
-        {
-          DisplayMessageOk(Settings.Default.TextBoxEmptyEN, "Empty quote", MessageBoxButtons.OK);
-          return;
-        }
+        DisplayMessageOk(GetTranslatedString("EmptyQuote"),GetTranslatedString("EmptyQuoteShort"), MessageBoxButtons.OK);
+        return;
       }
 
       // check if the quote is not already in
       // TODO code
-      // open the quotes.xml file and add the quote
 
       AllQuotes.Add(new Quote(textBoxAddAuthor.Text, radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
       EnableDisableMenu();
+      if (DisplayMessage(GetTranslatedString("TheQuoteHasBeenAdded"),
+        GetTranslatedString("TheQuoteHasBeenAddedShort"),
+        MessageBoxButtons.YesNo) == DialogResult.Yes)
+      {
+        UpdateAfterAddition();
+        tabPageList.Select();
+      }
+      else
+      {
+        UpdateAfterAddition();
+      }
+    }
+
+    private void UpdateAfterAddition()
+    {
+      textBoxAddAuthor.Text = string.Empty;
+      textBoxAddQuote.Text = string.Empty;
+      DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
     }
 
     private string RemoveColon(string input)

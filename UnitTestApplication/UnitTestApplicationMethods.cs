@@ -61,10 +61,14 @@ namespace UnitTestApplication
 
     #endregion SeparateQuote
     #region helper methods
-    public bool AssertCollectionsAreEqual<T>() where T : Type
+    public bool AssertCollectionsAreEqual<T>(object collectionExpected, object collectionResult) where T : Type
     {
       bool result = false;
-      // code
+      //for (int i = 0; i < collectionExpected.Length; i++)
+      //{
+      //  Assert.AreEqual(collectionExpected[i], collectionResult[i]);
+      //}
+            
       return result;
     }
     #endregion helper methods

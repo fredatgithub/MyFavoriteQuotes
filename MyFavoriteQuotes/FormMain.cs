@@ -564,7 +564,7 @@ namespace MyFavoriteQuotes
         MessageBoxButtons.YesNo) == DialogResult.Yes)
       {
         UpdateAfterAddition();
-        tabPageList.Select();
+        tabControlMain.SelectedIndex = 2;
       }
       else
       {

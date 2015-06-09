@@ -7,12 +7,54 @@ namespace UnitTestApplication
   {
     #region SeparateQuote
     [TestMethod]
-    public void TestMethod_SeparateQuote()
+    public void TestMethod_SeparateQuote_simple_quote()
     {
-      var source = "";
-      var expected = "";
-      var result = MyFavoriteQuotes.SeparateQuote(source);
-      Assert.AreEqual(result, expected);
+      string source = "A long long time ago in a galaxy far far away - StarWars";
+      string[] expected = { "A long long time ago in a galaxy far far away", "StarWars" };
+      string[] result = FormMain.SeparateQuote(source);
+      Assert.AreEqual(result[0], expected[0]);
+      Assert.AreEqual(result[1], expected[1]);
+    }
+
+    [TestMethod]
+    public void TestMethod_SeparateQuote_empty_string()
+    {
+      string source = "";
+      string[] expected = new string[2];
+      string[] result = FormMain.SeparateQuote(source);
+      Assert.AreEqual(result[0], expected[0]);
+      Assert.AreEqual(result[1], expected[1]);
+    }
+
+    [TestMethod]
+    public void TestMethod_SeparateQuote_two_dashes()
+    {
+      string source = "A long-long time ago in a galaxy far far away - StarWars";
+      string[] expected = { "A long-long time ago in a galaxy far far away", "StarWars" };
+      string[] result = FormMain.SeparateQuote(source);
+      Assert.AreEqual(result[0], expected[0]);
+      Assert.AreEqual(result[1], expected[1]);
+    }
+
+
+    [TestMethod]
+    public void TestMethod_SeparateQuote_three_dashes()
+    {
+      string source = "A long-long time ago in a galaxy far-far away - StarWars";
+      string[] expected = { "A long-long time ago in a galaxy far-far away", "StarWars" };
+      string[] result = FormMain.SeparateQuote(source);
+      Assert.AreEqual(result[0], expected[0]);
+      Assert.AreEqual(result[1], expected[1]);
+    }
+
+    [TestMethod]
+    public void TestMethod_SeparateQuote_no_dash()
+    {
+      string source = "A long long time ago in a galaxy far far away StarWars";
+      string[] expected = new string[2];
+      string[] result = FormMain.SeparateQuote(source);
+      Assert.AreEqual(result[0], expected[0]);
+      Assert.AreEqual(result[1], expected[1]);
     }
 
     #endregion SeparateQuote

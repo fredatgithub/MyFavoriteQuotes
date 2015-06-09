@@ -1047,6 +1047,7 @@ namespace MyFavoriteQuotes
       {
         DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeletedShort"), MessageBoxButtons.OK);
         EnableDisableMenu();
+        // refresh and reload list TODO
       }
       else
       {
@@ -1054,7 +1055,7 @@ namespace MyFavoriteQuotes
       }
     }
 
-    private static string[] SeparateQuote(string wholeQuote)
+    public static string[] SeparateQuote(string wholeQuote)
     {
       string[] result = new string[2];
       if (wholeQuote.Length < 4)

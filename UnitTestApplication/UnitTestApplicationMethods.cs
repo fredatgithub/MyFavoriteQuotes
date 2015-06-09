@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyFavoriteQuotes;
+using System;
+
 namespace UnitTestApplication
 {
   [TestClass]
@@ -58,5 +60,13 @@ namespace UnitTestApplication
     }
 
     #endregion SeparateQuote
+    #region helper methods
+    public bool AssertCollectionsAreEqual<T>() where T : Type
+    {
+      bool result = false;
+      // code
+      return result;
+    }
+    #endregion helper methods
   }
 }

@@ -1034,20 +1034,13 @@ namespace MyFavoriteQuotes
         return;
       }
 
-      // check for selection spanning several lines : bad idea
-      //if (textBoxListQuotes.SelectionLength >= 140)
-      //{
-      //  MessageBox.Show(textBoxListQuotes.SelectionLength.ToString());
-      //  DisplayMessageOk(GetTranslatedString("NoSelection"), GetTranslatedString("NoSelectionShort"), MessageBoxButtons.OK);
-      //  return;
-      //}
-
       // delete the quote
       if (AllQuotes.Remove(SeparateQuote(textBoxListQuotes.SelectedText)[0], SeparateQuote(textBoxListQuotes.SelectedText)[1]))
       {
         DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeletedShort"), MessageBoxButtons.OK);
         EnableDisableMenu();
-        // refresh and reload list TODO
+        // refresh and reload list
+        DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
       }
       else
       {

@@ -559,18 +559,15 @@ namespace MyFavoriteQuotes
 
       AllQuotes.Add(new Quote(textBoxAddAuthor.Text, radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
       EnableDisableMenu();
+      UpdateAfterAddition();
       if (DisplayMessage(GetTranslatedString("TheQuoteHasBeenAdded"),
         GetTranslatedString("TheQuoteHasBeenAddedShort"),
         MessageBoxButtons.YesNo) == DialogResult.Yes)
       {
-        UpdateAfterAddition();
         tabControlMain.SelectedIndex = 2;
         textBoxResult.Select(0, 0);
       }
-      else
-      {
-        UpdateAfterAddition();
-      }
+
     }
 
     private void UpdateAfterAddition()

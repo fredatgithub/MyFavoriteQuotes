@@ -1050,7 +1050,12 @@ namespace MyFavoriteQuotes
       }
       else
       {
-        DisplayMessageOk(GetTranslatedString("NoQuoteDeleted"), GetTranslatedString("NoQuoteDeletedShort"), MessageBoxButtons.OK);
+        DisplayMessageOk(GetTranslatedString("NoQuoteDeleted") +
+          Environment.NewLine +
+          GetTranslatedString("TheSentence") +
+          SeparateQuote(textBoxListQuotes.SelectedText)[0] +
+          GetTranslatedString("HasNotBeenfound"),
+          GetTranslatedString("NoQuoteDeletedShort"), MessageBoxButtons.OK);
       }
     }
 

@@ -250,6 +250,16 @@
       <frenchValue>Pas de citation trouvée donc pas de suppression</frenchValue>
     </term>
     <term>
+      <name>TheSentence</name>
+      <englishValue>The selected sentence</englishValue>
+      <frenchValue>La phrase sélectionnée</frenchValue>
+    </term>
+    <term>
+      <name>HasNotBeenfound</name>
+      <englishValue> has not been found in the list of quotes</englishValue>
+      <frenchValue> n'a pas été trouvée dans la liste des citations</frenchValue>
+    </term>
+    <term>
       <name>NoQuoteDeletedShort</name>
       <englishValue>No Quote deleted</englishValue>
       <frenchValue>Pas de citation Supprimée</frenchValue>

@@ -565,6 +565,7 @@ namespace MyFavoriteQuotes
       {
         UpdateAfterAddition();
         tabControlMain.SelectedIndex = 2;
+        textBoxResult.Select(0, 0);
       }
       else
       {

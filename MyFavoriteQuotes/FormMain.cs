@@ -944,9 +944,19 @@ namespace MyFavoriteQuotes
 
     private void DisplayQuotes(string author)
     {
-      IEnumerable<Quote> result3 = from node in AllQuotes.ToList()
-                                   where node.Author == author
-                                   select node;
+      IEnumerable<Quote> result3;
+      if (author.ToLower() == "all")
+      {
+        result3 = from node in AllQuotes.ToList()
+                  select node;
+      }
+      else
+      {
+        result3 = from node in AllQuotes.ToList()
+                                     where node.Author == author
+                                     select node;
+      }
+      
       textBoxListQuotes.Text = string.Empty;
       foreach (var quote in result3)
       {
@@ -986,6 +996,7 @@ namespace MyFavoriteQuotes
 
       textBoxListQuotes.Text = string.Empty;
       comboBoxListAuthor.Items.Clear();
+      comboBoxListAuthor.Items.Add("All");
       foreach (var quote in result3)
       {
         textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;

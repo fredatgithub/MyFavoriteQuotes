@@ -942,6 +942,18 @@ namespace MyFavoriteQuotes
       DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
     }
 
+    private void DisplayQuotes(string author)
+    {
+      IEnumerable<Quote> result3 = from node in AllQuotes.ToList()
+                                   where node.Author == author
+                                   select node;
+      textBoxListQuotes.Text = string.Empty;
+      foreach (var quote in result3)
+      {
+        textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;
+      }
+    }
+
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
     {
       List<string> result2 = new List<string>();
@@ -973,9 +985,20 @@ namespace MyFavoriteQuotes
       }
 
       textBoxListQuotes.Text = string.Empty;
+      comboBoxListAuthor.Items.Clear();
       foreach (var quote in result3)
       {
         textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;
+        comboBoxListAuthor.Items.Add(quote.Author);
+      }
+
+      if (comboBoxListAuthor.Items.Count > 0)
+      {
+        comboBoxListAuthor.SelectedIndex = 0;
+      }
+      else
+      {
+        comboBoxListAuthor.Text = string.Empty;
       }
     }
 
@@ -1080,6 +1103,12 @@ namespace MyFavoriteQuotes
       result[0] = wholeQuote.Substring(0, lastIndex - 1);
       result[1] = wholeQuote.Substring(lastIndex + 2);
       return result;
+    }
+
+    private void comboBoxListAuthor_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      // display only selected author in all languages
+      DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString());
     }
   }
 }

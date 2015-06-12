@@ -716,7 +716,7 @@
       this.groupBoxListLanguage.Size = new System.Drawing.Size(371, 62);
       this.groupBoxListLanguage.TabIndex = 8;
       this.groupBoxListLanguage.TabStop = false;
-      this.groupBoxListLanguage.Text = "Langage";
+      this.groupBoxListLanguage.Text = "Langue";
       // 
       // checkBoxListFrench
       // 
@@ -797,6 +797,7 @@
       this.comboBoxListAuthor.Name = "comboBoxListAuthor";
       this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 24);
       this.comboBoxListAuthor.TabIndex = 1;
+      this.comboBoxListAuthor.SelectedIndexChanged += new System.EventHandler(this.comboBoxListAuthor_SelectedIndexChanged);
       // 
       // FormMain
       // 

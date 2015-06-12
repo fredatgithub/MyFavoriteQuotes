@@ -400,7 +400,7 @@
       // checkBoxCaseSensitive
       // 
       this.checkBoxCaseSensitive.AutoSize = true;
-      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(117, 78);
+      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(105, 78);
       this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
       this.checkBoxCaseSensitive.Size = new System.Drawing.Size(123, 21);
@@ -413,11 +413,11 @@
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageFrench);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageEnglish);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageAll);
-      this.groupBoxLanguage.Location = new System.Drawing.Point(32, 180);
+      this.groupBoxLanguage.Location = new System.Drawing.Point(20, 180);
       this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxLanguage.Name = "groupBoxLanguage";
       this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxLanguage.Size = new System.Drawing.Size(835, 62);
+      this.groupBoxLanguage.Size = new System.Drawing.Size(421, 62);
       this.groupBoxLanguage.TabIndex = 6;
       this.groupBoxLanguage.TabStop = false;
       this.groupBoxLanguage.Text = "Langage";
@@ -463,11 +463,11 @@
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchQuote);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAuthor);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAll);
-      this.groupBoxSearch.Location = new System.Drawing.Point(32, 112);
+      this.groupBoxSearch.Location = new System.Drawing.Point(20, 112);
       this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxSearch.Name = "groupBoxSearch";
       this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxSearch.Size = new System.Drawing.Size(835, 62);
+      this.groupBoxSearch.Size = new System.Drawing.Size(421, 62);
       this.groupBoxSearch.TabIndex = 5;
       this.groupBoxSearch.TabStop = false;
       this.groupBoxSearch.Text = "Rechercher";
@@ -510,18 +510,21 @@
       // 
       // textBoxResult
       // 
+      this.textBoxResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxResult.Location = new System.Drawing.Point(32, 263);
+      this.textBoxResult.Location = new System.Drawing.Point(20, 263);
       this.textBoxResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
-      this.textBoxResult.Size = new System.Drawing.Size(837, 187);
+      this.textBoxResult.Size = new System.Drawing.Size(861, 187);
       this.textBoxResult.TabIndex = 4;
       // 
       // labelSearch
       // 
       this.labelSearch.AutoSize = true;
-      this.labelSearch.Location = new System.Drawing.Point(29, 43);
+      this.labelSearch.Location = new System.Drawing.Point(17, 43);
       this.labelSearch.Name = "labelSearch";
       this.labelSearch.Size = new System.Drawing.Size(53, 17);
       this.labelSearch.TabIndex = 2;
@@ -529,7 +532,7 @@
       // 
       // buttonSearch
       // 
-      this.buttonSearch.Location = new System.Drawing.Point(765, 42);
+      this.buttonSearch.Location = new System.Drawing.Point(340, 78);
       this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonSearch.Name = "buttonSearch";
       this.buttonSearch.Size = new System.Drawing.Size(101, 25);
@@ -540,10 +543,12 @@
       // 
       // textBoxSearch
       // 
-      this.textBoxSearch.Location = new System.Drawing.Point(117, 43);
+      this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.textBoxSearch.Location = new System.Drawing.Point(105, 43);
       this.textBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxSearch.Name = "textBoxSearch";
-      this.textBoxSearch.Size = new System.Drawing.Size(643, 22);
+      this.textBoxSearch.Size = new System.Drawing.Size(776, 22);
       this.textBoxSearch.TabIndex = 0;
       this.textBoxSearch.Text = "a";
       // 
@@ -568,7 +573,7 @@
       // 
       // buttonAddCancel
       // 
-      this.buttonAddCancel.Location = new System.Drawing.Point(645, 420);
+      this.buttonAddCancel.Location = new System.Drawing.Point(355, 113);
       this.buttonAddCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonAddCancel.Name = "buttonAddCancel";
       this.buttonAddCancel.Size = new System.Drawing.Size(101, 26);
@@ -594,7 +599,7 @@
       this.groupBoxAddLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxAddLanguage.Name = "groupBoxAddLanguage";
       this.groupBoxAddLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxAddLanguage.Size = new System.Drawing.Size(733, 47);
+      this.groupBoxAddLanguage.Size = new System.Drawing.Size(205, 47);
       this.groupBoxAddLanguage.TabIndex = 11;
       this.groupBoxAddLanguage.TabStop = false;
       // 
@@ -634,7 +639,7 @@
       // 
       // buttonAdd
       // 
-      this.buttonAdd.Location = new System.Drawing.Point(765, 420);
+      this.buttonAdd.Location = new System.Drawing.Point(475, 113);
       this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonAdd.Name = "buttonAdd";
       this.buttonAdd.Size = new System.Drawing.Size(101, 26);
@@ -645,12 +650,15 @@
       // 
       // textBoxAddQuote
       // 
+      this.textBoxAddQuote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.textBoxAddQuote.Location = new System.Drawing.Point(133, 155);
       this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxAddQuote.Multiline = true;
       this.textBoxAddQuote.Name = "textBoxAddQuote";
-      this.textBoxAddQuote.Size = new System.Drawing.Size(733, 250);
+      this.textBoxAddQuote.Size = new System.Drawing.Size(745, 296);
       this.textBoxAddQuote.TabIndex = 8;
       // 
       // labelAddAuthor
@@ -664,10 +672,12 @@
       // 
       // textBoxAddAuthor
       // 
+      this.textBoxAddAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxAddAuthor.Location = new System.Drawing.Point(133, 73);
       this.textBoxAddAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxAddAuthor.Name = "textBoxAddAuthor";
-      this.textBoxAddAuthor.Size = new System.Drawing.Size(733, 22);
+      this.textBoxAddAuthor.Size = new System.Drawing.Size(745, 22);
       this.textBoxAddAuthor.TabIndex = 4;
       // 
       // tabPageList
@@ -774,16 +784,16 @@
       // labelListAuthor
       // 
       this.labelListAuthor.AutoSize = true;
-      this.labelListAuthor.Location = new System.Drawing.Point(20, 22);
+      this.labelListAuthor.Location = new System.Drawing.Point(7, 22);
       this.labelListAuthor.Name = "labelListAuthor";
-      this.labelListAuthor.Size = new System.Drawing.Size(54, 17);
+      this.labelListAuthor.Size = new System.Drawing.Size(60, 17);
       this.labelListAuthor.TabIndex = 0;
-      this.labelListAuthor.Text = "Author:";
+      this.labelListAuthor.Text = "Choose:";
       // 
       // comboBoxListAuthor
       // 
       this.comboBoxListAuthor.FormattingEnabled = true;
-      this.comboBoxListAuthor.Location = new System.Drawing.Point(93, 13);
+      this.comboBoxListAuthor.Location = new System.Drawing.Point(93, 20);
       this.comboBoxListAuthor.Name = "comboBoxListAuthor";
       this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 24);
       this.comboBoxListAuthor.TabIndex = 1;

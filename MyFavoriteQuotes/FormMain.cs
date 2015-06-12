@@ -482,8 +482,12 @@ namespace MyFavoriteQuotes
           checkBoxLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
           checkBoxCaseSensitive.Text = languageDicoEn["CaseSensitive"];
           buttonListDelete.Text = languageDicoEn["Delete"];
+          groupBoxListAuthor.Text = languageDicoEn["Author"];
+          labelListAuthor.Text = languageDicoEn["Choose"];
           break;
         case "French":
+          labelListAuthor.Text = languageDicoFr["Choose"];
+          groupBoxListAuthor.Text = languageDicoFr["Author"];
           frenchToolStripMenuItem.Checked = true;
           englishToolStripMenuItem.Checked = false;
           fileToolStripMenuItem.Text = languageDicoFr["MenuFile"];

@@ -274,5 +274,10 @@
       <englishValue>Empty quote</englishValue>
       <frenchValue>Citation vide</frenchValue>
     </term>
+  <term>
+      <name>Choose</name>
+      <englishValue>Choose</englishValue>
+      <frenchValue>Choisissez</frenchValue>
+    </term>
   </terms>
 </Document>

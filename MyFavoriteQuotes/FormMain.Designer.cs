@@ -88,12 +88,15 @@
       this.labelAddAuthor = new System.Windows.Forms.Label();
       this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
       this.tabPageList = new System.Windows.Forms.TabPage();
+      this.buttonListDelete = new System.Windows.Forms.Button();
       this.groupBoxListLanguage = new System.Windows.Forms.GroupBox();
       this.checkBoxListFrench = new System.Windows.Forms.CheckBox();
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
-      this.buttonListDelete = new System.Windows.Forms.Button();
+      this.groupBoxListAuthor = new System.Windows.Forms.GroupBox();
+      this.labelListAuthor = new System.Windows.Forms.Label();
+      this.comboBoxListAuthor = new System.Windows.Forms.ComboBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -103,6 +106,7 @@
       this.groupBoxAddLanguage.SuspendLayout();
       this.tabPageList.SuspendLayout();
       this.groupBoxListLanguage.SuspendLayout();
+      this.groupBoxListAuthor.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -506,6 +510,7 @@
       // 
       // textBoxResult
       // 
+      this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.textBoxResult.Location = new System.Drawing.Point(32, 263);
       this.textBoxResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxResult.Multiline = true;
@@ -640,6 +645,7 @@
       // 
       // textBoxAddQuote
       // 
+      this.textBoxAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.textBoxAddQuote.Location = new System.Drawing.Point(133, 155);
       this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxAddQuote.Multiline = true;
@@ -666,6 +672,7 @@
       // 
       // tabPageList
       // 
+      this.tabPageList.Controls.Add(this.groupBoxListAuthor);
       this.tabPageList.Controls.Add(this.buttonListDelete);
       this.tabPageList.Controls.Add(this.groupBoxListLanguage);
       this.tabPageList.Controls.Add(this.textBoxListQuotes);
@@ -677,6 +684,16 @@
       this.tabPageList.Text = "List";
       this.tabPageList.UseVisualStyleBackColor = true;
       // 
+      // buttonListDelete
+      // 
+      this.buttonListDelete.Location = new System.Drawing.Point(52, 111);
+      this.buttonListDelete.Name = "buttonListDelete";
+      this.buttonListDelete.Size = new System.Drawing.Size(92, 26);
+      this.buttonListDelete.TabIndex = 9;
+      this.buttonListDelete.Text = "Delete";
+      this.buttonListDelete.UseVisualStyleBackColor = true;
+      this.buttonListDelete.Click += new System.EventHandler(this.buttonListDelete_Click);
+      // 
       // groupBoxListLanguage
       // 
       this.groupBoxListLanguage.Controls.Add(this.checkBoxListFrench);
@@ -686,7 +703,7 @@
       this.groupBoxListLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxListLanguage.Name = "groupBoxListLanguage";
       this.groupBoxListLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxListLanguage.Size = new System.Drawing.Size(827, 62);
+      this.groupBoxListLanguage.Size = new System.Drawing.Size(371, 62);
       this.groupBoxListLanguage.TabIndex = 8;
       this.groupBoxListLanguage.TabStop = false;
       this.groupBoxListLanguage.Text = "Langage";
@@ -729,22 +746,47 @@
       // 
       // textBoxListQuotes
       // 
-      this.textBoxListQuotes.Location = new System.Drawing.Point(52, 117);
+      this.textBoxListQuotes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.textBoxListQuotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.textBoxListQuotes.Location = new System.Drawing.Point(52, 164);
       this.textBoxListQuotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxListQuotes.Multiline = true;
       this.textBoxListQuotes.Name = "textBoxListQuotes";
+      this.textBoxListQuotes.ScrollBars = System.Windows.Forms.ScrollBars.Both;
       this.textBoxListQuotes.Size = new System.Drawing.Size(827, 306);
       this.textBoxListQuotes.TabIndex = 7;
       // 
-      // buttonListDelete
+      // groupBoxListAuthor
       // 
-      this.buttonListDelete.Location = new System.Drawing.Point(52, 443);
-      this.buttonListDelete.Name = "buttonListDelete";
-      this.buttonListDelete.Size = new System.Drawing.Size(92, 26);
-      this.buttonListDelete.TabIndex = 9;
-      this.buttonListDelete.Text = "Delete";
-      this.buttonListDelete.UseVisualStyleBackColor = true;
-      this.buttonListDelete.Click += new System.EventHandler(this.buttonListDelete_Click);
+      this.groupBoxListAuthor.Controls.Add(this.comboBoxListAuthor);
+      this.groupBoxListAuthor.Controls.Add(this.labelListAuthor);
+      this.groupBoxListAuthor.Location = new System.Drawing.Point(454, 33);
+      this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListAuthor.Name = "groupBoxListAuthor";
+      this.groupBoxListAuthor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListAuthor.Size = new System.Drawing.Size(371, 62);
+      this.groupBoxListAuthor.TabIndex = 9;
+      this.groupBoxListAuthor.TabStop = false;
+      this.groupBoxListAuthor.Text = "Author";
+      // 
+      // labelListAuthor
+      // 
+      this.labelListAuthor.AutoSize = true;
+      this.labelListAuthor.Location = new System.Drawing.Point(20, 22);
+      this.labelListAuthor.Name = "labelListAuthor";
+      this.labelListAuthor.Size = new System.Drawing.Size(54, 17);
+      this.labelListAuthor.TabIndex = 0;
+      this.labelListAuthor.Text = "Author:";
+      // 
+      // comboBoxListAuthor
+      // 
+      this.comboBoxListAuthor.FormattingEnabled = true;
+      this.comboBoxListAuthor.Location = new System.Drawing.Point(93, 13);
+      this.comboBoxListAuthor.Name = "comboBoxListAuthor";
+      this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 24);
+      this.comboBoxListAuthor.TabIndex = 1;
       // 
       // FormMain
       // 
@@ -777,6 +819,8 @@
       this.tabPageList.PerformLayout();
       this.groupBoxListLanguage.ResumeLayout(false);
       this.groupBoxListLanguage.PerformLayout();
+      this.groupBoxListAuthor.ResumeLayout(false);
+      this.groupBoxListAuthor.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -850,5 +894,8 @@
     private System.Windows.Forms.RadioButton radioButtonAddLanguageEnglish;
     private System.Windows.Forms.Button buttonAddCancel;
     private System.Windows.Forms.Button buttonListDelete;
+    private System.Windows.Forms.GroupBox groupBoxListAuthor;
+    private System.Windows.Forms.ComboBox comboBoxListAuthor;
+    private System.Windows.Forms.Label labelListAuthor;
   }
 }

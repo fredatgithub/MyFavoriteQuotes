@@ -18,6 +18,11 @@
   <Quote>
     <Author>Antoine de St Exupéry</Author>
     <Language>French</Language>
-    <QuoteValue>Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir mais de le rendre possbile.</QuoteValue>
+    <QuoteValue>Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir mais de le rendre possbile</QuoteValue>
+  </Quote>
+<Quote>
+    <Author>Albert Einstein</Author>
+    <Language>French</Language>
+    <QuoteValue>La vie c’est comme une bicyclette, il faut avancer pour ne pas perdre l’équilibre</QuoteValue>
   </Quote>
 </Quotes>

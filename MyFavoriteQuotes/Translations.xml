@@ -284,5 +284,40 @@
       <englishValue>Display After Adding</englishValue>
       <frenchValue>Afficher après ajout</frenchValue>
     </term>
+    <term>
+      <name>NoText</name>
+      <englishValue>no text</englishValue>
+      <frenchValue>pas de texte</frenchValue>
+    </term>
+    <term>
+      <name>ThereIs</name>
+      <englishValue>There is</englishValue>
+      <frenchValue>Il y a</frenchValue>
+    </term>
+    <term>
+      <name>ToCut</name>
+      <englishValue>To cut</englishValue>
+      <frenchValue>à couper</frenchValue>
+    </term>
+    <term>
+      <name>Nothing</name>
+      <englishValue>nothing</englishValue>
+      <frenchValue>rien</frenchValue>
+    </term>
+    <term>
+      <name>nothing</name>
+      <englishValue>nothing</englishValue>
+      <frenchValue>rien</frenchValue>
+    </term>
+    <term>
+      <name>NoTextHasBeenSelected</name>
+      <englishValue>No text has been selected</englishValue>
+      <frenchValue>Pas de texte a été selectionné</frenchValue>
+    </term>
+    <term>
+      <name>ThereIsNothingToCopy</name>
+      <englishValue>There is nothing to copy</englishValue>
+      <frenchValue>Il n'y a rien à copier</frenchValue>
+    </term>
   </terms>
 </Document>

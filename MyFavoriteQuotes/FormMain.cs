@@ -39,6 +39,7 @@ namespace MyFavoriteQuotes
 
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
+    private const string space = " ";
     private Quotes AllQuotes = new Quotes();
 
     private bool searchAll;
@@ -1161,6 +1162,110 @@ namespace MyFavoriteQuotes
     {
       // display only selected author in all languages
       DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString());
+    }
+
+    private static Control FindFocusedControl(Control container)
+    {
+      foreach (Control childControl in container.Controls.Cast<Control>().Where(childControl => childControl.Focused))
+      {
+        return childControl;
+      }
+
+      return (from Control childControl in container.Controls
+              select FindFocusedControl(childControl)).FirstOrDefault(maybeFocusedControl => maybeFocusedControl != null);
+    }
+
+    private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      Control focusedControl = FindFocusedControl(tabControlMain);
+      if (focusedControl is TextBox)
+      {
+        CutToClipboard((TextBox)focusedControl);
+      }
+    }
+
+    private TextBox WhatTextBoxHasFocus()
+    {
+      TextBox result = null;
+      foreach (var control in Controls.OfType<TextBox>())
+      {
+        if (control.Focused)
+        {
+          result = control;
+          break;
+        }
+      }
+
+      return result;
+    }
+
+    private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      Control focusedControl = FindFocusedControl(tabControlMain);
+      if (focusedControl is TextBox)
+      {
+        CopyToClipboard((TextBox)focusedControl);
+      }
+    }
+
+    private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      Control focusedControl = FindFocusedControl(tabControlMain);
+      if (focusedControl is TextBox)
+      {
+        PasteFromClipboard((TextBox)focusedControl);
+      }
+    }
+
+    private void CutToClipboard(TextBox tb, string errorMessage = "nothing")
+    {
+      if (tb != ActiveControl) return;
+      if (tb.Text == string.Empty)
+      {
+        DisplayMessageOk(GetTranslatedString("ThereIs") + space +
+          GetTranslatedString(errorMessage) + space +
+          GetTranslatedString("ToCut") + space, GetTranslatedString(errorMessage),
+          MessageBoxButtons.OK);
+        return;
+      }
+
+      if (tb.SelectedText == string.Empty)
+      {
+        DisplayMessageOk(GetTranslatedString("NoTextHasBeenSelected"),
+          GetTranslatedString(errorMessage), MessageBoxButtons.OK);
+        return;
+      }
+
+      Clipboard.SetText(tb.SelectedText);
+      tb.SelectedText = string.Empty;
+    }
+
+    private void CopyToClipboard(TextBoxBase tb, string message = "nothing")
+    {
+      if (tb != ActiveControl) return;
+      if (tb.Text == string.Empty)
+      {
+        DisplayMessageOk(GetTranslatedString("ThereIsNothingToCopy") + space,
+          GetTranslatedString(message), MessageBoxButtons.OK);
+        return;
+      }
+
+      if (tb.SelectedText == string.Empty)
+      {
+        DisplayMessageOk(GetTranslatedString("NoTextHasBeenSelected"),
+          GetTranslatedString(message), MessageBoxButtons.OK);
+        return;
+      }
+
+      Clipboard.SetText(tb.SelectedText);
+    }
+
+    private void PasteFromClipboard(TextBoxBase tb)
+    {
+      if (tb != ActiveControl) return;
+      var selectionIndex = tb.SelectionStart;
+      tb.Text = tb.Text.Insert(selectionIndex, Clipboard.GetText());
+      tb.SelectionStart = selectionIndex + Clipboard.GetText().Length;
     }
   }
 }

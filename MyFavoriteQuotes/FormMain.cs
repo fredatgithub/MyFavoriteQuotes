@@ -172,10 +172,52 @@ namespace MyFavoriteQuotes
 
     private void CreateQuotesFile()
     {
-      // TODO
+      List < string > minimumVersion = new List<string>
+      {
+        "<?xml version=\"1.0\" encoding=\"utf - 8\" ?>",
+        "<Document>",
+        "<DocumentVersion>",
+        "<version> 1.0 </version>",
+        "</DocumentVersion>",
+        "<Quotes>",
+         "<Quote>",
+           "<Author>Anonyme</Author>",
+           "<Language>French</Language>",
+           "<QuoteValue>La culture, c'est comme la confiture, moins on en a et plus on l'étale</QuoteValue>",
+        "</Quote>",
+        "<Quote>",
+           "<Author>Freddy Juhel</Author>",
+           "<Language>French</Language>",
+           "<QuoteValue>La connaissance est certitude et la certitude ne se confirme pas</QuoteValue>",
+        "</Quote>",
+        "<Quote>",
+           "<Author>Anonymous</Author>",
+           "<Language>English</Language>",
+           "<QuoteValue>It's impossible said pride. It's risky said experience. It's pointless said reason but give it a try whispered the heart</QuoteValue>",
+        "</Quote>",
+        "<Quote>",
+           "<Author>Antoine de St Exupéry</Author>",
+           "<Language>French</Language>",
+           "<QuoteValue>Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir mais de le rendre possbile</QuoteValue>",
+        "</Quote>",
+        "<Quote>",
+           "<Author>Albert Einstein</Author>",
+           "<Language>French</Language>",
+           "<QuoteValue>La vie c’est comme une bicyclette, il faut avancer pour ne pas perdre l’équilibre</QuoteValue>",
+        "</Quote>",
+      "</terms>",
+    "</Document>"
+      };
+      StreamWriter sw = new StreamWriter(Settings.Default.QuoteFileName);
+      foreach (string item in minimumVersion)
+      {
+        sw.WriteLine(item);
+      }
+
+      sw.Close();
       AllQuotes.QuoteFileSaved = true;
     }
-
+        
     private void LoadLanguages()
     {
       if (!File.Exists(Settings.Default.LanguageFileName))

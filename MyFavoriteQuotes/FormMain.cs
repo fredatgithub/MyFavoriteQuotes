@@ -1267,5 +1267,15 @@ namespace MyFavoriteQuotes
       tb.Text = tb.Text.Insert(selectionIndex, Clipboard.GetText());
       tb.SelectionStart = selectionIndex + Clipboard.GetText().Length;
     }
+
+    private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      Control focusedControl = FindFocusedControl(new Control()); // replace new control by your control like tabControlMain
+      if (focusedControl is TextBox)
+      {
+        //((TextBox)focusedControl).SelectAll;
+      }
+
+    }
   }
 }

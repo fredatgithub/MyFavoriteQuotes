@@ -172,7 +172,7 @@ namespace MyFavoriteQuotes
 
     private void CreateQuotesFile()
     {
-      List < string > minimumVersion = new List<string>
+      List<string> minimumVersion = new List<string>
       {
         "<?xml version=\"1.0\" encoding=\"utf - 8\" ?>",
         "<Document>",
@@ -217,7 +217,7 @@ namespace MyFavoriteQuotes
       sw.Close();
       AllQuotes.QuoteFileSaved = true;
     }
-        
+
     private void LoadLanguages()
     {
       if (!File.Exists(Settings.Default.LanguageFileName))
@@ -526,8 +526,10 @@ namespace MyFavoriteQuotes
           buttonListDelete.Text = languageDicoEn["Delete"];
           groupBoxListAuthor.Text = languageDicoEn["Author"];
           labelListAuthor.Text = languageDicoEn["Choose"];
+          checkBoxAdddisplayAfterAdding.Text = languageDicoEn["DisplayAfterAdding"];
           break;
         case "French":
+          checkBoxAdddisplayAfterAdding.Text = languageDicoFr["DisplayAfterAdding"];
           labelListAuthor.Text = languageDicoFr["Choose"];
           groupBoxListAuthor.Text = languageDicoFr["Author"];
           frenchToolStripMenuItem.Checked = true;
@@ -596,7 +598,7 @@ namespace MyFavoriteQuotes
 
       if (textBoxAddQuote.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("EmptyQuote"),GetTranslatedString("EmptyQuoteShort"), MessageBoxButtons.OK);
+        DisplayMessageOk(GetTranslatedString("EmptyQuote"), GetTranslatedString("EmptyQuoteShort"), MessageBoxButtons.OK);
         return;
       }
 
@@ -606,14 +608,11 @@ namespace MyFavoriteQuotes
       AllQuotes.Add(new Quote(textBoxAddAuthor.Text, radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
       EnableDisableMenu();
       UpdateAfterAddition();
-      if (DisplayMessage(GetTranslatedString("TheQuoteHasBeenAdded"),
-        GetTranslatedString("TheQuoteHasBeenAddedShort"),
-        MessageBoxButtons.YesNo) == DialogResult.Yes)
+      if (checkBoxAdddisplayAfterAdding.Checked)
       {
         tabControlMain.SelectedIndex = 2;
         textBoxResult.Select(0, 0);
       }
-
     }
 
     private void UpdateAfterAddition()
@@ -995,10 +994,10 @@ namespace MyFavoriteQuotes
       else
       {
         result3 = from node in AllQuotes.ToList()
-                                     where node.Author == author
-                                     select node;
+                  where node.Author == author
+                  select node;
       }
-      
+
       textBoxListQuotes.Text = string.Empty;
       foreach (var quote in result3)
       {
@@ -1045,14 +1044,14 @@ namespace MyFavoriteQuotes
         comboBoxListAuthor.Items.Add(quote.Author);
       }
 
-      if (comboBoxListAuthor.Items.Count > 0)
-      {
-        comboBoxListAuthor.SelectedIndex = 0;
-      }
-      else
-      {
-        comboBoxListAuthor.Text = string.Empty;
-      }
+      //if (comboBoxListAuthor.Items.Count > 0)
+      //{
+      //  comboBoxListAuthor.SelectedIndex = 0;
+      //}
+      //else
+      //{
+      //  comboBoxListAuthor.Text = string.Empty;
+      //}
     }
 
     private void checkBoxListFrench_CheckedChanged(object sender, EventArgs e)
@@ -1101,9 +1100,7 @@ namespace MyFavoriteQuotes
 
     private void saveasToolStripMenuItem_Click(object sender, EventArgs e)
     {
-
       // TODO
-
     }
 
     private void buttonListDelete_Click(object sender, EventArgs e)
@@ -1133,7 +1130,9 @@ namespace MyFavoriteQuotes
         DisplayMessageOk(GetTranslatedString("NoQuoteDeleted") +
           Environment.NewLine +
           GetTranslatedString("TheSentence") +
-          SeparateQuote(textBoxListQuotes.SelectedText)[0] +
+          Environment.NewLine +
+          textBoxListQuotes.SelectedText +
+          Environment.NewLine +
           GetTranslatedString("HasNotBeenfound"),
           GetTranslatedString("NoQuoteDeletedShort"), MessageBoxButtons.OK);
       }

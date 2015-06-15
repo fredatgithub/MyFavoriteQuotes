@@ -88,15 +88,16 @@
       this.labelAddAuthor = new System.Windows.Forms.Label();
       this.textBoxAddAuthor = new System.Windows.Forms.TextBox();
       this.tabPageList = new System.Windows.Forms.TabPage();
+      this.groupBoxListAuthor = new System.Windows.Forms.GroupBox();
+      this.comboBoxListAuthor = new System.Windows.Forms.ComboBox();
+      this.labelListAuthor = new System.Windows.Forms.Label();
       this.buttonListDelete = new System.Windows.Forms.Button();
       this.groupBoxListLanguage = new System.Windows.Forms.GroupBox();
       this.checkBoxListFrench = new System.Windows.Forms.CheckBox();
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
-      this.groupBoxListAuthor = new System.Windows.Forms.GroupBox();
-      this.labelListAuthor = new System.Windows.Forms.Label();
-      this.comboBoxListAuthor = new System.Windows.Forms.ComboBox();
+      this.checkBoxAdddisplayAfterAdding = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -105,8 +106,8 @@
       this.tabPageAdd.SuspendLayout();
       this.groupBoxAddLanguage.SuspendLayout();
       this.tabPageList.SuspendLayout();
-      this.groupBoxListLanguage.SuspendLayout();
       this.groupBoxListAuthor.SuspendLayout();
+      this.groupBoxListLanguage.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -554,6 +555,7 @@
       // 
       // tabPageAdd
       // 
+      this.tabPageAdd.Controls.Add(this.checkBoxAdddisplayAfterAdding);
       this.tabPageAdd.Controls.Add(this.buttonAddCancel);
       this.tabPageAdd.Controls.Add(this.labelAddLanguage);
       this.tabPageAdd.Controls.Add(this.groupBoxAddLanguage);
@@ -573,7 +575,7 @@
       // 
       // buttonAddCancel
       // 
-      this.buttonAddCancel.Location = new System.Drawing.Point(355, 113);
+      this.buttonAddCancel.Location = new System.Drawing.Point(520, 113);
       this.buttonAddCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonAddCancel.Name = "buttonAddCancel";
       this.buttonAddCancel.Size = new System.Drawing.Size(101, 26);
@@ -639,7 +641,7 @@
       // 
       // buttonAdd
       // 
-      this.buttonAdd.Location = new System.Drawing.Point(475, 113);
+      this.buttonAdd.Location = new System.Drawing.Point(640, 113);
       this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonAdd.Name = "buttonAdd";
       this.buttonAdd.Size = new System.Drawing.Size(101, 26);
@@ -693,6 +695,37 @@
       this.tabPageList.TabIndex = 2;
       this.tabPageList.Text = "List";
       this.tabPageList.UseVisualStyleBackColor = true;
+      // 
+      // groupBoxListAuthor
+      // 
+      this.groupBoxListAuthor.Controls.Add(this.comboBoxListAuthor);
+      this.groupBoxListAuthor.Controls.Add(this.labelListAuthor);
+      this.groupBoxListAuthor.Location = new System.Drawing.Point(454, 33);
+      this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListAuthor.Name = "groupBoxListAuthor";
+      this.groupBoxListAuthor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListAuthor.Size = new System.Drawing.Size(371, 62);
+      this.groupBoxListAuthor.TabIndex = 9;
+      this.groupBoxListAuthor.TabStop = false;
+      this.groupBoxListAuthor.Text = "Author";
+      // 
+      // comboBoxListAuthor
+      // 
+      this.comboBoxListAuthor.FormattingEnabled = true;
+      this.comboBoxListAuthor.Location = new System.Drawing.Point(93, 20);
+      this.comboBoxListAuthor.Name = "comboBoxListAuthor";
+      this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 24);
+      this.comboBoxListAuthor.TabIndex = 1;
+      this.comboBoxListAuthor.SelectedIndexChanged += new System.EventHandler(this.comboBoxListAuthor_SelectedIndexChanged);
+      // 
+      // labelListAuthor
+      // 
+      this.labelListAuthor.AutoSize = true;
+      this.labelListAuthor.Location = new System.Drawing.Point(7, 22);
+      this.labelListAuthor.Name = "labelListAuthor";
+      this.labelListAuthor.Size = new System.Drawing.Size(60, 17);
+      this.labelListAuthor.TabIndex = 0;
+      this.labelListAuthor.Text = "Choose:";
       // 
       // buttonListDelete
       // 
@@ -768,36 +801,15 @@
       this.textBoxListQuotes.Size = new System.Drawing.Size(827, 306);
       this.textBoxListQuotes.TabIndex = 7;
       // 
-      // groupBoxListAuthor
+      // checkBoxAdddisplayAfterAdding
       // 
-      this.groupBoxListAuthor.Controls.Add(this.comboBoxListAuthor);
-      this.groupBoxListAuthor.Controls.Add(this.labelListAuthor);
-      this.groupBoxListAuthor.Location = new System.Drawing.Point(454, 33);
-      this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxListAuthor.Name = "groupBoxListAuthor";
-      this.groupBoxListAuthor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxListAuthor.Size = new System.Drawing.Size(371, 62);
-      this.groupBoxListAuthor.TabIndex = 9;
-      this.groupBoxListAuthor.TabStop = false;
-      this.groupBoxListAuthor.Text = "Author";
-      // 
-      // labelListAuthor
-      // 
-      this.labelListAuthor.AutoSize = true;
-      this.labelListAuthor.Location = new System.Drawing.Point(7, 22);
-      this.labelListAuthor.Name = "labelListAuthor";
-      this.labelListAuthor.Size = new System.Drawing.Size(60, 17);
-      this.labelListAuthor.TabIndex = 0;
-      this.labelListAuthor.Text = "Choose:";
-      // 
-      // comboBoxListAuthor
-      // 
-      this.comboBoxListAuthor.FormattingEnabled = true;
-      this.comboBoxListAuthor.Location = new System.Drawing.Point(93, 20);
-      this.comboBoxListAuthor.Name = "comboBoxListAuthor";
-      this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 24);
-      this.comboBoxListAuthor.TabIndex = 1;
-      this.comboBoxListAuthor.SelectedIndexChanged += new System.EventHandler(this.comboBoxListAuthor_SelectedIndexChanged);
+      this.checkBoxAdddisplayAfterAdding.AutoSize = true;
+      this.checkBoxAdddisplayAfterAdding.Location = new System.Drawing.Point(358, 117);
+      this.checkBoxAdddisplayAfterAdding.Name = "checkBoxAdddisplayAfterAdding";
+      this.checkBoxAdddisplayAfterAdding.Size = new System.Drawing.Size(156, 21);
+      this.checkBoxAdddisplayAfterAdding.TabIndex = 14;
+      this.checkBoxAdddisplayAfterAdding.Text = "Display after adding";
+      this.checkBoxAdddisplayAfterAdding.UseVisualStyleBackColor = true;
       // 
       // FormMain
       // 
@@ -828,10 +840,10 @@
       this.groupBoxAddLanguage.PerformLayout();
       this.tabPageList.ResumeLayout(false);
       this.tabPageList.PerformLayout();
-      this.groupBoxListLanguage.ResumeLayout(false);
-      this.groupBoxListLanguage.PerformLayout();
       this.groupBoxListAuthor.ResumeLayout(false);
       this.groupBoxListAuthor.PerformLayout();
+      this.groupBoxListLanguage.ResumeLayout(false);
+      this.groupBoxListLanguage.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -908,5 +920,6 @@
     private System.Windows.Forms.GroupBox groupBoxListAuthor;
     private System.Windows.Forms.ComboBox comboBoxListAuthor;
     private System.Windows.Forms.Label labelListAuthor;
+    private System.Windows.Forms.CheckBox checkBoxAdddisplayAfterAdding;
   }
 }

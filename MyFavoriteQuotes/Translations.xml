@@ -279,5 +279,10 @@
       <englishValue>Choose</englishValue>
       <frenchValue>Choisissez</frenchValue>
     </term>
+    <term>
+      <name>DisplayAfterAdding</name>
+      <englishValue>Display After Adding</englishValue>
+      <frenchValue>Afficher après ajout</frenchValue>
+    </term>
   </terms>
 </Document>

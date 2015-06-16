@@ -1270,10 +1270,10 @@ namespace MyFavoriteQuotes
 
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new Control()); // replace new control by your control like tabControlMain
+      Control focusedControl = FindFocusedControl(tabControlMain); // replace new control by your control like tabControlMain
       if (focusedControl is TextBox)
       {
-        //((TextBox)focusedControl).SelectAll;
+        ((TextBox)focusedControl).SelectAll();
       }
 
     }

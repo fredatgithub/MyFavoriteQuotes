@@ -40,6 +40,7 @@ namespace MyFavoriteQuotes
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
     private const string space = " ";
+    private string lastSaveLocation = string.Empty;
     private Quotes AllQuotes = new Quotes();
 
     private bool searchAll;
@@ -1102,6 +1103,11 @@ namespace MyFavoriteQuotes
     private void saveasToolStripMenuItem_Click(object sender, EventArgs e)
     {
       // TODO
+      SaveFileDialog sfd = new SaveFileDialog();
+      sfd.InitialDirectory = Settings.Default.LastSaveLocation == "" ? 
+        Environment.SpecialFolder.MyDocuments.ToString():
+        Settings.Default.LastSaveLocation ;
+
     }
 
     private void buttonListDelete_Click(object sender, EventArgs e)
@@ -1270,7 +1276,7 @@ namespace MyFavoriteQuotes
 
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(tabControlMain); // replace new control by your control like tabControlMain
+      Control focusedControl = FindFocusedControl(tabControlMain); 
       if (focusedControl is TextBox)
       {
         ((TextBox)focusedControl).SelectAll();

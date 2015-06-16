@@ -98,6 +98,7 @@
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
+      this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -926,5 +927,6 @@
     private System.Windows.Forms.ComboBox comboBoxListAuthor;
     private System.Windows.Forms.Label labelListAuthor;
     private System.Windows.Forms.CheckBox checkBoxAdddisplayAfterAdding;
+    private System.Windows.Forms.SaveFileDialog saveFileDialog1;
   }
 }

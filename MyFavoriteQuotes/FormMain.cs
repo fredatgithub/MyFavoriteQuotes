@@ -450,6 +450,7 @@ namespace MyFavoriteQuotes
       Settings.Default.checkBoxLanguageAll = checkBoxLanguageAll.Checked;
       Settings.Default.checkBoxLanguageEnglish = checkBoxLanguageEnglish.Checked;
       Settings.Default.checkBoxLanguageFrench = checkBoxLanguageFrench.Checked;
+      Settings.Default.LastSaveLocation = lastSaveLocation;
       Settings.Default.Save();
     }
 
@@ -1107,6 +1108,17 @@ namespace MyFavoriteQuotes
       sfd.InitialDirectory = Settings.Default.LastSaveLocation == "" ? 
         Environment.SpecialFolder.MyDocuments.ToString():
         Settings.Default.LastSaveLocation ;
+      sfd.CreatePrompt = true;
+      sfd.OverwritePrompt = true;
+      sfd.FileName = "NewQuoteFile.xml";
+      sfd.DefaultExt = "xml";
+      sfd.Filter = "Xml files (*.xml)|*.xml";
+      if (sfd.ShowDialog() == DialogResult.OK)
+      {
+        // TODO
+
+        lastSaveLocation = sfd.FileName;
+      }
 
     }
 

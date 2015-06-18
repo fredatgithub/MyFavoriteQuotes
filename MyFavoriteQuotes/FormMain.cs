@@ -1105,9 +1105,9 @@ namespace MyFavoriteQuotes
     {
       // TODO
       SaveFileDialog sfd = new SaveFileDialog();
-      sfd.InitialDirectory = Settings.Default.LastSaveLocation == "" ? 
-        Environment.SpecialFolder.MyDocuments.ToString():
-        Settings.Default.LastSaveLocation ;
+      sfd.InitialDirectory = Settings.Default.LastSaveLocation == "" ?
+        Environment.SpecialFolder.MyDocuments.ToString() :
+        Settings.Default.LastSaveLocation;
       sfd.CreatePrompt = true;
       sfd.OverwritePrompt = true;
       sfd.FileName = "NewQuoteFile.xml";
@@ -1117,6 +1117,8 @@ namespace MyFavoriteQuotes
       {
         // TODO
 
+        AllQuotes.QuoteFileSaved = true;
+        EnableDisableMenu();
         lastSaveLocation = sfd.FileName;
       }
 
@@ -1288,7 +1290,7 @@ namespace MyFavoriteQuotes
 
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(tabControlMain); 
+      Control focusedControl = FindFocusedControl(tabControlMain);
       if (focusedControl is TextBox)
       {
         ((TextBox)focusedControl).SelectAll();

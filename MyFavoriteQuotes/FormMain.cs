@@ -27,6 +27,8 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using MyFavoriteQuotes.Properties;
+using System.Threading;
+using System.Text;
 
 namespace MyFavoriteQuotes
 {
@@ -176,7 +178,7 @@ namespace MyFavoriteQuotes
     {
       List<string> minimumVersion = new List<string>
       {
-        "<?xml version=\"1.0\" encoding=\"utf - 8\" ?>",
+        "<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
         "<Document>",
         "<DocumentVersion>",
         "<version> 1.0 </version>",
@@ -249,7 +251,7 @@ namespace MyFavoriteQuotes
     {
       List<string> minimumVersion = new List<string>
       {
-        "<?xml version=\"1.0\" encoding=\"utf - 8\" ?>",
+        "<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
         "<Document>",
         "<DocumentVersion>",
         "<version> 1.0 </version>",
@@ -1108,14 +1110,50 @@ namespace MyFavoriteQuotes
       sfd.InitialDirectory = Settings.Default.LastSaveLocation == "" ?
         Environment.SpecialFolder.MyDocuments.ToString() :
         Settings.Default.LastSaveLocation;
-      sfd.CreatePrompt = true;
+      sfd.CreatePrompt = false;
       sfd.OverwritePrompt = true;
       sfd.FileName = "NewQuoteFile.xml";
       sfd.DefaultExt = "xml";
       sfd.Filter = "Xml files (*.xml)|*.xml";
       if (sfd.ShowDialog() == DialogResult.OK)
       {
-        // TODO
+        // TODO to debug
+        if (File.Exists(sfd.FileName))
+        {
+          File.Delete(sfd.FileName);
+        }
+
+        using (FileStream fs = new FileStream(sfd.FileName, FileMode.CreateNew))
+        {
+          using (StreamWriter sw = new StreamWriter(fs, Encoding.UTF8))
+          {
+            sw.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+            sw.WriteLine("<Quotes>");
+            sw.WriteLine("</Quotes>");
+            sw.Flush();
+          }
+        }
+        
+        //Thread.Sleep(5000);
+        XmlDocument doc = new XmlDocument();
+        doc.Load(sfd.FileName);
+        XmlNode root = doc.DocumentElement;
+        foreach (var item in AllQuotes.ToList())
+        {
+          XmlElement newQuote = doc.CreateElement("Quote");
+          XmlElement newAuthor = doc.CreateElement("Author");
+          newAuthor.InnerText = item.Author;
+          XmlElement newLanguage = doc.CreateElement("Language");
+          newLanguage.InnerText = item.Language;
+          XmlElement newQuoteValue = doc.CreateElement("QuoteValue");
+          newQuoteValue.InnerText = RemoveColon(item.Sentence);
+          newQuote.AppendChild(newAuthor);
+          newQuote.AppendChild(newLanguage);
+          newQuote.AppendChild(newQuoteValue);
+          root.AppendChild(newQuote);
+        }
+        
+        doc.Save(Settings.Default.QuoteFileName);
 
         AllQuotes.QuoteFileSaved = true;
         EnableDisableMenu();

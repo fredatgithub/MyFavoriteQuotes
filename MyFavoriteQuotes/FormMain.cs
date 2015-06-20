@@ -1048,15 +1048,6 @@ namespace MyFavoriteQuotes
         textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;
         comboBoxListAuthor.Items.Add(quote.Author);
       }
-
-      //if (comboBoxListAuthor.Items.Count > 0)
-      //{
-      //  comboBoxListAuthor.SelectedIndex = 0;
-      //}
-      //else
-      //{
-      //  comboBoxListAuthor.Text = string.Empty;
-      //}
     }
 
     private void checkBoxListFrench_CheckedChanged(object sender, EventArgs e)

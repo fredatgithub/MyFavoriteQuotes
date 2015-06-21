@@ -844,7 +844,7 @@ namespace MyFavoriteQuotes
       {
         result2.Add(i.quoteValue);
         //languageDicoEn.Add(i.quoteValue, i.authorValue);
-        //languageDicoFr.Add(i.quoteValue, i.languageValue);
+        //languageDicoFr.Add(i.quoteValue, i.languageValue);lllllklkkkk
       }
 
       return result2;

@@ -434,6 +434,7 @@ namespace MyFavoriteQuotes
       checkBoxLanguageAll.Checked = Settings.Default.checkBoxLanguageAll;
       checkBoxLanguageEnglish.Checked = Settings.Default.checkBoxLanguageEnglish;
       checkBoxLanguageFrench.Checked = Settings.Default.checkBoxLanguageFrench;
+      checkBoxAdddisplayAfterAdding.Checked = Settings.Default.checkBoxAdddisplayAfterAdding;
     }
 
     private void SaveWindowValue()
@@ -453,6 +454,7 @@ namespace MyFavoriteQuotes
       Settings.Default.checkBoxLanguageEnglish = checkBoxLanguageEnglish.Checked;
       Settings.Default.checkBoxLanguageFrench = checkBoxLanguageFrench.Checked;
       Settings.Default.LastSaveLocation = lastSaveLocation;
+      Settings.Default.checkBoxAdddisplayAfterAdding = checkBoxAdddisplayAfterAdding.Checked;
       Settings.Default.Save();
     }
 
@@ -1096,61 +1098,51 @@ namespace MyFavoriteQuotes
 
     private void saveasToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO
-      SaveFileDialog sfd = new SaveFileDialog();
-      sfd.InitialDirectory = Settings.Default.LastSaveLocation == "" ?
-        Environment.SpecialFolder.MyDocuments.ToString() :
-        Settings.Default.LastSaveLocation;
-      sfd.CreatePrompt = false;
-      sfd.OverwritePrompt = true;
-      sfd.FileName = "NewQuoteFile.xml";
-      sfd.DefaultExt = "xml";
-      sfd.Filter = "Xml files (*.xml)|*.xml";
-      if (sfd.ShowDialog() == DialogResult.OK)
+      SaveFileDialog sfd = new SaveFileDialog
       {
-        // TODO to debug
-        if (File.Exists(sfd.FileName))
-        {
-          File.Delete(sfd.FileName);
-        }
-
-        using (FileStream fs = new FileStream(sfd.FileName, FileMode.CreateNew))
-        {
-          using (StreamWriter sw = new StreamWriter(fs, Encoding.UTF8))
-          {
-            sw.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
-            sw.WriteLine("<Quotes>");
-            sw.WriteLine("</Quotes>");
-            sw.Flush();
-          }
-        }
-        
-        //Thread.Sleep(5000);
-        XmlDocument doc = new XmlDocument();
-        doc.Load(sfd.FileName);
-        XmlNode root = doc.DocumentElement;
-        foreach (var item in AllQuotes.ToList())
-        {
-          XmlElement newQuote = doc.CreateElement("Quote");
-          XmlElement newAuthor = doc.CreateElement("Author");
-          newAuthor.InnerText = item.Author;
-          XmlElement newLanguage = doc.CreateElement("Language");
-          newLanguage.InnerText = item.Language;
-          XmlElement newQuoteValue = doc.CreateElement("QuoteValue");
-          newQuoteValue.InnerText = RemoveColon(item.Sentence);
-          newQuote.AppendChild(newAuthor);
-          newQuote.AppendChild(newLanguage);
-          newQuote.AppendChild(newQuoteValue);
-          root.AppendChild(newQuote);
-        }
-        
-        doc.Save(Settings.Default.QuoteFileName);
-
-        AllQuotes.QuoteFileSaved = true;
-        EnableDisableMenu();
-        lastSaveLocation = sfd.FileName;
+        InitialDirectory = Settings.Default.LastSaveLocation == ""
+          ? Environment.SpecialFolder.MyDocuments.ToString()
+          : Settings.Default.LastSaveLocation,
+        CreatePrompt = false,
+        OverwritePrompt = true,
+        FileName = "NewQuoteFile.xml",
+        DefaultExt = "xml",
+        Filter = "Xml files (*.xml)|*.xml"
+      };
+      if (sfd.ShowDialog() != DialogResult.OK) return;
+      if (File.Exists(sfd.FileName))
+      {
+        File.Delete(sfd.FileName);
       }
 
+      XmlDocument xmlDoc = new XmlDocument();
+      //(1) the xml declaration is recommended, but not mandatory
+      XmlDeclaration xmlDeclaration = xmlDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
+      XmlElement xmlRoot = xmlDoc.DocumentElement;
+      xmlDoc.InsertBefore(xmlDeclaration, xmlRoot);
+      XmlElement rootQuotes = xmlDoc.CreateElement(string.Empty, "Quotes", string.Empty);
+      xmlDoc.AppendChild(rootQuotes);
+
+      foreach (var item in AllQuotes.ToList())
+      {
+        XmlElement newQuote = xmlDoc.CreateElement("Quote");
+        XmlElement newAuthor = xmlDoc.CreateElement("Author");
+        newAuthor.InnerText = item.Author;
+        XmlElement newLanguage = xmlDoc.CreateElement("Language");
+        newLanguage.InnerText = item.Language;
+        XmlElement newQuoteValue = xmlDoc.CreateElement("QuoteValue");
+        newQuoteValue.InnerText = RemoveColon(item.Sentence);
+        newQuote.AppendChild(newAuthor);
+        newQuote.AppendChild(newLanguage);
+        newQuote.AppendChild(newQuoteValue);
+        rootQuotes.AppendChild(newQuote);
+      }
+
+      xmlDoc.Save(sfd.FileName);
+
+      AllQuotes.QuoteFileSaved = true;
+      EnableDisableMenu();
+      lastSaveLocation = sfd.FileName;
     }
 
     private void buttonListDelete_Click(object sender, EventArgs e)

@@ -27,8 +27,6 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using MyFavoriteQuotes.Properties;
-using System.Threading;
-using System.Text;
 
 namespace MyFavoriteQuotes
 {
@@ -41,9 +39,9 @@ namespace MyFavoriteQuotes
 
     readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
-    private const string space = " ";
+    private const string Space = " ";
     private string lastSaveLocation = string.Empty;
-    private Quotes AllQuotes = new Quotes();
+    private readonly Quotes AllQuotes = new Quotes();
 
     private bool searchAll;
     private bool searchAuthor;
@@ -68,7 +66,7 @@ namespace MyFavoriteQuotes
         }
       }
 
-      SaveWindowValue();
+      SaveControlParametersValue();
       Application.Exit();
     }
 
@@ -122,7 +120,7 @@ namespace MyFavoriteQuotes
     private void FormMain_Load(object sender, EventArgs e)
     {
       DisplayTitle();
-      GetWindowValue();
+      GeControlParametersValue();
       LoadLanguages();
       SetLanguage(Settings.Default.LastLanguageUsed);
       LoadQuotes();
@@ -419,7 +417,7 @@ namespace MyFavoriteQuotes
       sw.Close();
     }
 
-    private void GetWindowValue()
+    private void GeControlParametersValue()
     {
       Width = Settings.Default.WindowWidth;
       Height = Settings.Default.WindowHeight;
@@ -437,7 +435,7 @@ namespace MyFavoriteQuotes
       checkBoxAdddisplayAfterAdding.Checked = Settings.Default.checkBoxAdddisplayAfterAdding;
     }
 
-    private void SaveWindowValue()
+    private void SaveControlParametersValue()
     {
       Settings.Default.WindowHeight = Height;
       Settings.Default.WindowWidth = Width;
@@ -460,7 +458,7 @@ namespace MyFavoriteQuotes
 
     private void FormMainFormClosing(object sender, FormClosingEventArgs e)
     {
-      SaveWindowValue();
+      SaveControlParametersValue();
     }
 
     private void FrenchToolStripMenuItemClick(object sender, EventArgs e)
@@ -840,11 +838,10 @@ namespace MyFavoriteQuotes
                      languageValue = node.Element("Quote").Attribute("Language").Value,
                    };
 
+      // return result.Select(i => i.quoteValue).ToList();
       foreach (var i in result)
       {
         result2.Add(i.quoteValue);
-        //languageDicoEn.Add(i.quoteValue, i.authorValue);
-        //languageDicoFr.Add(i.quoteValue, i.languageValue);lllllklkkkk
       }
 
       return result2;
@@ -1014,7 +1011,6 @@ namespace MyFavoriteQuotes
 
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
     {
-      List<string> result2 = new List<string>();
       IEnumerable<Quote> result3 = from node in AllQuotes.ToList() select node;
       IEnumerable<Quote> result4 = result3;
       if (englishChecked && !frenchChecked)
@@ -1109,14 +1105,19 @@ namespace MyFavoriteQuotes
         DefaultExt = "xml",
         Filter = "Xml files (*.xml)|*.xml"
       };
+
       if (sfd.ShowDialog() != DialogResult.OK) return;
       if (File.Exists(sfd.FileName))
       {
         File.Delete(sfd.FileName);
       }
 
+      SaveAllQuotesToXmlFile(sfd.FileName);
+    }
+
+    private void SaveAllQuotesToXmlFile(string fileName)
+    {
       XmlDocument xmlDoc = new XmlDocument();
-      //(1) the xml declaration is recommended, but not mandatory
       XmlDeclaration xmlDeclaration = xmlDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
       XmlElement xmlRoot = xmlDoc.DocumentElement;
       xmlDoc.InsertBefore(xmlDeclaration, xmlRoot);
@@ -1138,11 +1139,11 @@ namespace MyFavoriteQuotes
         rootQuotes.AppendChild(newQuote);
       }
 
-      xmlDoc.Save(sfd.FileName);
+      xmlDoc.Save(fileName);
 
       AllQuotes.QuoteFileSaved = true;
       EnableDisableMenu();
-      lastSaveLocation = sfd.FileName;
+      lastSaveLocation = fileName;
     }
 
     private void buttonListDelete_Click(object sender, EventArgs e)
@@ -1219,25 +1220,17 @@ namespace MyFavoriteQuotes
     private void cutToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
-      if (focusedControl is TextBox)
+      // if (focusedControl is TextBox)
+      TextBox tb = focusedControl as TextBox;
+      if (tb != null)
       {
-        CutToClipboard((TextBox)focusedControl);
+        CutToClipboard(tb);
       }
     }
 
     private TextBox WhatTextBoxHasFocus()
     {
-      TextBox result = null;
-      foreach (var control in Controls.OfType<TextBox>())
-      {
-        if (control.Focused)
-        {
-          result = control;
-          break;
-        }
-      }
-
-      return result;
+      return Controls.OfType<TextBox>().FirstOrDefault(control => control.Focused);
     }
 
     private void copyToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1252,9 +1245,11 @@ namespace MyFavoriteQuotes
     private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
-      if (focusedControl is TextBox)
+      // if (focusedControl is TextBox)
+      TextBox tb = focusedControl as TextBox;
+      if (tb != null)
       {
-        PasteFromClipboard((TextBox)focusedControl);
+        PasteFromClipboard(tb);
       }
     }
 
@@ -1263,9 +1258,9 @@ namespace MyFavoriteQuotes
       if (tb != ActiveControl) return;
       if (tb.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("ThereIs") + space +
-          GetTranslatedString(errorMessage) + space +
-          GetTranslatedString("ToCut") + space, GetTranslatedString(errorMessage),
+        DisplayMessageOk(GetTranslatedString("ThereIs") + Space +
+          GetTranslatedString(errorMessage) + Space +
+          GetTranslatedString("ToCut") + Space, GetTranslatedString(errorMessage),
           MessageBoxButtons.OK);
         return;
       }
@@ -1286,7 +1281,7 @@ namespace MyFavoriteQuotes
       if (tb != ActiveControl) return;
       if (tb.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("ThereIsNothingToCopy") + space,
+        DisplayMessageOk(GetTranslatedString("ThereIsNothingToCopy") + Space,
           GetTranslatedString(message), MessageBoxButtons.OK);
         return;
       }
@@ -1312,11 +1307,12 @@ namespace MyFavoriteQuotes
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
-      if (focusedControl is TextBox)
+      // if (focusedControl is TextBox)
+      TextBox box = focusedControl as TextBox;
+      if (box != null)
       {
-        ((TextBox)focusedControl).SelectAll();
+        box.SelectAll();
       }
-
     }
   }
 }

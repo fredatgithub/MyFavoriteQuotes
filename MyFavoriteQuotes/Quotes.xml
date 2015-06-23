@@ -150,4 +150,9 @@
     <Language>French</Language>
     <QuoteValue>Choisissez un travail que vous aimez et vous n'aurez pas à travailler un seul jour de votre vie</QuoteValue>
   </Quote>
+  <Quote>
+    <Author>Anne Frank</Author>
+    <Language>French</Language>
+    <QuoteValue>Un ami ne peut prendre la place d'une mère. J'ai besoin de ma mère comme d'un exemple à suivre</QuoteValue>
+  </Quote>
 </Quotes>

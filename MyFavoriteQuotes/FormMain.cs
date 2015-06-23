@@ -1044,7 +1044,10 @@ namespace MyFavoriteQuotes
       foreach (var quote in result3)
       {
         textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;
-        comboBoxListAuthor.Items.Add(quote.Author);
+        if (!comboBoxListAuthor.Items.Contains(quote.Author))
+        {
+          comboBoxListAuthor.Items.Add(quote.Author);
+        }
       }
     }
 

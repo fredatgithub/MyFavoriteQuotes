@@ -574,7 +574,7 @@
       this.tabPageAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.tabPageAdd.Name = "tabPageAdd";
       this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.tabPageAdd.Size = new System.Drawing.Size(903, 476);
+      this.tabPageAdd.Size = new System.Drawing.Size(903, 477);
       this.tabPageAdd.TabIndex = 1;
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
@@ -717,6 +717,7 @@
       // 
       this.groupBoxListAuthor.Controls.Add(this.comboBoxListAuthor);
       this.groupBoxListAuthor.Controls.Add(this.labelListAuthor);
+      this.groupBoxListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBoxListAuthor.Location = new System.Drawing.Point(453, 33);
       this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxListAuthor.Name = "groupBoxListAuthor";
@@ -728,25 +729,29 @@
       // 
       // comboBoxListAuthor
       // 
+      this.comboBoxListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxListAuthor.FormattingEnabled = true;
       this.comboBoxListAuthor.Location = new System.Drawing.Point(93, 20);
       this.comboBoxListAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.comboBoxListAuthor.Name = "comboBoxListAuthor";
-      this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 24);
+      this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 28);
+      this.comboBoxListAuthor.Sorted = true;
       this.comboBoxListAuthor.TabIndex = 1;
       this.comboBoxListAuthor.SelectedIndexChanged += new System.EventHandler(this.comboBoxListAuthor_SelectedIndexChanged);
       // 
       // labelListAuthor
       // 
       this.labelListAuthor.AutoSize = true;
+      this.labelListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.labelListAuthor.Location = new System.Drawing.Point(7, 22);
       this.labelListAuthor.Name = "labelListAuthor";
-      this.labelListAuthor.Size = new System.Drawing.Size(60, 17);
+      this.labelListAuthor.Size = new System.Drawing.Size(67, 17);
       this.labelListAuthor.TabIndex = 0;
       this.labelListAuthor.Text = "Choose:";
       // 
       // buttonListDelete
       // 
+      this.buttonListDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.buttonListDelete.Location = new System.Drawing.Point(52, 111);
       this.buttonListDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonListDelete.Name = "buttonListDelete";
@@ -761,6 +766,7 @@
       this.groupBoxListLanguage.Controls.Add(this.checkBoxListFrench);
       this.groupBoxListLanguage.Controls.Add(this.checkBoxListEnglish);
       this.groupBoxListLanguage.Controls.Add(this.checkBoxListAll);
+      this.groupBoxListLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBoxListLanguage.Location = new System.Drawing.Point(52, 33);
       this.groupBoxListLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.groupBoxListLanguage.Name = "groupBoxListLanguage";
@@ -773,10 +779,11 @@
       // checkBoxListFrench
       // 
       this.checkBoxListFrench.AutoSize = true;
+      this.checkBoxListFrench.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.checkBoxListFrench.Location = new System.Drawing.Point(267, 22);
       this.checkBoxListFrench.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.checkBoxListFrench.Name = "checkBoxListFrench";
-      this.checkBoxListFrench.Size = new System.Drawing.Size(84, 21);
+      this.checkBoxListFrench.Size = new System.Drawing.Size(92, 21);
       this.checkBoxListFrench.TabIndex = 2;
       this.checkBoxListFrench.Text = "Français";
       this.checkBoxListFrench.UseVisualStyleBackColor = true;
@@ -785,10 +792,11 @@
       // checkBoxListEnglish
       // 
       this.checkBoxListEnglish.AutoSize = true;
+      this.checkBoxListEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.checkBoxListEnglish.Location = new System.Drawing.Point(125, 22);
       this.checkBoxListEnglish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.checkBoxListEnglish.Name = "checkBoxListEnglish";
-      this.checkBoxListEnglish.Size = new System.Drawing.Size(76, 21);
+      this.checkBoxListEnglish.Size = new System.Drawing.Size(83, 21);
       this.checkBoxListEnglish.TabIndex = 1;
       this.checkBoxListEnglish.Text = "Anglais";
       this.checkBoxListEnglish.UseVisualStyleBackColor = true;
@@ -797,10 +805,11 @@
       // checkBoxListAll
       // 
       this.checkBoxListAll.AutoSize = true;
+      this.checkBoxListAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.checkBoxListAll.Location = new System.Drawing.Point(7, 22);
       this.checkBoxListAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.checkBoxListAll.Name = "checkBoxListAll";
-      this.checkBoxListAll.Size = new System.Drawing.Size(62, 21);
+      this.checkBoxListAll.Size = new System.Drawing.Size(66, 21);
       this.checkBoxListAll.TabIndex = 0;
       this.checkBoxListAll.Text = "Tous";
       this.checkBoxListAll.UseVisualStyleBackColor = true;

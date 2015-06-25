@@ -207,6 +207,11 @@ namespace MyFavoriteQuotes
            "<Language>French</Language>",
            "<QuoteValue>La vie c’est comme une bicyclette, il faut avancer pour ne pas perdre l’équilibre</QuoteValue>",
         "</Quote>",
+         "<Quote>",
+    "<Author>Charles Baudelaire</Author>",
+    "<Language>French</Language>",
+    "<QuoteValue>La curiosité peut être considérée comme le point de départ du génie</QuoteValue>",
+  "</Quote>",
       "</terms>",
     "</Document>"
       };

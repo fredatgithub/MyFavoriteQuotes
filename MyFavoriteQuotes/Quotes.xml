@@ -475,4 +475,9 @@
     <Language>French</Language>
     <QuoteValue>Aimez le chocolat à fond sans complexes ni fausse honte car...sans un grain de folie,il n'est point d'homme raisonnable</QuoteValue>
   </Quote>
- </Quotes>
+  <Quote>
+    <Author>William Shakespeare</Author>
+    <Language>French</Language>
+    <QuoteValue>Notre paix doit se dresser aussi solide que les montagnes Rocheuses</QuoteValue>
+  </Quote>
+</Quotes>

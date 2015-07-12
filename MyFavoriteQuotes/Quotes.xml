@@ -16,7 +16,7 @@
     <QuoteValue>It's impossible said pride. It's risky said experience. It's pointless said reason but give it a try whispered the heart</QuoteValue>
   </Quote>
   <Quote>
-    <Author>Antoine de St Exupéry</Author>
+    <Author>Antoine de Saint-Exupéry</Author>
     <Language>French</Language>
     <QuoteValue>Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir mais de le rendre possbile</QuoteValue>
   </Quote>
@@ -479,5 +479,15 @@
     <Author>William Shakespeare</Author>
     <Language>French</Language>
     <QuoteValue>Notre paix doit se dresser aussi solide que les montagnes Rocheuses</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Antoine de Saint-Exupéry</Author>
+    <Language>English</Language>
+    <QuoteValue>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Rick Cook</Author>
+    <Language>English</Language>
+    <QuoteValue>Programming today is a race between software engineers striving to build bigger and better idiot-proff programs, and the universe trying to build bigger and better idiots. So far, the universe is winning</QuoteValue>
   </Quote>
 </Quotes>

@@ -681,12 +681,18 @@ namespace MyFavoriteQuotes
       XDocument xmlDoc = XDocument.Load(Settings.Default.LanguageFileName);
       var result = from node in xmlDoc.Descendants("term")
                    where node.HasElements
+                   let xElementName = node.Element("name")
+                   where xElementName != null
+                   let xElementEnglish = node.Element("englishValue")
+                   where xElementEnglish != null
+                   let xElementFrench = node.Element("frenchValue")
+                   where xElementFrench != null
                    select new
-                   {
-                     quoteValue = node.Element("name").Value,
-                     authorValue = node.Element("englishValue").Value,
-                     languageValue = node.Element("frenchValue").Value
-                   };
+                              {
+                                quoteValue = xElementName.Value,
+                                authorValue = xElementEnglish.Value,
+                                languageValue = xElementFrench.Value
+                              };
 
       foreach (var i in result)
       {

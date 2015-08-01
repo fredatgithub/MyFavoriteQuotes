@@ -122,8 +122,8 @@
             this.helpToolStripMenuItem});
       this.menuStrip1.Location = new System.Drawing.Point(0, 0);
       this.menuStrip1.Name = "menuStrip1";
-      this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-      this.menuStrip1.Size = new System.Drawing.Size(911, 28);
+      this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+      this.menuStrip1.Size = new System.Drawing.Size(683, 24);
       this.menuStrip1.TabIndex = 1;
       this.menuStrip1.Text = "menuStrip1";
       // 
@@ -141,7 +141,7 @@
             this.toolStripSeparator2,
             this.quitToolStripMenuItem});
       this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-      this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+      this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
       this.fileToolStripMenuItem.Text = "&Fichier";
       // 
       // newToolStripMenuItem
@@ -149,7 +149,7 @@
       this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.newToolStripMenuItem.Name = "newToolStripMenuItem";
       this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-      this.newToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.newToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.newToolStripMenuItem.Text = "&Nouveau";
       // 
       // openToolStripMenuItem
@@ -157,59 +157,59 @@
       this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.openToolStripMenuItem.Name = "openToolStripMenuItem";
       this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-      this.openToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.openToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.openToolStripMenuItem.Text = "&Ouvrir";
       // 
       // toolStripSeparator
       // 
       this.toolStripSeparator.Name = "toolStripSeparator";
-      this.toolStripSeparator.Size = new System.Drawing.Size(244, 6);
+      this.toolStripSeparator.Size = new System.Drawing.Size(202, 6);
       // 
       // saveToolStripMenuItem
       // 
       this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
       this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-      this.saveToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.saveToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.saveToolStripMenuItem.Text = "&Enregistrer";
       this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
       // 
       // saveasToolStripMenuItem
       // 
       this.saveasToolStripMenuItem.Name = "saveasToolStripMenuItem";
-      this.saveasToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.saveasToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.saveasToolStripMenuItem.Text = "Enregistrer &sous";
       this.saveasToolStripMenuItem.Click += new System.EventHandler(this.saveasToolStripMenuItem_Click);
       // 
       // toolStripSeparator1
       // 
       this.toolStripSeparator1.Name = "toolStripSeparator1";
-      this.toolStripSeparator1.Size = new System.Drawing.Size(244, 6);
+      this.toolStripSeparator1.Size = new System.Drawing.Size(202, 6);
       // 
       // printToolStripMenuItem
       // 
       this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.printToolStripMenuItem.Name = "printToolStripMenuItem";
       this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-      this.printToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.printToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.printToolStripMenuItem.Text = "&Imprimer";
       // 
       // printPreviewToolStripMenuItem
       // 
       this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-      this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.printPreviewToolStripMenuItem.Text = "Aperçu a&vant impression";
       // 
       // toolStripSeparator2
       // 
       this.toolStripSeparator2.Name = "toolStripSeparator2";
-      this.toolStripSeparator2.Size = new System.Drawing.Size(244, 6);
+      this.toolStripSeparator2.Size = new System.Drawing.Size(202, 6);
       // 
       // quitToolStripMenuItem
       // 
       this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-      this.quitToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+      this.quitToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.quitToolStripMenuItem.Text = "&Quitter";
       this.quitToolStripMenuItem.Click += new System.EventHandler(this.QuitToolStripMenuItem_Click);
       // 
@@ -225,34 +225,34 @@
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
       this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-      this.editToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+      this.editToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
       this.editToolStripMenuItem.Text = "&Edition";
       // 
       // cancelToolStripMenuItem
       // 
       this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
       this.cancelToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-      this.cancelToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+      this.cancelToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.cancelToolStripMenuItem.Text = "&Annuler";
       // 
       // redoToolStripMenuItem
       // 
       this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
       this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-      this.redoToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+      this.redoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.redoToolStripMenuItem.Text = "&Rétablir";
       // 
       // toolStripSeparator3
       // 
       this.toolStripSeparator3.Name = "toolStripSeparator3";
-      this.toolStripSeparator3.Size = new System.Drawing.Size(246, 6);
+      this.toolStripSeparator3.Size = new System.Drawing.Size(203, 6);
       // 
       // cutToolStripMenuItem
       // 
       this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
       this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-      this.cutToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+      this.cutToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.cutToolStripMenuItem.Text = "&Couper";
       this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
       // 
@@ -261,7 +261,7 @@
       this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
       this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-      this.copyToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+      this.copyToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.copyToolStripMenuItem.Text = "Co&pier";
       this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
       // 
@@ -270,20 +270,20 @@
       this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
       this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-      this.pasteToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+      this.pasteToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.pasteToolStripMenuItem.Text = "Co&ller";
       this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
       // 
       // toolStripSeparator4
       // 
       this.toolStripSeparator4.Name = "toolStripSeparator4";
-      this.toolStripSeparator4.Size = new System.Drawing.Size(246, 6);
+      this.toolStripSeparator4.Size = new System.Drawing.Size(203, 6);
       // 
       // selectAllToolStripMenuItem
       // 
       this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
       this.selectAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-      this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+      this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.selectAllToolStripMenuItem.Text = "Sélectio&nner tout";
       this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
       // 
@@ -293,19 +293,19 @@
             this.personalizeToolStripMenuItem,
             this.optionsToolStripMenuItem});
       this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-      this.toolsToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+      this.toolsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
       this.toolsToolStripMenuItem.Text = "&Outils";
       // 
       // personalizeToolStripMenuItem
       // 
       this.personalizeToolStripMenuItem.Name = "personalizeToolStripMenuItem";
-      this.personalizeToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+      this.personalizeToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
       this.personalizeToolStripMenuItem.Text = "&Personnaliser";
       // 
       // optionsToolStripMenuItem
       // 
       this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-      this.optionsToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+      this.optionsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
       this.optionsToolStripMenuItem.Text = "&Options";
       // 
       // languagetoolStripMenuItem
@@ -314,20 +314,20 @@
             this.frenchToolStripMenuItem,
             this.englishToolStripMenuItem});
       this.languagetoolStripMenuItem.Name = "languagetoolStripMenuItem";
-      this.languagetoolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+      this.languagetoolStripMenuItem.Size = new System.Drawing.Size(71, 20);
       this.languagetoolStripMenuItem.Text = "Language";
       // 
       // frenchToolStripMenuItem
       // 
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
       this.frenchToolStripMenuItem.Text = "Français";
       this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItemClick);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-      this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
       this.englishToolStripMenuItem.Text = "Anglais";
       this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItemClick);
       // 
@@ -340,36 +340,36 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem});
       this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-      this.helpToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+      this.helpToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
       this.helpToolStripMenuItem.Text = "&Aide";
       // 
       // summaryToolStripMenuItem
       // 
       this.summaryToolStripMenuItem.Name = "summaryToolStripMenuItem";
-      this.summaryToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.summaryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.summaryToolStripMenuItem.Text = "&Sommaire";
       // 
       // indexToolStripMenuItem
       // 
       this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-      this.indexToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.indexToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.indexToolStripMenuItem.Text = "&Index";
       // 
       // searchToolStripMenuItem
       // 
       this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-      this.searchToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.searchToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.searchToolStripMenuItem.Text = "&Rechercher";
       // 
       // toolStripSeparator5
       // 
       this.toolStripSeparator5.Name = "toolStripSeparator5";
-      this.toolStripSeparator5.Size = new System.Drawing.Size(172, 6);
+      this.toolStripSeparator5.Size = new System.Drawing.Size(144, 6);
       // 
       // aboutToolStripMenuItem
       // 
       this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-      this.aboutToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
+      this.aboutToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
       this.aboutToolStripMenuItem.Text = "À &propos de...";
       this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
       // 
@@ -379,11 +379,11 @@
       this.tabControlMain.Controls.Add(this.tabPageAdd);
       this.tabControlMain.Controls.Add(this.tabPageList);
       this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tabControlMain.Location = new System.Drawing.Point(0, 28);
-      this.tabControlMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.tabControlMain.Location = new System.Drawing.Point(0, 24);
+      this.tabControlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabControlMain.Name = "tabControlMain";
       this.tabControlMain.SelectedIndex = 0;
-      this.tabControlMain.Size = new System.Drawing.Size(911, 506);
+      this.tabControlMain.Size = new System.Drawing.Size(683, 410);
       this.tabControlMain.TabIndex = 2;
       // 
       // tabPageSearch
@@ -395,11 +395,11 @@
       this.tabPageSearch.Controls.Add(this.labelSearch);
       this.tabPageSearch.Controls.Add(this.buttonSearch);
       this.tabPageSearch.Controls.Add(this.textBoxSearch);
-      this.tabPageSearch.Location = new System.Drawing.Point(4, 25);
-      this.tabPageSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.tabPageSearch.Location = new System.Drawing.Point(4, 22);
+      this.tabPageSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabPageSearch.Name = "tabPageSearch";
-      this.tabPageSearch.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.tabPageSearch.Size = new System.Drawing.Size(903, 477);
+      this.tabPageSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageSearch.Size = new System.Drawing.Size(675, 384);
       this.tabPageSearch.TabIndex = 0;
       this.tabPageSearch.Text = "Search";
       this.tabPageSearch.UseVisualStyleBackColor = true;
@@ -407,10 +407,10 @@
       // checkBoxCaseSensitive
       // 
       this.checkBoxCaseSensitive.AutoSize = true;
-      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(105, 78);
-      this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(79, 63);
+      this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
-      this.checkBoxCaseSensitive.Size = new System.Drawing.Size(123, 21);
+      this.checkBoxCaseSensitive.Size = new System.Drawing.Size(96, 17);
       this.checkBoxCaseSensitive.TabIndex = 3;
       this.checkBoxCaseSensitive.Text = "Case Sensitive";
       this.checkBoxCaseSensitive.UseVisualStyleBackColor = true;
@@ -420,11 +420,11 @@
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageFrench);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageEnglish);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageAll);
-      this.groupBoxLanguage.Location = new System.Drawing.Point(20, 180);
-      this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxLanguage.Location = new System.Drawing.Point(15, 146);
+      this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxLanguage.Name = "groupBoxLanguage";
-      this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxLanguage.Size = new System.Drawing.Size(421, 62);
+      this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxLanguage.Size = new System.Drawing.Size(316, 50);
       this.groupBoxLanguage.TabIndex = 6;
       this.groupBoxLanguage.TabStop = false;
       this.groupBoxLanguage.Text = "Langage";
@@ -432,10 +432,10 @@
       // checkBoxLanguageFrench
       // 
       this.checkBoxLanguageFrench.AutoSize = true;
-      this.checkBoxLanguageFrench.Location = new System.Drawing.Point(275, 22);
-      this.checkBoxLanguageFrench.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxLanguageFrench.Location = new System.Drawing.Point(206, 18);
+      this.checkBoxLanguageFrench.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxLanguageFrench.Name = "checkBoxLanguageFrench";
-      this.checkBoxLanguageFrench.Size = new System.Drawing.Size(84, 21);
+      this.checkBoxLanguageFrench.Size = new System.Drawing.Size(66, 17);
       this.checkBoxLanguageFrench.TabIndex = 2;
       this.checkBoxLanguageFrench.Text = "Français";
       this.checkBoxLanguageFrench.UseVisualStyleBackColor = true;
@@ -444,10 +444,10 @@
       // checkBoxLanguageEnglish
       // 
       this.checkBoxLanguageEnglish.AutoSize = true;
-      this.checkBoxLanguageEnglish.Location = new System.Drawing.Point(143, 22);
-      this.checkBoxLanguageEnglish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxLanguageEnglish.Location = new System.Drawing.Point(107, 18);
+      this.checkBoxLanguageEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxLanguageEnglish.Name = "checkBoxLanguageEnglish";
-      this.checkBoxLanguageEnglish.Size = new System.Drawing.Size(76, 21);
+      this.checkBoxLanguageEnglish.Size = new System.Drawing.Size(60, 17);
       this.checkBoxLanguageEnglish.TabIndex = 1;
       this.checkBoxLanguageEnglish.Text = "Anglais";
       this.checkBoxLanguageEnglish.UseVisualStyleBackColor = true;
@@ -456,10 +456,10 @@
       // checkBoxLanguageAll
       // 
       this.checkBoxLanguageAll.AutoSize = true;
-      this.checkBoxLanguageAll.Location = new System.Drawing.Point(7, 22);
-      this.checkBoxLanguageAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxLanguageAll.Location = new System.Drawing.Point(5, 18);
+      this.checkBoxLanguageAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxLanguageAll.Name = "checkBoxLanguageAll";
-      this.checkBoxLanguageAll.Size = new System.Drawing.Size(62, 21);
+      this.checkBoxLanguageAll.Size = new System.Drawing.Size(50, 17);
       this.checkBoxLanguageAll.TabIndex = 0;
       this.checkBoxLanguageAll.Text = "Tous";
       this.checkBoxLanguageAll.UseVisualStyleBackColor = true;
@@ -470,11 +470,11 @@
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchQuote);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAuthor);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAll);
-      this.groupBoxSearch.Location = new System.Drawing.Point(20, 112);
-      this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxSearch.Location = new System.Drawing.Point(15, 91);
+      this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxSearch.Name = "groupBoxSearch";
-      this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxSearch.Size = new System.Drawing.Size(421, 62);
+      this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxSearch.Size = new System.Drawing.Size(316, 50);
       this.groupBoxSearch.TabIndex = 5;
       this.groupBoxSearch.TabStop = false;
       this.groupBoxSearch.Text = "Rechercher";
@@ -482,10 +482,10 @@
       // checkBoxSearchQuote
       // 
       this.checkBoxSearchQuote.AutoSize = true;
-      this.checkBoxSearchQuote.Location = new System.Drawing.Point(275, 22);
-      this.checkBoxSearchQuote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxSearchQuote.Location = new System.Drawing.Point(206, 18);
+      this.checkBoxSearchQuote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxSearchQuote.Name = "checkBoxSearchQuote";
-      this.checkBoxSearchQuote.Size = new System.Drawing.Size(77, 21);
+      this.checkBoxSearchQuote.Size = new System.Drawing.Size(61, 17);
       this.checkBoxSearchQuote.TabIndex = 2;
       this.checkBoxSearchQuote.Text = "Citation";
       this.checkBoxSearchQuote.UseVisualStyleBackColor = true;
@@ -494,10 +494,10 @@
       // checkBoxSearchAuthor
       // 
       this.checkBoxSearchAuthor.AutoSize = true;
-      this.checkBoxSearchAuthor.Location = new System.Drawing.Point(143, 22);
-      this.checkBoxSearchAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxSearchAuthor.Location = new System.Drawing.Point(107, 18);
+      this.checkBoxSearchAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxSearchAuthor.Name = "checkBoxSearchAuthor";
-      this.checkBoxSearchAuthor.Size = new System.Drawing.Size(72, 21);
+      this.checkBoxSearchAuthor.Size = new System.Drawing.Size(57, 17);
       this.checkBoxSearchAuthor.TabIndex = 1;
       this.checkBoxSearchAuthor.Text = "Auteur";
       this.checkBoxSearchAuthor.UseVisualStyleBackColor = true;
@@ -506,10 +506,10 @@
       // checkBoxSearchAll
       // 
       this.checkBoxSearchAll.AutoSize = true;
-      this.checkBoxSearchAll.Location = new System.Drawing.Point(7, 22);
-      this.checkBoxSearchAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxSearchAll.Location = new System.Drawing.Point(5, 18);
+      this.checkBoxSearchAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxSearchAll.Name = "checkBoxSearchAll";
-      this.checkBoxSearchAll.Size = new System.Drawing.Size(76, 21);
+      this.checkBoxSearchAll.Size = new System.Drawing.Size(60, 17);
       this.checkBoxSearchAll.TabIndex = 0;
       this.checkBoxSearchAll.Text = "Partout";
       this.checkBoxSearchAll.UseVisualStyleBackColor = true;
@@ -521,28 +521,29 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxResult.Location = new System.Drawing.Point(20, 263);
-      this.textBoxResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.textBoxResult.Location = new System.Drawing.Point(15, 214);
+      this.textBoxResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
-      this.textBoxResult.Size = new System.Drawing.Size(861, 187);
+      this.textBoxResult.Size = new System.Drawing.Size(647, 152);
       this.textBoxResult.TabIndex = 4;
       // 
       // labelSearch
       // 
       this.labelSearch.AutoSize = true;
-      this.labelSearch.Location = new System.Drawing.Point(17, 43);
+      this.labelSearch.Location = new System.Drawing.Point(13, 35);
+      this.labelSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelSearch.Name = "labelSearch";
-      this.labelSearch.Size = new System.Drawing.Size(53, 17);
+      this.labelSearch.Size = new System.Drawing.Size(41, 13);
       this.labelSearch.TabIndex = 2;
       this.labelSearch.Text = "Search";
       // 
       // buttonSearch
       // 
-      this.buttonSearch.Location = new System.Drawing.Point(340, 78);
-      this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.buttonSearch.Location = new System.Drawing.Point(255, 63);
+      this.buttonSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.buttonSearch.Name = "buttonSearch";
-      this.buttonSearch.Size = new System.Drawing.Size(101, 25);
+      this.buttonSearch.Size = new System.Drawing.Size(76, 20);
       this.buttonSearch.TabIndex = 1;
       this.buttonSearch.Text = "Search";
       this.buttonSearch.UseVisualStyleBackColor = true;
@@ -552,10 +553,10 @@
       // 
       this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-      this.textBoxSearch.Location = new System.Drawing.Point(105, 43);
-      this.textBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.textBoxSearch.Location = new System.Drawing.Point(79, 35);
+      this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxSearch.Name = "textBoxSearch";
-      this.textBoxSearch.Size = new System.Drawing.Size(776, 22);
+      this.textBoxSearch.Size = new System.Drawing.Size(583, 20);
       this.textBoxSearch.TabIndex = 0;
       this.textBoxSearch.Text = "a";
       // 
@@ -570,11 +571,11 @@
       this.tabPageAdd.Controls.Add(this.textBoxAddQuote);
       this.tabPageAdd.Controls.Add(this.labelAddAuthor);
       this.tabPageAdd.Controls.Add(this.textBoxAddAuthor);
-      this.tabPageAdd.Location = new System.Drawing.Point(4, 25);
-      this.tabPageAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.tabPageAdd.Location = new System.Drawing.Point(4, 22);
+      this.tabPageAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabPageAdd.Name = "tabPageAdd";
-      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.tabPageAdd.Size = new System.Drawing.Size(903, 477);
+      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageAdd.Size = new System.Drawing.Size(675, 385);
       this.tabPageAdd.TabIndex = 1;
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
@@ -582,20 +583,20 @@
       // checkBoxAdddisplayAfterAdding
       // 
       this.checkBoxAdddisplayAfterAdding.AutoSize = true;
-      this.checkBoxAdddisplayAfterAdding.Location = new System.Drawing.Point(357, 117);
-      this.checkBoxAdddisplayAfterAdding.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxAdddisplayAfterAdding.Location = new System.Drawing.Point(268, 95);
+      this.checkBoxAdddisplayAfterAdding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxAdddisplayAfterAdding.Name = "checkBoxAdddisplayAfterAdding";
-      this.checkBoxAdddisplayAfterAdding.Size = new System.Drawing.Size(156, 21);
+      this.checkBoxAdddisplayAfterAdding.Size = new System.Drawing.Size(119, 17);
       this.checkBoxAdddisplayAfterAdding.TabIndex = 14;
       this.checkBoxAdddisplayAfterAdding.Text = "Display after adding";
       this.checkBoxAdddisplayAfterAdding.UseVisualStyleBackColor = true;
       // 
       // buttonAddCancel
       // 
-      this.buttonAddCancel.Location = new System.Drawing.Point(520, 113);
-      this.buttonAddCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.buttonAddCancel.Location = new System.Drawing.Point(390, 92);
+      this.buttonAddCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.buttonAddCancel.Name = "buttonAddCancel";
-      this.buttonAddCancel.Size = new System.Drawing.Size(101, 26);
+      this.buttonAddCancel.Size = new System.Drawing.Size(76, 21);
       this.buttonAddCancel.TabIndex = 13;
       this.buttonAddCancel.Text = "Cancel";
       this.buttonAddCancel.UseVisualStyleBackColor = true;
@@ -604,9 +605,10 @@
       // labelAddLanguage
       // 
       this.labelAddLanguage.AutoSize = true;
-      this.labelAddLanguage.Location = new System.Drawing.Point(45, 122);
+      this.labelAddLanguage.Location = new System.Drawing.Point(34, 99);
+      this.labelAddLanguage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelAddLanguage.Name = "labelAddLanguage";
-      this.labelAddLanguage.Size = new System.Drawing.Size(72, 17);
+      this.labelAddLanguage.Size = new System.Drawing.Size(55, 13);
       this.labelAddLanguage.TabIndex = 12;
       this.labelAddLanguage.Text = "Language";
       // 
@@ -614,21 +616,21 @@
       // 
       this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageFrench);
       this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageEnglish);
-      this.groupBoxAddLanguage.Location = new System.Drawing.Point(133, 101);
-      this.groupBoxAddLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxAddLanguage.Location = new System.Drawing.Point(100, 82);
+      this.groupBoxAddLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxAddLanguage.Name = "groupBoxAddLanguage";
-      this.groupBoxAddLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxAddLanguage.Size = new System.Drawing.Size(205, 47);
+      this.groupBoxAddLanguage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxAddLanguage.Size = new System.Drawing.Size(154, 38);
       this.groupBoxAddLanguage.TabIndex = 11;
       this.groupBoxAddLanguage.TabStop = false;
       // 
       // radioButtonAddLanguageFrench
       // 
       this.radioButtonAddLanguageFrench.AutoSize = true;
-      this.radioButtonAddLanguageFrench.Location = new System.Drawing.Point(99, 20);
-      this.radioButtonAddLanguageFrench.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.radioButtonAddLanguageFrench.Location = new System.Drawing.Point(74, 16);
+      this.radioButtonAddLanguageFrench.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.radioButtonAddLanguageFrench.Name = "radioButtonAddLanguageFrench";
-      this.radioButtonAddLanguageFrench.Size = new System.Drawing.Size(73, 21);
+      this.radioButtonAddLanguageFrench.Size = new System.Drawing.Size(58, 17);
       this.radioButtonAddLanguageFrench.TabIndex = 1;
       this.radioButtonAddLanguageFrench.TabStop = true;
       this.radioButtonAddLanguageFrench.Text = "French";
@@ -638,10 +640,10 @@
       // 
       this.radioButtonAddLanguageEnglish.AutoSize = true;
       this.radioButtonAddLanguageEnglish.Checked = true;
-      this.radioButtonAddLanguageEnglish.Location = new System.Drawing.Point(7, 20);
-      this.radioButtonAddLanguageEnglish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.radioButtonAddLanguageEnglish.Location = new System.Drawing.Point(5, 16);
+      this.radioButtonAddLanguageEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.radioButtonAddLanguageEnglish.Name = "radioButtonAddLanguageEnglish";
-      this.radioButtonAddLanguageEnglish.Size = new System.Drawing.Size(75, 21);
+      this.radioButtonAddLanguageEnglish.Size = new System.Drawing.Size(59, 17);
       this.radioButtonAddLanguageEnglish.TabIndex = 0;
       this.radioButtonAddLanguageEnglish.TabStop = true;
       this.radioButtonAddLanguageEnglish.Text = "English";
@@ -650,18 +652,19 @@
       // labelAddQuote
       // 
       this.labelAddQuote.AutoSize = true;
-      this.labelAddQuote.Location = new System.Drawing.Point(45, 155);
+      this.labelAddQuote.Location = new System.Drawing.Point(34, 126);
+      this.labelAddQuote.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelAddQuote.Name = "labelAddQuote";
-      this.labelAddQuote.Size = new System.Drawing.Size(47, 17);
+      this.labelAddQuote.Size = new System.Drawing.Size(36, 13);
       this.labelAddQuote.TabIndex = 10;
       this.labelAddQuote.Text = "Quote";
       // 
       // buttonAdd
       // 
-      this.buttonAdd.Location = new System.Drawing.Point(640, 113);
-      this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.buttonAdd.Location = new System.Drawing.Point(480, 92);
+      this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.buttonAdd.Name = "buttonAdd";
-      this.buttonAdd.Size = new System.Drawing.Size(101, 26);
+      this.buttonAdd.Size = new System.Drawing.Size(76, 21);
       this.buttonAdd.TabIndex = 9;
       this.buttonAdd.Text = "Add";
       this.buttonAdd.UseVisualStyleBackColor = true;
@@ -673,19 +676,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxAddQuote.Location = new System.Drawing.Point(133, 155);
-      this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.textBoxAddQuote.Location = new System.Drawing.Point(100, 126);
+      this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxAddQuote.Multiline = true;
       this.textBoxAddQuote.Name = "textBoxAddQuote";
-      this.textBoxAddQuote.Size = new System.Drawing.Size(745, 294);
+      this.textBoxAddQuote.Size = new System.Drawing.Size(560, 240);
       this.textBoxAddQuote.TabIndex = 8;
       // 
       // labelAddAuthor
       // 
       this.labelAddAuthor.AutoSize = true;
-      this.labelAddAuthor.Location = new System.Drawing.Point(45, 73);
+      this.labelAddAuthor.Location = new System.Drawing.Point(34, 59);
+      this.labelAddAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelAddAuthor.Name = "labelAddAuthor";
-      this.labelAddAuthor.Size = new System.Drawing.Size(50, 17);
+      this.labelAddAuthor.Size = new System.Drawing.Size(38, 13);
       this.labelAddAuthor.TabIndex = 6;
       this.labelAddAuthor.Text = "Author";
       // 
@@ -693,10 +697,10 @@
       // 
       this.textBoxAddAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-      this.textBoxAddAuthor.Location = new System.Drawing.Point(133, 73);
-      this.textBoxAddAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.textBoxAddAuthor.Location = new System.Drawing.Point(100, 59);
+      this.textBoxAddAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxAddAuthor.Name = "textBoxAddAuthor";
-      this.textBoxAddAuthor.Size = new System.Drawing.Size(745, 22);
+      this.textBoxAddAuthor.Size = new System.Drawing.Size(560, 20);
       this.textBoxAddAuthor.TabIndex = 4;
       // 
       // tabPageList
@@ -705,10 +709,10 @@
       this.tabPageList.Controls.Add(this.buttonListDelete);
       this.tabPageList.Controls.Add(this.groupBoxListLanguage);
       this.tabPageList.Controls.Add(this.textBoxListQuotes);
-      this.tabPageList.Location = new System.Drawing.Point(4, 25);
-      this.tabPageList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.tabPageList.Location = new System.Drawing.Point(4, 22);
+      this.tabPageList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.tabPageList.Name = "tabPageList";
-      this.tabPageList.Size = new System.Drawing.Size(903, 477);
+      this.tabPageList.Size = new System.Drawing.Size(675, 384);
       this.tabPageList.TabIndex = 2;
       this.tabPageList.Text = "List";
       this.tabPageList.UseVisualStyleBackColor = true;
@@ -718,11 +722,11 @@
       this.groupBoxListAuthor.Controls.Add(this.comboBoxListAuthor);
       this.groupBoxListAuthor.Controls.Add(this.labelListAuthor);
       this.groupBoxListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.groupBoxListAuthor.Location = new System.Drawing.Point(453, 33);
-      this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListAuthor.Location = new System.Drawing.Point(340, 27);
+      this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxListAuthor.Name = "groupBoxListAuthor";
-      this.groupBoxListAuthor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxListAuthor.Size = new System.Drawing.Size(371, 62);
+      this.groupBoxListAuthor.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxListAuthor.Size = new System.Drawing.Size(278, 50);
       this.groupBoxListAuthor.TabIndex = 9;
       this.groupBoxListAuthor.TabStop = false;
       this.groupBoxListAuthor.Text = "Author";
@@ -731,10 +735,10 @@
       // 
       this.comboBoxListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxListAuthor.FormattingEnabled = true;
-      this.comboBoxListAuthor.Location = new System.Drawing.Point(93, 20);
-      this.comboBoxListAuthor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.comboBoxListAuthor.Location = new System.Drawing.Point(70, 16);
+      this.comboBoxListAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.comboBoxListAuthor.Name = "comboBoxListAuthor";
-      this.comboBoxListAuthor.Size = new System.Drawing.Size(260, 28);
+      this.comboBoxListAuthor.Size = new System.Drawing.Size(196, 24);
       this.comboBoxListAuthor.Sorted = true;
       this.comboBoxListAuthor.TabIndex = 1;
       this.comboBoxListAuthor.SelectedIndexChanged += new System.EventHandler(this.comboBoxListAuthor_SelectedIndexChanged);
@@ -743,19 +747,20 @@
       // 
       this.labelListAuthor.AutoSize = true;
       this.labelListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelListAuthor.Location = new System.Drawing.Point(7, 22);
+      this.labelListAuthor.Location = new System.Drawing.Point(5, 18);
+      this.labelListAuthor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
       this.labelListAuthor.Name = "labelListAuthor";
-      this.labelListAuthor.Size = new System.Drawing.Size(67, 17);
+      this.labelListAuthor.Size = new System.Drawing.Size(53, 13);
       this.labelListAuthor.TabIndex = 0;
       this.labelListAuthor.Text = "Choose:";
       // 
       // buttonListDelete
       // 
       this.buttonListDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.buttonListDelete.Location = new System.Drawing.Point(52, 111);
-      this.buttonListDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.buttonListDelete.Location = new System.Drawing.Point(39, 90);
+      this.buttonListDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.buttonListDelete.Name = "buttonListDelete";
-      this.buttonListDelete.Size = new System.Drawing.Size(92, 26);
+      this.buttonListDelete.Size = new System.Drawing.Size(69, 21);
       this.buttonListDelete.TabIndex = 9;
       this.buttonListDelete.Text = "Delete";
       this.buttonListDelete.UseVisualStyleBackColor = true;
@@ -767,11 +772,11 @@
       this.groupBoxListLanguage.Controls.Add(this.checkBoxListEnglish);
       this.groupBoxListLanguage.Controls.Add(this.checkBoxListAll);
       this.groupBoxListLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.groupBoxListLanguage.Location = new System.Drawing.Point(52, 33);
-      this.groupBoxListLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.groupBoxListLanguage.Location = new System.Drawing.Point(39, 27);
+      this.groupBoxListLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.groupBoxListLanguage.Name = "groupBoxListLanguage";
-      this.groupBoxListLanguage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-      this.groupBoxListLanguage.Size = new System.Drawing.Size(371, 62);
+      this.groupBoxListLanguage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxListLanguage.Size = new System.Drawing.Size(278, 50);
       this.groupBoxListLanguage.TabIndex = 8;
       this.groupBoxListLanguage.TabStop = false;
       this.groupBoxListLanguage.Text = "Langue";
@@ -780,10 +785,10 @@
       // 
       this.checkBoxListFrench.AutoSize = true;
       this.checkBoxListFrench.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.checkBoxListFrench.Location = new System.Drawing.Point(267, 22);
-      this.checkBoxListFrench.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxListFrench.Location = new System.Drawing.Point(200, 18);
+      this.checkBoxListFrench.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxListFrench.Name = "checkBoxListFrench";
-      this.checkBoxListFrench.Size = new System.Drawing.Size(92, 21);
+      this.checkBoxListFrench.Size = new System.Drawing.Size(74, 17);
       this.checkBoxListFrench.TabIndex = 2;
       this.checkBoxListFrench.Text = "Français";
       this.checkBoxListFrench.UseVisualStyleBackColor = true;
@@ -793,10 +798,10 @@
       // 
       this.checkBoxListEnglish.AutoSize = true;
       this.checkBoxListEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.checkBoxListEnglish.Location = new System.Drawing.Point(125, 22);
-      this.checkBoxListEnglish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxListEnglish.Location = new System.Drawing.Point(94, 18);
+      this.checkBoxListEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxListEnglish.Name = "checkBoxListEnglish";
-      this.checkBoxListEnglish.Size = new System.Drawing.Size(83, 21);
+      this.checkBoxListEnglish.Size = new System.Drawing.Size(67, 17);
       this.checkBoxListEnglish.TabIndex = 1;
       this.checkBoxListEnglish.Text = "Anglais";
       this.checkBoxListEnglish.UseVisualStyleBackColor = true;
@@ -806,10 +811,10 @@
       // 
       this.checkBoxListAll.AutoSize = true;
       this.checkBoxListAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.checkBoxListAll.Location = new System.Drawing.Point(7, 22);
-      this.checkBoxListAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.checkBoxListAll.Location = new System.Drawing.Point(5, 18);
+      this.checkBoxListAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.checkBoxListAll.Name = "checkBoxListAll";
-      this.checkBoxListAll.Size = new System.Drawing.Size(66, 21);
+      this.checkBoxListAll.Size = new System.Drawing.Size(54, 17);
       this.checkBoxListAll.TabIndex = 0;
       this.checkBoxListAll.Text = "Tous";
       this.checkBoxListAll.UseVisualStyleBackColor = true;
@@ -820,25 +825,25 @@
       this.textBoxListQuotes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-      this.textBoxListQuotes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxListQuotes.Location = new System.Drawing.Point(52, 164);
-      this.textBoxListQuotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.textBoxListQuotes.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.textBoxListQuotes.Location = new System.Drawing.Point(39, 133);
+      this.textBoxListQuotes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.textBoxListQuotes.Multiline = true;
       this.textBoxListQuotes.Name = "textBoxListQuotes";
       this.textBoxListQuotes.ReadOnly = true;
       this.textBoxListQuotes.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-      this.textBoxListQuotes.Size = new System.Drawing.Size(827, 305);
+      this.textBoxListQuotes.Size = new System.Drawing.Size(621, 248);
       this.textBoxListQuotes.TabIndex = 7;
       // 
       // FormMain
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(911, 534);
+      this.ClientSize = new System.Drawing.Size(683, 434);
       this.Controls.Add(this.tabControlMain);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
-      this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "FormMain";
       this.ShowIcon = false;
       this.Text = "My favorite quotes";

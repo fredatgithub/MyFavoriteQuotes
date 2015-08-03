@@ -1,5 +1,7 @@
 
 language: csharp
 solution: MyFavoriteQuotes.sln
+script:
+  - xbuild /p:Configuration=Release MyFavoriteQuotes/MyFavoriteQuotes.csproj
 notifications:
   email: false

@@ -515,4 +515,29 @@
     <Language>French</Language>
     <QuoteValue>Nos enfants ne sont pas nos enfants, ils viennent par nous et pas de nous. Livre -le prophète</QuoteValue>
   </Quote>
+  <Quote>
+    <Author>David Herbert Lawrence</Author>
+    <Language>French</Language>
+    <QuoteValue>Je n'ai jamais vu une bête sauvage s'apitoyer sur son sort. Un oisillon tombera mort de froid de sa branche sans jamais s'être apitoyé sur son sort.</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>David Herbert Lawrence</Author>
+    <Language>English</Language>
+    <QuoteValue>Self-Pity. I never saw a wild thing sorry for itself. A small bird will drop frozen dead from a bough without ever having felt sorry for himself</QuoteValue>
+  </Quote>
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>
+  <Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>
+  <Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
 </Quotes>

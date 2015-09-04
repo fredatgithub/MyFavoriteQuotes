@@ -74,5 +74,8 @@
     <Setting Name="checkBoxAdddisplayAfterAdding" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="UnknownAuthor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">unknown author</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

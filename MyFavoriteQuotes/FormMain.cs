@@ -37,25 +37,25 @@ namespace MyFavoriteQuotes
       InitializeComponent();
     }
 
-    readonly Dictionary<string, string> languageDicoEn = new Dictionary<string, string>();
-    readonly Dictionary<string, string> languageDicoFr = new Dictionary<string, string>();
+    readonly Dictionary<string, string> _languageDicoEn = new Dictionary<string, string>();
+    readonly Dictionary<string, string> _languageDicoFr = new Dictionary<string, string>();
     private const string Space = " ";
-    private string lastSaveLocation = string.Empty;
-    private readonly Quotes AllQuotes = new Quotes();
+    private string _lastSaveLocation = string.Empty;
+    private readonly Quotes _allQuotes = new Quotes();
 
-    private bool searchAll;
-    private bool searchAuthor;
-    private bool searchQuote;
-    private bool languageAll;
-    private bool languageEnglish;
-    private bool languageFrench;
-    private bool listlanguageAll;
-    private bool listlanguageEnglish;
-    private bool listlanguageFrench;
+    private bool _searchAll;
+    private bool _searchAuthor;
+    private bool _searchQuote;
+    private bool _languageAll;
+    private bool _languageEnglish;
+    private bool _languageFrench;
+    private bool _listlanguageAll;
+    private bool _listlanguageEnglish;
+    private bool _listlanguageFrench;
 
     private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      if (!AllQuotes.QuoteFileSaved)
+      if (!_allQuotes.QuoteFileSaved)
       {
         string msg1 = GetTranslatedString("QuoteAdded");
         string msg2 = GetTranslatedString("QuoteAdded");
@@ -76,10 +76,10 @@ namespace MyFavoriteQuotes
       switch (language.ToLower())
       {
         case "english":
-          result = languageDicoEn[index];
+          result = _languageDicoEn[index];
           break;
         case "french":
-          result = languageDicoFr[index];
+          result = _languageDicoFr[index];
           break;
       }
 
@@ -94,10 +94,10 @@ namespace MyFavoriteQuotes
       switch (language.ToLower())
       {
         case "english":
-          result = languageDicoEn[index];
+          result = _languageDicoEn[index];
           break;
         case "french":
-          result = languageDicoFr[index];
+          result = _languageDicoFr[index];
           break;
       }
 
@@ -130,15 +130,15 @@ namespace MyFavoriteQuotes
 
     private void EnableDisableMenu()
     {
-      saveToolStripMenuItem.Enabled = !AllQuotes.QuoteFileSaved;
-      saveasToolStripMenuItem.Enabled = !AllQuotes.QuoteFileSaved;
+      saveToolStripMenuItem.Enabled = !_allQuotes.QuoteFileSaved;
+      saveasToolStripMenuItem.Enabled = !_allQuotes.QuoteFileSaved;
     }
 
     private void DisplayAllQuotes()
     {
       checkBoxListAll.Checked = true;
       textBoxListQuotes.Text = string.Empty;
-      foreach (var item in AllQuotes.ToList())
+      foreach (var item in _allQuotes.ToList())
       {
         textBoxListQuotes.Text += item.Sentence + " - " + item.Author + Environment.NewLine;
       }
@@ -166,10 +166,10 @@ namespace MyFavoriteQuotes
 
       foreach (var q in result)
       {
-        AllQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
+        _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
       }
 
-      AllQuotes.QuoteFileSaved = true;
+      _allQuotes.QuoteFileSaved = true;
     }
 
     private void CreateQuotesFile()
@@ -667,7 +667,7 @@ namespace MyFavoriteQuotes
       }
 
       sw.Close();
-      AllQuotes.QuoteFileSaved = true;
+      _allQuotes.QuoteFileSaved = true;
     }
 
     private void LoadLanguages()
@@ -696,8 +696,8 @@ namespace MyFavoriteQuotes
 
       foreach (var i in result)
       {
-        languageDicoEn.Add(i.quoteValue, i.authorValue);
-        languageDicoFr.Add(i.quoteValue, i.languageValue);
+        _languageDicoEn.Add(i.quoteValue, i.authorValue);
+        _languageDicoFr.Add(i.quoteValue, i.languageValue);
       }
     }
 
@@ -907,7 +907,7 @@ namespace MyFavoriteQuotes
       Settings.Default.checkBoxLanguageAll = checkBoxLanguageAll.Checked;
       Settings.Default.checkBoxLanguageEnglish = checkBoxLanguageEnglish.Checked;
       Settings.Default.checkBoxLanguageFrench = checkBoxLanguageFrench.Checked;
-      Settings.Default.LastSaveLocation = lastSaveLocation;
+      Settings.Default.LastSaveLocation = _lastSaveLocation;
       Settings.Default.checkBoxAdddisplayAfterAdding = checkBoxAdddisplayAfterAdding.Checked;
       Settings.Default.Save();
     }
@@ -934,118 +934,118 @@ namespace MyFavoriteQuotes
         case "English":
           frenchToolStripMenuItem.Checked = false;
           englishToolStripMenuItem.Checked = true;
-          fileToolStripMenuItem.Text = languageDicoEn["MenuFile"];
-          newToolStripMenuItem.Text = languageDicoEn["MenuFileNew"];
-          openToolStripMenuItem.Text = languageDicoEn["MenuFileOpen"];
-          saveToolStripMenuItem.Text = languageDicoEn["MenuFileSave"];
-          saveasToolStripMenuItem.Text = languageDicoEn["MenuFileSaveAs"];
-          printPreviewToolStripMenuItem.Text = languageDicoEn["MenuFilePrint"];
-          printPreviewToolStripMenuItem.Text = languageDicoEn["MenufilePageSetup"];
-          quitToolStripMenuItem.Text = languageDicoEn["MenufileQuit"];
-          editToolStripMenuItem.Text = languageDicoEn["MenuEdit"];
-          cancelToolStripMenuItem.Text = languageDicoEn["MenuEditCancel"];
-          redoToolStripMenuItem.Text = languageDicoEn["MenuEditRedo"];
-          cutToolStripMenuItem.Text = languageDicoEn["MenuEditCut"];
-          copyToolStripMenuItem.Text = languageDicoEn["MenuEditCopy"];
-          pasteToolStripMenuItem.Text = languageDicoEn["MenuEditPaste"];
-          selectAllToolStripMenuItem.Text = languageDicoEn["MenuEditSelectAll"];
-          toolsToolStripMenuItem.Text = languageDicoEn["MenuTools"];
-          personalizeToolStripMenuItem.Text = languageDicoEn["MenuToolsCustomize"];
-          optionsToolStripMenuItem.Text = languageDicoEn["MenuToolsOptions"];
-          languagetoolStripMenuItem.Text = languageDicoEn["MenuLanguage"];
-          englishToolStripMenuItem.Text = languageDicoEn["MenuLanguageEnglish"];
-          radioButtonAddLanguageEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
-          checkBoxListEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
-          frenchToolStripMenuItem.Text = languageDicoEn["MenuLanguageFrench"];
-          radioButtonAddLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
-          checkBoxListFrench.Text = languageDicoEn["MenuLanguageFrench"];
-          groupBoxListLanguage.Text = languageDicoEn["MenuLanguage"];
-          helpToolStripMenuItem.Text = languageDicoEn["MenuHelp"];
-          summaryToolStripMenuItem.Text = languageDicoEn["MenuHelpSummary"];
-          indexToolStripMenuItem.Text = languageDicoEn["MenuHelpIndex"];
-          searchToolStripMenuItem.Text = languageDicoEn["MenuHelpSearch"];
-          aboutToolStripMenuItem.Text = languageDicoEn["MenuHelpAbout"];
-          tabPageSearch.Text = languageDicoEn["Search"];
-          buttonSearch.Text = languageDicoEn["Search"];
-          labelSearch.Text = languageDicoEn["Search"];
-          tabPageAdd.Text = languageDicoEn["Add"];
-          tabPageList.Text = languageDicoEn["ListAllQuotes"];
-          buttonAdd.Text = languageDicoEn["Add"];
-          labelAddAuthor.Text = languageDicoEn["Author"];
-          labelAddQuote.Text = languageDicoEn["Quote"];
-          groupBoxSearch.Text = languageDicoEn["Search"];
-          checkBoxSearchAll.Text = languageDicoEn["SearchAll"];
-          checkBoxSearchAuthor.Text = languageDicoEn["Author"];
-          checkBoxSearchQuote.Text = languageDicoEn["Quote"];
-          groupBoxLanguage.Text = languageDicoEn["Language"];
-          labelAddLanguage.Text = languageDicoEn["Language"];
-          checkBoxLanguageAll.Text = languageDicoEn["LanguageAll"];
-          checkBoxListAll.Text = languageDicoEn["LanguageAll"];
-          checkBoxLanguageEnglish.Text = languageDicoEn["MenuLanguageEnglish"];
-          checkBoxLanguageFrench.Text = languageDicoEn["MenuLanguageFrench"];
-          checkBoxCaseSensitive.Text = languageDicoEn["CaseSensitive"];
-          buttonListDelete.Text = languageDicoEn["Delete"];
-          groupBoxListAuthor.Text = languageDicoEn["Author"];
-          labelListAuthor.Text = languageDicoEn["Choose"];
-          checkBoxAdddisplayAfterAdding.Text = languageDicoEn["DisplayAfterAdding"];
+          fileToolStripMenuItem.Text = _languageDicoEn["MenuFile"];
+          newToolStripMenuItem.Text = _languageDicoEn["MenuFileNew"];
+          openToolStripMenuItem.Text = _languageDicoEn["MenuFileOpen"];
+          saveToolStripMenuItem.Text = _languageDicoEn["MenuFileSave"];
+          saveasToolStripMenuItem.Text = _languageDicoEn["MenuFileSaveAs"];
+          printPreviewToolStripMenuItem.Text = _languageDicoEn["MenuFilePrint"];
+          printPreviewToolStripMenuItem.Text = _languageDicoEn["MenufilePageSetup"];
+          quitToolStripMenuItem.Text = _languageDicoEn["MenufileQuit"];
+          editToolStripMenuItem.Text = _languageDicoEn["MenuEdit"];
+          cancelToolStripMenuItem.Text = _languageDicoEn["MenuEditCancel"];
+          redoToolStripMenuItem.Text = _languageDicoEn["MenuEditRedo"];
+          cutToolStripMenuItem.Text = _languageDicoEn["MenuEditCut"];
+          copyToolStripMenuItem.Text = _languageDicoEn["MenuEditCopy"];
+          pasteToolStripMenuItem.Text = _languageDicoEn["MenuEditPaste"];
+          selectAllToolStripMenuItem.Text = _languageDicoEn["MenuEditSelectAll"];
+          toolsToolStripMenuItem.Text = _languageDicoEn["MenuTools"];
+          personalizeToolStripMenuItem.Text = _languageDicoEn["MenuToolsCustomize"];
+          optionsToolStripMenuItem.Text = _languageDicoEn["MenuToolsOptions"];
+          languagetoolStripMenuItem.Text = _languageDicoEn["MenuLanguage"];
+          englishToolStripMenuItem.Text = _languageDicoEn["MenuLanguageEnglish"];
+          radioButtonAddLanguageEnglish.Text = _languageDicoEn["MenuLanguageEnglish"];
+          checkBoxListEnglish.Text = _languageDicoEn["MenuLanguageEnglish"];
+          frenchToolStripMenuItem.Text = _languageDicoEn["MenuLanguageFrench"];
+          radioButtonAddLanguageFrench.Text = _languageDicoEn["MenuLanguageFrench"];
+          checkBoxListFrench.Text = _languageDicoEn["MenuLanguageFrench"];
+          groupBoxListLanguage.Text = _languageDicoEn["MenuLanguage"];
+          helpToolStripMenuItem.Text = _languageDicoEn["MenuHelp"];
+          summaryToolStripMenuItem.Text = _languageDicoEn["MenuHelpSummary"];
+          indexToolStripMenuItem.Text = _languageDicoEn["MenuHelpIndex"];
+          searchToolStripMenuItem.Text = _languageDicoEn["MenuHelpSearch"];
+          aboutToolStripMenuItem.Text = _languageDicoEn["MenuHelpAbout"];
+          tabPageSearch.Text = _languageDicoEn["Search"];
+          buttonSearch.Text = _languageDicoEn["Search"];
+          labelSearch.Text = _languageDicoEn["Search"];
+          tabPageAdd.Text = _languageDicoEn["Add"];
+          tabPageList.Text = _languageDicoEn["ListAllQuotes"];
+          buttonAdd.Text = _languageDicoEn["Add"];
+          labelAddAuthor.Text = _languageDicoEn["Author"];
+          labelAddQuote.Text = _languageDicoEn["Quote"];
+          groupBoxSearch.Text = _languageDicoEn["Search"];
+          checkBoxSearchAll.Text = _languageDicoEn["SearchAll"];
+          checkBoxSearchAuthor.Text = _languageDicoEn["Author"];
+          checkBoxSearchQuote.Text = _languageDicoEn["Quote"];
+          groupBoxLanguage.Text = _languageDicoEn["Language"];
+          labelAddLanguage.Text = _languageDicoEn["Language"];
+          checkBoxLanguageAll.Text = _languageDicoEn["LanguageAll"];
+          checkBoxListAll.Text = _languageDicoEn["LanguageAll"];
+          checkBoxLanguageEnglish.Text = _languageDicoEn["MenuLanguageEnglish"];
+          checkBoxLanguageFrench.Text = _languageDicoEn["MenuLanguageFrench"];
+          checkBoxCaseSensitive.Text = _languageDicoEn["CaseSensitive"];
+          buttonListDelete.Text = _languageDicoEn["Delete"];
+          groupBoxListAuthor.Text = _languageDicoEn["Author"];
+          labelListAuthor.Text = _languageDicoEn["Choose"];
+          checkBoxAdddisplayAfterAdding.Text = _languageDicoEn["DisplayAfterAdding"];
           break;
         case "French":
-          checkBoxAdddisplayAfterAdding.Text = languageDicoFr["DisplayAfterAdding"];
-          labelListAuthor.Text = languageDicoFr["Choose"];
-          groupBoxListAuthor.Text = languageDicoFr["Author"];
+          checkBoxAdddisplayAfterAdding.Text = _languageDicoFr["DisplayAfterAdding"];
+          labelListAuthor.Text = _languageDicoFr["Choose"];
+          groupBoxListAuthor.Text = _languageDicoFr["Author"];
           frenchToolStripMenuItem.Checked = true;
           englishToolStripMenuItem.Checked = false;
-          fileToolStripMenuItem.Text = languageDicoFr["MenuFile"];
-          newToolStripMenuItem.Text = languageDicoFr["MenuFileNew"];
-          openToolStripMenuItem.Text = languageDicoFr["MenuFileOpen"];
-          saveToolStripMenuItem.Text = languageDicoFr["MenuFileSave"];
-          saveasToolStripMenuItem.Text = languageDicoFr["MenuFileSaveAs"];
-          printPreviewToolStripMenuItem.Text = languageDicoFr["MenuFilePrint"];
-          printPreviewToolStripMenuItem.Text = languageDicoFr["MenufilePageSetup"];
-          quitToolStripMenuItem.Text = languageDicoFr["MenufileQuit"];
-          editToolStripMenuItem.Text = languageDicoFr["MenuEdit"];
-          cancelToolStripMenuItem.Text = languageDicoFr["MenuEditCancel"];
-          redoToolStripMenuItem.Text = languageDicoFr["MenuEditRedo"];
-          cutToolStripMenuItem.Text = languageDicoFr["MenuEditCut"];
-          copyToolStripMenuItem.Text = languageDicoFr["MenuEditCopy"];
-          pasteToolStripMenuItem.Text = languageDicoFr["MenuEditPaste"];
-          selectAllToolStripMenuItem.Text = languageDicoFr["MenuEditSelectAll"];
-          toolsToolStripMenuItem.Text = languageDicoFr["MenuTools"];
-          personalizeToolStripMenuItem.Text = languageDicoFr["MenuToolsCustomize"];
-          optionsToolStripMenuItem.Text = languageDicoFr["MenuToolsOptions"];
-          languagetoolStripMenuItem.Text = languageDicoFr["MenuLanguage"];
-          englishToolStripMenuItem.Text = languageDicoFr["MenuLanguageEnglish"];
-          radioButtonAddLanguageEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
-          checkBoxListEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
-          frenchToolStripMenuItem.Text = languageDicoFr["MenuLanguageFrench"];
-          radioButtonAddLanguageFrench.Text = languageDicoFr["MenuLanguageFrench"];
-          checkBoxListFrench.Text = languageDicoFr["MenuLanguageFrench"];
-          groupBoxListLanguage.Text = languageDicoFr["MenuLanguage"];
-          helpToolStripMenuItem.Text = languageDicoFr["MenuHelp"];
-          summaryToolStripMenuItem.Text = languageDicoFr["MenuHelpSummary"];
-          indexToolStripMenuItem.Text = languageDicoFr["MenuHelpIndex"];
-          searchToolStripMenuItem.Text = languageDicoFr["MenuHelpSearch"];
-          aboutToolStripMenuItem.Text = languageDicoFr["MenuHelpAbout"];
-          tabPageSearch.Text = languageDicoFr["Search"];
-          buttonSearch.Text = languageDicoFr["Search"];
-          labelSearch.Text = languageDicoFr["Search"];
-          tabPageAdd.Text = languageDicoFr["Add"];
-          tabPageList.Text = languageDicoFr["ListAllQuotes"];
-          buttonAdd.Text = languageDicoFr["Add"];
-          labelAddAuthor.Text = languageDicoFr["Author"];
-          labelAddQuote.Text = languageDicoFr["Quote"];
-          groupBoxSearch.Text = languageDicoFr["Search"];
-          checkBoxSearchAll.Text = languageDicoFr["SearchAll"];
-          checkBoxSearchAuthor.Text = languageDicoFr["Author"];
-          checkBoxSearchQuote.Text = languageDicoFr["Quote"];
-          groupBoxLanguage.Text = languageDicoFr["Language"];
-          checkBoxLanguageAll.Text = languageDicoFr["LanguageAll"];
-          checkBoxListAll.Text = languageDicoFr["LanguageAll"];
-          checkBoxLanguageEnglish.Text = languageDicoFr["MenuLanguageEnglish"];
-          checkBoxLanguageFrench.Text = languageDicoFr["MenuLanguageFrench"];
-          checkBoxCaseSensitive.Text = languageDicoFr["CaseSensitive"];
-          labelAddLanguage.Text = languageDicoFr["Language"];
-          buttonListDelete.Text = languageDicoFr["Delete"];
+          fileToolStripMenuItem.Text = _languageDicoFr["MenuFile"];
+          newToolStripMenuItem.Text = _languageDicoFr["MenuFileNew"];
+          openToolStripMenuItem.Text = _languageDicoFr["MenuFileOpen"];
+          saveToolStripMenuItem.Text = _languageDicoFr["MenuFileSave"];
+          saveasToolStripMenuItem.Text = _languageDicoFr["MenuFileSaveAs"];
+          printPreviewToolStripMenuItem.Text = _languageDicoFr["MenuFilePrint"];
+          printPreviewToolStripMenuItem.Text = _languageDicoFr["MenufilePageSetup"];
+          quitToolStripMenuItem.Text = _languageDicoFr["MenufileQuit"];
+          editToolStripMenuItem.Text = _languageDicoFr["MenuEdit"];
+          cancelToolStripMenuItem.Text = _languageDicoFr["MenuEditCancel"];
+          redoToolStripMenuItem.Text = _languageDicoFr["MenuEditRedo"];
+          cutToolStripMenuItem.Text = _languageDicoFr["MenuEditCut"];
+          copyToolStripMenuItem.Text = _languageDicoFr["MenuEditCopy"];
+          pasteToolStripMenuItem.Text = _languageDicoFr["MenuEditPaste"];
+          selectAllToolStripMenuItem.Text = _languageDicoFr["MenuEditSelectAll"];
+          toolsToolStripMenuItem.Text = _languageDicoFr["MenuTools"];
+          personalizeToolStripMenuItem.Text = _languageDicoFr["MenuToolsCustomize"];
+          optionsToolStripMenuItem.Text = _languageDicoFr["MenuToolsOptions"];
+          languagetoolStripMenuItem.Text = _languageDicoFr["MenuLanguage"];
+          englishToolStripMenuItem.Text = _languageDicoFr["MenuLanguageEnglish"];
+          radioButtonAddLanguageEnglish.Text = _languageDicoFr["MenuLanguageEnglish"];
+          checkBoxListEnglish.Text = _languageDicoFr["MenuLanguageEnglish"];
+          frenchToolStripMenuItem.Text = _languageDicoFr["MenuLanguageFrench"];
+          radioButtonAddLanguageFrench.Text = _languageDicoFr["MenuLanguageFrench"];
+          checkBoxListFrench.Text = _languageDicoFr["MenuLanguageFrench"];
+          groupBoxListLanguage.Text = _languageDicoFr["MenuLanguage"];
+          helpToolStripMenuItem.Text = _languageDicoFr["MenuHelp"];
+          summaryToolStripMenuItem.Text = _languageDicoFr["MenuHelpSummary"];
+          indexToolStripMenuItem.Text = _languageDicoFr["MenuHelpIndex"];
+          searchToolStripMenuItem.Text = _languageDicoFr["MenuHelpSearch"];
+          aboutToolStripMenuItem.Text = _languageDicoFr["MenuHelpAbout"];
+          tabPageSearch.Text = _languageDicoFr["Search"];
+          buttonSearch.Text = _languageDicoFr["Search"];
+          labelSearch.Text = _languageDicoFr["Search"];
+          tabPageAdd.Text = _languageDicoFr["Add"];
+          tabPageList.Text = _languageDicoFr["ListAllQuotes"];
+          buttonAdd.Text = _languageDicoFr["Add"];
+          labelAddAuthor.Text = _languageDicoFr["Author"];
+          labelAddQuote.Text = _languageDicoFr["Quote"];
+          groupBoxSearch.Text = _languageDicoFr["Search"];
+          checkBoxSearchAll.Text = _languageDicoFr["SearchAll"];
+          checkBoxSearchAuthor.Text = _languageDicoFr["Author"];
+          checkBoxSearchQuote.Text = _languageDicoFr["Quote"];
+          groupBoxLanguage.Text = _languageDicoFr["Language"];
+          checkBoxLanguageAll.Text = _languageDicoFr["LanguageAll"];
+          checkBoxListAll.Text = _languageDicoFr["LanguageAll"];
+          checkBoxLanguageEnglish.Text = _languageDicoFr["MenuLanguageEnglish"];
+          checkBoxLanguageFrench.Text = _languageDicoFr["MenuLanguageFrench"];
+          checkBoxCaseSensitive.Text = _languageDicoFr["CaseSensitive"];
+          labelAddLanguage.Text = _languageDicoFr["Language"];
+          buttonListDelete.Text = _languageDicoFr["Delete"];
           break;
       }
     }
@@ -1054,7 +1054,7 @@ namespace MyFavoriteQuotes
     {
       if (textBoxAddAuthor.Text.Trim() == string.Empty)
       {
-        textBoxAddAuthor.Text = "unknown author";
+        textBoxAddAuthor.Text = Settings.Default.UnknownAuthor;
       }
 
       if (textBoxAddQuote.Text == string.Empty)
@@ -1066,7 +1066,7 @@ namespace MyFavoriteQuotes
       // check if the quote is not already in
       // TODO code
 
-      AllQuotes.Add(new Quote(textBoxAddAuthor.Text, radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
+      _allQuotes.Add(new Quote(textBoxAddAuthor.Text, radioButtonAddLanguageEnglish.Checked ? "English" : "French", textBoxAddQuote.Text));
       EnableDisableMenu();
       UpdateAfterAddition();
       if (checkBoxAdddisplayAfterAdding.Checked)
@@ -1083,7 +1083,7 @@ namespace MyFavoriteQuotes
       DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
     }
 
-    private string RemoveColon(string input)
+    private static string RemoveColon(string input)
     {
       return input.Replace(':', ' ');
     }
@@ -1110,12 +1110,12 @@ namespace MyFavoriteQuotes
           MessageBoxButtons.OK);
       }
 
-      if (!searchAll && !searchAuthor && !searchQuote)
+      if (!_searchAll && !_searchAuthor && !_searchQuote)
       {
         checkBoxSearchAll.Checked = true;
       }
 
-      if (!languageAll && !languageEnglish && !languageFrench)
+      if (!_languageAll && !_languageEnglish && !_languageFrench)
       {
         checkBoxLanguageAll.Checked = true;
       }
@@ -1182,7 +1182,7 @@ namespace MyFavoriteQuotes
       IEnumerable<Quote> result3;
       IEnumerable<Quote> result4;
       // First we select them all and then we remove what's not selected
-      result3 = from node in AllQuotes.ToList()
+      result3 = from node in _allQuotes.ToList()
                 select node;
       result4 = result3;
       bool caseSensitive = checkBoxCaseSensitive.Checked;
@@ -1341,7 +1341,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxSearchAll_CheckedChanged(object sender, EventArgs e)
     {
-      searchAll = checkBoxSearchAll.Checked;
+      _searchAll = checkBoxSearchAll.Checked;
       if (checkBoxSearchAll.Checked)
       {
         checkBoxSearchAuthor.Checked = true;
@@ -1351,7 +1351,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxSearchAuthor_CheckedChanged(object sender, EventArgs e)
     {
-      searchAuthor = checkBoxSearchAuthor.Checked;
+      _searchAuthor = checkBoxSearchAuthor.Checked;
       if (checkBoxSearchAll.Checked && !checkBoxSearchAuthor.Checked)
       {
         checkBoxSearchAll.Checked = false;
@@ -1365,7 +1365,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxSearchQuote_CheckedChanged(object sender, EventArgs e)
     {
-      searchQuote = checkBoxSearchQuote.Checked;
+      _searchQuote = checkBoxSearchQuote.Checked;
       if (checkBoxSearchAll.Checked && !checkBoxSearchQuote.Checked)
       {
         checkBoxSearchAll.Checked = false;
@@ -1379,7 +1379,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxLanguageAll_CheckedChanged(object sender, EventArgs e)
     {
-      languageAll = checkBoxLanguageAll.Checked;
+      _languageAll = checkBoxLanguageAll.Checked;
       if (checkBoxLanguageAll.Checked)
       {
         checkBoxLanguageEnglish.Checked = true;
@@ -1389,7 +1389,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxLanguageEnglish_CheckedChanged(object sender, EventArgs e)
     {
-      languageEnglish = checkBoxLanguageEnglish.Checked;
+      _languageEnglish = checkBoxLanguageEnglish.Checked;
       if (checkBoxLanguageAll.Checked && !checkBoxLanguageEnglish.Checked)
       {
         checkBoxLanguageAll.Checked = false;
@@ -1403,7 +1403,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxLanguageFrench_CheckedChanged(object sender, EventArgs e)
     {
-      languageFrench = checkBoxLanguageFrench.Checked;
+      _languageFrench = checkBoxLanguageFrench.Checked;
       if (checkBoxLanguageAll.Checked && !checkBoxLanguageFrench.Checked)
       {
         checkBoxLanguageAll.Checked = false;
@@ -1417,7 +1417,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxListAll_CheckedChanged(object sender, EventArgs e)
     {
-      listlanguageAll = checkBoxListAll.Checked;
+      _listlanguageAll = checkBoxListAll.Checked;
       if (checkBoxListAll.Checked)
       {
         checkBoxListEnglish.Checked = true;
@@ -1428,7 +1428,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxListEnglish_CheckedChanged(object sender, EventArgs e)
     {
-      listlanguageEnglish = checkBoxListEnglish.Checked;
+      _listlanguageEnglish = checkBoxListEnglish.Checked;
       if (checkBoxListAll.Checked && !checkBoxListEnglish.Checked)
       {
         checkBoxListAll.Checked = false;
@@ -1448,12 +1448,12 @@ namespace MyFavoriteQuotes
       IEnumerable<Quote> result3;
       if (author.ToLower() == "all")
       {
-        result3 = from node in AllQuotes.ToList()
+        result3 = from node in _allQuotes.ToList()
                   select node;
       }
       else
       {
-        result3 = from node in AllQuotes.ToList()
+        result3 = from node in _allQuotes.ToList()
                   where node.Author == author
                   select node;
       }
@@ -1467,7 +1467,7 @@ namespace MyFavoriteQuotes
 
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
     {
-      IEnumerable<Quote> result3 = from node in AllQuotes.ToList() select node;
+      IEnumerable<Quote> result3 = from node in _allQuotes.ToList() select node;
       IEnumerable<Quote> result4 = result3;
       if (englishChecked && !frenchChecked)
       {
@@ -1490,7 +1490,7 @@ namespace MyFavoriteQuotes
 
       if (!englishChecked && !frenchChecked) // nothing to display, empty list
       {
-        result3 = from node in AllQuotes.ToList().Where(n => n.Sentence == "")
+        result3 = from node in _allQuotes.ToList().Where(n => n.Sentence == "")
                   select node;
       }
 
@@ -1509,7 +1509,7 @@ namespace MyFavoriteQuotes
 
     private void checkBoxListFrench_CheckedChanged(object sender, EventArgs e)
     {
-      listlanguageFrench = checkBoxListFrench.Checked;
+      _listlanguageFrench = checkBoxListFrench.Checked;
       if (checkBoxListAll.Checked && !checkBoxListFrench.Checked)
       {
         checkBoxListAll.Checked = false;
@@ -1547,7 +1547,7 @@ namespace MyFavoriteQuotes
       root.AppendChild(newQuote);
       doc.Save(Settings.Default.QuoteFileName);
 
-      AllQuotes.QuoteFileSaved = true;
+      _allQuotes.QuoteFileSaved = true;
       EnableDisableMenu();
     }
 
@@ -1583,7 +1583,7 @@ namespace MyFavoriteQuotes
       XmlElement rootQuotes = xmlDoc.CreateElement(string.Empty, "Quotes", string.Empty);
       xmlDoc.AppendChild(rootQuotes);
 
-      foreach (var item in AllQuotes.ToList())
+      foreach (var item in _allQuotes.ToList())
       {
         XmlElement newQuote = xmlDoc.CreateElement("Quote");
         XmlElement newAuthor = xmlDoc.CreateElement("Author");
@@ -1600,9 +1600,9 @@ namespace MyFavoriteQuotes
 
       xmlDoc.Save(fileName);
 
-      AllQuotes.QuoteFileSaved = true;
+      _allQuotes.QuoteFileSaved = true;
       EnableDisableMenu();
-      lastSaveLocation = fileName;
+      _lastSaveLocation = fileName;
     }
 
     private void buttonListDelete_Click(object sender, EventArgs e)
@@ -1620,7 +1620,7 @@ namespace MyFavoriteQuotes
       }
 
       // delete the quote
-      if (AllQuotes.Remove(SeparateQuote(textBoxListQuotes.SelectedText)[0], SeparateQuote(textBoxListQuotes.SelectedText)[1]))
+      if (_allQuotes.Remove(SeparateQuote(textBoxListQuotes.SelectedText)[0], SeparateQuote(textBoxListQuotes.SelectedText)[1]))
       {
         DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeletedShort"), MessageBoxButtons.OK);
         EnableDisableMenu();

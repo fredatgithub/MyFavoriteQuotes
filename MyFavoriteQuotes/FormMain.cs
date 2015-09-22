@@ -27,6 +27,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using MyFavoriteQuotes.Properties;
+using Tools;
 
 namespace MyFavoriteQuotes
 {
@@ -57,8 +58,8 @@ namespace MyFavoriteQuotes
     {
       if (!_allQuotes.QuoteFileSaved)
       {
-        string msg1 = GetTranslatedString("QuoteAdded");
-        string msg2 = GetTranslatedString("QuoteAdded");
+        string msg1 = Translate("QuoteAdded");
+        string msg2 = Translate("QuoteAdded");
         var result = DisplayMessage(msg1, msg2, MessageBoxButtons.YesNo);
         if (result == DialogResult.Yes)
         {
@@ -86,7 +87,7 @@ namespace MyFavoriteQuotes
       return result;
     }
 
-    private string GetTranslatedString(string index)
+    private string Translate(string index)
     {
       string result = string.Empty;
       string language = frenchToolStripMenuItem.Checked ? "french" : "english";
@@ -140,7 +141,8 @@ namespace MyFavoriteQuotes
       textBoxListQuotes.Text = string.Empty;
       foreach (var item in _allQuotes.ToList())
       {
-        textBoxListQuotes.Text += item.Sentence + " - " + item.Author + Environment.NewLine;
+        textBoxListQuotes.Text += item.Sentence + Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace +
+          item.Author + Environment.NewLine;
       }
 
       textBoxListQuotes.Select(0, 0);
@@ -157,11 +159,17 @@ namespace MyFavoriteQuotes
       XDocument xmlDoc = XDocument.Load(Settings.Default.QuoteFileName);
       var result = from node in xmlDoc.Descendants("Quote")
                    where node.HasElements
+                   let xElementAuthor = node.Element("Author")
+                   where xElementAuthor != null
+                   let xElementLanguage = node.Element("Language")
+                   where xElementLanguage != null
+                   let xElementQuote = node.Element("QuoteValue")
+                   where xElementQuote != null
                    select new
                    {
-                     authorValue = node.Element("Author").Value,
-                     languageValue = node.Element("Language").Value,
-                     sentenceValue = node.Element("QuoteValue").Value
+                     authorValue = xElementAuthor.Value,
+                     languageValue = xElementLanguage.Value,
+                     sentenceValue = xElementQuote.Value
                    };
 
       foreach (var q in result)
@@ -688,11 +696,11 @@ namespace MyFavoriteQuotes
                    let xElementFrench = node.Element("frenchValue")
                    where xElementFrench != null
                    select new
-                              {
-                                quoteValue = xElementName.Value,
-                                authorValue = xElementEnglish.Value,
-                                languageValue = xElementFrench.Value
-                              };
+                   {
+                     quoteValue = xElementName.Value,
+                     authorValue = xElementEnglish.Value,
+                     languageValue = xElementFrench.Value
+                   };
 
       foreach (var i in result)
       {
@@ -1059,7 +1067,7 @@ namespace MyFavoriteQuotes
 
       if (textBoxAddQuote.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("EmptyQuote"), GetTranslatedString("EmptyQuoteShort"), MessageBoxButtons.OK);
+        DisplayMessageOk(Translate("EmptyQuote"), Translate("EmptyQuoteShort"), MessageBoxButtons.OK);
         return;
       }
 
@@ -1125,7 +1133,6 @@ namespace MyFavoriteQuotes
       //  Debugger.Break();
       //}
 
-      List<string> searchedResult = new List<string>();
       var criteriaAuthor = SearchedCriteria.NoCriteriaChosen;
       var criteriaLanguage = SearchedLanguage.NoLanguageChosen;
       if (checkBoxSearchAll.Checked)
@@ -1158,6 +1165,7 @@ namespace MyFavoriteQuotes
         criteriaLanguage = SearchedLanguage.French;
       }
 
+      List<string> searchedResult = new List<string>();
       searchedResult = SearchInMemory(textBoxSearch.Text, criteriaAuthor, criteriaLanguage);
       if (searchedResult.Count != 0)
       {
@@ -1179,12 +1187,10 @@ namespace MyFavoriteQuotes
       SearchedLanguage language = SearchedLanguage.FrenchAndEnglish)
     {
       List<string> result2 = new List<string>();
-      IEnumerable<Quote> result3;
-      IEnumerable<Quote> result4;
       // First we select them all and then we remove what's not selected
-      result3 = from node in _allQuotes.ToList()
-                select node;
-      result4 = result3;
+      var result3 = from node in _allQuotes.ToList()
+                    select node;
+      var result4 = result3;
       bool caseSensitive = checkBoxCaseSensitive.Checked;
       if (author == SearchedCriteria.Author && caseSensitive)
       {
@@ -1258,20 +1264,25 @@ namespace MyFavoriteQuotes
       XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
       var result = from node in xDoc.Descendants("Quote")
                    where node.HasElements
+                   let xElementAuthor = node.Element("Author")
+                   where xElementAuthor != null
+                   let xElementLanguage = node.Element("Language")
+                   where xElementLanguage != null
+                   let xElementquote = node.Element("QuoteValue")
+                   where xElementquote != null
                    select new
                    {
-                     authorValue = node.Element("Author").Value,
-                     languageValue = node.Element("Language").Value,
-                     quoteValue = node.Element("QuoteValue").Value
+                     authorValue = xElementAuthor.Value,
+                     languageValue = xElementLanguage.Value,
+                     quoteValue = xElementquote.Value
                    };
 
       foreach (var i in result)
       {
         if (i.languageValue == language)
         {
-          result2.Add(i.quoteValue + " - " + i.authorValue);
+          result2.Add(i.quoteValue + Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace + i.authorValue);
         }
-
       }
 
       return result2;
@@ -1284,14 +1295,16 @@ namespace MyFavoriteQuotes
       var result = from node in xDoc.Descendants("Quotes")
                    where node.HasElements
                    where node.Name == "Quote"
+                   let xElementquote = node.Element("Quote")
                    //where node.Element("Quote").Attribute("Author") == author
                    //where node.Element("Quote"). == language
                    //where node.Element("Author") == searchString
+                   where xElementquote != null
                    select new
                    {
-                     quoteValue = node.Element("Quote").Value,
-                     authorValue = node.Element("Quote").Attribute("Author").Value,
-                     languageValue = node.Element("Quote").Attribute("Language").Value,
+                     quoteValue = xElementquote.Value,
+                     authorValue = xElementquote.Attribute("Author").Value,
+                     languageValue = xElementquote.Attribute("Language").Value,
                    };
 
       // return result.Select(i => i.quoteValue).ToList();
@@ -1461,7 +1474,8 @@ namespace MyFavoriteQuotes
       textBoxListQuotes.Text = string.Empty;
       foreach (var quote in result3)
       {
-        textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;
+        textBoxListQuotes.Text += quote.Sentence +Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace + 
+          quote.Author + Environment.NewLine;
       }
     }
 
@@ -1609,34 +1623,34 @@ namespace MyFavoriteQuotes
     {
       if (textBoxListQuotes.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("EmptyText"), GetTranslatedString("EmptyTextShort"), MessageBoxButtons.OK);
+        DisplayMessageOk(Translate("EmptyText"), Translate("EmptyTextShort"), MessageBoxButtons.OK);
         return;
       }
 
       if (textBoxListQuotes.SelectedText.Length <= 0)
       {
-        DisplayMessageOk(GetTranslatedString("NoSelection"), GetTranslatedString("NoSelectionShort"), MessageBoxButtons.OK);
+        DisplayMessageOk(Translate("NoSelection"), Translate("NoSelectionShort"), MessageBoxButtons.OK);
         return;
       }
 
       // delete the quote
       if (_allQuotes.Remove(SeparateQuote(textBoxListQuotes.SelectedText)[0], SeparateQuote(textBoxListQuotes.SelectedText)[1]))
       {
-        DisplayMessageOk(GetTranslatedString("QuoteDeleted"), GetTranslatedString("QuoteDeletedShort"), MessageBoxButtons.OK);
+        DisplayMessageOk(Translate("QuoteDeleted"), Translate("QuoteDeletedShort"), MessageBoxButtons.OK);
         EnableDisableMenu();
         // refresh and reload list
         DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
       }
       else
       {
-        DisplayMessageOk(GetTranslatedString("NoQuoteDeleted") +
+        DisplayMessageOk(Translate("NoQuoteDeleted") +
           Environment.NewLine +
-          GetTranslatedString("TheSentence") +
+          Translate("TheSentence") +
           Environment.NewLine +
           textBoxListQuotes.SelectedText +
           Environment.NewLine +
-          GetTranslatedString("HasNotBeenfound"),
-          GetTranslatedString("NoQuoteDeletedShort"), MessageBoxButtons.OK);
+          Translate("HasNotBeenfound"),
+          Translate("NoQuoteDeletedShort"), MessageBoxButtons.OK);
       }
     }
 
@@ -1717,17 +1731,17 @@ namespace MyFavoriteQuotes
       if (tb != ActiveControl) return;
       if (tb.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("ThereIs") + Space +
-          GetTranslatedString(errorMessage) + Space +
-          GetTranslatedString("ToCut") + Space, GetTranslatedString(errorMessage),
+        DisplayMessageOk(Translate("ThereIs") + Space +
+          Translate(errorMessage) + Space +
+          Translate("ToCut") + Space, Translate(errorMessage),
           MessageBoxButtons.OK);
         return;
       }
 
       if (tb.SelectedText == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("NoTextHasBeenSelected"),
-          GetTranslatedString(errorMessage), MessageBoxButtons.OK);
+        DisplayMessageOk(Translate("NoTextHasBeenSelected"),
+          Translate(errorMessage), MessageBoxButtons.OK);
         return;
       }
 
@@ -1740,15 +1754,15 @@ namespace MyFavoriteQuotes
       if (tb != ActiveControl) return;
       if (tb.Text == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("ThereIsNothingToCopy") + Space,
-          GetTranslatedString(message), MessageBoxButtons.OK);
+        DisplayMessageOk(Translate("ThereIsNothingToCopy") + Space,
+          Translate(message), MessageBoxButtons.OK);
         return;
       }
 
       if (tb.SelectedText == string.Empty)
       {
-        DisplayMessageOk(GetTranslatedString("NoTextHasBeenSelected"),
-          GetTranslatedString(message), MessageBoxButtons.OK);
+        DisplayMessageOk(Translate("NoTextHasBeenSelected"),
+          Translate(message), MessageBoxButtons.OK);
         return;
       }
 

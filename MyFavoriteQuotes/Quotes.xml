@@ -535,11 +535,11 @@
     <Language>French</Language>
     <QuoteValue>La meilleur façon de se défendre est de ne pas imiter l'offenseur</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand vous dites "oui" à quelqu'un, soyez sûr de ne pas vous dire "non" à vous-même</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

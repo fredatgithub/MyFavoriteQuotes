@@ -540,11 +540,11 @@
     <Language>French</Language>
     <QuoteValue>Quand vous dites "oui" à quelqu'un, soyez sûr de ne pas vous dire "non" à vous-même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jean-Jacques Rousseau</Author>
+    <Language>French</Language>
+    <QuoteValue>Renoncer à sa liberté, c'est renoncer à sa qualité d'homme, aux droits de l'humanité, même à ses devoirs</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

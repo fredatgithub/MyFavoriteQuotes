@@ -545,11 +545,11 @@
     <Language>French</Language>
     <QuoteValue>Renoncer à sa liberté, c'est renoncer à sa qualité d'homme, aux droits de l'humanité, même à ses devoirs</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paul Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>La vie est un rêve dans lequel vous pouvez obtenir ce que vous voulez - si vous maîtrisez l'art de l'attaque et de la retraite</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

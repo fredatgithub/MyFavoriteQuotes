@@ -550,11 +550,11 @@
     <Language>French</Language>
     <QuoteValue>La vie est un rêve dans lequel vous pouvez obtenir ce que vous voulez - si vous maîtrisez l'art de l'attaque et de la retraite</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>S'émerveiller des splendeurs de la vie et y trouver l'énergie pour se révolter contre ses horreurs</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

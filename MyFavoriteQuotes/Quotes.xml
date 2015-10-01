@@ -555,11 +555,11 @@
     <Language>French</Language>
     <QuoteValue>S'émerveiller des splendeurs de la vie et y trouver l'énergie pour se révolter contre ses horreurs</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>George Orwell</Author>
+    <Language>French</Language>
+    <QuoteValue>En ces temps d'imposture universelle, dire la vérité est un acte révolutionnaire</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

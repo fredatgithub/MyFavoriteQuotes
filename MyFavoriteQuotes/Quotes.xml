@@ -560,16 +560,16 @@
     <Language>French</Language>
     <QuoteValue>En ces temps d'imposture universelle, dire la vérité est un acte révolutionnaire</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Montaigne</Author>
+    <Language>French</Language>
+    <QuoteValue>La parole est à moitié à celui qui écoute, et à moitié à celui qui parle</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Cardinal de Richelieu</Author>
+    <Language>French</Language>
+    <QuoteValue>Donnez-moi six lignes écrites par le plus honnête homme, et je trouverai une raison de le pendre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

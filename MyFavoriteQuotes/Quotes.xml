@@ -570,16 +570,16 @@
     <Language>French</Language>
     <QuoteValue>Donnez-moi six lignes écrites par le plus honnête homme, et je trouverai une raison de le pendre</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Benjamin Franklin</Author>
+    <Language>English</Language>
+    <QuoteValue>Those who surrender freedom for security will not have, nor do they deserve, either one</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Benjamin Franklin</Author>
+    <Language>French</Language>
+    <QuoteValue>Ceux qui sacrifient un peu de liberté pour de la sécurité n'auront et ne méritent ni l'un, ni l'autre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

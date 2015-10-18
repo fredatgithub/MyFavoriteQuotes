@@ -40,9 +40,9 @@ namespace MyFavoriteQuotes
 
     readonly Dictionary<string, string> _languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> _languageDicoFr = new Dictionary<string, string>();
-    private const string Space = " ";
     private string _lastSaveLocation = string.Empty;
     private readonly Quotes _allQuotes = new Quotes();
+    private string _currentLanguage = "english";
 
     private bool _searchAll;
     private bool _searchAuthor;
@@ -182,13 +182,9 @@ namespace MyFavoriteQuotes
 
     private void CreateQuotesFile()
     {
-      List<string> minimumVersion = new List<string>
+      var minimumVersion = new List<string>
       {
         "<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
-        "<Document>",
-        "<DocumentVersion>",
-        "<version> 1.0 </version>",
-        "</DocumentVersion>",
         "<Quotes>",
          "<Quote>",
            "<Author>Anonyme</Author>",
@@ -665,7 +661,7 @@ namespace MyFavoriteQuotes
           "<Language>French</Language>",
           "<QuoteValue>Aimez le chocolat à fond sans complexes ni fausse honte car...sans un grain de folie,il n'est point d'homme raisonnable</QuoteValue>",
           "</Quote>",
-      "</terms>",
+      "<Quotes>",
     "</Document>"
       };
       StreamWriter sw = new StreamWriter(Settings.Default.QuoteFileName);
@@ -686,8 +682,19 @@ namespace MyFavoriteQuotes
       }
 
       // read the translation file and feed the language
-      XDocument xmlDoc = XDocument.Load(Settings.Default.LanguageFileName);
-      var result = from node in xmlDoc.Descendants("term")
+      XDocument xDoc;
+      try
+      {
+        xDoc = XDocument.Load(Settings.Default.LanguageFileName);
+      }
+      catch (Exception exception)
+      {
+        MessageBox.Show("Error while loading xml file " + exception);
+        CreateLanguageFile();
+        return;
+      }
+
+      var result = from node in xDoc.Descendants("term")
                    where node.HasElements
                    let xElementName = node.Element("name")
                    where xElementName != null
@@ -697,27 +704,37 @@ namespace MyFavoriteQuotes
                    where xElementFrench != null
                    select new
                    {
-                     quoteValue = xElementName.Value,
-                     authorValue = xElementEnglish.Value,
-                     languageValue = xElementFrench.Value
+                     name = xElementName.Value,
+                     englishValue = xElementEnglish.Value,
+                     frenchValue = xElementFrench.Value
                    };
-
       foreach (var i in result)
       {
-        _languageDicoEn.Add(i.quoteValue, i.authorValue);
-        _languageDicoFr.Add(i.quoteValue, i.languageValue);
+        if (!_languageDicoEn.ContainsKey(i.name))
+        {
+          _languageDicoEn.Add(i.name, i.englishValue);
+        }
+        else
+        {
+          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+        }
+
+        if (!_languageDicoFr.ContainsKey(i.name))
+        {
+          _languageDicoFr.Add(i.name, i.frenchValue);
+        }
+        else
+        {
+          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+        }
       }
     }
 
     private static void CreateLanguageFile()
     {
-      List<string> minimumVersion = new List<string>
+      var minimumVersion = new List<string>
       {
         "<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
-        "<Document>",
-        "<DocumentVersion>",
-        "<version> 1.0 </version>",
-        "</DocumentVersion>",
         "<terms>",
          "<term>",
            "<name>MenuFile</name>",
@@ -869,8 +886,7 @@ namespace MyFavoriteQuotes
           "<englishValue>Case sensitive</englishValue>",
           "<frenchValue>Sensible à la casse</frenchValue>",
         "</term>",
-      "</terms>",
-    "</Document>"
+      "</terms>"
       };
       StreamWriter sw = new StreamWriter(Settings.Default.LanguageFileName);
       foreach (string item in minimumVersion)
@@ -996,6 +1012,7 @@ namespace MyFavoriteQuotes
           groupBoxListAuthor.Text = _languageDicoEn["Author"];
           labelListAuthor.Text = _languageDicoEn["Choose"];
           checkBoxAdddisplayAfterAdding.Text = _languageDicoEn["DisplayAfterAdding"];
+          _currentLanguage = "english";
           break;
         case "French":
           checkBoxAdddisplayAfterAdding.Text = _languageDicoFr["DisplayAfterAdding"];
@@ -1054,6 +1071,7 @@ namespace MyFavoriteQuotes
           checkBoxCaseSensitive.Text = _languageDicoFr["CaseSensitive"];
           labelAddLanguage.Text = _languageDicoFr["Language"];
           buttonListDelete.Text = _languageDicoFr["Delete"];
+          _currentLanguage = "french";
           break;
       }
     }
@@ -1165,7 +1183,7 @@ namespace MyFavoriteQuotes
         criteriaLanguage = SearchedLanguage.French;
       }
 
-      List<string> searchedResult = new List<string>();
+      var searchedResult = new List<string>();
       searchedResult = SearchInMemory(textBoxSearch.Text, criteriaAuthor, criteriaLanguage);
       if (searchedResult.Count != 0)
       {
@@ -1186,7 +1204,7 @@ namespace MyFavoriteQuotes
       SearchedCriteria author = SearchedCriteria.AuthorAndQuote,
       SearchedLanguage language = SearchedLanguage.FrenchAndEnglish)
     {
-      List<string> result2 = new List<string>();
+      var result2 = new List<string>();
       // First we select them all and then we remove what's not selected
       var result3 = from node in _allQuotes.ToList()
                     select node;
@@ -1260,7 +1278,7 @@ namespace MyFavoriteQuotes
 
     private List<string> SearchInXmlFor(string filename, string searchedString, string author, string language = "English")
     {
-      List<string> result2 = new List<string>();
+      var result2 = new List<string>();
       XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
       var result = from node in xDoc.Descendants("Quote")
                    where node.HasElements
@@ -1290,15 +1308,12 @@ namespace MyFavoriteQuotes
 
     private List<string> SearchInXmlFor2(string filename, string searchedString, string author, string language = "English")
     {
-      List<string> result2 = new List<string>();
+      var result2 = new List<string>();
       XDocument xDoc = XDocument.Load(filename);
       var result = from node in xDoc.Descendants("Quotes")
                    where node.HasElements
                    where node.Name == "Quote"
                    let xElementquote = node.Element("Quote")
-                   //where node.Element("Quote").Attribute("Author") == author
-                   //where node.Element("Quote"). == language
-                   //where node.Element("Author") == searchString
                    where xElementquote != null
                    select new
                    {
@@ -1307,7 +1322,6 @@ namespace MyFavoriteQuotes
                      languageValue = xElementquote.Attribute("Language").Value,
                    };
 
-      // return result.Select(i => i.quoteValue).ToList();
       foreach (var i in result)
       {
         result2.Add(i.quoteValue);
@@ -1474,9 +1488,12 @@ namespace MyFavoriteQuotes
       textBoxListQuotes.Text = string.Empty;
       foreach (var quote in result3)
       {
-        textBoxListQuotes.Text += quote.Sentence +Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace + 
+        textBoxListQuotes.Text += quote.Sentence + Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace +
           quote.Author + Environment.NewLine;
       }
+
+      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) + 
+        Punctuation.Colon + Punctuation.OneSpace + result3.Count();
     }
 
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
@@ -1513,12 +1530,16 @@ namespace MyFavoriteQuotes
       comboBoxListAuthor.Items.Add("All");
       foreach (var quote in result3)
       {
-        textBoxListQuotes.Text += quote.Sentence + " - " + quote.Author + Environment.NewLine;
+        textBoxListQuotes.Text += quote.Sentence + Punctuation.OneSpace + Punctuation.Dash +
+          Punctuation.OneSpace + quote.Author + Environment.NewLine;
         if (!comboBoxListAuthor.Items.Contains(quote.Author))
         {
           comboBoxListAuthor.Items.Add(quote.Author);
         }
       }
+
+      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) +
+        Punctuation.Colon + Punctuation.OneSpace + result3.Count();
     }
 
     private void checkBoxListFrench_CheckedChanged(object sender, EventArgs e)
@@ -1656,7 +1677,7 @@ namespace MyFavoriteQuotes
 
     public static string[] SeparateQuote(string wholeQuote)
     {
-      string[] result = new string[2];
+      var result = new string[2];
       if (wholeQuote.Length < 4)
       {
         return result;
@@ -1731,9 +1752,9 @@ namespace MyFavoriteQuotes
       if (tb != ActiveControl) return;
       if (tb.Text == string.Empty)
       {
-        DisplayMessageOk(Translate("ThereIs") + Space +
-          Translate(errorMessage) + Space +
-          Translate("ToCut") + Space, Translate(errorMessage),
+        DisplayMessageOk(Translate("ThereIs") + Punctuation.OneSpace +
+          Translate(errorMessage) + Punctuation.OneSpace +
+          Translate("ToCut") + Punctuation.OneSpace, Translate(errorMessage),
           MessageBoxButtons.OK);
         return;
       }
@@ -1754,7 +1775,7 @@ namespace MyFavoriteQuotes
       if (tb != ActiveControl) return;
       if (tb.Text == string.Empty)
       {
-        DisplayMessageOk(Translate("ThereIsNothingToCopy") + Space,
+        DisplayMessageOk(Translate("ThereIsNothingToCopy") + Punctuation.OneSpace,
           Translate(message), MessageBoxButtons.OK);
         return;
       }

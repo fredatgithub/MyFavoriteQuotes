@@ -23,6 +23,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
@@ -1293,7 +1294,18 @@ namespace MyFavoriteQuotes
     private List<string> SearchInXmlFor(string filename, string searchedString, string author, string language = "English")
     {
       var result2 = new List<string>();
-      XDocument xDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      XDocument xDoc;
+      try
+      {
+        xDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      }
+      catch (Exception exception)
+      {
+        MessageBox.Show("Error while loading the " + Settings.Default.QuoteFileName +
+                        " xml file: " + exception.Message);
+        return result2;
+      }
+      
       var result = from node in xDoc.Descendants("Quote")
                    where node.HasElements
                    let xElementAuthor = node.Element("Author")
@@ -1323,7 +1335,18 @@ namespace MyFavoriteQuotes
     private List<string> SearchInXmlFor2(string filename, string searchedString, string author, string language = "English")
     {
       var result2 = new List<string>();
-      XDocument xDoc = XDocument.Load(filename);
+      XDocument xDoc;
+      try
+      {
+        xDoc = XDocument.Load(filename);
+      }
+      catch (Exception exception)
+      {
+        MessageBox.Show("Error while loading the " + Settings.Default.QuoteFileName +
+                        " xml file: " + exception.Message);
+        return result2;
+      }
+      
       var result = from node in xDoc.Descendants("Quotes")
                    where node.HasElements
                    where node.Name == "Quote"
@@ -1611,7 +1634,7 @@ namespace MyFavoriteQuotes
         OverwritePrompt = true,
         FileName = "NewQuoteFile.xml",
         DefaultExt = "xml",
-        Filter = "Xml files (*.xml)|*.xml"
+        Filter = CreateFilterString("xml") // should be "Xml files (*.xml)|*.xml"
       };
 
       if (sfd.ShowDialog() != DialogResult.OK) return;
@@ -1621,6 +1644,22 @@ namespace MyFavoriteQuotes
       }
 
       SaveAllQuotesToXmlFile(sfd.FileName);
+    }
+
+    private static string CreateFilterString(string extension)
+    {
+      var result = new StringBuilder();
+      result.Append(Punctuation.OneSpace);
+      result.Append(Punctuation.OpenParenthesis);
+      result.Append(Punctuation.Multiply);
+      result.Append(Punctuation.Period);
+      result.Append(extension);
+      result.Append(Punctuation.CloseParenthesis);
+      result.Append(Punctuation.Pipe);
+      result.Append(Punctuation.Multiply);
+      result.Append(Punctuation.Period);
+      result.Append(extension);
+      return result.ToString();
     }
 
     private void SaveAllQuotesToXmlFile(string fileName)
@@ -1761,7 +1800,7 @@ namespace MyFavoriteQuotes
       }
     }
 
-    private void CutToClipboard(TextBox tb, string errorMessage = "nothing")
+    private void CutToClipboard(TextBoxBase tb, string errorMessage = "nothing")
     {
       if (tb != ActiveControl) return;
       if (tb.Text == string.Empty)

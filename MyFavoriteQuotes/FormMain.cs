@@ -156,7 +156,18 @@ namespace MyFavoriteQuotes
         CreateQuotesFile();
       }
 
-      XDocument xmlDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      XDocument xmlDoc;
+      try
+      {
+        xmlDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      }
+      catch (Exception exception)
+      {
+        MessageBox.Show("Error while loading " + Settings.Default.QuoteFileName + " xml file " + exception.Message);
+        CreateQuotesFile();
+        return;
+      }
+      
       var result = from node in xmlDoc.Descendants("Quote")
                    where node.HasElements
                    let xElementAuthor = node.Element("Author")
@@ -174,7 +185,10 @@ namespace MyFavoriteQuotes
 
       foreach (var q in result)
       {
-        _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
+        if (!_allQuotes.ListOfQuotes.Contains(new Quote(q.authorValue, q.languageValue, q.sentenceValue)))
+        {
+          _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
+        }
       }
 
       _allQuotes.QuoteFileSaved = true;

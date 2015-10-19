@@ -168,7 +168,7 @@ namespace MyFavoriteQuotes
         CreateQuotesFile();
         return;
       }
-      
+
       var result = from node in xmlDoc.Descendants("Quote")
                    where node.HasElements
                    let xElementAuthor = node.Element("Author")
@@ -1305,7 +1305,7 @@ namespace MyFavoriteQuotes
                         " xml file: " + exception.Message);
         return result2;
       }
-      
+
       var result = from node in xDoc.Descendants("Quote")
                    where node.HasElements
                    let xElementAuthor = node.Element("Author")
@@ -1346,7 +1346,7 @@ namespace MyFavoriteQuotes
                         " xml file: " + exception.Message);
         return result2;
       }
-      
+
       var result = from node in xDoc.Descendants("Quotes")
                    where node.HasElements
                    where node.Name == "Quote"
@@ -1529,7 +1529,7 @@ namespace MyFavoriteQuotes
           quote.Author + Environment.NewLine;
       }
 
-      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) + 
+      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) +
         Punctuation.Colon + Punctuation.OneSpace + result3.Count();
     }
 
@@ -1854,7 +1854,6 @@ namespace MyFavoriteQuotes
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
-      // if (focusedControl is TextBox)
       TextBox box = focusedControl as TextBox;
       if (box != null)
       {

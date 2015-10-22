@@ -735,16 +735,16 @@
     <Language>English</Language>
     <QuoteValue>An eye for an eye only ends up making the whole world blind.</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Alexander Lockhart</Author>
+    <Language>French</Language>
+    <QuoteValue>L’attitude est le pinceau de l’esprit. Elle colore toutes les situations.</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Antoine de Saint Exupery</Author>
+    <Language>French</Language>
+    <QuoteValue>Ce qui embellit le désert, c'est qu'il cache un puit quelque part</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -266,7 +266,7 @@
     <QuoteValue>La chance est le résultat d’une suite d’actions et d’attitudes positives</QuoteValue>
   </Quote>
   <Quote>
-    <Author>Jean Paul Sartre</Author>
+    <Author>Jean-Paul Sartre</Author>
     <Language>French</Language>
     <QuoteValue>Exister c'est être là...simplement</QuoteValue>
   </Quote>
@@ -750,11 +750,11 @@
     <Language>French</Language>
     <QuoteValue>Il y a en chacun de nous des calculs que nous nommons espérances</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jean-Paul Sartre</Author>
+    <Language>French</Language>
+    <QuoteValue>L'homme est à inventer chaque jour</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

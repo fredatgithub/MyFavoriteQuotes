@@ -745,11 +745,11 @@
     <Language>French</Language>
     <QuoteValue>Ce qui embellit le désert, c'est qu'il cache un puit quelque part</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Platon</Author>
+    <Language>French</Language>
+    <QuoteValue>Il y a en chacun de nous des calculs que nous nommons espérances</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

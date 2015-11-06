@@ -760,16 +760,16 @@
     <Language>English</Language>
     <QuoteValue>I am not afraid of any army of lions led by a sheep; I am afraid of an army of sheep led by a lion</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>French</Language>
+    <QuoteValue>Chaque fois que vous vous retrouvez du côté de la majorité, il est temps de faire une pause et de réfléchir</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>English</Language>
+    <QuoteValue>Whenever you find yourself on the side of the majority, it is time to pause and reflect</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -491,7 +491,7 @@
     <QuoteValue>Programming today is a race between software engineers striving to build bigger and better idiot-proff programs, and the universe trying to build bigger and better idiots. So far, the universe is winning</QuoteValue>
   </Quote>
   <Quote>
-    <Author>anonymous</Author>
+    <Author>Anonymous</Author>
     <Language>English</Language>
     <QuoteValue>No matter where you go, there's you are</QuoteValue>
   </Quote>
@@ -770,11 +770,11 @@
     <Language>English</Language>
     <QuoteValue>Whenever you find yourself on the side of the majority, it is time to pause and reflect</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>English</Language>
+    <QuoteValue>I don't expect Marines to follow orders, I expect them to follow me</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

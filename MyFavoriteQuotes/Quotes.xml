@@ -780,11 +780,11 @@
     <Language>Français</Language>
     <QuoteValue>Voici la morale parfaite: vivre chaque jour comme si c'était le dernier ; ne pas s'agiter, ne pas sommeiller, ne pas faire semblant</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Pierre Dac</Author>
+    <Language>Français</Language>
+    <QuoteValue>Le rire désarme, ne l’oublions pas</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

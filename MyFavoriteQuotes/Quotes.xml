@@ -795,11 +795,11 @@
     <Language>Français</Language>
     <QuoteValue>Depuis que les guerres ont commencé dans l’esprit des hommes, c’est dans leur esprit que la défense de la paix doit être construite.</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Nelson Mandela</Author>
+    <Language>French</Language>
+    <QuoteValue>J’ai appris que le courage n’était pas l’absence de peur, mais le triomphe sur celle-ci</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

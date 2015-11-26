@@ -17,6 +17,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+#define DEBUG
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -164,7 +165,9 @@ namespace MyFavoriteQuotes
       }
       catch (Exception exception)
       {
-        MessageBox.Show("Error while loading " + Settings.Default.QuoteFileName + " xml file " + exception.Message);
+        MessageBox.Show(Resources.Error_while_loading + Punctuation.OneSpace + 
+          Settings.Default.QuoteFileName + Punctuation.OneSpace +  Resources.XML_file +
+          Punctuation.OneSpace + exception.Message);
         CreateQuotesFile();
         return;
       }
@@ -186,7 +189,8 @@ namespace MyFavoriteQuotes
 
       foreach (var q in result)
       {
-        if (!_allQuotes.ListOfQuotes.Contains(new Quote(q.authorValue, q.languageValue, q.sentenceValue)))
+        if (!_allQuotes.ListOfQuotes.Contains(new Quote(q.authorValue, q.languageValue, q.sentenceValue)) &&
+          q.authorValue != string.Empty && q.languageValue != string.Empty && q.sentenceValue != string.Empty)
         {
           _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
         }
@@ -704,7 +708,7 @@ namespace MyFavoriteQuotes
       }
       catch (Exception exception)
       {
-        MessageBox.Show("Error while loading xml file " + exception);
+        MessageBox.Show(Resources.Error_while_loading_XML_file  + Punctuation.OneSpace + exception.Message);
         CreateLanguageFile();
         return;
       }
@@ -729,19 +733,22 @@ namespace MyFavoriteQuotes
         {
           _languageDicoEn.Add(i.name, i.englishValue);
         }
+#if DEBUG
         else
         {
-          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+          MessageBox.Show(Resources.Your_XML_file_has_duplicate_like + Punctuation.Colon + Punctuation.OneSpace + i.name);
         }
-
+#endif
         if (!_languageDicoFr.ContainsKey(i.name))
         {
           _languageDicoFr.Add(i.name, i.frenchValue);
         }
+#if DEBUG
         else
         {
-          MessageBox.Show("Your xml file has duplicate like: " + i.name);
+          MessageBox.Show(Resources.Your_XML_file_has_duplicate_like + Punctuation.Colon + Punctuation.OneSpace + i.name);
         }
+#endif
       }
     }
 
@@ -1129,6 +1136,11 @@ namespace MyFavoriteQuotes
       return input.Replace(':', ' ');
     }
 
+    private static string ReplaceSpaceWithUnderScore(string input)
+    {
+      return input.Replace(' ', '_');
+    }
+
     private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)
     {
       DialogResult result = MessageBox.Show(this, message, title, buttons);
@@ -1285,7 +1297,10 @@ namespace MyFavoriteQuotes
 
       foreach (var quote in result3)
       {
-        result2.Add(quote.Sentence + " - " + quote.Author);
+        if (quote.Author != string.Empty && quote.Language != string.Empty && quote.Sentence != string.Empty)
+        {
+          result2.Add(quote.Sentence + " - " + quote.Author);
+        }
       }
 
       return result2;
@@ -1301,8 +1316,9 @@ namespace MyFavoriteQuotes
       }
       catch (Exception exception)
       {
-        MessageBox.Show("Error while loading the " + Settings.Default.QuoteFileName +
-                        " xml file: " + exception.Message);
+        MessageBox.Show(Resources.Error_while_loading_the + Punctuation.OneSpace + 
+          Settings.Default.QuoteFileName + Punctuation.OneSpace + Resources.XML_file +
+          Punctuation.Colon + Punctuation.OneSpace + exception.Message);
         return result2;
       }
 

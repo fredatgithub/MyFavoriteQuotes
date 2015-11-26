@@ -800,11 +800,11 @@
     <Language>French</Language>
     <QuoteValue>J’ai appris que le courage n’était pas l’absence de peur, mais le triomphe sur celle-ci</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paul Erdos</Author>
+    <Language>English</Language>
+    <QuoteValue>God may not play dice with the universe, but something strange is going on with the prime numbers</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

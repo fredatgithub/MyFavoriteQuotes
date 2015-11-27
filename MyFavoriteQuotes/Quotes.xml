@@ -805,11 +805,11 @@
     <Language>English</Language>
     <QuoteValue>God may not play dice with the universe, but something strange is going on with the prime numbers</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Lenine</Author>
+    <Language>French</Language>
+    <QuoteValue>Les révolutions arrivent, non pas quand on le veut, mais quand elles le veulent, elles.</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

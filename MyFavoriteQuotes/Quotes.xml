@@ -810,11 +810,11 @@
     <Language>French</Language>
     <QuoteValue>Les révolutions arrivent, non pas quand on le veut, mais quand elles le veulent, elles.</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>French</Language>
+    <QuoteValue>Les deux jours les plus importants de votre vie sont le jour où vous êtes né et celui où vous avez compris pourquoi.</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

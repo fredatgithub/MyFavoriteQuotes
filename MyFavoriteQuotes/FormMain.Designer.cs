@@ -711,7 +711,7 @@
       this.tabPageList.Location = new System.Drawing.Point(4, 25);
       this.tabPageList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.tabPageList.Name = "tabPageList";
-      this.tabPageList.Size = new System.Drawing.Size(903, 607);
+      this.tabPageList.Size = new System.Drawing.Size(903, 609);
       this.tabPageList.TabIndex = 2;
       this.tabPageList.Text = "List";
       this.tabPageList.UseVisualStyleBackColor = true;
@@ -769,7 +769,7 @@
       this.buttonListDelete.Location = new System.Drawing.Point(455, 111);
       this.buttonListDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.buttonListDelete.Name = "buttonListDelete";
-      this.buttonListDelete.Size = new System.Drawing.Size(95, 39);
+      this.buttonListDelete.Size = new System.Drawing.Size(138, 39);
       this.buttonListDelete.TabIndex = 9;
       this.buttonListDelete.Text = "Delete";
       this.buttonListDelete.UseVisualStyleBackColor = true;

@@ -815,16 +815,16 @@
     <Language>French</Language>
     <QuoteValue>Les deux jours les plus importants de votre vie sont le jour où vous êtes né et celui où vous avez compris pourquoi.</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paul Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Les problèmes surviennent lorsque nous avons plus d’une réponse pour la même question</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Rosa Parks</Author>
+    <Language>French</Language>
+    <QuoteValue>Vous ne devez jamais avoir peur de ce que vous faites quand vous faites ce qui est juste</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

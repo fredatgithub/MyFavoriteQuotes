@@ -522,7 +522,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBoxResult.Location = new System.Drawing.Point(20, 263);
+      this.textBoxResult.Location = new System.Drawing.Point(20, 264);
       this.textBoxResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";

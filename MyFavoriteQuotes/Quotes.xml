@@ -840,16 +840,16 @@
     <Language>French</Language>
     <QuoteValue>Tous les champignons sont comestibles, certains une fois seulement</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Robert Collier</Author>
+    <Language>French</Language>
+    <QuoteValue>Le succès est la somme des petits efforts, répétés jour après jour</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Roudaki</Author>
+    <Language>French</Language>
+    <QuoteValue>Le monde n'est qu'un conte, un souffle qui passe. Ne faisons pas au présent grise mine. Des jours passés ne parlons point</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

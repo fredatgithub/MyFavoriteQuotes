@@ -116,7 +116,7 @@
     <QuoteValue>L'amitié est une bienveillance mutuelle, par laquelle on se veut et l'on se fait du bien l'un à l'autre</QuoteValue>
   </Quote>
   <Quote>
-    <Author>Eleonor Roosevelt</Author>
+    <Author>Eleanor Roosevelt</Author>
     <Language>French</Language>
     <QuoteValue>Vous devez faire les choses que vous vous croyez incapable de faire</QuoteValue>
   </Quote>
@@ -850,11 +850,11 @@
     <Language>French</Language>
     <QuoteValue>Le monde n'est qu'un conte, un souffle qui passe. Ne faisons pas au présent grise mine. Des jours passés ne parlons point</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Eleanor Roosevelt</Author>
+    <Language>French</Language>
+    <QuoteValue>Il vaut mieux allumer une bougie que maudire l’obscurité</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

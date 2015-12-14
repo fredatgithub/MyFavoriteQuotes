@@ -786,11 +786,6 @@
     <QuoteValue>Le rire désarme, ne l’oublions pas</QuoteValue>
   </Quote>
   <Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>
-  <Quote>
     <Author>Unesco</Author>
     <Language>Français</Language>
     <QuoteValue>Depuis que les guerres ont commencé dans l’esprit des hommes, c’est dans leur esprit que la défense de la paix doit être construite.</QuoteValue>
@@ -855,6 +850,11 @@
     <Language>French</Language>
     <QuoteValue>Il vaut mieux allumer une bougie que maudire l’obscurité</QuoteValue>
   </Quote>
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
   <!--<Quote>
     <Author></Author>
     <Language></Language>

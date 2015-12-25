@@ -860,11 +860,11 @@
     <Language>French</Language>
     <QuoteValue>L’humour, c’est l’affirmation de la supériorité de l’homme sur ce qui lui arrive</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>French</Language>
+    <QuoteValue>Si ma botte laisse une empreinte sur le marbre, laisse-la pour toujours en souvenir de mon passage</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

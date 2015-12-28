@@ -1523,7 +1523,7 @@ namespace MyFavoriteQuotes
       DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
     }
 
-    private void DisplayQuotes(string author)
+    private void DisplayQuotes(string author, Language language = Language.English)
     {
       IEnumerable<Quote> result3;
       if (author.ToLower() == "all")
@@ -1535,6 +1535,7 @@ namespace MyFavoriteQuotes
       {
         result3 = from node in _allQuotes.ToList()
                   where node.Author == author
+                  && node.Language == language.ToString() // to keep only selected languages
                   select node;
       }
 
@@ -1766,7 +1767,7 @@ namespace MyFavoriteQuotes
     private void comboBoxListAuthor_SelectedIndexChanged(object sender, EventArgs e)
     {
       // display only selected author in all languages
-      DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString());
+      DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString() ); // add language selected in checkboxes
     }
 
     private static Control FindFocusedControl(Control container)

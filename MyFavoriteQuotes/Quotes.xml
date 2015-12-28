@@ -865,11 +865,11 @@
     <Language>French</Language>
     <QuoteValue>Si ma botte laisse une empreinte sur le marbre, laisse-la pour toujours en souvenir de mon passage</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mahatma Gandhi</Author>
+    <Language>French</Language>
+    <QuoteValue>Les seuls démons sont ceux qui sont en nous et c'est là que nous devons les combattre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

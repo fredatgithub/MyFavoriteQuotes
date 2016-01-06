@@ -870,11 +870,11 @@
     <Language>French</Language>
     <QuoteValue>Les seuls démons sont ceux qui sont en nous et c'est là que nous devons les combattre</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Lao Tseu</Author>
+    <Language>French</Language>
+    <QuoteValue>Qui domine les autres est fort. Qui se domine est puissant</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

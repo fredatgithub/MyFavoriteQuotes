@@ -880,11 +880,11 @@
     <Language>French</Language>
     <QuoteValue>Je me presse de rire de tout de peur d’être obligé d’en pleurer</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edmond de Goncourt</Author>
+    <Language>French</Language>
+    <QuoteValue>L’art de plaire consiste à ne point parler de soi aux autres, et leur parler toujours d’eux-mêmes</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

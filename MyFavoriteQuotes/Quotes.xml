@@ -885,11 +885,11 @@
     <Language>French</Language>
     <QuoteValue>L’art de plaire consiste à ne point parler de soi aux autres, et leur parler toujours d’eux-mêmes</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jérôme Jarre</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne craignez pas de découvrir que vous êtes plus que ce vous pensez être</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

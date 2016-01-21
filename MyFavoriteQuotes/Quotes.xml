@@ -890,11 +890,11 @@
     <Language>French</Language>
     <QuoteValue>Ne craignez pas de découvrir que vous êtes plus que ce vous pensez être</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Thomas Carlyle</Author>
+    <Language>French</Language>
+    <QuoteValue>L’essentiel de la vie n’est pas de se demander ce que nous avons récolté, mais ce que nous avons semé</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -895,11 +895,11 @@
     <Language>French</Language>
     <QuoteValue>L’essentiel de la vie n’est pas de se demander ce que nous avons récolté, mais ce que nous avons semé</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Platon</Author>
+    <Language>French</Language>
+    <QuoteValue>Il ne dépend que de nous de suivre la route qui monte et d'éviter celle qui descend</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

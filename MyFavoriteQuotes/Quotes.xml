@@ -900,11 +900,11 @@
     <Language>French</Language>
     <QuoteValue>Il ne dépend que de nous de suivre la route qui monte et d'éviter celle qui descend</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jacques Brel</Author>
+    <Language>French</Language>
+    <QuoteValue>Le monde sommeille par manque d'audace</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

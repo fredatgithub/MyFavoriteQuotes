@@ -910,16 +910,16 @@
     <Language>French</Language>
     <QuoteValue>Enseigner, c'est apprendre aux autres qu'ils en savent autant que nous</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>French</Language>
+    <QuoteValue>J’aime les êtres sans unité ennuyeuse, tiraillés de folies opposées, dont le singulier est un pluriel</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Montaigne</Author>
+    <Language>French</Language>
+    <QuoteValue>Notre intelligence se conduisant par la seule voie de la parole, celui qui la fausse, trahit la société publique</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

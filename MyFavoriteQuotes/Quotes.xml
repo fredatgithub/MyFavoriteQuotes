@@ -920,11 +920,11 @@
     <Language>French</Language>
     <QuoteValue>Notre intelligence se conduisant par la seule voie de la parole, celui qui la fausse, trahit la société publique</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jean Racine</Author>
+    <Language>French</Language>
+    <QuoteValue>Le peuple aime les rois qui savent l’épargner – il estime encore plus ceux qui savent régner</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

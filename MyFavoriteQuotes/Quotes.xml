@@ -925,11 +925,11 @@
     <Language>French</Language>
     <QuoteValue>Le peuple aime les rois qui savent l’épargner – il estime encore plus ceux qui savent régner</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Marc Aurèle</Author>
+    <Language>French</Language>
+    <QuoteValue>Le but de la vie n’est pas de se trouver du côté de la majorité, mais d’éviter de terminer dans les rangs des fous</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

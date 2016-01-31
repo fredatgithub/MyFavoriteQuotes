@@ -21,7 +21,8 @@ namespace MyFavoriteQuotes
 {
   public enum Language
   {
-    French,
-    English
+    French = 1,
+    English = 2,
+    All = 3
   }
 }

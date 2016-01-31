@@ -165,8 +165,8 @@ namespace MyFavoriteQuotes
       }
       catch (Exception exception)
       {
-        MessageBox.Show(Resources.Error_while_loading + Punctuation.OneSpace + 
-          Settings.Default.QuoteFileName + Punctuation.OneSpace +  Resources.XML_file +
+        MessageBox.Show(Resources.Error_while_loading + Punctuation.OneSpace +
+          Settings.Default.QuoteFileName + Punctuation.OneSpace + Resources.XML_file +
           Punctuation.OneSpace + exception.Message);
         CreateQuotesFile();
         return;
@@ -708,7 +708,7 @@ namespace MyFavoriteQuotes
       }
       catch (Exception exception)
       {
-        MessageBox.Show(Resources.Error_while_loading_XML_file  + Punctuation.OneSpace + exception.Message);
+        MessageBox.Show(Resources.Error_while_loading_XML_file + Punctuation.OneSpace + exception.Message);
         CreateLanguageFile();
         return;
       }
@@ -1316,7 +1316,7 @@ namespace MyFavoriteQuotes
       }
       catch (Exception exception)
       {
-        MessageBox.Show(Resources.Error_while_loading_the + Punctuation.OneSpace + 
+        MessageBox.Show(Resources.Error_while_loading_the + Punctuation.OneSpace +
           Settings.Default.QuoteFileName + Punctuation.OneSpace + Resources.XML_file +
           Punctuation.Colon + Punctuation.OneSpace + exception.Message);
         return result2;
@@ -1767,7 +1767,29 @@ namespace MyFavoriteQuotes
     private void comboBoxListAuthor_SelectedIndexChanged(object sender, EventArgs e)
     {
       // display only selected author in all languages
-      DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString() ); // add language selected in checkboxes
+      DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString(), GetSelectedLanguage(checkBoxListAll, checkBoxListEnglish, checkBoxListFrench)); // add language selected in checkboxes
+    }
+
+    private static Language GetSelectedLanguage(params CheckBox[] checkBoxList)
+    {
+      var tmp = checkBoxList.ToList().Where(box => box.Checked);
+      foreach (CheckBox box in tmp)
+      {
+        if (box.Name.Contains("All"))
+        {
+          return Language.All;
+        }
+        if (box.Name.Contains("English"))
+        {
+          return Language.English;
+        }
+        if (box.Name.Contains("French"))
+        {
+          return Language.French;
+        }
+      }
+
+      return Language.All; // if no other language has been selected
     }
 
     private static Control FindFocusedControl(Control container)

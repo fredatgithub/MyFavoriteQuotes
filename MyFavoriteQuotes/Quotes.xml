@@ -930,11 +930,11 @@
     <Language>French</Language>
     <QuoteValue>Le but de la vie n’est pas de se trouver du côté de la majorité, mais d’éviter de terminer dans les rangs des fous</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Garry Kasparov</Author>
+    <Language>French</Language>
+    <QuoteValue>Si la définition de la folie est de faire la même chose encore et encore, et espérer un résultat différent, la moitié des dirigeants du monde libre sont fous</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

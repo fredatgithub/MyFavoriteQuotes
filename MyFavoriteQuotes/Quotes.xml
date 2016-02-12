@@ -935,16 +935,16 @@
     <Language>French</Language>
     <QuoteValue>Si la définition de la folie est de faire la même chose encore et encore, et espérer un résultat différent, la moitié des dirigeants du monde libre sont fous</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jean-Paul Sartre</Author>
+    <Language>French</Language>
+    <QuoteValue>L’important n’est pas ce qu’on a fait de toi, mais ce que tu fais de ce qu’on a fait de toi</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Sacha Guitry</Author>
+    <Language>French</Language>
+    <QuoteValue>Le talon haut a été inventé par une femme qui en avait assez d’être embrassée sur le front</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

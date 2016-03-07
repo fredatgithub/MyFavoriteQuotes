@@ -950,16 +950,16 @@
     <Language>English</Language>
     <QuoteValue>Ladies and gentlemen, this is your captain speaking. We have a small problem. All four engines have stopped. We are doing our damnedest to get them going again. I trust you are not in too much distress</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Russell Simmons </Author>
+    <Language>French</Language>
+    <QuoteValue>Soyez sûr que le cadeau que vous voulez partager avec le monde est une expression honnête de ce qui se trouve dans votre coeur</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Cyril Hanouna</Author>
+    <Language>French</Language>
+    <QuoteValue>Tant qu’on raconte des bêtises sur moi, c’est qu’il n’y a rien de grave dans le monde</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

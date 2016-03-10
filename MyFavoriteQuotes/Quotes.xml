@@ -970,16 +970,16 @@
     <Language>French</Language>
     <QuoteValue>Je veux que les gens soient la meilleure version d’eux-mêmes, et je serai la meilleure version de moi-même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>James LeBron</Author>
+    <Language>French</Language>
+    <QuoteValue>Structure et cohérence engendrent la perfection. Si tu triches, tu te diminues</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Charlie Chaplin</Author>
+    <Language>French</Language>
+    <QuoteValue>L’art de jouer la comédie, c’est l’art de se détendre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

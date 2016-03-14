@@ -985,11 +985,11 @@
     <Language>French</Language>
     <QuoteValue>Certains s’auto-punissent de crimes imaginaires, d’autres s’auto-absolvent de vilenies réelles</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Coluche</Author>
+    <Language>French</Language>
+    <QuoteValue>De tous ceux qui n’ont rien à dire, les plus agréables sont ceux qui se taisent</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

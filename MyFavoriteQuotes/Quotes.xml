@@ -1000,11 +1000,11 @@
     <Language>French</Language>
     <QuoteValue>Une fois que quelque chose est devenu une passion, la motivation est là</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Coluche</Author>
+    <Language>French</Language>
+    <QuoteValue>L'intelligence n'est pas sorcier, il suffit de penser à une connerie et de dire l'inverse</QuoteValue>
+  </Quote>
  <!--<Quote>
     <Author></Author>
     <Language></Language>

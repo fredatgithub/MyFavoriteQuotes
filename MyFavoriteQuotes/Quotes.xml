@@ -995,11 +995,11 @@
     <LANGUAGE>French</LANGUAGE>
     <QUOTEVALUE>Détestée, rejetée des puissants et des riches, la lenteur est le dernier luxe des pauvres</QUOTEVALUE>
   </QUOTE>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Michael Schumacher</Author>
+    <Language>French</Language>
+    <QuoteValue>Une fois que quelque chose est devenu une passion, la motivation est là</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1005,11 +1005,11 @@
     <Language>French</Language>
     <QuoteValue>L'intelligence n'est pas sorcier, il suffit de penser à une connerie et de dire l'inverse</QuoteValue>
   </Quote>
- <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+ <Quote>
+    <Author>John F. Kennedy</Author>
+    <Language>French</Language>
+    <QuoteValue>Si une société libre ne peut aider sa majorité de personnes pauvres, elle ne peut pas sauver sa minorité de riches</QuoteValue>
+  </Quote>
  <!--<Quote>
     <Author></Author>
     <Language></Language>

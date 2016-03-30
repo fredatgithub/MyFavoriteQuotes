@@ -1015,11 +1015,11 @@
     <Language>French</Language>
     <QuoteValue>L’amour ne dure pas forcément toujours mais son souvenir, lui, dure toujours</QuoteValue>
   </Quote>
- <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+ <Quote>
+    <Author>Hector Berlioz</Author>
+    <Language>French</Language>
+    <QuoteValue>La chance d’avoir du talent ne suffit pas; il faut encore le talent d’avoir de la chance</QuoteValue>
+  </Quote>
  <!--<Quote>
     <Author></Author>
     <Language></Language>

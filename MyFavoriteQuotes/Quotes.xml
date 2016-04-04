@@ -1020,16 +1020,16 @@
     <Language>French</Language>
     <QuoteValue>La chance d’avoir du talent ne suffit pas; il faut encore le talent d’avoir de la chance</QuoteValue>
   </Quote>
- <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
- <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+ <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Rien dans le monde n’est plus dangereux que l’ignorance joyeuse déguisée en «peace & love</QuoteValue>
+  </Quote>
+ <Quote>
+    <Author>Coluche</Author>
+    <Language>French</Language>
+    <QuoteValue>L’amour rend fou. Il n’y a que la guerre qui Rambo</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

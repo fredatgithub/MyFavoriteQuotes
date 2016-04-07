@@ -1030,26 +1030,26 @@
     <Language>French</Language>
     <QuoteValue>L’amour rend fou. Il n’y a que la guerre qui Rambo</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>L’esprit humain a sécrété dieux, mythes, idées qui deviennent ses maîtres tout-puissants</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Sonny Bill Williams</Author>
+    <Language>French</Language>
+    <QuoteValue>Je ne peux pas respecter quelqu’un qui te sourit en face, et puis médit dans ton dos. J’espère que Dieu ne me laissera jamais terminer avec un coeur comme celui-là</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Usher Raymond IV</Author>
+    <Language>French</Language>
+    <QuoteValue>Seules deux choses importent : l’objectif qu’on se fixe et l’amour. S’ils n’existent pas dans votre vie, il faut faire de la place pour les accueillir. Vous serez une personne meilleure</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Ana Ivanovic</Author>
+    <Language>French</Language>
+    <QuoteValue>Rappelez-vous que la vie est un miracle et que des miracles arrivent tous les jours. Il ne faut jamais baisser les bras</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

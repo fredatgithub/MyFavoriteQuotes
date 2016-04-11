@@ -1050,11 +1050,11 @@
     <Language>French</Language>
     <QuoteValue>Rappelez-vous que la vie est un miracle et que des miracles arrivent tous les jours. Il ne faut jamais baisser les bras</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Notre personnalité, c’est ce que nous faisons quand nous pensons que personne ne regarde</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

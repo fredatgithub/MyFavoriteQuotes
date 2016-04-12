@@ -1055,11 +1055,11 @@
     <Language>French</Language>
     <QuoteValue>Notre personnalité, c’est ce que nous faisons quand nous pensons que personne ne regarde</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>Ce qui m’étonne, c’est qu’on s’étonne si peu de notre cerveau, de notre vie, de notre univers</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

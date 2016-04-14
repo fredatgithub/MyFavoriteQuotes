@@ -1070,11 +1070,11 @@
     <Language>French</Language>
     <QuoteValue>Vous pouvez avec certitude améliorer un seul petit coin de l’univers : vous-même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Coluche</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand on voit ce qu’on voit et quand on entend ce qu’on entend, on a bien raison de penser ce qu’on pense !</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

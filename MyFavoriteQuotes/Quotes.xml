@@ -1080,11 +1080,11 @@
     <Language>French</Language>
     <QuoteValue>La musique n’est pas juste une succession de notes, mais un mouvement constant d’une note entre le son et le silence. C’est la même chose pour la vie</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Woody Allen</Author>
+    <Language>French</Language>
+    <QuoteValue>L'éternité, c'est long, surtout à la fin</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

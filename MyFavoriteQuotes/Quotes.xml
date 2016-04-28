@@ -1100,11 +1100,11 @@
     <Language>French</Language>
     <QuoteValue>Le monde entier est un théâtre, et tous, hommes et femmes, n’en sont que les acteurs</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Victor Hugo</Author>
+    <Language>French</Language>
+    <QuoteValue>La mort et la beauté sont deux choses profondes. Deux soeurs également terribles et fécondes, ayant la même énigme et le même secret</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1110,11 +1110,11 @@
     <Language>French</Language>
     <QuoteValue>Les miroirs feraient bien de réfléchir un peu avant de renvoyer les images</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Pablo Picasso</Author>
+    <Language>French</Language>
+    <QuoteValue>A cinq ans, je dessinais comme Velasquez et j'ai mis toute une vie à apprendre à dessiner comme un enfant</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

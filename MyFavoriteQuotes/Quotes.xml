@@ -1115,21 +1115,21 @@
     <Language>French</Language>
     <QuoteValue>A cinq ans, je dessinais comme Velasquez et j'ai mis toute une vie à apprendre à dessiner comme un enfant</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Russell Simmons</Author>
+    <Language>French</Language>
+    <QuoteValue>Nous laissons les distractions retenir notre attention, loin des miracles qui se déroulent constamment autour de nous</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Oxmo Puccino</Author>
+    <Language>French</Language>
+    <QuoteValue>Un jour, l’amour lui demande : «pourquoi existes-tu ?» – l’amitié lui répond : «Pour sécher les larmes que tu fais couler</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Simone de Beauvoir</Author>
+    <Language>French</Language>
+    <QuoteValue>Personne n’est plus arrogant envers les femmes, plus agressif ou méprisant, qu’un homme inquiet pour sa virilité</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

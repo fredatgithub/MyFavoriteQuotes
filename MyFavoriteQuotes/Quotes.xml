@@ -1130,11 +1130,11 @@
     <Language>French</Language>
     <QuoteValue>Personne n’est plus arrogant envers les femmes, plus agressif ou méprisant, qu’un homme inquiet pour sa virilité</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Gaël Monfils</Author>
+    <Language>French</Language>
+    <QuoteValue>Les bons amis t’aident à retrouver des choses importantes lorsque tu les as perdues, ton sourire, ton espoir et ton courage</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

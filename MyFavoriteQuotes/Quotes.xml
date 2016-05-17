@@ -1135,11 +1135,11 @@
     <Language>French</Language>
     <QuoteValue>Les bons amis t’aident à retrouver des choses importantes lorsque tu les as perdues, ton sourire, ton espoir et ton courage</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Marcel Achard</Author>
+    <Language>French</Language>
+    <QuoteValue>La chance existe. Sans cela, comment expliquerait-on la réussite des autres ?</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

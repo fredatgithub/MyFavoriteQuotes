@@ -1140,11 +1140,11 @@
     <Language>French</Language>
     <QuoteValue>La chance existe. Sans cela, comment expliquerait-on la réussite des autres ?</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Chacun d’entre nous est un génie. Si on juge un poisson à son habileté à monter aux arbres, il pensera toute sa vie qu’il est un idiot</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

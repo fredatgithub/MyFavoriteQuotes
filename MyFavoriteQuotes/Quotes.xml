@@ -1145,11 +1145,11 @@
     <Language>French</Language>
     <QuoteValue>Chacun d’entre nous est un génie. Si on juge un poisson à son habileté à monter aux arbres, il pensera toute sa vie qu’il est un idiot</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Soljenitsyne</Author>
+    <Language>French</Language>
+    <QuoteValue>La littérature mondiale est comme un seul coeur géant qui bat au rythme des soucis et des drames de notre monde</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

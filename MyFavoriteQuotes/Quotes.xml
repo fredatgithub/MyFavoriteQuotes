@@ -1155,11 +1155,11 @@
     <Language>French</Language>
     <QuoteValue>On est heureux quand on a dépassé l'inquiétude du bonheur</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>A.C. Pi</Author>
+    <Language>French</Language>
+    <QuoteValue>Celui qui croit que la vie a un sens accepte les événements défavorables de sa vie pour faire d’eux des outils d’évolution</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

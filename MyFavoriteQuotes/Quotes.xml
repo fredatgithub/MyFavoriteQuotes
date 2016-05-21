@@ -1150,11 +1150,11 @@
     <Language>French</Language>
     <QuoteValue>La littérature mondiale est comme un seul coeur géant qui bat au rythme des soucis et des drames de notre monde</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Maurice Maeterlinck</Author>
+    <Language>French</Language>
+    <QuoteValue>On est heureux quand on a dépassé l'inquiétude du bonheur</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

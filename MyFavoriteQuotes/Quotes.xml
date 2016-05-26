@@ -1165,11 +1165,11 @@
     <Language>French</Language>
     <QuoteValue>La vie, c’est ce qui arrive quand on décide de changer ses plans</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Garry Kasparov</Author>
+    <Language>French</Language>
+    <QuoteValue>C’est tragique que la liberté décline dans le monde entier, mais il y a de nombreux combattants courageux face à la répression qui méritent de la reconnaissance</QuoteValue>
+  </Quote>
      <!--<Quote>
     <Author></Author>
     <Language></Language>

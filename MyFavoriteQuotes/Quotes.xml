@@ -1175,16 +1175,16 @@
     <Language>French</Language>
     <QuoteValue>Peut-être est-ce absurde de vouloir aider les autres ; mais je n’arrive pas à guérir de cette folie.</QuoteValue>
   </Quote>
-     <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+     <Quote>
+    <Author>Jean de Lattre de Tassigny</Author>
+    <Language>French</Language>
+    <QuoteValue>Un optimiste, c’est un homme qui plante deux glands et qui s’achète un hamac</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Il faut être arrogant avec les personnes arrogantes ; c’est le seul langage qu’elles comprennent, car elles confondent la gentillesse avec la faiblesse.</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

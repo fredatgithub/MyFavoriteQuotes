@@ -1185,11 +1185,11 @@
     <Language>French</Language>
     <QuoteValue>Il faut être arrogant avec les personnes arrogantes ; c’est le seul langage qu’elles comprennent, car elles confondent la gentillesse avec la faiblesse.</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Antonio Machado</Author>
+    <Language>French</Language>
+    <QuoteValue>Un Dieu existant serait quelque chose de terrible. Que Dieu nous en préserve !</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

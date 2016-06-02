@@ -1190,16 +1190,16 @@
     <Language>French</Language>
     <QuoteValue>Un Dieu existant serait quelque chose de terrible. Que Dieu nous en préserve !</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Les gens ne pleurent pas parce qu’ils sont faibles, mais car ils ont été forts pendant trop longtemps</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Winston Churchill</Author>
+    <Language>French</Language>
+    <QuoteValue>S’améliorer, c’est changer. Etre parfait, c’est donc changer souvent.</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>
@@ -1215,7 +1215,6 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   </Quote>-->
     <!--<Quote>
     <Author></Author>
     <Language></Language>

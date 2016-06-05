@@ -1200,16 +1200,16 @@
     <Language>French</Language>
     <QuoteValue>S’améliorer, c’est changer. Etre parfait, c’est donc changer souvent.</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-     <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Léonard de Vinci</Author>
+    <Language>French</Language>
+    <QuoteValue>La simplicité est la sophistication suprême</QuoteValue>
+  </Quote>
+     <Quote>
+    <Author>Nelson Mandela</Author>
+    <Language>French</Language>
+    <QuoteValue>L'honnêteté, la sincérité, la simplicité, l'humilité, la générosité, l'absence de vanité, la capacité à servir les autres - qualités à la portée de toutes les âmes- sont les véritables fondations de notre vie spirituelle.</QuoteValue>
+  </Quote>
     <!--<Quote>
     <Author></Author>
     <Language></Language>

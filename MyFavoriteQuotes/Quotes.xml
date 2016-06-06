@@ -1210,21 +1210,21 @@
     <Language>French</Language>
     <QuoteValue>L'honnêteté, la sincérité, la simplicité, l'humilité, la générosité, l'absence de vanité, la capacité à servir les autres - qualités à la portée de toutes les âmes- sont les véritables fondations de notre vie spirituelle.</QuoteValue>
   </Quote>
-    <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-    <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+    <Quote>
+    <Author>Blaise Pascal</Author>
+    <Language>French</Language>
+    <QuoteValue>Il y a deux sortes d’esprit : l’esprit de géométrie et l’esprit de finesse</QuoteValue>
+  </Quote>
+    <Quote>
+    <Author>Alexandre Jardin</Author>
+    <Language>French</Language>
+    <QuoteValue>Au café, une femme s’ennuie un peu. Son visage dit : «Il faut qu’il se passe quelque chose». Fou comme les gens attendent au lieu de faire/QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Pape François</Author>
+    <Language>French</Language>
+    <QuoteValue>Les saints ne sont pas des surhommes, ni ne sont nés parfaits. Quand ils ont connu l’amour de Dieu, ils l’ont suivi, au service des autres.</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

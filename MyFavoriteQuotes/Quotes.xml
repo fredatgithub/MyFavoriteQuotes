@@ -1230,11 +1230,11 @@
     <Language>French</Language>
     <QuoteValue>Si tu téléphones à une voyante et qu’elle ne décroche pas avant que ça sonne, raccroche !</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Nos vrais amis sont ceux qui sont également présents quand les bonnes choses arrivent. Ils nous félicitent et se réjouissent de nos triomphes</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

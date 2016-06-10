@@ -1235,11 +1235,11 @@
     <Language>French</Language>
     <QuoteValue>Nos vrais amis sont ceux qui sont également présents quand les bonnes choses arrivent. Ils nous félicitent et se réjouissent de nos triomphes</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

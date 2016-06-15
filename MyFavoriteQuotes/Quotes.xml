@@ -1250,11 +1250,11 @@
     <Language>French</Language>
     <QuoteValue>Trois sortes d'amis sont utiles, trois sortes d'amis sont néfastes. Les utiles : un ami droit, un ami fidèle, un ami cultivé. Les néfastes : un ami faux, un ami mou, un ami bavard</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Abdullah al-Qassimi</Author>
+    <Language>French</Language>
+    <QuoteValue>L’occupation de nos cerveaux par les dieux est la pire forme d’occupation</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

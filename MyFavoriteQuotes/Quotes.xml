@@ -1260,11 +1260,11 @@
     <Language>French</Language>
     <QuoteValue>A chaque fois que nous répétons la même erreur, le prix qu’elle coûte augmente</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Choisissez un travail que vous aimez et vous n'aurez pas à travailler un seul jour de votre vie</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

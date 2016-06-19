@@ -1270,11 +1270,11 @@
     <Language>French</Language>
     <QuoteValue>La nature fait les hommes semblables, la vie les rend différents</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>1Agis avec gentillesse, mais n'attends pas de la reconnaissance</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

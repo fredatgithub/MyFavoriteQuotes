@@ -1273,13 +1273,13 @@
   <Quote>
     <Author>Confucius</Author>
     <Language>French</Language>
-    <QuoteValue>1Agis avec gentillesse, mais n'attends pas de la reconnaissance</QuoteValue>
+    <QuoteValue>Agis avec gentillesse, mais n'attends pas de la reconnaissance</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Lorsque l'on se cogne la tête contre un pot et que cela sonne creux, ça n'est pas forcément le pot qui est vide</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

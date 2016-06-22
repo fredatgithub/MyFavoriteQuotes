@@ -1285,11 +1285,11 @@
     <Language>French</Language>
     <QuoteValue>Sous un bon gouvernement, la pauvreté est une honte ; sous un mauvais gouvernement, la richesse est aussi une honte</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>David Abiker</Author>
+    <Language>French</Language>
+    <QuoteValue>Il nous faudrait quelqu’un de la trempe de Ramsay Bolton pour rétablir l’ordre, la sécurité et le patriarcat</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

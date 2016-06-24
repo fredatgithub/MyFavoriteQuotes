@@ -1300,11 +1300,11 @@
     <Language>French</Language>
     <QuoteValue>Je ne cherche pas à connaître les réponses, je cherche à comprendre les questions</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Nulle pierre ne peut être polie sans friction, nul homme ne peut parfaire son expérience sans épreuve</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

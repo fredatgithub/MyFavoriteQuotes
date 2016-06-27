@@ -1315,11 +1315,11 @@
     <Language>French</Language>
     <QuoteValue>Notre plus grande gloire n'est point de tomber, mais de savoir nous relever chaque fois que nous tombons</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Pas trop d'isolement ; pas trop de relations ; le juste milieu, voilà la sagesse</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

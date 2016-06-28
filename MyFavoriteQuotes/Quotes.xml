@@ -1320,11 +1320,11 @@
     <Language>French</Language>
     <QuoteValue>Pas trop d'isolement ; pas trop de relations ; le juste milieu, voilà la sagesse</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Examine si ce que tu promets est juste et possible, car la promesse est une dette</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

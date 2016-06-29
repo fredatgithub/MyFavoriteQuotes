@@ -1325,11 +1325,11 @@
     <Language>French</Language>
     <QuoteValue>Examine si ce que tu promets est juste et possible, car la promesse est une dette</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Gore Vedal</Author>
+    <Language>French</Language>
+    <QuoteValue>Le style, c’est de savoir qui vous êtes, ce que vous voulez dire, et de se ficher de tout</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

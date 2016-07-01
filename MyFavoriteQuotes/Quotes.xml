@@ -1330,11 +1330,11 @@
     <Language>French</Language>
     <QuoteValue>Le style, c’est de savoir qui vous êtes, ce que vous voulez dire, et de se ficher de tout</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Léo Ferré</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand il nous arrive de diverger dans nos élucubrations, on se tape dessus, à coup de plume, toujours. Léo Ferré à André Breton</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1345,11 +1345,11 @@
     <Language>French</Language>
     <QuoteValue>L'expérience est une lanterne attachée dans notre dos, qui n'éclaire que le chemin parcouru</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne vous souciez pas de n'être pas remarqué ; cherchez plutôt à faire quelque chose de remarquable</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

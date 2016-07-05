@@ -1350,11 +1350,11 @@
     <Language>French</Language>
     <QuoteValue>Ne vous souciez pas de n'être pas remarqué ; cherchez plutôt à faire quelque chose de remarquable</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Joseph Staline</Author>
+    <Language>French</Language>
+    <QuoteValue>La pire erreur que vous puissiez faire, c'est de minimiser l'ennemi</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1370,11 +1370,11 @@
     <Language>English</Language>
     <QuoteValue>I believe in one thing only, the power of human will</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Nous sommes frères par la nature, mais étrangers par l'éducation</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

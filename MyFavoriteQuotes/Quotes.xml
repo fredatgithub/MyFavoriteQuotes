@@ -1375,11 +1375,11 @@
     <Language>French</Language>
     <QuoteValue>Nous sommes frères par la nature, mais étrangers par l'éducation</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Joseph Stalin</Author>
+    <Language>English</Language>
+    <QuoteValue>When we hang the capitalists they will sell us the rope we use</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

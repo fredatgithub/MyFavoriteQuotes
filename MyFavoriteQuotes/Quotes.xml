@@ -1380,11 +1380,11 @@
     <Language>English</Language>
     <QuoteValue>When we hang the capitalists they will sell us the rope we use</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Que l'on s'efforce d'être pleinement humain et il n'y aura plus de place pour le mal</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

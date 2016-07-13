@@ -1390,11 +1390,11 @@
     <Language>French</Language>
     <QuoteValue>Celui qui ne progresse pas chaque jour, recule chaque jour</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>La conscience est la lumière de l'intelligence pour distinguer le bien du mal<QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

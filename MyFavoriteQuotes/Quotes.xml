@@ -1395,11 +1395,11 @@
     <Language>French</Language>
     <QuoteValue>La conscience est la lumière de l'intelligence pour distinguer le bien du mal<QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand on ne sait pas ce qu'est la vie, comment pourrait-on savoir ce qu'est la mort ?</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

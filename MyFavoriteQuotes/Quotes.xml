@@ -1405,11 +1405,11 @@
     <Language>French</Language>
     <QuoteValue>Ne vous souciez pas d'être sans emploi ; souciez-vous plutôt d'être digne d'un emploi</QuoteValue>
   </Quote>
-    <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+    <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Il faut se garder de trois fautes : parler sans y être invité, ce qui est impertinence ; ne pas parler quand on y est invité, ce qui est de la dissimulation ; parler sans observer les réactions de l'autre, ce qui est de l'aveuglement</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

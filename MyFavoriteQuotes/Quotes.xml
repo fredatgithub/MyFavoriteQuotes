@@ -1400,11 +1400,11 @@
     <Language>French</Language>
     <QuoteValue>Quand on ne sait pas ce qu'est la vie, comment pourrait-on savoir ce qu'est la mort ?</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne vous souciez pas d'être sans emploi ; souciez-vous plutôt d'être digne d'un emploi</QuoteValue>
+  </Quote>
     <!--<Quote>
     <Author></Author>
     <Language></Language>

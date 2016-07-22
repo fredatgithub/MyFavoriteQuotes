@@ -1420,11 +1420,11 @@
     <Language>English</Language>
     <QuoteValue>Three things cannot be long hidden: the sun, the moon, and the truth</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Buddha</Author>
+    <Language>English</Language>
+    <QuoteValue>Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

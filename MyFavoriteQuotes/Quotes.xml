@@ -1430,11 +1430,11 @@
     <Language>French</Language>
     <QuoteValue>La vie de l'homme dépend de sa volonté ; sans volonté, elle serait abandonnée au hasard</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Le père qui n'enseigne pas ses devoirs à son fils est autant coupable que ce dernier s'il les néglige</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

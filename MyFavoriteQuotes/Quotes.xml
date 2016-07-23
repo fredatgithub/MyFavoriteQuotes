@@ -1425,11 +1425,11 @@
     <Language>English</Language>
     <QuoteValue>Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>La vie de l'homme dépend de sa volonté ; sans volonté, elle serait abandonnée au hasard</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

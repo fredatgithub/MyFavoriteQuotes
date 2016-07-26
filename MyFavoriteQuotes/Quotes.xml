@@ -1435,11 +1435,11 @@
     <Language>French</Language>
     <QuoteValue>Le père qui n'enseigne pas ses devoirs à son fils est autant coupable que ce dernier s'il les néglige</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Buddha</Author>
+    <Language>English</Language>
+    <QuoteValue>You can search throughout the entire universe for someone who is more deserving of your love and affection than you are yourself, and that person is not to be found anywhere. You yourself, as much as anybody in the entire universe deserve your love and affection</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

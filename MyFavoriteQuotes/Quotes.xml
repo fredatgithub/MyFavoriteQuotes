@@ -1445,11 +1445,11 @@
     <Language>English</Language>
     <QuoteValue>No one saves us but ourselves. No one can and no one may. We ourselves must walk the path</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Buddha</Author>
+    <Language>English</Language>
+    <QuoteValue>We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

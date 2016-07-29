@@ -1450,11 +1450,11 @@
     <Language>English</Language>
     <QuoteValue>We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Buddha</Author>
+    <Language>English</Language>
+    <QuoteValue>You will not be punished for your anger, you will be punished by your anger</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

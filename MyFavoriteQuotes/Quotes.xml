@@ -1455,11 +1455,11 @@
     <Language>English</Language>
     <QuoteValue>You will not be punished for your anger, you will be punished by your anger</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>La vie de l'homme dépend de sa volonté ; sans volonté, elle serait abandonnée au hasard</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

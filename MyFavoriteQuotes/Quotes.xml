@@ -1460,11 +1460,11 @@
     <Language>French</Language>
     <QuoteValue>La vie de l'homme dépend de sa volonté ; sans volonté, elle serait abandonnée au hasard</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand un homme a faim, mieux vaut lui apprendre à pêcher que de lui donner un poisson</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

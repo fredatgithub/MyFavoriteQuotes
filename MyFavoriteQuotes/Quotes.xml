@@ -1490,11 +1490,11 @@
     <Language>English</Language>
     <QuoteValue>Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind. To walk safely through the maze of human life, one needs the light of wisdom and the guidance of virtue</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Dalaï Lama</Author>
+    <Language>French</Language>
+    <QuoteValue>Si vous avez l’impression d’être trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique et vous verrez lequel des deux empêche l’autre de dormir</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

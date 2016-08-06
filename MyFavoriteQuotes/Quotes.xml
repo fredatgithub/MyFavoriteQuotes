@@ -1550,11 +1550,11 @@
     <Language>French</Language>
     <QuoteValue>Si tu aimes deux personnes en même temps, choisis la deuxieme. Parce que si tu aimais vraiment la première, tu n’aurais jamais eu des sentiments pour la deuxième</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Celui qui aime à apprendre est bien près du savoir</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

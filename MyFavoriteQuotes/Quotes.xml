@@ -1555,11 +1555,11 @@
     <Language>French</Language>
     <QuoteValue>Celui qui aime à apprendre est bien près du savoir</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Le sage est calme et serein. L'homme de peu est toujours accablé de soucis</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

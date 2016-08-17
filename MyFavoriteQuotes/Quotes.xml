@@ -1560,11 +1560,11 @@
     <Language>French</Language>
     <QuoteValue>Le sage est calme et serein. L'homme de peu est toujours accablé de soucis</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Antoine Chuquet</Author>
+    <Language>French</Language>
+    <QuoteValue>Plusieurs personnes entrent et sortent de nos vies, seuls les vrais amis laissent une empreinte sur nos coeurs</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

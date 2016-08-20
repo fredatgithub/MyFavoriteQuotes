@@ -1565,11 +1565,11 @@
     <Language>French</Language>
     <QuoteValue>Plusieurs personnes entrent et sortent de nos vies, seuls les vrais amis laissent une empreinte sur nos coeurs</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>L'expérience est une bougie qui n'éclaire que celui qui la porte</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

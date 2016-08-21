@@ -1570,11 +1570,11 @@
     <Language>French</Language>
     <QuoteValue>L'expérience est une bougie qui n'éclaire que celui qui la porte</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne te crois point si important que les autres te paraissent insignifiants</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

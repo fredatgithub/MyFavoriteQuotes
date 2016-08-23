@@ -1580,11 +1580,11 @@
     <Language>French</Language>
     <QuoteValue>L'homme supérieur c'est celui qui d'abord met ses paroles en pratique, et ensuite parle conformément à ses actions</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Apprendre sans réfléchir est vain. Réfléchir sans apprendre est dangereux</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

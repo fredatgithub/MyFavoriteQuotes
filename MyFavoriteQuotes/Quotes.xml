@@ -1585,11 +1585,11 @@
     <Language>French</Language>
     <QuoteValue>Apprendre sans réfléchir est vain. Réfléchir sans apprendre est dangereux</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Winston Churchill</Author>
+    <Language>French</Language>
+    <QuoteValue>Un peuple qui oubie son passé n'a pas d'avenir</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

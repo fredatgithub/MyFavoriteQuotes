@@ -1605,11 +1605,11 @@
     <Language>French</Language>
     <QuoteValue>Le sage a honte de ses défauts, mais n'a pas honte de s'en corriger</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Ecoutez beaucoup, afin de diminuer vos doutes ; soyez attentifs à ce que vous dites, afin de ne rien dire de superflu ; alors, vous commettrez rarement des fautes</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

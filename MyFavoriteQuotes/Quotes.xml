@@ -1610,11 +1610,11 @@
     <Language>French</Language>
     <QuoteValue>Ecoutez beaucoup, afin de diminuer vos doutes ; soyez attentifs à ce que vous dites, afin de ne rien dire de superflu ; alors, vous commettrez rarement des fautes</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Jean-Baptiste Jules Bernadotte roi Charles XIV Jean de Suède</Author>
+    <Language>French</Language>
+    <QuoteValue>L'amour du peuple sera ma récomprense</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

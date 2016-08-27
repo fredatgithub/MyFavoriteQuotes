@@ -1620,11 +1620,11 @@
     <Language>French</Language>
     <QuoteValue>Rappelle-toi que ton fils n'est pas ton fils, mais le fils de son temps</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>On doit aimer son prochain comme soi-même ; ne pas lui faire ce que nous ne voudrions pas qu'il nous fît</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

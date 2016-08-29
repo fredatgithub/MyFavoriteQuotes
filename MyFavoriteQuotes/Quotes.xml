@@ -1625,11 +1625,11 @@
     <Language>French</Language>
     <QuoteValue>On doit aimer son prochain comme soi-même ; ne pas lui faire ce que nous ne voudrions pas qu'il nous fît</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Celui qui déplace la montagne, c'est celui qui commence à enlever les petites pierres</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

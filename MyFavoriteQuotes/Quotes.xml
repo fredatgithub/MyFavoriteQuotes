@@ -1630,11 +1630,11 @@
     <Language>French</Language>
     <QuoteValue>Celui qui déplace la montagne, c'est celui qui commence à enlever les petites pierres</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne parlez jamais de vous, ni en bien, car on ne vous croirait pas, ni en mal car on ne vous croirait que trop</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

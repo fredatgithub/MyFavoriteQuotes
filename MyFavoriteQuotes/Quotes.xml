@@ -1635,11 +1635,11 @@
     <Language>French</Language>
     <QuoteValue>Ne parlez jamais de vous, ni en bien, car on ne vous croirait pas, ni en mal car on ne vous croirait que trop</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>L'archer a un point commun avec l'homme de bien : quand sa flèche n'atteint pas le centre de la cible, il en cherche la cause en lui-même</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

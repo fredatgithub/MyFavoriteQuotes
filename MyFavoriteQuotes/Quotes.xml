@@ -1640,11 +1640,11 @@
     <Language>French</Language>
     <QuoteValue>L'archer a un point commun avec l'homme de bien : quand sa flèche n'atteint pas le centre de la cible, il en cherche la cause en lui-même</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Sans principes communs, ce n'est pas la peine de discuter</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

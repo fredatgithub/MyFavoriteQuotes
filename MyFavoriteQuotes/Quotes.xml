@@ -1645,11 +1645,11 @@
     <Language>French</Language>
     <QuoteValue>Sans principes communs, ce n'est pas la peine de discuter</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>L'homme de bien est droit et juste, mais non raide et inflexible ; il sait se plier mais pas se courber</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

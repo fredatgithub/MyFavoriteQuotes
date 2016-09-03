@@ -1655,11 +1655,11 @@
     <Language>French</Language>
     <QuoteValue>Il ne faut pas compter sur ceux qui ont créé les problèmes pour les résoudre</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Agissez envers les autres comme vous aimeriez qu'ils agissent envers vous</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

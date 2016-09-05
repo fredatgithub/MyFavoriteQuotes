@@ -1662,14 +1662,14 @@
   </Quote>
    <Quote>
     <Author>Confucius</Author>
-    <Language>French</Language>
+    <Language></Language>
     <QuoteValue>L'homme supérieur ne demande rien qu'à lui-même ; l'homme vulgaire et sans mérite demande tout aux autres</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Le grave défaut est d'avoir des défauts et de ne pas s'efforcer de s'en corriger</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

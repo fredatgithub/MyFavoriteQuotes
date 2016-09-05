@@ -1660,11 +1660,11 @@
     <Language>French</Language>
     <QuoteValue>Agissez envers les autres comme vous aimeriez qu'ils agissent envers vous</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>L'homme supérieur ne demande rien qu'à lui-même ; l'homme vulgaire et sans mérite demande tout aux autres</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1700,11 +1700,11 @@
     <Language>French</Language>
     <QuoteValue>Celui qui sait obéir saura ensuite commander</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>William S. Burroughs</Author>
+    <Language>English</Language>
+    <QuoteValue>After one look at this planet any visitor from outer space would say I want to see the manager</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

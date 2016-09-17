@@ -1715,11 +1715,11 @@
     <Language>French</Language>
     <QuoteValue>Rien ne sert de parler des choses qui sont déjà accomplies, ni de faire des remontrances sur celles qui sont déjà très avancées, ni de blâmer ce qui est passé</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Rendez le bien pour le bien et la justice pour le mal</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

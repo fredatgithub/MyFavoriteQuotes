@@ -1720,11 +1720,11 @@
     <Language>French</Language>
     <QuoteValue>Rendez le bien pour le bien et la justice pour le mal</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand vous êtes bon dans quelque chose, vous le dites à tout le monde. Quand vous êtes excellent, tout le monde vous le dit</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1725,11 +1725,11 @@
     <Language>French</Language>
     <QuoteValue>Quand vous êtes bon dans quelque chose, vous le dites à tout le monde. Quand vous êtes excellent, tout le monde vous le dit</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Russell Simmons</Author>
+    <Language>French</Language>
+    <QuoteValue>Plus on parvient à se connaître soi-même, plus on a envie d’améliorer cet être.</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1735,11 +1735,11 @@
     <Language>French</Language>
     <QuoteValue>Ce qu'on sait, savoir qu'on le sait ; ce qu'on ne sait pas, savoir qu'on ne le sait pas : c'est savoir véritablement</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>La joie est en tout ; il faut savoir l'extraire</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

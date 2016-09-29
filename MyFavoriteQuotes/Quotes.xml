@@ -1740,11 +1740,11 @@
     <Language>French</Language>
     <QuoteValue>La joie est en tout ; il faut savoir l'extraire</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Se regarder scrupuleusement soi-même, ne regarder que discrètement les autres</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

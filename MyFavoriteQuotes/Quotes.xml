@@ -1760,11 +1760,11 @@
     <Language>English</Language>
     <QuoteValue>America will never be destroyed from the outside. If we falter and lose our freedoms, it will be because we destroyed ourselves</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>In the end, it's not the years in your life that count. It's the life in your years</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

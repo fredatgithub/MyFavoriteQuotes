@@ -1765,11 +1765,11 @@
     <Language>English</Language>
     <QuoteValue>In the end, it's not the years in your life that count. It's the life in your years</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paul Valery</Author>
+    <Language>French</Language>
+    <QuoteValue>C'est en copiant qu'on invente</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

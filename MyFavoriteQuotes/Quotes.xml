@@ -1775,16 +1775,16 @@
     <Language>English</Language>
     <QuoteValue>No man has a good enough memory to be a successful liar</QuoteValue>
       </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Alexandre Jardin</Author>
+    <Language>French</Language>
+    <QuoteValue>Je crois en la force inarrêtable des gens dont l’action – même modeste – à un SENS pour eux</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Carlos Fuentes</Author>
+    <Language>French</Language>
+    <QuoteValue>La narration discute l’ordre des choses. Le silence le confirme</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1790,11 +1790,11 @@
     <Language>French</Language>
     <QuoteValue>On ne peut jamais être neutre, le silence est une opinion</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Blaise Pascal</Author>
+    <Language>French</Language>
+    <QuoteValue>Il est bien plus beau de savoir quelque chose de tout que de savoir tout d'une chose</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

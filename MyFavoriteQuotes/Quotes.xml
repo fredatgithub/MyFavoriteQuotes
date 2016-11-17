@@ -1795,11 +1795,11 @@
     <Language>French</Language>
     <QuoteValue>Il est bien plus beau de savoir quelque chose de tout que de savoir tout d'une chose</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Dwayne Johnson</Author>
+    <Language>French</Language>
+    <QuoteValue>Le sens de l’humour est le principal atout pour être sexy. Se prendre trop au sérieux = grosse déconvenue. L’humour dépasse toutes les autres qualités</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

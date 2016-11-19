@@ -1800,11 +1800,11 @@
     <Language>French</Language>
     <QuoteValue>Le sens de l’humour est le principal atout pour être sexy. Se prendre trop au sérieux = grosse déconvenue. L’humour dépasse toutes les autres qualités</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Nicolas Boileau-Despréaux</Author>
+    <Language>French</Language>
+    <QuoteValue>Ce qui se conçoit bien s'énonce clairement - Et les mots pour le dire arrivent aisément.(1674)</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

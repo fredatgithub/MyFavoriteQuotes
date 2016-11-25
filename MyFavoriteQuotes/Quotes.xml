@@ -1815,11 +1815,11 @@
     <Language>French</Language>
     <QuoteValue>Pardonnez, mais n’oubliez pas, ou vous serez blessé à nouveau. Le pardon permet de relativiser, tandis qu’oublier fait disparaître la leçon.</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Enseigner, c’est seulement démontrer qu’une chose est possible. Apprendre, c’est la rendre possible pour soi-même</QuoteValue>
+  </Quote>
        <!--<Quote>
     <Author></Author>
     <Language></Language>

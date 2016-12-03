@@ -1830,11 +1830,11 @@
     <Language>French</Language>
     <QuoteValue>Comme tout ce qui vient en dernier, la conscience est ce que nous avons de plus précieux, et à la fois de plus fragile</QuoteValue>
   </Quote>
-        <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+        <Quote>
+    <Author>Claire de Lamirande</Author>
+    <Language>French</Language>
+    <QuoteValue>Le sourire est d'abord une décision</QuoteValue>
+  </Quote>
         <!--<Quote>
     <Author></Author>
     <Language></Language>

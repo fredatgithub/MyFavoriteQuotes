@@ -1779,10 +1779,12 @@ namespace MyFavoriteQuotes
         {
           return Language.All;
         }
+
         if (box.Name.Contains("English"))
         {
           return Language.English;
         }
+
         if (box.Name.Contains("French"))
         {
           return Language.French;

@@ -1840,11 +1840,11 @@
     <Language>French</Language>
     <QuoteValue>C'est en croyant aux roses qu'on les fait éclore</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>Notre univers est à la fois en construction et en destruction, et nous de même</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

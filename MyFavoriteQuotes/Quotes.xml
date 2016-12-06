@@ -1845,11 +1845,11 @@
     <Language>French</Language>
     <QuoteValue>Notre univers est à la fois en construction et en destruction, et nous de même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Gustave Flaubert</Author>
+    <Language>French</Language>
+    <QuoteValue>Le meilleur de la vie se passe à dire “Il est trop tôt”, puis “Il est trop tard"</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

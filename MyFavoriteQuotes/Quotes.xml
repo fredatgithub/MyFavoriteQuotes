@@ -1855,11 +1855,11 @@
     <Language>English</Language>
     <QuoteValue>Life is really simple, but we insist on making it complicated</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Vladimir Nabokov</Author>
+    <Language>French</Language>
+    <QuoteValue>L'imagination n'est fertile que lorsqu'elle est futile</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

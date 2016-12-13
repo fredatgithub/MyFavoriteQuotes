@@ -1865,16 +1865,16 @@
     <Language>French</Language>
     <QuoteValue>L’homme ne sera libre que lorsque la notion même de sacré se sera effacée de son esprit</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Eminem</Author>
+    <Language>english</Language>
+    <QuoteValue>You can do anything you set your mind to</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Proverbe africain</Author>
+    <Language>French</Language>
+    <QuoteValue>L'homme jeune marche plus vite que l'ancien, mais l'ancien connait la route</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

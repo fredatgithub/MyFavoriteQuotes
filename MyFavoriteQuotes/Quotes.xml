@@ -1885,11 +1885,11 @@
     <Language>French</Language>
     <QuoteValue>Quand l'injustice devient loi, la résistance est un devoir</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Always bear in mind that your own resolution to succeed is more important than any other</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

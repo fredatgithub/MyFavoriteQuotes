@@ -1875,11 +1875,11 @@
     <Language>French</Language>
     <QuoteValue>L'homme jeune marche plus vite que l'ancien, mais l'ancien connait la route</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Theodore Roosevelt</Author>
+    <Language>English</Language>
+    <QuoteValue>With self-discipline most anything is possible</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1895,11 +1895,11 @@
     <Language>English</Language>
     <QuoteValue>Nearly all men can stand adversity, but if you want to test a man's character, give him power</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jules Barbey d’Aurevilly</Author>
+    <Language>French</Language>
+    <QuoteValue>Le plaisir est le bonheur des fous, le bonheur est le plaisir des sages</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

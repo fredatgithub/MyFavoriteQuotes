@@ -1900,11 +1900,11 @@
     <Language>French</Language>
     <QuoteValue>Le plaisir est le bonheur des fous, le bonheur est le plaisir des sages</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Better to remain silent and be thought a fool than to speak out and remove all doubt</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

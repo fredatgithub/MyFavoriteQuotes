@@ -1915,11 +1915,11 @@
     <Language>English</Language>
     <QuoteValue>Do the right thing. It will gratify some people and astonish the rest</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>Mark Twain</Language>
+    <QuoteValue>If you tell the truth, you don't have to remember anything</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

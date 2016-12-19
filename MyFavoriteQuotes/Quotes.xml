@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Quotes>
   <Quote>
     <Author>Anonyme</Author>
@@ -1920,11 +1920,11 @@
     <Language>Mark Twain</Language>
     <QuoteValue>If you tell the truth, you don't have to remember anything</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Give me six hours to chop down a tree and I will spend the first four sharpening the axe</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

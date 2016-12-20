@@ -1925,11 +1925,11 @@
     <Language>English</Language>
     <QuoteValue>Give me six hours to chop down a tree and I will spend the first four sharpening the axe</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Oscar wilde</Author>
+    <Language>French</Language>
+    <QuoteValue>Aujourd'hui les gens savent le prix de tout, et ne connaissent la valeur de rien</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

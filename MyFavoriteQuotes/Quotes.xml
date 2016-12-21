@@ -1930,11 +1930,11 @@
     <Language>French</Language>
     <QuoteValue>Aujourd'hui les gens savent le prix de tout, et ne connaissent la valeur de rien</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>When I do good, I feel good. When I do bad, I feel bad. That's my religion</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

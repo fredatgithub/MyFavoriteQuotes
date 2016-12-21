@@ -1224,7 +1224,7 @@ namespace MyFavoriteQuotes
         DisplayMessage("No result were found.", "No result", MessageBoxButtons.OK);
       }
 
-      labelNbOfResultFound.Text = $@": {searchedResult.Count}";
+      labelNbOfResultFound.Text = string.Format(": {0}", searchedResult.Count);
       searchedResult = null;
     }
 

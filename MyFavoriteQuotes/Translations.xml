@@ -1611,13 +1611,48 @@
     <frenchValue>Niveau en simple</frenchValue>
   </term>
   <term>
-    <name>double level</name>
-    <englishValue>double level</englishValue>
+    <name>Double level</name>
+    <englishValue>Double level</englishValue>
     <frenchValue>Niveau en double</frenchValue>
   </term>
   <term>
     <name>Mixed level</name>
     <englishValue>Mixed level</englishValue>
-    <frenchValue>Niveau en mixe</frenchValue>
+    <frenchValue>Niveau en mixte</frenchValue>
+  </term>
+  <term>
+    <name>Player number</name>
+    <englishValue>Player number</englishValue>
+    <frenchValue>Numéro joueur</frenchValue>
+  </term>
+  <term>
+    <name>License number</name>
+    <englishValue>License number</englishValue>
+    <frenchValue>Numéro de licence</frenchValue>
+  </term>
+  <term>
+    <name>Choose a process</name>
+    <englishValue>Choose a process</englishValue>
+    <frenchValue>Choisir un process</frenchValue>
+  </term>
+  <term>
+    <name>Shutdown when done</name>
+    <englishValue>Shutdown when done</englishValue>
+    <frenchValue>Arrêter PC quand fini</frenchValue>
+  </term>
+   <term>
+    <name>You must select a process first</name>
+    <englishValue>You must select a process first</englishValue>
+    <frenchValue>Vous devez sélectionner un process</frenchValue>
+  </term>
+  <term>
+    <name>Select a process</name>
+    <englishValue>Select a process</englishValue>
+    <frenchValue>Sélectionnez un process</frenchValue>
+  </term>
+  <term>
+    <name>Result found</name>
+    <englishValue>Result found</englishValue>
+    <frenchValue>Résultat trouvé</frenchValue>
   </term>
 </terms>

@@ -1950,11 +1950,11 @@
     <Language>French</Language>
     <QuoteValue>Il faut faire vite ce qui ne presse pas pour pouvoir faire lentement ce qui presse</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>On ne peut se passer du oui ou du non dans l’action, mais il faut savoir pratiquer le oui et non dans la pensée</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

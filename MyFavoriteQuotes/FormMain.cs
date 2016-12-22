@@ -1921,6 +1921,7 @@ namespace MyFavoriteQuotes
       // 64 French quotes
       // xx duplicate quote(s)
       // count by author
+      // add translation
 
       int totalQuotes = _allQuotes.ToList().Count();
       textBoxStatQuotes.Text += string.Format("{0} quote{1} in total{2}", totalQuotes, Punctuation.Plural(totalQuotes), Environment.NewLine);
@@ -1932,11 +1933,44 @@ namespace MyFavoriteQuotes
       textBoxStatQuotes.Text += string.Format("{0} quote{1} in English{2}", englishQuotes, Punctuation.Plural(englishQuotes), Environment.NewLine);
 
       Dictionary<string, int> allQuotes = GetQuotesByAuthor(Language.All);
+      IEnumerable<Quote> tmpQuotes = GetDuplicateQuotes(_allQuotes.ToList());
+      if (tmpQuotes.Count() != 0)
+      {
+        foreach (Quote quote in tmpQuotes)
+        {
+          textBoxStatQuotes.Text += string.Format("duplicate quote{0}: {1} - {2}{3}",
+         " ", quote.Author, quote.Sentence, Environment.NewLine);
+        }
+      }
+      else
+      {
+        textBoxStatQuotes.Text += string.Format("No duplicate quote found{0}", Environment.NewLine);
+      }
+
       foreach (KeyValuePair<string, int> quote in allQuotes)
       {
         textBoxStatQuotes.Text += string.Format("{0} has {1} quote{2}{3}",
           quote.Key, quote.Value, Punctuation.Plural(quote.Value), Environment.NewLine);
       }
+    }
+
+    private static IEnumerable<Quote> GetDuplicateQuotes(IEnumerable<Quote> allQuotes)
+    {
+      Dictionary<string, int> tmpDico = new Dictionary<string, int>();
+      List<Quote> result = new List<Quote>();
+      foreach (Quote quote in allQuotes)
+      {
+        if (tmpDico.ContainsKey(quote.Sentence))
+        {
+          result.Add(quote);
+        }
+        else
+        {
+          tmpDico.Add(quote.Sentence, 1);
+        }
+      }
+
+      return result;
     }
 
     private IEnumerable<Quote> GetQuotesByLanguage(Language language = Language.English)

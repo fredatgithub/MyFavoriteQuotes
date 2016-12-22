@@ -1655,4 +1655,14 @@
     <englishValue>Result found</englishValue>
     <frenchValue>Résultat trouvé</frenchValue>
   </term>
+   <term>
+    <name>Quote found</name>
+    <englishValue>Quote found</englishValue>
+    <frenchValue>Citation trouvée</frenchValue>
+  </term>
+   <term>
+    <name>Statistics</name>
+    <englishValue>Statistics</englishValue>
+    <frenchValue>Statistiques</frenchValue>
+  </term>
 </terms>

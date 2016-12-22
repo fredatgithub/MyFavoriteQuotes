@@ -1034,6 +1034,8 @@ namespace MyFavoriteQuotes
           groupBoxListAuthor.Text = _languageDicoEn["Author"];
           labelListAuthor.Text = _languageDicoEn["Choose"];
           checkBoxAdddisplayAfterAdding.Text = _languageDicoEn["DisplayAfterAdding"];
+          labelSearchResultFound.Text = _languageDicoEn["Result found"];
+          tabPageStatistics.Text = _languageDicoEn["Statistics"];
           _currentLanguage = "english";
           break;
         case "French":
@@ -1093,6 +1095,8 @@ namespace MyFavoriteQuotes
           checkBoxCaseSensitive.Text = _languageDicoFr["CaseSensitive"];
           labelAddLanguage.Text = _languageDicoFr["Language"];
           buttonListDelete.Text = _languageDicoFr["Delete"];
+          labelSearchResultFound.Text = _languageDicoFr["Result found"];
+          tabPageStatistics.Text = _languageDicoFr["Statistics"];
           _currentLanguage = "french";
           break;
       }

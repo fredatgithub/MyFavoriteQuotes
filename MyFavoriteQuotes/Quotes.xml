@@ -1940,11 +1940,11 @@
     <Language>English</Language>
     <QuoteValue>You cannot escape the responsibility of tomorrow by evading it today</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paul Eluard</Author>
+    <Language>French</Language>
+    <QuoteValue>il ne faut pas de tout pour faire un monde. Il faut du bonheur et rien d'autre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

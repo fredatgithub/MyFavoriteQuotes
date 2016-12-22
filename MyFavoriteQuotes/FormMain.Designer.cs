@@ -63,6 +63,8 @@
       this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.tabControlMain = new System.Windows.Forms.TabControl();
       this.tabPageSearch = new System.Windows.Forms.TabPage();
+      this.labelNbOfResultFound = new System.Windows.Forms.Label();
+      this.labelSearchResultFound = new System.Windows.Forms.Label();
       this.checkBoxCaseSensitive = new System.Windows.Forms.CheckBox();
       this.groupBoxLanguage = new System.Windows.Forms.GroupBox();
       this.checkBoxLanguageFrench = new System.Windows.Forms.CheckBox();
@@ -99,10 +101,10 @@
       this.checkBoxListEnglish = new System.Windows.Forms.CheckBox();
       this.checkBoxListAll = new System.Windows.Forms.CheckBox();
       this.textBoxListQuotes = new System.Windows.Forms.TextBox();
-      this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
       this.tabPageStatistics = new System.Windows.Forms.TabPage();
-      this.labelSearchResultFound = new System.Windows.Forms.Label();
-      this.labelNbOfResultFound = new System.Windows.Forms.Label();
+      this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+      this.buttonStatCount = new System.Windows.Forms.Button();
+      this.textBoxStatQuotes = new System.Windows.Forms.TextBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -113,6 +115,7 @@
       this.tabPageList.SuspendLayout();
       this.groupBoxListAuthor.SuspendLayout();
       this.groupBoxListLanguage.SuspendLayout();
+      this.tabPageStatistics.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -324,14 +327,14 @@
       // frenchToolStripMenuItem
       // 
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
       this.frenchToolStripMenuItem.Text = "Français";
       this.frenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItemClick);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-      this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+      this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
       this.englishToolStripMenuItem.Text = "Anglais";
       this.englishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItemClick);
       // 
@@ -410,6 +413,24 @@
       this.tabPageSearch.TabIndex = 0;
       this.tabPageSearch.Text = "Search";
       this.tabPageSearch.UseVisualStyleBackColor = true;
+      // 
+      // labelNbOfResultFound
+      // 
+      this.labelNbOfResultFound.AutoSize = true;
+      this.labelNbOfResultFound.Location = new System.Drawing.Point(125, 254);
+      this.labelNbOfResultFound.Name = "labelNbOfResultFound";
+      this.labelNbOfResultFound.Size = new System.Drawing.Size(24, 17);
+      this.labelNbOfResultFound.TabIndex = 8;
+      this.labelNbOfResultFound.Text = ": 0";
+      // 
+      // labelSearchResultFound
+      // 
+      this.labelSearchResultFound.AutoSize = true;
+      this.labelSearchResultFound.Location = new System.Drawing.Point(17, 254);
+      this.labelSearchResultFound.Name = "labelSearchResultFound";
+      this.labelSearchResultFound.Size = new System.Drawing.Size(88, 17);
+      this.labelSearchResultFound.TabIndex = 7;
+      this.labelSearchResultFound.Text = "Result found";
       // 
       // checkBoxCaseSensitive
       // 
@@ -856,6 +877,8 @@
       // 
       // tabPageStatistics
       // 
+      this.tabPageStatistics.Controls.Add(this.buttonStatCount);
+      this.tabPageStatistics.Controls.Add(this.textBoxStatQuotes);
       this.tabPageStatistics.Location = new System.Drawing.Point(4, 25);
       this.tabPageStatistics.Name = "tabPageStatistics";
       this.tabPageStatistics.Size = new System.Drawing.Size(903, 609);
@@ -863,23 +886,32 @@
       this.tabPageStatistics.Text = "Statistics";
       this.tabPageStatistics.UseVisualStyleBackColor = true;
       // 
-      // labelSearchResultFound
+      // buttonStatCount
       // 
-      this.labelSearchResultFound.AutoSize = true;
-      this.labelSearchResultFound.Location = new System.Drawing.Point(17, 254);
-      this.labelSearchResultFound.Name = "labelSearchResultFound";
-      this.labelSearchResultFound.Size = new System.Drawing.Size(88, 17);
-      this.labelSearchResultFound.TabIndex = 7;
-      this.labelSearchResultFound.Text = "Result found";
+      this.buttonStatCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.buttonStatCount.Location = new System.Drawing.Point(38, 31);
+      this.buttonStatCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.buttonStatCount.Name = "buttonStatCount";
+      this.buttonStatCount.Size = new System.Drawing.Size(95, 30);
+      this.buttonStatCount.TabIndex = 11;
+      this.buttonStatCount.Text = "Count";
+      this.buttonStatCount.UseVisualStyleBackColor = true;
+      this.buttonStatCount.Click += new System.EventHandler(this.buttonStatCount_Click);
       // 
-      // labelNbOfResultFound
+      // textBoxStatQuotes
       // 
-      this.labelNbOfResultFound.AutoSize = true;
-      this.labelNbOfResultFound.Location = new System.Drawing.Point(125, 254);
-      this.labelNbOfResultFound.Name = "labelNbOfResultFound";
-      this.labelNbOfResultFound.Size = new System.Drawing.Size(24, 17);
-      this.labelNbOfResultFound.TabIndex = 8;
-      this.labelNbOfResultFound.Text = ": 0";
+      this.textBoxStatQuotes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.textBoxStatQuotes.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.textBoxStatQuotes.Location = new System.Drawing.Point(38, 81);
+      this.textBoxStatQuotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+      this.textBoxStatQuotes.Multiline = true;
+      this.textBoxStatQuotes.Name = "textBoxStatQuotes";
+      this.textBoxStatQuotes.ReadOnly = true;
+      this.textBoxStatQuotes.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+      this.textBoxStatQuotes.Size = new System.Drawing.Size(827, 468);
+      this.textBoxStatQuotes.TabIndex = 10;
       // 
       // FormMain
       // 
@@ -914,6 +946,8 @@
       this.groupBoxListAuthor.PerformLayout();
       this.groupBoxListLanguage.ResumeLayout(false);
       this.groupBoxListLanguage.PerformLayout();
+      this.tabPageStatistics.ResumeLayout(false);
+      this.tabPageStatistics.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -996,5 +1030,7 @@
     private System.Windows.Forms.TabPage tabPageStatistics;
     private System.Windows.Forms.Label labelSearchResultFound;
     private System.Windows.Forms.Label labelNbOfResultFound;
+    private System.Windows.Forms.Button buttonStatCount;
+    private System.Windows.Forms.TextBox textBoxStatQuotes;
   }
 }

@@ -1037,6 +1037,7 @@ namespace MyFavoriteQuotes
           checkBoxAdddisplayAfterAdding.Text = _languageDicoEn["DisplayAfterAdding"];
           labelSearchResultFound.Text = _languageDicoEn["Result found"];
           tabPageStatistics.Text = _languageDicoEn["Statistics"];
+          buttonStatCount.Text = _languageDicoEn["Count"];
           _currentLanguage = "english";
           break;
         case "French":
@@ -1098,6 +1099,7 @@ namespace MyFavoriteQuotes
           buttonListDelete.Text = _languageDicoFr["Delete"];
           labelSearchResultFound.Text = _languageDicoFr["Result found"];
           tabPageStatistics.Text = _languageDicoFr["Statistics"];
+          buttonStatCount.Text = _languageDicoFr["Count"];
           _currentLanguage = "french";
           break;
       }
@@ -1902,10 +1904,63 @@ namespace MyFavoriteQuotes
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
       TextBox box = focusedControl as TextBox;
+      // box?.SelectAll(); // null propagation
       if (box != null)
       {
         box.SelectAll();
       }
+    }
+
+    private void buttonStatCount_Click(object sender, EventArgs e)
+    {
+      textBoxStatQuotes.Text = string.Empty;
+      // detect language and write to textbox accordingly
+      // use _allQuotes.ToList()
+      // 355 quotes in total
+      // 300 English quotes
+      // 64 French quotes
+      // xx duplicate quote(s)
+      // count by author
+
+      int totalQuotes = _allQuotes.ToList().Count();
+      textBoxStatQuotes.Text += string.Format("{0} quote{1} in total{2}", totalQuotes, Punctuation.Plural(totalQuotes), Environment.NewLine);
+
+      int frenchQuotes = CountQuotes(Language.French).Count();
+      textBoxStatQuotes.Text += string.Format("{0} quote{1} in French{2}", frenchQuotes, Punctuation.Plural(frenchQuotes), Environment.NewLine);
+
+      int englishQuotes = CountQuotes(Language.English).Count();
+      textBoxStatQuotes.Text += string.Format("{0} quote{1} in English{2}", englishQuotes, Punctuation.Plural(englishQuotes), Environment.NewLine);
+
+    }
+
+    private IEnumerable<Quote> CountQuotes(Language language = Language.English)
+    {
+      var result = from node in _allQuotes.ToList()
+                   where node.Language == language.ToString()
+                   select node;
+
+      return result;
+    }
+
+    private Dictionary<string, int> GetQuotesByAuthor(Language language = Language.English)
+    {
+      var dico = new Dictionary<string, int>();
+      var result = from node in _allQuotes.ToList()
+                   where node.Language == language.ToString()
+                   select node;
+      foreach (Quote quote in result)
+      {
+        if (dico.ContainsKey(quote.Author))
+        {
+          dico[quote.Author]++;
+        }
+        else
+        {
+          dico.Add(quote.Author, 1);
+        }
+      }
+
+      return dico;
     }
   }
 }

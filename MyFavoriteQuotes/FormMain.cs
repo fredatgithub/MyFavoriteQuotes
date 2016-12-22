@@ -1925,38 +1925,62 @@ namespace MyFavoriteQuotes
       int totalQuotes = _allQuotes.ToList().Count();
       textBoxStatQuotes.Text += string.Format("{0} quote{1} in total{2}", totalQuotes, Punctuation.Plural(totalQuotes), Environment.NewLine);
 
-      int frenchQuotes = CountQuotes(Language.French).Count();
+      int frenchQuotes = GetQuotesByLanguage(Language.French).Count();
       textBoxStatQuotes.Text += string.Format("{0} quote{1} in French{2}", frenchQuotes, Punctuation.Plural(frenchQuotes), Environment.NewLine);
 
-      int englishQuotes = CountQuotes(Language.English).Count();
+      int englishQuotes = GetQuotesByLanguage(Language.English).Count();
       textBoxStatQuotes.Text += string.Format("{0} quote{1} in English{2}", englishQuotes, Punctuation.Plural(englishQuotes), Environment.NewLine);
 
+      Dictionary<string, int> allQuotes = GetQuotesByAuthor(Language.All);
+      foreach (KeyValuePair<string, int> quote in allQuotes)
+      {
+        textBoxStatQuotes.Text += string.Format("{0} has {1} quote{2}{3}",
+          quote.Key, quote.Value, Punctuation.Plural(quote.Value), Environment.NewLine);
+      }
     }
 
-    private IEnumerable<Quote> CountQuotes(Language language = Language.English)
+    private IEnumerable<Quote> GetQuotesByLanguage(Language language = Language.English)
     {
       var result = from node in _allQuotes.ToList()
                    where node.Language == language.ToString()
                    select node;
-
       return result;
     }
 
     private Dictionary<string, int> GetQuotesByAuthor(Language language = Language.English)
     {
       var dico = new Dictionary<string, int>();
-      var result = from node in _allQuotes.ToList()
-                   where node.Language == language.ToString()
-                   select node;
-      foreach (Quote quote in result)
+      if (language == Language.All)
       {
-        if (dico.ContainsKey(quote.Author))
+        var result = from node in _allQuotes.ToList()
+                     select node;
+        foreach (Quote quote in result)
         {
-          dico[quote.Author]++;
+          if (dico.ContainsKey(quote.Author))
+          {
+            dico[quote.Author]++;
+          }
+          else
+          {
+            dico.Add(quote.Author, 1);
+          }
         }
-        else
+      }
+      else
+      {
+        var result = from node in _allQuotes.ToList()
+                     where node.Language == language.ToString()
+                     select node;
+        foreach (Quote quote in result)
         {
-          dico.Add(quote.Author, 1);
+          if (dico.ContainsKey(quote.Author))
+          {
+            dico[quote.Author]++;
+          }
+          else
+          {
+            dico.Add(quote.Author, 1);
+          }
         }
       }
 

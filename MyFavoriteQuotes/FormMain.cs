@@ -28,6 +28,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
+using MyFavoriteQuotes.Enums;
 using MyFavoriteQuotes.Properties;
 using Tools;
 

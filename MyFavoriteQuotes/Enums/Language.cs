@@ -17,13 +17,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-namespace MyFavoriteQuotes
+namespace MyFavoriteQuotes.Enums
 {
-  public enum SearchedLanguage
+  public enum Language
   {
-    NoLanguageChosen = 0,
     French = 1,
     English = 2,
-    FrenchAndEnglish = 3 //French & English // = 3
+    All = 3
   }
 }

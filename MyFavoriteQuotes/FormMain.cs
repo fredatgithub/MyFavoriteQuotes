@@ -1922,7 +1922,7 @@ namespace MyFavoriteQuotes
       // xx duplicate quote(s)
       // count by author
       // add translation
-
+      const string dashLine = "----------------------------";
       int totalQuotes = _allQuotes.ToList().Count();
       textBoxStatQuotes.Text += string.Format("{0} quote{1} in total{2}", totalQuotes, Punctuation.Plural(totalQuotes), Environment.NewLine);
 
@@ -1931,8 +1931,8 @@ namespace MyFavoriteQuotes
 
       int englishQuotes = GetQuotesByLanguage(Language.English).Count();
       textBoxStatQuotes.Text += string.Format("{0} quote{1} in English{2}", englishQuotes, Punctuation.Plural(englishQuotes), Environment.NewLine);
-
-      Dictionary<string, int> allQuotes = GetQuotesByAuthor(Language.All);
+      AddLine(dashLine);
+      Dictionary <string, int> allQuotes = GetQuotesByAuthor(Language.All);
       IEnumerable<Quote> tmpQuotes = GetDuplicateQuotes(_allQuotes.ToList());
       if (tmpQuotes.Count() != 0)
       {
@@ -1947,6 +1947,20 @@ namespace MyFavoriteQuotes
         textBoxStatQuotes.Text += string.Format("No duplicate quote found{0}", Environment.NewLine);
       }
 
+      AddLine(dashLine);
+      textBoxStatQuotes.Text += string.Format("List of author sorted by number of quotes descending{0}", Environment.NewLine);
+      AddLine(dashLine);
+      allQuotes = SortDictionaryWithValue(allQuotes);
+      foreach (KeyValuePair<string, int> quote in allQuotes)
+      {
+        textBoxStatQuotes.Text += string.Format("{0} has {1} quote{2}{3}",
+          quote.Key, quote.Value, Punctuation.Plural(quote.Value), Environment.NewLine);
+      }
+
+      AddLine(dashLine);
+      textBoxStatQuotes.Text += string.Format("List of author sorted in alphabetical order{0}", Environment.NewLine);
+      AddLine(dashLine);
+      allQuotes = SortDictionaryWithKey(allQuotes, false);
       foreach (KeyValuePair<string, int> quote in allQuotes)
       {
         textBoxStatQuotes.Text += string.Format("{0} has {1} quote{2}{3}",
@@ -1954,10 +1968,15 @@ namespace MyFavoriteQuotes
       }
     }
 
+    private void AddLine(string dashLine)
+    {
+      textBoxStatQuotes.Text += string.Format("{0}{1}",dashLine, Environment.NewLine);
+    }
+
     private static IEnumerable<Quote> GetDuplicateQuotes(IEnumerable<Quote> allQuotes)
     {
-      Dictionary<string, int> tmpDico = new Dictionary<string, int>();
-      List<Quote> result = new List<Quote>();
+      var tmpDico = new Dictionary<string, int>();
+      var result = new List<Quote>();
       foreach (Quote quote in allQuotes)
       {
         if (tmpDico.ContainsKey(quote.Sentence))
@@ -1979,6 +1998,18 @@ namespace MyFavoriteQuotes
                    where node.Language == language.ToString()
                    select node;
       return result;
+    }
+
+    private Dictionary<string, int> SortDictionaryWithValue(Dictionary<string, int> dico, bool descending = true)
+    {
+      return @descending ? dico.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value) : 
+        dico.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+    }
+
+    private Dictionary<string, int> SortDictionaryWithKey(Dictionary<string, int> dico, bool descending = true)
+    {
+      return @descending ? dico.OrderByDescending(x => x.Key).ToDictionary(x => x.Key, x => x.Value) :
+        dico.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
     }
 
     private Dictionary<string, int> GetQuotesByAuthor(Language language = Language.English)

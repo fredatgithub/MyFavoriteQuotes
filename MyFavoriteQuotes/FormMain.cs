@@ -1921,7 +1921,7 @@ namespace MyFavoriteQuotes
       textBoxStatQuotes.Text += $"{totalQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(totalQuotes)}{Punctuation.OneSpace}{Translate("in total")}{Environment.NewLine}";
 
       int frenchQuotes = GetQuotesByLanguage(Language.French).Count();
-      textBoxStatQuotes.Text += $"{frenchQuotes} quote{Punctuation.Plural(frenchQuotes)} in French{Environment.NewLine}";
+      textBoxStatQuotes.Text += $"{frenchQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(frenchQuotes)}{Punctuation.OneSpace}in French{Environment.NewLine}";
 
       int englishQuotes = GetQuotesByLanguage().Count();
       textBoxStatQuotes.Text +=

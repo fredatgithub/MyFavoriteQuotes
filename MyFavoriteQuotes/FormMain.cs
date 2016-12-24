@@ -1914,57 +1914,59 @@ namespace MyFavoriteQuotes
     private void buttonStatCount_Click(object sender, EventArgs e)
     {
       textBoxStatQuotes.Text = string.Empty;
-      // detect language and write to textbox accordingly
-      // add translation
-      const string dashLine = "----------------------------";
+
       int totalQuotes = _allQuotes.ToList().Count();
       textBoxStatQuotes.Text += $"{totalQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(totalQuotes)}{Punctuation.OneSpace}{Translate("in total")}{Environment.NewLine}";
 
       int frenchQuotes = GetQuotesByLanguage(Language.French).Count();
       textBoxStatQuotes.Text += $"{frenchQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(frenchQuotes)}{Punctuation.OneSpace}{Translate("in French")}{Environment.NewLine}";
 
-      int englishQuotes = GetQuotesByLanguage().Count();
-      textBoxStatQuotes.Text += $"{englishQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(englishQuotes)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}";
-
-      int tmpLenght = $"{englishQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(englishQuotes)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}".Length;
-      CreateDashLine(tmpLenght);
-
+      int englishQuotesNumber = GetQuotesByLanguage().Count();
+      string tmpQuote = $"{englishQuotesNumber}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(englishQuotesNumber)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}";
+      textBoxStatQuotes.Text += tmpQuote;
+      int tmpQuoteLenght = tmpQuote.Length;
+      
+      AddLine(CreateDashLine(tmpQuoteLenght));
       Dictionary <string, int> allQuotes = GetQuotesByAuthor(Language.All);
       IEnumerable<Quote> tmpQuotes = GetDuplicateQuotes(_allQuotes.ToList());
       if (tmpQuotes.Count() != 0)
       {
         foreach (Quote quote in tmpQuotes)
         {
-          textBoxStatQuotes.Text += $"duplicate quote{" "}: {quote.Author} - {quote.Sentence}{Environment.NewLine}";
+          textBoxStatQuotes.Text += $"{Translate("duplicate quote")}{Punctuation.OneSpace}: {quote.Author} - {quote.Sentence}{Environment.NewLine}";
         }
       }
       else
       {
-        textBoxStatQuotes.Text += $"No duplicate quote found{Environment.NewLine}";
+        textBoxStatQuotes.Text += $"{Translate("No duplicate quote found")}{Environment.NewLine}";
       }
-
-      AddLine(dashLine);
-      textBoxStatQuotes.Text += $"List of author sorted by number of quotes descending{Environment.NewLine}";
-      AddLine(dashLine);
+      
+      AddLine(CreateDashLine($"{Translate("No duplicate quote found")}".Length));
+      textBoxStatQuotes.Text += $"{Translate("List of author sorted by number of quotes descending")}{Environment.NewLine}";
+      AddLine(CreateDashLine($"{Translate("List of author sorted by number of quotes descending")}{Environment.NewLine}".Length));
       allQuotes = SortDictionaryWithValue(allQuotes);
+      string lastQuote = string.Empty;
       foreach (KeyValuePair<string, int> quote in allQuotes)
       {
-        textBoxStatQuotes.Text +=
-          $"{quote.Key} has {quote.Value} quote{Punctuation.Plural(quote.Value)}{Environment.NewLine}";
+        lastQuote =
+          $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(quote.Value)}{Environment.NewLine}";
+        textBoxStatQuotes.Text += lastQuote;
       }
 
-      AddLine(dashLine);
-      textBoxStatQuotes.Text += $"List of author sorted in alphabetical order{Environment.NewLine}";
-      AddLine(dashLine);
+      AddLine(CreateDashLine(lastQuote.Length));
+      tmpQuote = $"{Translate("List of author sorted in alphabetical order")}{Environment.NewLine}";
+      textBoxStatQuotes.Text += tmpQuote;
+      tmpQuoteLenght = tmpQuote.Length;
+      AddLine(CreateDashLine(tmpQuoteLenght));
       allQuotes = SortDictionaryWithKey(allQuotes, false);
       foreach (KeyValuePair<string, int> quote in allQuotes)
       {
         textBoxStatQuotes.Text +=
-          $"{quote.Key} has {quote.Value} quote{Punctuation.Plural(quote.Value)}{Environment.NewLine}";
+          $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(quote.Value)}{Environment.NewLine}";
       }
     }
 
-    private string CreateDashLine(int numberOfDash)
+    private static string CreateDashLine(int numberOfDash)
     {
       string result = string.Empty;
       for (int i = 0; i < numberOfDash; i++)

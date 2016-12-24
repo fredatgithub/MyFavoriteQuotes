@@ -910,6 +910,11 @@
     <englishValue>Quote</englishValue>
     <frenchValue>Citation</frenchValue>
   </term>
+   <term>
+    <name>quote</name>
+    <englishValue>quote</englishValue>
+    <frenchValue>citation</frenchValue>
+  </term>
   <term>
     <name>Search</name>
     <englishValue>Search</englishValue>
@@ -1664,5 +1669,40 @@
     <name>Statistics</name>
     <englishValue>Statistics</englishValue>
     <frenchValue>Statistiques</frenchValue>
+  </term>
+   <term>
+    <name>in total</name>
+    <englishValue>in total</englishValue>
+    <frenchValue>au total</frenchValue>
+  </term>
+  <term>
+    <name>in French</name>
+    <englishValue>in French</englishValue>
+    <frenchValue>en français</frenchValue>
+  </term>
+  <term>
+    <name>duplicate quote</name>
+    <englishValue>duplicate quote</englishValue>
+    <frenchValue>citation en double</frenchValue>
+  </term>
+  <term>
+    <name>No duplicate quote found</name>
+    <englishValue>No duplicate quote found</englishValue>
+    <frenchValue>Pas de citation en double</frenchValue>
+  </term>
+  <term>
+    <name>List of author sorted by number of quotes descending</name>
+    <englishValue>List of author sorted by number of quotes descending</englishValue>
+    <frenchValue>Liste des auteurs triée par nombre de citation par ordre décroissant</frenchValue>
+  </term>
+   <term>
+    <name>List of author sorted in alphabetical order</name>
+    <englishValue>List of author sorted in alphabetical order</englishValue>
+    <frenchValue>Liste des auteurs triée par ordre alphabétique</frenchValue>
+  </term>
+  <term>
+    <name>in English</name>
+    <englishValue>in English</englishValue>
+    <frenchValue>en anglais</frenchValue>
   </term>
 </terms>

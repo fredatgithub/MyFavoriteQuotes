@@ -1921,12 +1921,14 @@ namespace MyFavoriteQuotes
       textBoxStatQuotes.Text += $"{totalQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(totalQuotes)}{Punctuation.OneSpace}{Translate("in total")}{Environment.NewLine}";
 
       int frenchQuotes = GetQuotesByLanguage(Language.French).Count();
-      textBoxStatQuotes.Text += $"{frenchQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(frenchQuotes)}{Punctuation.OneSpace}in French{Environment.NewLine}";
+      textBoxStatQuotes.Text += $"{frenchQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(frenchQuotes)}{Punctuation.OneSpace}{Translate("in French")}{Environment.NewLine}";
 
       int englishQuotes = GetQuotesByLanguage().Count();
-      textBoxStatQuotes.Text +=
-        $"{englishQuotes} quote{Punctuation.Plural(englishQuotes)} in English{Environment.NewLine}";
-      AddLine(dashLine);
+      textBoxStatQuotes.Text += $"{englishQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(englishQuotes)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}";
+
+      int tmpLenght = $"{englishQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(englishQuotes)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}".Length;
+      CreateDashLine(tmpLenght);
+
       Dictionary <string, int> allQuotes = GetQuotesByAuthor(Language.All);
       IEnumerable<Quote> tmpQuotes = GetDuplicateQuotes(_allQuotes.ToList());
       if (tmpQuotes.Count() != 0)

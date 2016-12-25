@@ -313,21 +313,21 @@
       this.SmallToolStripMenuItem.Checked = true;
       this.SmallToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
       this.SmallToolStripMenuItem.Name = "SmallToolStripMenuItem";
-      this.SmallToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+      this.SmallToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
       this.SmallToolStripMenuItem.Text = "Petit";
       this.SmallToolStripMenuItem.Click += new System.EventHandler(this.SmallToolStripMenuItem_Click);
       // 
       // MediumToolStripMenuItem
       // 
       this.MediumToolStripMenuItem.Name = "MediumToolStripMenuItem";
-      this.MediumToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+      this.MediumToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
       this.MediumToolStripMenuItem.Text = "Moyen";
       this.MediumToolStripMenuItem.Click += new System.EventHandler(this.MediumToolStripMenuItem_Click);
       // 
       // LargeToolStripMenuItem
       // 
       this.LargeToolStripMenuItem.Name = "LargeToolStripMenuItem";
-      this.LargeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+      this.LargeToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
       this.LargeToolStripMenuItem.Text = "Grand";
       this.LargeToolStripMenuItem.Click += new System.EventHandler(this.LargeToolStripMenuItem_Click);
       // 
@@ -390,6 +390,7 @@
       this.buttonXMLFilePath.TabIndex = 3;
       this.buttonXMLFilePath.Text = "...";
       this.buttonXMLFilePath.UseVisualStyleBackColor = true;
+      this.buttonXMLFilePath.Click += new System.EventHandler(this.buttonXMLFilePath_Click);
       // 
       // textBoxXMLFilePath
       // 
@@ -423,6 +424,7 @@
       this.buttonSearch.TabIndex = 7;
       this.buttonSearch.Text = "Search";
       this.buttonSearch.UseVisualStyleBackColor = true;
+      this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
       // 
       // labelFoundOrNot
       // 
@@ -441,6 +443,7 @@
       this.buttonAddToQuote.TabIndex = 9;
       this.buttonAddToQuote.Text = "Add";
       this.buttonAddToQuote.UseVisualStyleBackColor = true;
+      this.buttonAddToQuote.Click += new System.EventHandler(this.buttonAddToQuote_Click);
       // 
       // textBoxXMLFile
       // 
@@ -470,7 +473,7 @@
       this.Controls.Add(this.labelXMLFilePath);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
-      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.Margin = new System.Windows.Forms.Padding(2);
       this.Name = "FormMain";
       this.ShowIcon = false;
       this.Text = "Search and add quotes";

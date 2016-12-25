@@ -724,5 +724,20 @@ namespace SearchAndAddQuotes
         // do something
       }
     }
+
+    private void buttonXMLFilePath_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void buttonSearch_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void buttonAddToQuote_Click(object sender, EventArgs e)
+    {
+
+    }
   }
 }

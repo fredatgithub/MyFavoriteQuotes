@@ -811,7 +811,7 @@ namespace SearchAndAddQuotes
         ColorLabel(labelFoundOrNot, found ? Color.Green : Color.Red);
         if (found && textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture) != -1)
         {
-          int tmpnb = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
+          int tmpNb = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
           textBoxXMLFile.SelectionStart = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
         textBoxXMLFile.SelectionLength = textBoxTermToSearch.Text.Length;
         textBoxXMLFile.Select();

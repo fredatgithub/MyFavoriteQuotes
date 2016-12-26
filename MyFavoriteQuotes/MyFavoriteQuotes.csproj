@@ -54,6 +54,7 @@
     <Compile Include="AboutBoxApplication.Designer.cs">
       <DependentUpon>AboutBoxApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Enums\WordCase.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>

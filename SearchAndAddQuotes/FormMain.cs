@@ -610,13 +610,33 @@ namespace SearchAndAddQuotes
       return result;
     }
 
-    private string PeekFile()
+    private static string PeekFile(string title = "", string filter = "All Files|*.*", bool multiSelect = false, string initialDirectory = "")
     {
       string result = string.Empty;
-      OpenFileDialog fd = new OpenFileDialog();
-      if (fd.ShowDialog() == DialogResult.OK)
+      OpenFileDialog ofd = new OpenFileDialog();
+      if (string.IsNullOrEmpty(initialDirectory))
       {
-        result = fd.SafeFileName;
+        ofd.InitialDirectory = initialDirectory;
+      }
+
+      ofd.Multiselect = multiSelect;
+      ofd.Filter = filter;
+      ofd.Title = title;
+      if (ofd.ShowDialog() == DialogResult.OK)
+      {
+        result = ofd.FileName;
+      }
+
+      return result;
+    }
+
+    private string SimplePeekFile()
+    {
+      string result = string.Empty;
+      OpenFileDialog ofd = new OpenFileDialog();
+      if (ofd.ShowDialog() == DialogResult.OK)
+      {
+        result = ofd.SafeFileName;
       }
 
       return result;
@@ -727,7 +747,7 @@ namespace SearchAndAddQuotes
 
     private void buttonXMLFilePath_Click(object sender, EventArgs e)
     {
-
+      textBoxXMLFilePath.Text = PeekFile(Translate("Open XML file"), Translate("Xml files") + "|*.xml", false, string.Empty);
     }
 
     private void buttonSearch_Click(object sender, EventArgs e)

@@ -1705,4 +1705,9 @@
     <englishValue>in English</englishValue>
     <frenchValue>en anglais</frenchValue>
   </term>
+  <term>
+    <name>Open XML file</name>
+    <englishValue>Open XML file</englishValue>
+    <frenchValue>Ouvrir fichier XML</frenchValue>
+  </term>
 </terms>

@@ -797,31 +797,24 @@ namespace SearchAndAddQuotes
     {
       if (textBoxXMLFile.Text != string.Empty && textBoxTermToSearch.Text != string.Empty)
       {
+        bool found = false;
         if (checkBoxCaseSensitive.Checked)
         {
-          if (textBoxXMLFile.Text.Contains(textBoxTermToSearch.Text))
-          {
-            labelFoundOrNot.Text = Translate("Found");
-            ColorLabel(labelFoundOrNot, Color.Green);
-          }
-          else
-          {
-            labelFoundOrNot.Text = Translate("Not Found");
-            ColorLabel(labelFoundOrNot, Color.Red);
-          }
+          found = textBoxXMLFile.Text.Contains(textBoxTermToSearch.Text);
         }
         else
         {
-          if (textBoxXMLFile.Text.ToLower().Contains(textBoxTermToSearch.Text.ToLower()))
-          {
-            labelFoundOrNot.Text = Translate("Found");
-            ColorLabel(labelFoundOrNot, Color.Green);
-          }
-          else
-          {
-            labelFoundOrNot.Text = Translate("Not Found");
-            ColorLabel(labelFoundOrNot, Color.Red);
-          }
+          found = textBoxXMLFile.Text.ToLower().Contains(textBoxTermToSearch.Text.ToLower());
+        }
+
+        labelFoundOrNot.Text = found ? Translate("Found") : Translate("Not Found");
+        ColorLabel(labelFoundOrNot, found ? Color.Green : Color.Red);
+        if (found && textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture) != -1)
+        {
+          int tmpnb = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
+          textBoxXMLFile.SelectionStart = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
+        textBoxXMLFile.SelectionLength = textBoxTermToSearch.Text.Length;
+        textBoxXMLFile.Select();
         }
       }
     }

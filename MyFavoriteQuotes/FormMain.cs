@@ -110,7 +110,6 @@ namespace MyFavoriteQuotes
 
     private static WordCase GetWordCase(string myString)
     {
-      WordCase result = WordCase.Unknown;
       if (myString.ToLower() == myString)
       {
         return WordCase.AllLowerCase;
@@ -123,7 +122,7 @@ namespace MyFavoriteQuotes
       // TODO to be completed
 
 
-      return result;
+      return WordCase.Unknown;
     }
 
     private void AboutToolStripMenuItemClick(object sender, EventArgs e)

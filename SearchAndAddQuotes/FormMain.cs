@@ -21,6 +21,7 @@ SOFTWARE.
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -150,7 +151,7 @@ namespace SearchAndAddQuotes
 
     private static void CreateLanguageFile()
     {
-      List<string> minimumVersion = new List<string>
+      var minimumVersion = new List<string>
       {
         "<?xml version=\"1.0\" encoding=\"utf-8\" ?>",
         "<terms>",
@@ -302,6 +303,9 @@ namespace SearchAndAddQuotes
       Top = Settings.Default.WindowTop < 0 ? 0 : Settings.Default.WindowTop;
       Left = Settings.Default.WindowLeft < 0 ? 0 : Settings.Default.WindowLeft;
       SetDisplayOption(Settings.Default.DisplayToolStripMenuItem);
+      textBoxXMLFilePath.Text =  Settings.Default.textBoxXMLFilePath;
+      textBoxTermToSearch.Text = Settings.Default.textBoxTermToSearch;
+      checkBoxCaseSensitive.Checked = Settings.Default.checkBoxCaseSensitive;
       LoadConfigurationOptions();
     }
 
@@ -313,6 +317,9 @@ namespace SearchAndAddQuotes
       Settings.Default.WindowTop = Top;
       Settings.Default.LastLanguageUsed = frenchToolStripMenuItem.Checked ? "French" : "English";
       Settings.Default.DisplayToolStripMenuItem = GetDisplayOption();
+      Settings.Default.textBoxXMLFilePath = textBoxXMLFilePath.Text;
+      Settings.Default.textBoxTermToSearch = textBoxTermToSearch.Text;
+      Settings.Default.checkBoxCaseSensitive = checkBoxCaseSensitive.Checked;
       SaveConfigurationOptions();
       Settings.Default.Save();
     }
@@ -415,7 +422,7 @@ namespace SearchAndAddQuotes
           SmallToolStripMenuItem.Text = _languageDicoEn["Small"];
           MediumToolStripMenuItem.Text = _languageDicoEn["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoEn["Large"];
-          
+
           _currentLanguage = "English";
           break;
         case "French":
@@ -462,7 +469,10 @@ namespace SearchAndAddQuotes
 
     private void cutToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
+      }); 
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -472,7 +482,10 @@ namespace SearchAndAddQuotes
 
     private void copyToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
+      }); 
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -482,7 +495,10 @@ namespace SearchAndAddQuotes
 
     private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
+      }); 
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -492,7 +508,10 @@ namespace SearchAndAddQuotes
 
     private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      Control focusedControl = FindFocusedControl(new List<Control> { }); // add your controls in the List
+      Control focusedControl = FindFocusedControl(new List<Control>
+      {
+        textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
+      });
       TextBox control = focusedControl as TextBox;
       if (control != null) control.SelectAll();
     }
@@ -747,16 +766,95 @@ namespace SearchAndAddQuotes
     private void buttonXMLFilePath_Click(object sender, EventArgs e)
     {
       textBoxXMLFilePath.Text = PeekFile(Translate("Open XML file"), Translate("Xml files") + "|*.xml", false, string.Empty);
+      textBoxXMLFile.Text = string.Empty;
+      textBoxXMLFile.Text = ReadFile(textBoxXMLFilePath.Text);
+
+
+    }
+
+    private static string ReadFile(string fileName)
+    {
+      string result = string.Empty;
+      if (File.Exists(fileName))
+      {
+        try
+        {
+          using (StreamReader sr = new StreamReader(fileName))
+          {
+            result = sr.ReadToEnd();
+          }
+        }
+        catch (Exception)
+        {
+          // do nothing, return empty string
+        }
+      }
+
+      return result;
     }
 
     private void buttonSearch_Click(object sender, EventArgs e)
     {
+      if (textBoxXMLFile.Text != string.Empty && textBoxTermToSearch.Text != string.Empty)
+      {
+        if (checkBoxCaseSensitive.Checked)
+        {
+          if (textBoxXMLFile.Text.Contains(textBoxTermToSearch.Text))
+          {
+            labelFoundOrNot.Text = Translate("Found");
+            ColorLabel(labelFoundOrNot, Color.Green);
+          }
+          else
+          {
+            labelFoundOrNot.Text = Translate("Not Found");
+            ColorLabel(labelFoundOrNot, Color.Red);
+          }
+        }
+        else
+        {
+          if (textBoxXMLFile.Text.ToLower().Contains(textBoxTermToSearch.Text.ToLower()))
+          {
+            labelFoundOrNot.Text = Translate("Found");
+            ColorLabel(labelFoundOrNot, Color.Green);
+          }
+          else
+          {
+            labelFoundOrNot.Text = Translate("Not Found");
+            ColorLabel(labelFoundOrNot, Color.Red);
+          }
+        }
+      }
+    }
 
+    private void ColorLabel(Label labelFound, Color color)
+    {
+      this.labelFoundOrNot.ForeColor = color;
     }
 
     private void buttonAddToQuote_Click(object sender, EventArgs e)
     {
+      if (string.IsNullOrEmpty(textBoxTermToSearch.Text))
+      {
 
+      }
+    }
+
+    private void ButtonLoadXmlFileClick(object sender, EventArgs e)
+    {
+      if (textBoxXMLFilePath.Text == string.Empty) return;
+      textBoxXMLFile.Text = string.Empty;
+      textBoxXMLFile.Text = ReadFile(textBoxXMLFilePath.Text);
+      buttonSearch.Enabled = true;
+    }
+
+    private void textBoxXMLFile_TextChanged(object sender, EventArgs e)
+    {
+      buttonSearch.Enabled = textBoxXMLFile.Text != string.Empty;
+    }
+
+    private void textBoxXMLFilePath_TextChanged(object sender, EventArgs e)
+    {
+      buttonLoadXmlFile.Enabled = textBoxXMLFilePath.Text != string.Empty && File.Exists(textBoxXMLFilePath.Text);
     }
   }
 }

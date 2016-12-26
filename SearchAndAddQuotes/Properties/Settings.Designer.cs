@@ -154,5 +154,17 @@ namespace SearchAndAddQuotes.Properties {
                 this["textBoxTermToSearch"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool checkBoxCaseSensitive {
+            get {
+                return ((bool)(this["checkBoxCaseSensitive"]));
+            }
+            set {
+                this["checkBoxCaseSensitive"] = value;
+            }
+        }
     }
 }

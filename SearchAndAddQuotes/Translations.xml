@@ -1710,4 +1710,14 @@
     <englishValue>Open XML file</englishValue>
     <frenchValue>Ouvrir fichier XML</frenchValue>
   </term>
+  <term>
+    <name>Found</name>
+    <englishValue>Found</englishValue>
+    <frenchValue>Trouvé</frenchValue>
+  </term>
+  <term>
+    <name>Not Found</name>
+    <englishValue>Not Found</englishValue>
+    <frenchValue>Non trouvé</frenchValue>
+  </term>
 </terms>

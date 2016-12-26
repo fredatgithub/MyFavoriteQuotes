@@ -72,8 +72,9 @@
       this.labelTermToSearch = new System.Windows.Forms.Label();
       this.buttonSearch = new System.Windows.Forms.Button();
       this.labelFoundOrNot = new System.Windows.Forms.Label();
-      this.buttonAddToQuote = new System.Windows.Forms.Button();
       this.textBoxXMLFile = new System.Windows.Forms.TextBox();
+      this.buttonLoadXmlFile = new System.Windows.Forms.Button();
+      this.checkBoxCaseSensitive = new System.Windows.Forms.CheckBox();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -90,7 +91,7 @@
       this.menuStrip1.Location = new System.Drawing.Point(0, 0);
       this.menuStrip1.Name = "menuStrip1";
       this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-      this.menuStrip1.Size = new System.Drawing.Size(911, 28);
+      this.menuStrip1.Size = new System.Drawing.Size(1150, 28);
       this.menuStrip1.TabIndex = 1;
       this.menuStrip1.Text = "menuStrip1";
       // 
@@ -287,14 +288,14 @@
       this.frenchToolStripMenuItem.Checked = true;
       this.frenchToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
       this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.frenchToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.frenchToolStripMenuItem.Text = "Français";
       this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
       // 
       // englishToolStripMenuItem
       // 
       this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-      this.englishToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+      this.englishToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
       this.englishToolStripMenuItem.Text = "Anglais";
       this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
       // 
@@ -385,8 +386,8 @@
       // 
       // buttonXMLFilePath
       // 
-      this.buttonXMLFilePath.Location = new System.Drawing.Point(615, 103);
-      this.buttonXMLFilePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.buttonXMLFilePath.Location = new System.Drawing.Point(977, 101);
+      this.buttonXMLFilePath.Margin = new System.Windows.Forms.Padding(4);
       this.buttonXMLFilePath.Name = "buttonXMLFilePath";
       this.buttonXMLFilePath.Size = new System.Drawing.Size(34, 28);
       this.buttonXMLFilePath.TabIndex = 3;
@@ -397,24 +398,25 @@
       // textBoxXMLFilePath
       // 
       this.textBoxXMLFilePath.Location = new System.Drawing.Point(157, 103);
-      this.textBoxXMLFilePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.textBoxXMLFilePath.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxXMLFilePath.Name = "textBoxXMLFilePath";
-      this.textBoxXMLFilePath.Size = new System.Drawing.Size(431, 22);
+      this.textBoxXMLFilePath.Size = new System.Drawing.Size(812, 22);
       this.textBoxXMLFilePath.TabIndex = 4;
       this.textBoxXMLFilePath.Text = "XML file path";
+      this.textBoxXMLFilePath.TextChanged += new System.EventHandler(this.textBoxXMLFilePath_TextChanged);
       // 
       // textBoxTermToSearch
       // 
       this.textBoxTermToSearch.Location = new System.Drawing.Point(157, 162);
-      this.textBoxTermToSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.textBoxTermToSearch.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxTermToSearch.Name = "textBoxTermToSearch";
-      this.textBoxTermToSearch.Size = new System.Drawing.Size(431, 22);
+      this.textBoxTermToSearch.Size = new System.Drawing.Size(812, 22);
       this.textBoxTermToSearch.TabIndex = 5;
       // 
       // labelTermToSearch
       // 
       this.labelTermToSearch.AutoSize = true;
-      this.labelTermToSearch.Location = new System.Drawing.Point(29, 171);
+      this.labelTermToSearch.Location = new System.Drawing.Point(29, 164);
       this.labelTermToSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.labelTermToSearch.Name = "labelTermToSearch";
       this.labelTermToSearch.Size = new System.Drawing.Size(104, 17);
@@ -423,10 +425,11 @@
       // 
       // buttonSearch
       // 
-      this.buttonSearch.Location = new System.Drawing.Point(615, 162);
-      this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.buttonSearch.Enabled = false;
+      this.buttonSearch.Location = new System.Drawing.Point(977, 160);
+      this.buttonSearch.Margin = new System.Windows.Forms.Padding(4);
       this.buttonSearch.Name = "buttonSearch";
-      this.buttonSearch.Size = new System.Drawing.Size(95, 28);
+      this.buttonSearch.Size = new System.Drawing.Size(137, 28);
       this.buttonSearch.TabIndex = 7;
       this.buttonSearch.Text = "Search";
       this.buttonSearch.UseVisualStyleBackColor = true;
@@ -435,23 +438,13 @@
       // labelFoundOrNot
       // 
       this.labelFoundOrNot.AutoSize = true;
+      this.labelFoundOrNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.labelFoundOrNot.Location = new System.Drawing.Point(35, 226);
       this.labelFoundOrNot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.labelFoundOrNot.Name = "labelFoundOrNot";
-      this.labelFoundOrNot.Size = new System.Drawing.Size(70, 17);
+      this.labelFoundOrNot.Size = new System.Drawing.Size(90, 20);
       this.labelFoundOrNot.TabIndex = 8;
       this.labelFoundOrNot.Text = "Not found";
-      // 
-      // buttonAddToQuote
-      // 
-      this.buttonAddToQuote.Location = new System.Drawing.Point(157, 222);
-      this.buttonAddToQuote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-      this.buttonAddToQuote.Name = "buttonAddToQuote";
-      this.buttonAddToQuote.Size = new System.Drawing.Size(95, 28);
-      this.buttonAddToQuote.TabIndex = 9;
-      this.buttonAddToQuote.Text = "Add";
-      this.buttonAddToQuote.UseVisualStyleBackColor = true;
-      this.buttonAddToQuote.Click += new System.EventHandler(this.buttonAddToQuote_Click);
       // 
       // textBoxXMLFile
       // 
@@ -459,20 +452,43 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxXMLFile.Location = new System.Drawing.Point(39, 267);
-      this.textBoxXMLFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.textBoxXMLFile.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxXMLFile.Multiline = true;
       this.textBoxXMLFile.Name = "textBoxXMLFile";
       this.textBoxXMLFile.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-      this.textBoxXMLFile.Size = new System.Drawing.Size(855, 242);
+      this.textBoxXMLFile.Size = new System.Drawing.Size(1094, 242);
       this.textBoxXMLFile.TabIndex = 10;
+      this.textBoxXMLFile.TextChanged += new System.EventHandler(this.textBoxXMLFile_TextChanged);
+      // 
+      // buttonLoadXmlFile
+      // 
+      this.buttonLoadXmlFile.Location = new System.Drawing.Point(1019, 100);
+      this.buttonLoadXmlFile.Margin = new System.Windows.Forms.Padding(4);
+      this.buttonLoadXmlFile.Name = "buttonLoadXmlFile";
+      this.buttonLoadXmlFile.Size = new System.Drawing.Size(95, 28);
+      this.buttonLoadXmlFile.TabIndex = 11;
+      this.buttonLoadXmlFile.Text = "Load";
+      this.buttonLoadXmlFile.UseVisualStyleBackColor = true;
+      this.buttonLoadXmlFile.Click += new System.EventHandler(this.ButtonLoadXmlFileClick);
+      // 
+      // checkBoxCaseSensitive
+      // 
+      this.checkBoxCaseSensitive.AutoSize = true;
+      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(157, 192);
+      this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
+      this.checkBoxCaseSensitive.Size = new System.Drawing.Size(121, 21);
+      this.checkBoxCaseSensitive.TabIndex = 12;
+      this.checkBoxCaseSensitive.Text = "Case sensitive";
+      this.checkBoxCaseSensitive.UseVisualStyleBackColor = true;
       // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(911, 534);
+      this.ClientSize = new System.Drawing.Size(1150, 534);
+      this.Controls.Add(this.checkBoxCaseSensitive);
+      this.Controls.Add(this.buttonLoadXmlFile);
       this.Controls.Add(this.textBoxXMLFile);
-      this.Controls.Add(this.buttonAddToQuote);
       this.Controls.Add(this.labelFoundOrNot);
       this.Controls.Add(this.buttonSearch);
       this.Controls.Add(this.labelTermToSearch);
@@ -541,7 +557,8 @@
     private System.Windows.Forms.Label labelTermToSearch;
     private System.Windows.Forms.Button buttonSearch;
     private System.Windows.Forms.Label labelFoundOrNot;
-    private System.Windows.Forms.Button buttonAddToQuote;
     private System.Windows.Forms.TextBox textBoxXMLFile;
+    private System.Windows.Forms.Button buttonLoadXmlFile;
+    private System.Windows.Forms.CheckBox checkBoxCaseSensitive;
   }
 }

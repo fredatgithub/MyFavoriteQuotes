@@ -2,8 +2,10 @@
 {
   internal enum WordCase
   {
+    Unknown = 0,
     AllLowerCase,
     AllUpperCase,
-    StartWithUpperCase
+    StartWithUpperCaseOnly,
+    PascalCase
   }
 }

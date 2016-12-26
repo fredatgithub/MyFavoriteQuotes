@@ -108,6 +108,24 @@ namespace MyFavoriteQuotes
       return result;
     }
 
+    private static WordCase GetWordCase(string myString)
+    {
+      WordCase result = WordCase.Unknown;
+      if (myString.ToLower() == myString)
+      {
+        return WordCase.AllLowerCase;
+      }
+
+      if (myString.ToUpper() == myString)
+      {
+        return WordCase.AllUpperCase;
+      }
+      // TODO to be completed
+
+
+      return result;
+    }
+
     private void AboutToolStripMenuItemClick(object sender, EventArgs e)
     {
       AboutBoxApplication aboutBoxApplication = new AboutBoxApplication();

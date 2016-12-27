@@ -1920,11 +1920,11 @@
     <Language>English</Language>
     <QuoteValue>And know that I am with you always; yes, to the end of time</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Don't worry when you are not recognized, but strive to be worthy of recognition</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

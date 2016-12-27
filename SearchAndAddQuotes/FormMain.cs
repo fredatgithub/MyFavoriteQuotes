@@ -22,6 +22,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -38,8 +39,8 @@ namespace SearchAndAddQuotes
       InitializeComponent();
     }
 
-    public readonly Dictionary<string, string> _languageDicoEn = new Dictionary<string, string>();
-    public readonly Dictionary<string, string> _languageDicoFr = new Dictionary<string, string>();
+    private readonly Dictionary<string, string> _languageDicoEn = new Dictionary<string, string>();
+    private readonly Dictionary<string, string> _languageDicoFr = new Dictionary<string, string>();
     private string _currentLanguage = "english";
     private ConfigurationOptions _configurationOptions = new ConfigurationOptions();
 
@@ -422,7 +423,12 @@ namespace SearchAndAddQuotes
           SmallToolStripMenuItem.Text = _languageDicoEn["Small"];
           MediumToolStripMenuItem.Text = _languageDicoEn["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoEn["Large"];
-
+          labelXMLFilePath.Text = _languageDicoEn["Path to XML file"];
+          labelTermToSearch.Text = _languageDicoEn["Term to search"];
+          checkBoxCaseSensitive.Text = _languageDicoEn["Case sensitive"];
+          buttonLoadXmlFile.Text = _languageDicoEn["Load"];
+          buttonSearch.Text = _languageDicoEn["Search"];
+          TranslateIfNeeded(labelFoundOrNot);
           _currentLanguage = "English";
           break;
         case "French":
@@ -458,12 +464,29 @@ namespace SearchAndAddQuotes
           SmallToolStripMenuItem.Text = _languageDicoFr["Small"];
           MediumToolStripMenuItem.Text = _languageDicoFr["Medium"];
           LargeToolStripMenuItem.Text = _languageDicoFr["Large"];
-
+          labelXMLFilePath.Text = _languageDicoFr["Path to XML file"];
+          labelTermToSearch.Text = _languageDicoFr["Term to search"];
+          checkBoxCaseSensitive.Text = _languageDicoFr["Case sensitive"];
+          buttonLoadXmlFile.Text = _languageDicoFr["Load"];
+          buttonSearch.Text = _languageDicoFr["Search"];
+          TranslateIfNeeded(labelFoundOrNot);
           _currentLanguage = "French";
           break;
         default:
           SetLanguage("English");
           break;
+      }
+    }
+
+    private void TranslateIfNeeded(Control label)
+    {
+      if (label.Visible && _currentLanguage == Language.English.ToString())
+      {
+        label.Text = Translate(label.Text);
+      }
+      else
+      {
+        label.Text = TranslateBack(label.Text);
       }
     }
 
@@ -572,18 +595,37 @@ namespace SearchAndAddQuotes
       MessageBox.Show(this, message, title, buttons);
     }
 
-    private string Translate(string index)
+    private string Translate(string word)
     {
       string result = string.Empty;
       switch (_currentLanguage.ToLower())
       {
         case "english":
-          result = _languageDicoEn.ContainsKey(index) ? _languageDicoEn[index] :
-           "the term: \"" + index + "\" has not been translated yet.\nPlease tell the developer to translate this term";
+          result = _languageDicoEn.ContainsKey(word) ? _languageDicoEn[word] :
+           "the term: \"" + word + "\" has not been translated yet.";
           break;
         case "french":
-          result = _languageDicoFr.ContainsKey(index) ? _languageDicoFr[index] :
-            "the term: \"" + index + "\" has not been translated yet.\nPlease tell the developer to translate this term";
+          result = _languageDicoFr.ContainsKey(word) ? _languageDicoFr[word] :
+            "the term: \"" + word + "\" has not been translated yet.";
+          break;
+      }
+
+      return result;
+    }
+
+    private string TranslateBack(string word)
+    {
+      // TODO to be debugged
+      string result = string.Empty;
+      switch (_currentLanguage.ToLower())
+      {
+        case "english":
+          result = _languageDicoEn.ContainsValue(word) ? _languageDicoEn[word] :
+           "the term: \"" + word + "\" has not been translated yet.";
+          break;
+        case "french":
+          result = _languageDicoFr.ContainsValue(word) ? _languageDicoFr[word] :
+            "the term: \"" + word + "\" has not been translated yet.";
           break;
       }
 
@@ -768,8 +810,6 @@ namespace SearchAndAddQuotes
       textBoxXMLFilePath.Text = PeekFile(Translate("Open XML file"), Translate("Xml files") + "|*.xml", false, string.Empty);
       textBoxXMLFile.Text = string.Empty;
       textBoxXMLFile.Text = ReadFile(textBoxXMLFilePath.Text);
-
-
     }
 
     private static string ReadFile(string fileName)
@@ -795,41 +835,32 @@ namespace SearchAndAddQuotes
 
     private void buttonSearch_Click(object sender, EventArgs e)
     {
-      if (textBoxXMLFile.Text != string.Empty && textBoxTermToSearch.Text != string.Empty)
+      if (textBoxXMLFile.Text == string.Empty || textBoxTermToSearch.Text == string.Empty) return;
+      bool found = false;
+      if (checkBoxCaseSensitive.Checked)
       {
-        bool found = false;
-        if (checkBoxCaseSensitive.Checked)
-        {
-          found = textBoxXMLFile.Text.Contains(textBoxTermToSearch.Text);
-        }
-        else
-        {
-          found = textBoxXMLFile.Text.ToLower().Contains(textBoxTermToSearch.Text.ToLower());
-        }
+        found = textBoxXMLFile.Text.Contains(textBoxTermToSearch.Text);
+      }
+      else
+      {
+        found = textBoxXMLFile.Text.ToLower().Contains(textBoxTermToSearch.Text.ToLower());
+      }
 
-        labelFoundOrNot.Text = found ? Translate("Found") : Translate("Not Found");
-        ColorLabel(labelFoundOrNot, found ? Color.Green : Color.Red);
-        if (found && textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture) != -1)
-        {
-          int tmpNb = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
-          textBoxXMLFile.SelectionStart = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
+      labelFoundOrNot.Visible = true;
+      labelFoundOrNot.Text = found ? Translate("Found") : Translate("Not Found");
+      ColorLabel(labelFoundOrNot, found ? Color.Green : Color.Red);
+      if (found && textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture) != -1)
+      {
+        //int tmpNb = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
+        textBoxXMLFile.SelectionStart = textBoxXMLFile.Text.IndexOf(textBoxTermToSearch.Text, StringComparison.CurrentCulture);
         textBoxXMLFile.SelectionLength = textBoxTermToSearch.Text.Length;
         textBoxXMLFile.Select();
-        }
       }
     }
 
     private void ColorLabel(Label labelFound, Color color)
     {
-      this.labelFoundOrNot.ForeColor = color;
-    }
-
-    private void buttonAddToQuote_Click(object sender, EventArgs e)
-    {
-      if (string.IsNullOrEmpty(textBoxTermToSearch.Text))
-      {
-
-      }
+      labelFoundOrNot.ForeColor = color;
     }
 
     private void ButtonLoadXmlFileClick(object sender, EventArgs e)
@@ -848,6 +879,12 @@ namespace SearchAndAddQuotes
     private void textBoxXMLFilePath_TextChanged(object sender, EventArgs e)
     {
       buttonLoadXmlFile.Enabled = textBoxXMLFilePath.Text != string.Empty && File.Exists(textBoxXMLFilePath.Text);
+    }
+
+    private void textBoxTermToSearch_TextChanged(object sender, EventArgs e)
+    {
+      buttonSearch.Enabled = textBoxTermToSearch.Text != string.Empty;
+      labelFoundOrNot.Text = textBoxTermToSearch.Text == string.Empty ? string.Empty : labelFoundOrNot.Text;
     }
   }
 }

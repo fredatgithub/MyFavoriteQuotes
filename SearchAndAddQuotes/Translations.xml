@@ -1720,4 +1720,19 @@
     <englishValue>Not Found</englishValue>
     <frenchValue>Non trouvé</frenchValue>
   </term>
+  <term>
+    <name>Load</name>
+    <englishValue>Load</englishValue>
+    <frenchValue>Charger</frenchValue>
+  </term>
+  <term>
+    <name>Term to search</name>
+    <englishValue>Term to search</englishValue>
+    <frenchValue>Terme à chercher</frenchValue>
+  </term>
+  <term>
+    <name>Path to XML file</name>
+    <englishValue>Path to XML file</englishValue>
+    <frenchValue>Chemin du fichier XML</frenchValue>
+  </term>
 </terms>

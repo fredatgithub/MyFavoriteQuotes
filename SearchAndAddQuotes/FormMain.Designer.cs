@@ -397,21 +397,22 @@
       // 
       // textBoxXMLFilePath
       // 
-      this.textBoxXMLFilePath.Location = new System.Drawing.Point(157, 103);
+      this.textBoxXMLFilePath.Location = new System.Drawing.Point(190, 103);
       this.textBoxXMLFilePath.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxXMLFilePath.Name = "textBoxXMLFilePath";
-      this.textBoxXMLFilePath.Size = new System.Drawing.Size(812, 22);
+      this.textBoxXMLFilePath.Size = new System.Drawing.Size(779, 22);
       this.textBoxXMLFilePath.TabIndex = 4;
       this.textBoxXMLFilePath.Text = "XML file path";
       this.textBoxXMLFilePath.TextChanged += new System.EventHandler(this.textBoxXMLFilePath_TextChanged);
       // 
       // textBoxTermToSearch
       // 
-      this.textBoxTermToSearch.Location = new System.Drawing.Point(157, 162);
+      this.textBoxTermToSearch.Location = new System.Drawing.Point(190, 162);
       this.textBoxTermToSearch.Margin = new System.Windows.Forms.Padding(4);
       this.textBoxTermToSearch.Name = "textBoxTermToSearch";
-      this.textBoxTermToSearch.Size = new System.Drawing.Size(812, 22);
+      this.textBoxTermToSearch.Size = new System.Drawing.Size(779, 22);
       this.textBoxTermToSearch.TabIndex = 5;
+      this.textBoxTermToSearch.TextChanged += new System.EventHandler(this.textBoxTermToSearch_TextChanged);
       // 
       // labelTermToSearch
       // 
@@ -445,6 +446,7 @@
       this.labelFoundOrNot.Size = new System.Drawing.Size(90, 20);
       this.labelFoundOrNot.TabIndex = 8;
       this.labelFoundOrNot.Text = "Not found";
+      this.labelFoundOrNot.Visible = false;
       // 
       // textBoxXMLFile
       // 
@@ -474,7 +476,7 @@
       // checkBoxCaseSensitive
       // 
       this.checkBoxCaseSensitive.AutoSize = true;
-      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(157, 192);
+      this.checkBoxCaseSensitive.Location = new System.Drawing.Point(190, 191);
       this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
       this.checkBoxCaseSensitive.Size = new System.Drawing.Size(121, 21);
       this.checkBoxCaseSensitive.TabIndex = 12;

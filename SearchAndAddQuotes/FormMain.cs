@@ -640,7 +640,8 @@ namespace SearchAndAddQuotes
       }
 
       return (from Control childControl in container.Controls
-              select FindFocusedControl(childControl)).FirstOrDefault(maybeFocusedControl => maybeFocusedControl != null);
+              select FindFocusedControl(childControl))
+              .FirstOrDefault(maybeFocusedControl => maybeFocusedControl != null);
     }
 
     private static Control FindFocusedControl(List<Control> container)
@@ -815,19 +816,17 @@ namespace SearchAndAddQuotes
     private static string ReadFile(string fileName)
     {
       string result = string.Empty;
-      if (File.Exists(fileName))
+      if (!File.Exists(fileName)) return result;
+      try
       {
-        try
+        using (StreamReader sr = new StreamReader(fileName))
         {
-          using (StreamReader sr = new StreamReader(fileName))
-          {
-            result = sr.ReadToEnd();
-          }
+          result = sr.ReadToEnd();
         }
-        catch (Exception)
-        {
-          // do nothing, return empty string
-        }
+      }
+      catch (Exception)
+      {
+        // do nothing, return empty string
       }
 
       return result;

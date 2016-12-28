@@ -1735,4 +1735,9 @@
     <englishValue>Path to XML file</englishValue>
     <frenchValue>Chemin du fichier XML</frenchValue>
   </term>
+  <term>
+    <name>Xml files</name>
+    <englishValue>Xml files</englishValue>
+    <frenchValue>Fichier Xml</frenchValue>
+  </term>
 </terms>

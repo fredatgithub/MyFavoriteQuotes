@@ -654,7 +654,7 @@ namespace SearchAndAddQuotes
       return container.FirstOrDefault(control => control.Focused);
     }
 
-    private static string PeekDirectory()
+    private static string SimplePeekDirectory()
     {
       string result = string.Empty;
       FolderBrowserDialog fbd = new FolderBrowserDialog();
@@ -666,7 +666,29 @@ namespace SearchAndAddQuotes
       return result;
     }
 
-    private static string PeekFile(string title = "", string filter = "All Files|*.*", bool multiSelect = false, string initialDirectory = "")
+    private static string PeekDirectory(string title = "", bool showNewFolderButton = false, 
+      bool multiSelect = false, Environment.SpecialFolderOption specialFolderOption = Environment.SpecialFolderOption.None,
+      Environment.SpecialFolder specialFolder = Environment.SpecialFolder.MyDocuments)
+    {
+      string result = string.Empty;
+      FolderBrowserDialog fbd = new FolderBrowserDialog();
+      if (specialFolderOption != Environment.SpecialFolderOption.None)
+      {
+        fbd.RootFolder = specialFolder;
+      }
+
+      fbd.Description = title;
+      fbd.ShowNewFolderButton = showNewFolderButton;
+      
+      if (fbd.ShowDialog() == DialogResult.OK)
+      {
+        result = fbd.SelectedPath;
+      }
+
+      return result;
+    }
+
+    private static string PeekFile(string title = "", string filter =  "All Files|*.*", bool multiSelect = false, string initialDirectory = "")
     {
       string result = string.Empty;
       OpenFileDialog ofd = new OpenFileDialog();

@@ -304,7 +304,7 @@ namespace SearchAndAddQuotes
       Top = Settings.Default.WindowTop < 0 ? 0 : Settings.Default.WindowTop;
       Left = Settings.Default.WindowLeft < 0 ? 0 : Settings.Default.WindowLeft;
       SetDisplayOption(Settings.Default.DisplayToolStripMenuItem);
-      textBoxXMLFilePath.Text =  Settings.Default.textBoxXMLFilePath;
+      textBoxXMLFilePath.Text = Settings.Default.textBoxXMLFilePath;
       textBoxTermToSearch.Text = Settings.Default.textBoxTermToSearch;
       checkBoxCaseSensitive.Checked = Settings.Default.checkBoxCaseSensitive;
       LoadConfigurationOptions();
@@ -393,6 +393,7 @@ namespace SearchAndAddQuotes
         case "English":
           frenchToolStripMenuItem.Checked = false;
           englishToolStripMenuItem.Checked = true;
+          _currentLanguage = "English";
           fileToolStripMenuItem.Text = _languageDicoEn["MenuFile"];
           newToolStripMenuItem.Text = _languageDicoEn["MenuFileNew"];
           openToolStripMenuItem.Text = _languageDicoEn["MenuFileOpen"];
@@ -429,11 +430,12 @@ namespace SearchAndAddQuotes
           buttonLoadXmlFile.Text = _languageDicoEn["Load"];
           buttonSearch.Text = _languageDicoEn["Search"];
           TranslateIfNeeded(labelFoundOrNot);
-          _currentLanguage = "English";
+
           break;
         case "French":
           frenchToolStripMenuItem.Checked = true;
           englishToolStripMenuItem.Checked = false;
+          _currentLanguage = "French";
           fileToolStripMenuItem.Text = _languageDicoFr["MenuFile"];
           newToolStripMenuItem.Text = _languageDicoFr["MenuFileNew"];
           openToolStripMenuItem.Text = _languageDicoFr["MenuFileOpen"];
@@ -470,7 +472,7 @@ namespace SearchAndAddQuotes
           buttonLoadXmlFile.Text = _languageDicoFr["Load"];
           buttonSearch.Text = _languageDicoFr["Search"];
           TranslateIfNeeded(labelFoundOrNot);
-          _currentLanguage = "French";
+
           break;
         default:
           SetLanguage("English");
@@ -480,14 +482,26 @@ namespace SearchAndAddQuotes
 
     private void TranslateIfNeeded(Control label)
     {
-      if (label.Visible && _currentLanguage == Language.English.ToString())
+      if (!label.Visible) return;
+      label.Text = TranslateBack(label.Text);
+    }
+
+    private string TranslateBack(string word)
+    {
+      string result = string.Empty;
+      switch (_currentLanguage.ToLower())
       {
-        label.Text = Translate(label.Text);
+        case "english":
+          result = _languageDicoFr.ContainsValue(word) ? _languageDicoFr.First(x => x.Value == word).Key :
+           "the term: \"" + word + "\" has not been translated yet.";
+          break;
+        case "french":
+          result = _languageDicoFr.ContainsKey(word) ? _languageDicoFr[word] :
+            "the term: \"" + word + "\" has not been translated yet.";
+          break;
       }
-      else
-      {
-        label.Text = TranslateBack(label.Text);
-      }
+
+      return result;
     }
 
     private void cutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -495,7 +509,7 @@ namespace SearchAndAddQuotes
       Control focusedControl = FindFocusedControl(new List<Control>
       {
         textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
-      }); 
+      });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -508,7 +522,7 @@ namespace SearchAndAddQuotes
       Control focusedControl = FindFocusedControl(new List<Control>
       {
         textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
-      }); 
+      });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -521,7 +535,7 @@ namespace SearchAndAddQuotes
       Control focusedControl = FindFocusedControl(new List<Control>
       {
         textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
-      }); 
+      });
       var tb = focusedControl as TextBox;
       if (tb != null)
       {
@@ -602,29 +616,10 @@ namespace SearchAndAddQuotes
       {
         case "english":
           result = _languageDicoEn.ContainsKey(word) ? _languageDicoEn[word] :
-           "the term: \"" + word + "\" has not been translated yet.";
+            "the term: \"" + word + "\" has not been translated yet.";
           break;
         case "french":
           result = _languageDicoFr.ContainsKey(word) ? _languageDicoFr[word] :
-            "the term: \"" + word + "\" has not been translated yet.";
-          break;
-      }
-
-      return result;
-    }
-
-    private string TranslateBack(string word)
-    {
-      // TODO to be debugged
-      string result = string.Empty;
-      switch (_currentLanguage.ToLower())
-      {
-        case "english":
-          result = _languageDicoEn.ContainsValue(word) ? _languageDicoEn[word] :
-           "the term: \"" + word + "\" has not been translated yet.";
-          break;
-        case "french":
-          result = _languageDicoFr.ContainsValue(word) ? _languageDicoFr[word] :
             "the term: \"" + word + "\" has not been translated yet.";
           break;
       }

@@ -1940,11 +1940,11 @@
     <Language>English</Language>
     <QuoteValue>If all my developer skills were taken from me with one exception, I would choose to keep the power of learning like a developer, for by it I would soon regain all the rest. Daniel Webster (American Statesman, 1782-1852)</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>I never had a policy; I have just tried to do my very best each and every day</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

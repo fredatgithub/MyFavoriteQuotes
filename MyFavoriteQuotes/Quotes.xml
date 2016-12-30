@@ -1945,11 +1945,11 @@
     <Language>English</Language>
     <QuoteValue>I never had a policy; I have just tried to do my very best each and every day</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anatole France</Author>
+    <Language>French</Language>
+    <QuoteValue>L'avenir est un lieu commode pour y mettre des songes</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

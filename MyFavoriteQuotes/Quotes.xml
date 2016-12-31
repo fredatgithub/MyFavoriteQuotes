@@ -1950,11 +1950,11 @@
     <Language>French</Language>
     <QuoteValue>L'avenir est un lieu commode pour y mettre des songes</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>English</Language>
+    <QuoteValue>Get your facts first, then you can distort them as you please</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

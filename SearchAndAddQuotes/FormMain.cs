@@ -549,7 +549,7 @@ namespace SearchAndAddQuotes
         textBoxXMLFilePath, textBoxTermToSearch, textBoxXMLFile
       });
       TextBox control = focusedControl as TextBox;
-      if (control != null) control.SelectAll();
+      control?.SelectAll();
     }
 
     private void CutToClipboard(TextBoxBase tb, string errorMessage = "nothing")
@@ -852,14 +852,7 @@ namespace SearchAndAddQuotes
     {
       if (textBoxXMLFile.Text == string.Empty || textBoxTermToSearch.Text == string.Empty) return;
       bool found = false;
-      if (checkBoxCaseSensitive.Checked)
-      {
-        found = textBoxXMLFile.Text.Contains(textBoxTermToSearch.Text);
-      }
-      else
-      {
-        found = textBoxXMLFile.Text.ToLower().Contains(textBoxTermToSearch.Text.ToLower());
-      }
+      found = checkBoxCaseSensitive.Checked ? textBoxXMLFile.Text.Contains(textBoxTermToSearch.Text) : textBoxXMLFile.Text.ToLower().Contains(textBoxTermToSearch.Text.ToLower());
 
       labelFoundOrNot.Visible = true;
       labelFoundOrNot.Text = found ? Translate("Found") : Translate("Not Found");

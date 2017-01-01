@@ -1955,11 +1955,11 @@
     <Language>English</Language>
     <QuoteValue>Get your facts first, then you can distort them as you please</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Vincent Van Gogh</Author>
+    <Language>French</Language>
+    <QuoteValue>IL n'y a rien de plus réellement artistique que d'aimer les gens</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

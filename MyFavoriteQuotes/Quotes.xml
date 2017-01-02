@@ -1960,11 +1960,11 @@
     <Language>French</Language>
     <QuoteValue>IL n'y a rien de plus réellement artistique que d'aimer les gens</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>A house divided against itself cannot stand</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

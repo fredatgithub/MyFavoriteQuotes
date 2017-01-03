@@ -1970,11 +1970,11 @@
     <Language>French</Language>
     <QuoteValue>Le vrai handicap est de penser que c'est impossible quand rien ne l'est vraiment</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Whatever you are, be a good one</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -1985,11 +1985,11 @@
     <Language>English</Language>
     <QuoteValue>If I were two-faced, would I be wearing this one?</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Marc aurele</Author>
+    <Language>French</Language>
+    <QuoteValue>Donne moi la force de changer les choses que je peux, la sérénité d'accepter les choses qui sont, et la sagesse de distinguer l'une de l'autre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

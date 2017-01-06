@@ -1990,11 +1990,11 @@
     <Language>French</Language>
     <QuoteValue>Donne moi la force de changer les choses que je peux, la sérénité d'accepter les choses qui sont, et la sagesse de distinguer l'une de l'autre</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>With Malice toward none, with charity for all, with firmness in the right, as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation's wounds</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

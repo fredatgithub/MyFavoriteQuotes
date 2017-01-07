@@ -1995,11 +1995,11 @@
     <Language>English</Language>
     <QuoteValue>With Malice toward none, with charity for all, with firmness in the right, as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation's wounds</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>English</Language>
+    <QuoteValue>Go to Heaven for the climate, Hell for the company</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

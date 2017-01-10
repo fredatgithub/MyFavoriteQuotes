@@ -2005,11 +2005,11 @@
     <Language>English</Language>
     <QuoteValue>Important principles may, and must, be inflexible</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>I do the very best I know how - the very best I can; and I mean to keep on doing so until the end</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

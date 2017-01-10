@@ -2010,11 +2010,11 @@
     <Language>English</Language>
     <QuoteValue>I do the very best I know how - the very best I can; and I mean to keep on doing so until the end</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jacques Prevert</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand la vérité n'est pas libre, la liberté n'est pas vraie !</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

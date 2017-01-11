@@ -2020,11 +2020,11 @@
     <Language>English</Language>
     <QuoteValue>If this is coffee, please bring me some tea; but if this is tea, please bring me some coffee</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>English</Language>
+    <QuoteValue>Mess with the best, die with the rest</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

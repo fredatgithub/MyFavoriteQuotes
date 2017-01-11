@@ -2015,11 +2015,11 @@
     <Language>French</Language>
     <QuoteValue>Quand la vérité n'est pas libre, la liberté n'est pas vraie !</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>If this is coffee, please bring me some tea; but if this is tea, please bring me some coffee</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

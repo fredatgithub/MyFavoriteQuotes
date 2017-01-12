@@ -2030,11 +2030,11 @@
     <Language>English</Language>
     <QuoteValue>Do I not destroy my enemies when I make them my friends?</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Antoine de Saint-Exupéry</Author>
+    <Language>French</Language>
+    <QuoteValue>La vérité de demain se nourrit de l’erreur d’hier</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

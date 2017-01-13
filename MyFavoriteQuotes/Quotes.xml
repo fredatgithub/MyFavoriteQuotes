@@ -2055,21 +2055,21 @@
     <Language>French</Language>
     <QuoteValue>L'espace et le contrôle du climat ont remplacé Suez et Gibraltar comme éléments clé de la strarégie</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>John Lenon</Author>
+    <Language>French</Language>
+    <QuoteValue>Si tout le monde demandait la paix au lieu d'un écran plat, on aurait la paix</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>George Orwel</Author>
+    <Language>French</Language>
+    <QuoteValue>Un peuple qui élit des politiques corrompus n'est pas victime, il est complice</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Martin Luther King</Author>
+    <Language>French</Language>
+    <QuoteValue>Le moment viendra où le silence est une trahison</QuoteValue>
+  </Quote>
      <!--<Quote>
     <Author></Author>
     <Language></Language>

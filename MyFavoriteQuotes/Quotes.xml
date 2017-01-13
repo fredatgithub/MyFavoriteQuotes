@@ -2045,11 +2045,11 @@
     <Language>French</Language>
     <QuoteValue>L'arbre est deux fois plus utile que les fruits</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>john Edgard Hoover</Author>
+    <Language>French</Language>
+    <QuoteValue>L'individu est handicapé de se retrouver face à une conspiration si monstrueuse qu'il ne peut croire qu'elle existe</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

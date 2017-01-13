@@ -2035,11 +2035,11 @@
     <Language>French</Language>
     <QuoteValue>La vérité de demain se nourrit de l’erreur d’hier</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Don't interfere with anything in the Constitution. That must be maintained, for it is the only safeguard of our liberties</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

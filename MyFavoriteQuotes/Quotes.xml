@@ -2040,11 +2040,11 @@
     <Language>English</Language>
     <QuoteValue>Don't interfere with anything in the Constitution. That must be maintained, for it is the only safeguard of our liberties</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Cicéron </Author>
+    <Language>French</Language>
+    <QuoteValue>L'arbre est deux fois plus utile que les fruits</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

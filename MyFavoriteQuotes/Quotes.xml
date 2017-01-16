@@ -2075,11 +2075,11 @@
     <Language>English</Language>
     <QuoteValue>Life is really simple, but we insist on making it complicated</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Tact is the ability to describe others as they see themselves</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

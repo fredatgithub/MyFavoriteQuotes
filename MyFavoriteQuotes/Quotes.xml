@@ -2095,11 +2095,11 @@
     <Language>French</Language>
     <QuoteValue>L’inhumanité infligée à un autre détruit l’humanité en moi</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Henry Ford</Author>
+    <Language>English</Language>
+    <QuoteValue>Failure is the opportunity to begin again more intelligently</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

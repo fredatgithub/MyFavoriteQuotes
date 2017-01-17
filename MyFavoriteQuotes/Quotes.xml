@@ -2085,16 +2085,16 @@
     <Language>English</Language>
     <QuoteValue>Standing as I do, with my hand upon this staff, and under the folds of the American flag, I ask you to stand by me so long as I stand by it</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>La vie nous prend par surprise et nous ordonne d’avancer vers l’inconnu, alors même que l’on pense ne pas en avoir besoin</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Emmanuel Kant</Author>
+    <Language>French</Language>
+    <QuoteValue>L’inhumanité infligée à un autre détruit l’humanité en moi</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

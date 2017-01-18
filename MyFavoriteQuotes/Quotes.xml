@@ -2100,16 +2100,16 @@
     <Language>English</Language>
     <QuoteValue>Failure is the opportunity to begin again more intelligently</QuoteValue>
   </Quote>
-  <<Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>My great concern is not whether you have failed, but whether you are content with your failure</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Muhammad Ali</Author>
+    <Language>French</Language>
+    <QuoteValue>Les champions ne se sont pas faits dans les gymnases. Les champions sont faits de ce qu’ils ont au plus profond d’eux-mêmes. Un désir, un rêve, une vision</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

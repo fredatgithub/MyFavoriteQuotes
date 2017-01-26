@@ -2150,7 +2150,22 @@
     <Language>French</Language>
     <QuoteValue>La tranquillité est un sol fertile dans lequel l’imagination est nourrie, et les idées peuvent s’y développer de façon incroyable</QuoteValue>
   </Quote>
-   <!--<Quote>
+   <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>To the best of my judgment, I have labored for, and not against, the Union. As I have not felt, so I have not expressed any harsh sentiment towards our Southern brethren. I have constantly declared, as I really believed, the only difference between them and us is the difference of circumstances</QuoteValue>
+  </Quote>
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>

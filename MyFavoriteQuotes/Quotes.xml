@@ -2170,11 +2170,11 @@
     <Language>English</Language>
     <QuoteValue>All you need in this life is ignorance and confidence, and then success is sure</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Jacques Chirac</Author>
+    <Language>French</Language>
+    <QuoteValue>La maison brûle et nous regardons ailleurs</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

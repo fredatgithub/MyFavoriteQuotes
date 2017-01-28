@@ -2160,11 +2160,11 @@
     <Language>French</Language>
     <QuoteValue>Vous n’avez pas besoin d’attendre de grandes réussites pour être fier de vous. Les petits exploits aident à en construire des plus gros</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Voltaire</Author>
+    <Language>French</Language>
+    <QuoteValue>Notre destinée est de faire toujours des sottises, et de nous relever</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

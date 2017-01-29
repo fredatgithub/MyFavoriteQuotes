@@ -2175,16 +2175,16 @@
     <Language>French</Language>
     <QuoteValue>La maison brûle et nous regardons ailleurs</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Cher sommeil, je suis désolé de téavoir détesté quand j'étais petit, mais maintenant tu me manques</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Dans mon enfance, je pleurais alors que rien ne me faisait vraiment mal, maintenant que je suis grand je souris alors que tout va mal</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

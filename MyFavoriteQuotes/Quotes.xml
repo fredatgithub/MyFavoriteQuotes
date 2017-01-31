@@ -2190,11 +2190,11 @@
     <Language>French</Language>
     <QuoteValue>L'espérance est un risque à courir</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Garry Kasparov</Author>
+    <Language>French</Language>
+    <QuoteValue>Je l’ai déjà dit plusieurs fois, mais l’inaction est aussi un choix, et tous les choix ont des conséquences</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

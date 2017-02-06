@@ -2220,11 +2220,11 @@
     <Language>French</Language>
     <QuoteValue>Si vous voulez que la vie vous sourie, apportez-lui d'abord votre bonne humeur</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>If I were two-faced, would I be wearing this one?</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

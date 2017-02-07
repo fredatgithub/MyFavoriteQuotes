@@ -2225,7 +2225,17 @@
     <Language>English</Language>
     <QuoteValue>If I were two-faced, would I be wearing this one?</QuoteValue>
   </Quote>
-  <!--<Quote>
+  <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>The probability that we may fail in the struggle ought not to deter us from the support of a cause we believe to be just</QuoteValue>
+  </Quote>
+   <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+   <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>

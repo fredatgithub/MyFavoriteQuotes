@@ -2230,11 +2230,11 @@
     <Language>English</Language>
     <QuoteValue>The probability that we may fail in the struggle ought not to deter us from the support of a cause we believe to be just</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Pierre Dac</Author>
+    <Language>French</Language>
+    <QuoteValue>S’il est bon de ne rien dire avant de parler, il est encore plus utile de réfléchir avant de penser</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2240,11 +2240,11 @@
     <Language>French</Language>
     <QuoteValue>Soyez brillant. Soyez brave. Soyez audacieux. Soyez beau. Soyez génial. SOYEZ VOUS.</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Alfred de Musset</Author>
+    <Language>French</Language>
+    <QuoteValue>On s'approche, on sourit, la main touche la main. Et nous nous souvenons que nous marchions ensemble. Que l'âme est immortelle, et qu'hier c'est demain</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2255,11 +2255,11 @@
     <Language>French</Language>
     <QuoteValue>Combien noble est celui qui ne veut être ni maître ni esclave</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Pierre Dac</Author>
+    <Language>French</Language>
+    <QuoteValue>Une erreur peut devenir exacte selon que celui qui l'a commise s'est trompé ou non</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

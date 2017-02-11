@@ -2250,11 +2250,11 @@
     <Language>French</Language>
     <QuoteValue>Soyez une personne bienveillante et compatissante. C’est la beauté intérieure qui est le facteur clé pour rendre le monde meilleur</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Khalil Gibran</Author>
+    <Language>French</Language>
+    <QuoteValue>Combien noble est celui qui ne veut être ni maître ni esclave</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

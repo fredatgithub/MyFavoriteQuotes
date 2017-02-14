@@ -2260,11 +2260,11 @@
     <Language>French</Language>
     <QuoteValue>Une erreur peut devenir exacte selon que celui qui l'a commise s'est trompé ou non</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>My dream is of a place and a time where America will once again be seen as the last best hope of earth</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2270,11 +2270,11 @@
     <Language>English</Language>
     <QuoteValue>All that I am, or hope to be, I owe to my angel mother</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Victor Hugo</Author>
+    <Language>French</Language>
+    <QuoteValue>Aimer, c’est savoir dire je t’aime sans parler</QuoteValue>
+  </Quote>
 <!--<Quote>
     <Author></Author>
     <Language></Language>

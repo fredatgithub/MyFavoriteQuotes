@@ -1975,17 +1975,7 @@
     <Language>English</Language>
     <QuoteValue>Whatever you are, be a good one</QuoteValue>
   </Quote>
-  <Quote>
-    <Author>Abraham Lincoln</Author>
-    <Language>English</Language>
-    <QuoteValue>I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live by the light that I have. I must stand with anybody that stands right, and stand with him while he is right, and part with him when he goes wrong</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Abraham Lincoln</Author>
-    <Language>English</Language>
-    <QuoteValue>If I were two-faced, would I be wearing this one?</QuoteValue>
-  </Quote>
-  <Quote>
+ <Quote>
     <Author>Marc aurele</Author>
     <Language>French</Language>
     <QuoteValue>Donne moi la force de changer les choses que je peux, la sérénité d'accepter les choses qui sont, et la sagesse de distinguer l'une de l'autre</QuoteValue>
@@ -2055,25 +2045,20 @@
     <Language>French</Language>
     <QuoteValue>L'espace et le contrôle du climat ont remplacé Suez et Gibraltar comme éléments clé de la strarégie</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>John Lenon</Author>
     <Language>French</Language>
     <QuoteValue>Si tout le monde demandait la paix au lieu d'un écran plat, on aurait la paix</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>George Orwel</Author>
     <Language>French</Language>
     <QuoteValue>Un peuple qui élit des politiques corrompus n'est pas victime, il est complice</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Martin Luther King</Author>
     <Language>French</Language>
     <QuoteValue>Le moment viendra où le silence est une trahison</QuoteValue>
-  </Quote>
-    <Quote>
-    <Author>Confucius</Author>
-    <Language>English</Language>
-    <QuoteValue>Life is really simple, but we insist on making it complicated</QuoteValue>
   </Quote>
   <Quote>
     <Author>Abraham Lincoln</Author>
@@ -2085,7 +2070,7 @@
     <Language>English</Language>
     <QuoteValue>Standing as I do, with my hand upon this staff, and under the folds of the American flag, I ask you to stand by me so long as I stand by it</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Paulo Coelho</Author>
     <Language>French</Language>
     <QuoteValue>La vie nous prend par surprise et nous ordonne d’avancer vers l’inconnu, alors même que l’on pense ne pas en avoir besoin</QuoteValue>
@@ -2095,7 +2080,7 @@
     <Language>French</Language>
     <QuoteValue>L’inhumanité infligée à un autre détruit l’humanité en moi</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Henry Ford</Author>
     <Language>English</Language>
     <QuoteValue>Failure is the opportunity to begin again more intelligently</QuoteValue>
@@ -2105,7 +2090,7 @@
     <Language>English</Language>
     <QuoteValue>My great concern is not whether you have failed, but whether you are content with your failure</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Muhammad Ali</Author>
     <Language>French</Language>
     <QuoteValue>Les champions ne se sont pas faits dans les gymnases. Les champions sont faits de ce qu’ils ont au plus profond d’eux-mêmes. Un désir, un rêve, une vision</QuoteValue>
@@ -2115,7 +2100,7 @@
     <Language>English</Language>
     <QuoteValue>I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live by the light that I have. I must stand with anybody that stands right, and stand with him while he is right, and part with him when he goes wrong</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Coluche</Author>
     <Language>French</Language>
     <QuoteValue>L'argent ne fait pas le bonheur des pauvres</QuoteValue>
@@ -2125,7 +2110,7 @@
     <Language>English</Language>
     <QuoteValue>Discourage litigation. Persuade your neighbors to compromise whenever you can. As a peacemaker the lawyer has superior opportunity of being a good man. There will still be business enough</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Coluche</Author>
     <Language>French</Language>
     <QuoteValue>Je ne suis pas allé partout, mais je suis revenu de tout</QuoteValue>
@@ -2135,7 +2120,7 @@
     <Language>French</Language>
     <QuoteValue>Les portes de l'avenir sont ouvertes à ceux qui savent les pousser</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>Our defense is in the preservation of the spirit which prizes liberty as a heritage of all men, in all lands, everywhere. Destroy this spirit and you have planted the seeds of despotism around your own doors</QuoteValue>
@@ -2145,12 +2130,12 @@
     <Language>English</Language>
     <QuoteValue>Everybody likes a compliment</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Russell Simmons</Author>
     <Language>French</Language>
     <QuoteValue>La tranquillité est un sol fertile dans lequel l’imagination est nourrie, et les idées peuvent s’y développer de façon incroyable</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>To the best of my judgment, I have labored for, and not against, the Union. As I have not felt, so I have not expressed any harsh sentiment towards our Southern brethren. I have constantly declared, as I really believed, the only difference between them and us is the difference of circumstances</QuoteValue>
@@ -2170,7 +2155,7 @@
     <Language>English</Language>
     <QuoteValue>All you need in this life is ignorance and confidence, and then success is sure</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Jacques Chirac</Author>
     <Language>French</Language>
     <QuoteValue>La maison brûle et nous regardons ailleurs</QuoteValue>
@@ -2180,47 +2165,37 @@
     <Language>French</Language>
     <QuoteValue>Cher sommeil, je suis désolé de téavoir détesté quand j'étais petit, mais maintenant tu me manques</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Anonyme</Author>
     <Language>French</Language>
     <QuoteValue>Dans mon enfance, je pleurais alors que rien ne me faisait vraiment mal, maintenant que je suis grand je souris alors que tout va mal</QuoteValue>
   </Quote>
-  <Quote>
-    <Author>Georges Bernanos</Author>
-    <Language>French</Language>
-    <QuoteValue>L'espérance est un risque à courir</QuoteValue>
-  </Quote>
-   <Quote>
+ <Quote>
     <Author>Garry Kasparov</Author>
     <Language>French</Language>
     <QuoteValue>Je l’ai déjà dit plusieurs fois, mais l’inaction est aussi un choix, et tous les choix ont des conséquences</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Paulo Coelho</Author>
     <Language>French</Language>
     <QuoteValue>Moins vous répondez aux personnes négatives et plus votre vie sera paisible</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>The shepherd drives the wolf from the sheep's for which the sheep thanks the shepherd as his liberator, while the wolf denounces him for the same act as the destroyer of liberty. Plainly, the sheep and the wolf are not agreed upon a definition of liberty</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Léonard De Vinci</Author>
     <Language>French</Language>
     <QuoteValue>Jamais le soleil ne voit l'ombre</QuoteValue>
   </Quote>
-   <Quote>
-    <Author>Abraham Lincoln</Author>
-    <Language>English</Language>
-    <QuoteValue>I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live by the light that I have. I must stand with anybody that stands right, and stand with him while he is right, and part with him when he goes wrong</QuoteValue>
-  </Quote>
-  <Quote>
+ <Quote>
     <Author>Baruch Spinoza</Author>
     <Language>French</Language>
     <QuoteValue>Si vous voulez que la vie vous sourie, apportez-lui d'abord votre bonne humeur</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>If I were two-faced, would I be wearing this one?</QuoteValue>
@@ -2230,57 +2205,57 @@
     <Language>English</Language>
     <QuoteValue>The probability that we may fail in the struggle ought not to deter us from the support of a cause we believe to be just</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Pierre Dac</Author>
     <Language>French</Language>
     <QuoteValue>S’il est bon de ne rien dire avant de parler, il est encore plus utile de réfléchir avant de penser</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Paulo Coelho</Author>
     <Language>French</Language>
     <QuoteValue>Soyez brillant. Soyez brave. Soyez audacieux. Soyez beau. Soyez génial. SOYEZ VOUS.</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Alfred de Musset</Author>
     <Language>French</Language>
     <QuoteValue>On s'approche, on sourit, la main touche la main. Et nous nous souvenons que nous marchions ensemble. Que l'âme est immortelle, et qu'hier c'est demain</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Dalaï-lama</Author>
     <Language>French</Language>
     <QuoteValue>Soyez une personne bienveillante et compatissante. C’est la beauté intérieure qui est le facteur clé pour rendre le monde meilleur</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Khalil Gibran</Author>
     <Language>French</Language>
     <QuoteValue>Combien noble est celui qui ne veut être ni maître ni esclave</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Pierre Dac</Author>
     <Language>French</Language>
     <QuoteValue>Une erreur peut devenir exacte selon que celui qui l'a commise s'est trompé ou non</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>My dream is of a place and a time where America will once again be seen as the last best hope of earth</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>All that I am, or hope to be, I owe to my angel mother</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Victor Hugo</Author>
     <Language>French</Language>
     <QuoteValue>Aimer, c’est savoir dire je t’aime sans parler</QuoteValue>
   </Quote>
-<Quote>
+  <Quote>
     <Author>Albert Einstein</Author>
     <Language>French</Language>
     <QuoteValue>Nous ne pouvons pas désespérer des hommes, puisque nous sommes nous-mêmes des hommes</QuoteValue>
   </Quote>
-<Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>Be sure you put your feet in the right place, then stand firm</QuoteValue>
@@ -2290,7 +2265,7 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
@@ -2300,7 +2275,7 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
@@ -2310,7 +2285,7 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>

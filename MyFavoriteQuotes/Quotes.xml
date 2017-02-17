@@ -2280,11 +2280,11 @@
     <Language>French</Language>
     <QuoteValue>Nous ne pouvons pas désespérer des hommes, puisque nous sommes nous-mêmes des hommes</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+<Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Be sure you put your feet in the right place, then stand firm</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

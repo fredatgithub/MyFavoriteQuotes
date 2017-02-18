@@ -2260,11 +2260,11 @@
     <Language>English</Language>
     <QuoteValue>Be sure you put your feet in the right place, then stand firm</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Bruce Lee</Author>
+    <Language>English</Language>
+    <QuoteValue>Do not pray for an easy life, pray for the strengh to endure a difficult one</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

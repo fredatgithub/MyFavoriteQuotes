@@ -2265,11 +2265,11 @@
     <Language>English</Language>
     <QuoteValue>Do not pray for an easy life, pray for the strengh to endure a difficult one</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Ernest Hemingway</Author>
+    <Language>French</Language>
+    <QuoteValue>De la joie chez les gens intelligents, est la chose la plus rare que je connaisse</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

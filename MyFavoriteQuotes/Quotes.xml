@@ -2270,11 +2270,11 @@
     <Language>French</Language>
     <QuoteValue>De la joie chez les gens intelligents, est la chose la plus rare que je connaisse</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Lewis Hamilton</Author>
+    <Language>French</Language>
+    <QuoteValue>L’esprit négatif ne rendra pas votre vie positive. Restez positifs et gardez éloigné le pessimisme. L’énergie est contagieuse !</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

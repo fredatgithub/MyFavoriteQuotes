@@ -2280,11 +2280,11 @@
     <Language>French</Language>
     <QuoteValue>N’essaie pas ! Fais-le ou ne le fais pas ! Il n’y a pas d’essai</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Lewis Caroll</Author>
+    <Language>French</Language>
+    <QuoteValue>Je ne peux pas revenir en arrière parce que j'étais une autre personne</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

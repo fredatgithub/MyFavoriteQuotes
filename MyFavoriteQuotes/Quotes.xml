@@ -2285,16 +2285,16 @@
     <Language>French</Language>
     <QuoteValue>Je ne peux pas revenir en arrière parce que j'étais une autre personne</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>Privilégier la vie des nôtres ne doit pas conduire à dévaluer la vie des autres</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Dwyane Wade</Author>
+    <Language>French</Language>
+    <QuoteValue>Je ne peux pas m’en empêcher. Je suis accro à cette chose qu’on appelle LA VIE !</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

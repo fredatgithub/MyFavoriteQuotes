@@ -2295,11 +2295,11 @@
     <Language>French</Language>
     <QuoteValue>Je ne peux pas m’en empêcher. Je suis accro à cette chose qu’on appelle LA VIE !</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Peter Ustinov</Author>
+    <Language>French</Language>
+    <QuoteValue>Le rire est la musique la plus civilisée du monde</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

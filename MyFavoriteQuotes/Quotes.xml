@@ -2300,11 +2300,11 @@
     <Language>French</Language>
     <QuoteValue>Le rire est la musique la plus civilisée du monde</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Abraham Lincoln</Author>
+    <Language>English</Language>
+    <QuoteValue>Be sure you put your feet in the right place, then stand firm</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

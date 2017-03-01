@@ -2310,11 +2310,11 @@
     <Language>English</Language>
     <QuoteValue>I remember my mother's prayers and they have always followed me. They have clung to me all my life</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Aristote</Author>
+    <Language>French</Language>
+    <QuoteValue>Il n’y a point de génie sans un grain de folie</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

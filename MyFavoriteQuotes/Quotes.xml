@@ -2315,11 +2315,11 @@
     <Language>French</Language>
     <QuoteValue>Il n’y a point de génie sans un grain de folie</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne laissez rien s'interposer entre vous et votre rêve</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

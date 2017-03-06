@@ -2320,11 +2320,11 @@
     <Language>French</Language>
     <QuoteValue>Ne laissez rien s'interposer entre vous et votre rêve</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Alicia Keys</Author>
+    <Language>French</Language>
+    <QuoteValue>Petit rappel : nous sommes tous une oeuvre d’art. Ecrivez votre histoire ! Vous êtes un chef-d’oeuvre !</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

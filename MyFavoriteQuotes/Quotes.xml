@@ -2325,11 +2325,11 @@
     <Language>French</Language>
     <QuoteValue>Petit rappel : nous sommes tous une oeuvre d’art. Ecrivez votre histoire ! Vous êtes un chef-d’oeuvre !</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Andy Warhol</Author>
+    <Language>French</Language>
+    <QuoteValue>Nous cherchons plus à durer que nous n’essayons de vivre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2330,16 +2330,16 @@
     <Language>French</Language>
     <QuoteValue>Nous cherchons plus à durer que nous n’essayons de vivre</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Malala Yousafzai</Author>
+    <Language>French</Language>
+    <QuoteValue>N’attendez pas que quelqu’un parle en votre nom. Changez le monde vous-même</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>Tout s’oublie, mais la calomnie plus difficilement que le reste</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

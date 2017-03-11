@@ -2340,11 +2340,11 @@
     <Language>French</Language>
     <QuoteValue>Tout s’oublie, mais la calomnie plus difficilement que le reste</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Pablo Picasso</Author>
+    <Language>French</Language>
+    <QuoteValue>On met longtemps à devenir jeune</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2365,16 +2365,16 @@
     <Language>French</Language>
     <QuoteValue>Ce sont les détails qui font la perfection mais la perfection n'est pas un détail</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Dalaï-lama</Author>
+    <Language>French</Language>
+    <QuoteValue>Toutes les religions ont le potentiel de créer de meilleures personnes – mais aucune religion ne peut clamer sa suprématie au-dessus d’une autre</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Souvenez-vous : vous êtes libres de choisir. Prenez vos décisions avec courage, détachement et une pointe de folie</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

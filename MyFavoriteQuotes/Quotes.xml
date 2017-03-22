@@ -2375,11 +2375,11 @@
     <Language>French</Language>
     <QuoteValue>Souvenez-vous : vous êtes libres de choisir. Prenez vos décisions avec courage, détachement et une pointe de folie</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>S. C. Johnson</Author>
+    <Language>English</Language>
+    <QuoteValue>A successful [software] tool is one that was used to do something undreamed of by its author</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2380,11 +2380,11 @@
     <Language>English</Language>
     <QuoteValue>A successful [software] tool is one that was used to do something undreamed of by its author</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Anonymous</Author>
+    <Language>French</Language>
+    <QuoteValue>La différence est une beauté qu'il faut apprendre à voir</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

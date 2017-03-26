@@ -2385,16 +2385,16 @@
     <Language>French</Language>
     <QuoteValue>La différence est une beauté qu'il faut apprendre à voir</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Gustave Parking</Author>
+    <Language>French</Language>
+    <QuoteValue>Ceux qui veulent produire de la richesse oublient de la partager et ceux qui veulent partager oublient d’en produire</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Alexandre Jardin</Author>
+    <Language>French</Language>
+    <QuoteValue>Les hommes ont un mal fou à penser l’impensable. Pourtant, l’Histoire n’est faite que d’événements qui semblaient impensables…</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

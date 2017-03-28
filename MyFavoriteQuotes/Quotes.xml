@@ -2395,11 +2395,11 @@
     <Language>French</Language>
     <QuoteValue>Les hommes ont un mal fou à penser l’impensable. Pourtant, l’Histoire n’est faite que d’événements qui semblaient impensables…</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Mark Twain</Author>
+    <Language>French</Language>
+    <QuoteValue>Le courage, c’est la résistance à la peur, c’est surmonter sa peur. Pas l’absence de peur</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

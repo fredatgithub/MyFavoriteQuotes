@@ -2400,11 +2400,11 @@
     <Language>French</Language>
     <QuoteValue>Le courage, c’est la résistance à la peur, c’est surmonter sa peur. Pas l’absence de peur</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Albert Einstein</Author>
+    <Language>French</Language>
+    <QuoteValue>La seule chose absolue dans un monde comme le nôtre, c’est l’humour</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

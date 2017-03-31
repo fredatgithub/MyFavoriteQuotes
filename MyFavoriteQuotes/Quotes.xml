@@ -2405,11 +2405,11 @@
     <Language>French</Language>
     <QuoteValue>La seule chose absolue dans un monde comme le nôtre, c’est l’humour</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Andrée Chedid</Author>
+    <Language>French</Language>
+    <QuoteValue>La poésie suggère. En cela, elle est plus proche qu’on ne pense de la vie, qui est toujours en deçà de l’instant qui frappe</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

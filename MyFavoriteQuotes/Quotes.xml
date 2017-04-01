@@ -2410,11 +2410,11 @@
     <Language>French</Language>
     <QuoteValue>La poésie suggère. En cela, elle est plus proche qu’on ne pense de la vie, qui est toujours en deçà de l’instant qui frappe</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Robert Bresson</Author>
+    <Language>French</Language>
+    <QuoteValue>Pour un acteur, la caméra est l'oeil du public</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

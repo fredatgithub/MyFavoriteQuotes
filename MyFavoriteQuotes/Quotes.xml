@@ -2420,16 +2420,16 @@
     <Language>French</Language>
     <QuoteValue>Nous défendre quelque chose, c'est nous en donner envie</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-    <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>On s’indigne des images d’horreur pour enfants mais on nous a conté l’ogre, le grand méchant loup, Barbe bleue</QuoteValue>
+  </Quote>
+    <Quote>
+    <Author>Sean Diddy Combs</Author>
+    <Language>French</Language>
+    <QuoteValue>Beaucoup de gens ont juste besoin d’amour. Rien ne sert d’essayer de les changer. Il faut juste leur donner de l’amour et les regarder guérir et se magnifier</QuoteValue>
+  </Quote>
     <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2430,11 +2430,11 @@
     <Language>French</Language>
     <QuoteValue>Beaucoup de gens ont juste besoin d’amour. Rien ne sert d’essayer de les changer. Il faut juste leur donner de l’amour et les regarder guérir et se magnifier</QuoteValue>
   </Quote>
-    <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+    <Quote>
+    <Author>Platon</Author>
+    <Language>French</Language>
+    <QuoteValue>L'opinion est quelque chose d'intermédiaire entre la connaissance et l'ignorance</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

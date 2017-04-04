@@ -2435,11 +2435,11 @@
     <Language>French</Language>
     <QuoteValue>L'opinion est quelque chose d'intermédiaire entre la connaissance et l'ignorance</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Marcel Marceau</Author>
+    <Language>French</Language>
+    <QuoteValue>Avant de dire quelque chose, il faut s’assurer que le silence n’est pas plus important</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

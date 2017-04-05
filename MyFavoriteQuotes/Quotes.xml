@@ -2440,11 +2440,11 @@
     <Language>French</Language>
     <QuoteValue>Avant de dire quelque chose, il faut s’assurer que le silence n’est pas plus important</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>George Bernard Shaw</Author>
+    <Language>French</Language>
+    <QuoteValue>Il y a des fous partout, même dans les asiles</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

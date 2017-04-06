@@ -1975,7 +1975,7 @@
     <Language>English</Language>
     <QuoteValue>Whatever you are, be a good one</QuoteValue>
   </Quote>
- <Quote>
+  <Quote>
     <Author>Marc aurele</Author>
     <Language>French</Language>
     <QuoteValue>Donne moi la force de changer les choses que je peux, la sérénité d'accepter les choses qui sont, et la sagesse de distinguer l'une de l'autre</QuoteValue>
@@ -2170,7 +2170,7 @@
     <Language>French</Language>
     <QuoteValue>Dans mon enfance, je pleurais alors que rien ne me faisait vraiment mal, maintenant que je suis grand je souris alors que tout va mal</QuoteValue>
   </Quote>
- <Quote>
+  <Quote>
     <Author>Garry Kasparov</Author>
     <Language>French</Language>
     <QuoteValue>Je l’ai déjà dit plusieurs fois, mais l’inaction est aussi un choix, et tous les choix ont des conséquences</QuoteValue>
@@ -2190,7 +2190,7 @@
     <Language>French</Language>
     <QuoteValue>Jamais le soleil ne voit l'ombre</QuoteValue>
   </Quote>
- <Quote>
+  <Quote>
     <Author>Baruch Spinoza</Author>
     <Language>French</Language>
     <QuoteValue>Si vous voulez que la vie vous sourie, apportez-lui d'abord votre bonne humeur</QuoteValue>
@@ -2300,22 +2300,17 @@
     <Language>French</Language>
     <QuoteValue>Le rire est la musique la plus civilisée du monde</QuoteValue>
   </Quote>
-   <Quote>
-    <Author>Abraham Lincoln</Author>
-    <Language>English</Language>
-    <QuoteValue>Be sure you put your feet in the right place, then stand firm</QuoteValue>
-  </Quote>
-   <Quote>
+  <Quote>
     <Author>Abraham Lincoln</Author>
     <Language>English</Language>
     <QuoteValue>I remember my mother's prayers and they have always followed me. They have clung to me all my life</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Aristote</Author>
     <Language>French</Language>
     <QuoteValue>Il n’y a point de génie sans un grain de folie</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Anonyme</Author>
     <Language>French</Language>
     <QuoteValue>Ne laissez rien s'interposer entre vous et votre rêve</QuoteValue>
@@ -2335,12 +2330,12 @@
     <Language>French</Language>
     <QuoteValue>N’attendez pas que quelqu’un parle en votre nom. Changez le monde vous-même</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Edgar Morin</Author>
     <Language>French</Language>
     <QuoteValue>Tout s’oublie, mais la calomnie plus difficilement que le reste</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Pablo Picasso</Author>
     <Language>French</Language>
     <QuoteValue>On met longtemps à devenir jeune</QuoteValue>
@@ -2350,52 +2345,52 @@
     <Language>French</Language>
     <QuoteValue>Dans tous les cas, doutez de moi. Soyez suspicieux et vérifiez chacune de mes déclarations. C’est rationnel. Ensuite, faites la même chose pour ceux qui sont au pouvoir</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Pythagore</Author>
     <Language>French</Language>
     <QuoteValue>Qui parle sème ; qui écoute récolte</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Talleyrand</Author>
     <Language>French</Language>
     <QuoteValue>Quand on ne croit plus aux idées, il faut bien croire aux personnes</QuoteValue>
   </Quote>
-    <Quote>
+  <Quote>
     <Author>Anonyme</Author>
     <Language>French</Language>
     <QuoteValue>Ce sont les détails qui font la perfection mais la perfection n'est pas un détail</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Dalaï-lama</Author>
     <Language>French</Language>
     <QuoteValue>Toutes les religions ont le potentiel de créer de meilleures personnes – mais aucune religion ne peut clamer sa suprématie au-dessus d’une autre</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Paulo Coelho</Author>
     <Language>French</Language>
     <QuoteValue>Souvenez-vous : vous êtes libres de choisir. Prenez vos décisions avec courage, détachement et une pointe de folie</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>S. C. Johnson</Author>
     <Language>English</Language>
     <QuoteValue>A successful [software] tool is one that was used to do something undreamed of by its author</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Anonymous</Author>
     <Language>French</Language>
     <QuoteValue>La différence est une beauté qu'il faut apprendre à voir</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Gustave Parking</Author>
     <Language>French</Language>
     <QuoteValue>Ceux qui veulent produire de la richesse oublient de la partager et ceux qui veulent partager oublient d’en produire</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Alexandre Jardin</Author>
     <Language>French</Language>
     <QuoteValue>Les hommes ont un mal fou à penser l’impensable. Pourtant, l’Histoire n’est faite que d’événements qui semblaient impensables…</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Mark Twain</Author>
     <Language>French</Language>
     <QuoteValue>Le courage, c’est la résistance à la peur, c’est surmonter sa peur. Pas l’absence de peur</QuoteValue>
@@ -2405,12 +2400,12 @@
     <Language>French</Language>
     <QuoteValue>La seule chose absolue dans un monde comme le nôtre, c’est l’humour</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Andrée Chedid</Author>
     <Language>French</Language>
     <QuoteValue>La poésie suggère. En cela, elle est plus proche qu’on ne pense de la vie, qui est toujours en deçà de l’instant qui frappe</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Robert Bresson</Author>
     <Language>French</Language>
     <QuoteValue>Pour un acteur, la caméra est l'oeil du public</QuoteValue>
@@ -2425,17 +2420,17 @@
     <Language>French</Language>
     <QuoteValue>On s’indigne des images d’horreur pour enfants mais on nous a conté l’ogre, le grand méchant loup, Barbe bleue</QuoteValue>
   </Quote>
-    <Quote>
+  <Quote>
     <Author>Sean Diddy Combs</Author>
     <Language>French</Language>
     <QuoteValue>Beaucoup de gens ont juste besoin d’amour. Rien ne sert d’essayer de les changer. Il faut juste leur donner de l’amour et les regarder guérir et se magnifier</QuoteValue>
   </Quote>
-    <Quote>
+  <Quote>
     <Author>Platon</Author>
     <Language>French</Language>
     <QuoteValue>L'opinion est quelque chose d'intermédiaire entre la connaissance et l'ignorance</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Marcel Marceau</Author>
     <Language>French</Language>
     <QuoteValue>Avant de dire quelque chose, il faut s’assurer que le silence n’est pas plus important</QuoteValue>
@@ -2455,17 +2450,17 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>

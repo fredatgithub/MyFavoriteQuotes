@@ -2445,11 +2445,11 @@
     <Language>French</Language>
     <QuoteValue>Il y a des fous partout, même dans les asiles</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>French</Language>
+    <QuoteValue>La gentillesse est le langage qu'un sourd peut entendre et qu'un aveugle peut voir</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

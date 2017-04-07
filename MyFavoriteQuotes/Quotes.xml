@@ -2450,11 +2450,11 @@
     <Language>French</Language>
     <QuoteValue>Somewhere, something incredible is waiting to be known</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Ce que les autres pensent de vous ne doit pas faire partie de vos préoccupations</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

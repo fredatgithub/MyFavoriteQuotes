@@ -2460,11 +2460,11 @@
     <Language>French</Language>
     <QuoteValue>On peut rire de tout, mais pas pour rien</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Voltaire</Author>
+    <Language>French</Language>
+    <QuoteValue>La lecture agrandit l'âme, et un ami éclairé la console</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

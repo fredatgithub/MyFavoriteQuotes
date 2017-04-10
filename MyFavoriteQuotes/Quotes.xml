@@ -2465,11 +2465,11 @@
     <Language>French</Language>
     <QuoteValue>La lecture agrandit l'âme, et un ami éclairé la console</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Robert Kennedy</Author>
+    <Language>French</Language>
+    <QuoteValue>Pardonnez à vos ennemis, n'oubliez jamais leurs noms</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

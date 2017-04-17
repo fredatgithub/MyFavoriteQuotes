@@ -2477,14 +2477,14 @@
   </Quote>
    <Quote>
     <Author>Lord Byron</Author>
-    <Language></Language>
+    <Language>English</Language>
     <QuoteValue>There is pleasure in the pathless woods, there is rapture in the lonely shore, there is society where none intrudes, by the deep sea, and music in its roar; I love not man the less, but nature more</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>friedrich Nietzsche</Author>
+    <Language>French</Language>
+    <QuoteValue>La musique a trop longtemps rêvé, nous voulons devenir des rêveurs éveillés et conscients</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

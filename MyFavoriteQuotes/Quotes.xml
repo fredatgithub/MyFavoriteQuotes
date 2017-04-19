@@ -2485,11 +2485,11 @@
     <Language>French</Language>
     <QuoteValue>La musique a trop longtemps rêvé, nous voulons devenir des rêveurs éveillés et conscients</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Voter c'est gratuit, ne pas voter cela peut vous couter cher</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

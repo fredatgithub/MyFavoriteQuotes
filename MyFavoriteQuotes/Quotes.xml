@@ -2490,11 +2490,11 @@
     <Language>French</Language>
     <QuoteValue>Voter c'est gratuit, ne pas voter cela peut vous couter cher</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Michèle Laroque</Author>
+    <Language>French</Language>
+    <QuoteValue>Etre heureux ce n’est pas avoir tout, c’est n’avoir besoin de rien d’autre.</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2510,11 +2510,11 @@
     <Language>English</Language>
     <QuoteValue>The fool who persists in his folly will become wise</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Michèle Laroque</Author>
+    <Language>French</Language>
+    <QuoteValue>Le but de la vie est de garder espoir car il arrive souvent que les rêves se réalisent</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

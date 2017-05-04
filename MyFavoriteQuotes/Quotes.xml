@@ -2515,11 +2515,11 @@
     <Language>French</Language>
     <QuoteValue>Le but de la vie est de garder espoir car il arrive souvent que les rêves se réalisent</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>L’incapacité de tirer les leçons de l’expérience, de modifier ses schémas mentaux ainsi que la sélection de faux problèmes suscitent l’aveuglement</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

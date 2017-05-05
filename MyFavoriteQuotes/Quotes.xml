@@ -2520,11 +2520,11 @@
     <Language>French</Language>
     <QuoteValue>L’incapacité de tirer les leçons de l’expérience, de modifier ses schémas mentaux ainsi que la sélection de faux problèmes suscitent l’aveuglement</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Henry Miller</Author>
+    <Language>French</Language>
+    <QuoteValue>L’homme a ce choix : laisser entrer la lumière ou garder les volets fermés</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

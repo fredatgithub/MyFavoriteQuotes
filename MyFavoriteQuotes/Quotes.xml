@@ -2535,21 +2535,21 @@
     <Language>French</Language>
     <QuoteValue>Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue> Ceux qui pensent que c’est impossible sont priés de ne pas déranger ceux qui essaient</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Voltaire</Author>
+    <Language>French</Language>
+    <QuoteValue>Ceux qui ne croient pas en l’impossible sont priés de ne pas déranger ceux qui sont en train de le faire</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Voltaire</Author>
+    <Language>French</Language>
+    <QuoteValue>J’ai décidé d’être heureux parce que c’est bon pour la santé</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

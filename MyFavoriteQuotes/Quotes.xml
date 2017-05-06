@@ -2530,11 +2530,11 @@
     <Language>French</Language>
     <QuoteValue>Le racisme est une manière de déléguer à l'autre le dégout que l'on a de soi-même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Martin Luther-King</Author>
+    <Language>French</Language>
+    <QuoteValue>Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2550,11 +2550,11 @@
     <Language>French</Language>
     <QuoteValue>J’ai décidé d’être heureux parce que c’est bon pour la santé</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Dalaï-lama</Author>
+    <Language>French</Language>
+    <QuoteValue>Si dans votre vie de tous les jours, vous menez une bonne vie, avec honnêteté, amour, compassion et moins d’égoïsme, vous trouverez alors automatiquement la paix</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

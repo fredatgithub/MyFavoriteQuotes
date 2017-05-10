@@ -2555,11 +2555,11 @@
     <Language>French</Language>
     <QuoteValue>Si dans votre vie de tous les jours, vous menez une bonne vie, avec honnêteté, amour, compassion et moins d’égoïsme, vous trouverez alors automatiquement la paix</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Victor Hugo</Author>
+    <Language>French</Language>
+    <QuoteValue>Je ne suis rien, je sais, mais je compose mon rien avec un petit morceau de tout</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2475,13 +2475,13 @@
     <Language>English</Language>
     <QuoteValue>After Badminton training, I can say, it's a very good bad day</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Lord Byron</Author>
     <Language>English</Language>
     <QuoteValue>There is pleasure in the pathless woods, there is rapture in the lonely shore, there is society where none intrudes, by the deep sea, and music in its roar; I love not man the less, but nature more</QuoteValue>
   </Quote>
-   <Quote>
-    <Author>friedrich Nietzsche</Author>
+  <Quote>
+    <Author>Friedrich Nietzsche</Author>
     <Language>French</Language>
     <QuoteValue>La musique a trop longtemps rêvé, nous voulons devenir des rêveurs éveillés et conscients</QuoteValue>
   </Quote>
@@ -2490,17 +2490,17 @@
     <Language>French</Language>
     <QuoteValue>Voter c'est gratuit, ne pas voter cela peut vous couter cher</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Michèle Laroque</Author>
     <Language>French</Language>
     <QuoteValue>Etre heureux ce n’est pas avoir tout, c’est n’avoir besoin de rien d’autre.</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Salvador Dali</Author>
     <Language>French</Language>
     <QuoteValue>Ne craignez pas d’atteindre la perfection, vous n’y arriverez jamais</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Bryce Dallas Howard</Author>
     <Language>French</Language>
     <QuoteValue>Ton état d’esprit déteint sur tout le reste. Il dicte tes pensées, ton énergie, et surtout, tes actes</QuoteValue>
@@ -2510,22 +2510,22 @@
     <Language>English</Language>
     <QuoteValue>The fool who persists in his folly will become wise</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Michèle Laroque</Author>
     <Language>French</Language>
     <QuoteValue>Le but de la vie est de garder espoir car il arrive souvent que les rêves se réalisent</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Edgar Morin</Author>
     <Language>French</Language>
     <QuoteValue>L’incapacité de tirer les leçons de l’expérience, de modifier ses schémas mentaux ainsi que la sélection de faux problèmes suscitent l’aveuglement</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Henry Miller</Author>
     <Language>French</Language>
     <QuoteValue>L’homme a ce choix : laisser entrer la lumière ou garder les volets fermés</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Robert Sabatier</Author>
     <Language>French</Language>
     <QuoteValue>Le racisme est une manière de déléguer à l'autre le dégout que l'on a de soi-même</QuoteValue>
@@ -2535,12 +2535,12 @@
     <Language>French</Language>
     <QuoteValue>Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Anonyme</Author>
     <Language>French</Language>
     <QuoteValue> Ceux qui pensent que c’est impossible sont priés de ne pas déranger ceux qui essaient</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Voltaire</Author>
     <Language>French</Language>
     <QuoteValue>Ceux qui ne croient pas en l’impossible sont priés de ne pas déranger ceux qui sont en train de le faire</QuoteValue>
@@ -2550,36 +2550,26 @@
     <Language>French</Language>
     <QuoteValue>J’ai décidé d’être heureux parce que c’est bon pour la santé</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Dalaï-lama</Author>
     <Language>French</Language>
     <QuoteValue>Si dans votre vie de tous les jours, vous menez une bonne vie, avec honnêteté, amour, compassion et moins d’égoïsme, vous trouverez alors automatiquement la paix</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Victor Hugo</Author>
     <Language>French</Language>
     <QuoteValue>Je ne suis rien, je sais, mais je compose mon rien avec un petit morceau de tout</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Friedrich Nietzsche</Author>
+    <Language>French</Language>
+    <QuoteValue>Et quand tu atteindras l'eveil, à jamais tu resteras</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>La confiance, ça vaut de l'or, c'est idiot de la gaspiller</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>
@@ -2595,7 +2585,12 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
@@ -2610,12 +2605,17 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>

@@ -1545,7 +1545,29 @@ namespace MyFavoriteQuotes
         DisplayAllQuotes();
       }
 
-      DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
+      if (comboBoxListAuthor.SelectedIndex == -1)
+      {
+        DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
+      }
+      else
+      {
+        // take into account if comboboxLanguage has something selected
+        if (checkBoxListEnglish.Checked && !checkBoxListFrench.Checked)
+        {
+          DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString(), Language.English);
+        }
+
+        if (!checkBoxListEnglish.Checked && checkBoxListFrench.Checked)
+        {
+          DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString(), Language.French);
+        }
+
+
+        if (checkBoxListFrench.Checked && checkBoxListEnglish.Checked)
+        {
+          // TODO add code
+        }
+      }
     }
 
     private void DisplayQuotes(string author, Language language = Language.English)
@@ -1556,7 +1578,7 @@ namespace MyFavoriteQuotes
         result3 = from node in _allQuotes.ToList()
                   select node;
       }
-      else
+      else // language = all has to be coded otherwise it's a bug
       {
         result3 = from node in _allQuotes.ToList()
                   where node.Author == author
@@ -1942,9 +1964,9 @@ namespace MyFavoriteQuotes
       string tmpQuote = $"{englishQuotesNumber}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(englishQuotesNumber)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}";
       textBoxStatQuotes.Text += tmpQuote;
       int tmpQuoteLenght = tmpQuote.Length;
-      
+
       AddLine(CreateDashLine(tmpQuoteLenght));
-      Dictionary <string, int> allQuotes = GetQuotesByAuthor(Language.All);
+      Dictionary<string, int> allQuotes = GetQuotesByAuthor(Language.All);
       IEnumerable<Quote> tmpQuotes = GetDuplicateQuotes(_allQuotes.ToList());
       if (tmpQuotes.Count() != 0)
       {
@@ -1957,7 +1979,7 @@ namespace MyFavoriteQuotes
       {
         textBoxStatQuotes.Text += $"{Translate("No duplicate quote found")}{Environment.NewLine}";
       }
-      
+
       AddLine(CreateDashLine($"{Translate("No duplicate quote found")}".Length));
       textBoxStatQuotes.Text += $"{Translate("List of author sorted by number of quotes descending")}{Environment.NewLine}";
       AddLine(CreateDashLine($"{Translate("List of author sorted by number of quotes descending")}{Environment.NewLine}".Length));
@@ -2028,7 +2050,7 @@ namespace MyFavoriteQuotes
 
     private static Dictionary<string, int> SortDictionaryWithValue(Dictionary<string, int> dico, bool descending = true)
     {
-      return @descending ? dico.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value) : 
+      return @descending ? dico.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value) :
         dico.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
     }
 

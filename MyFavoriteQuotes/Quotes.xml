@@ -2575,11 +2575,11 @@
     <Language>French</Language>
     <QuoteValue>Le sage apprend plus de ses ennemis que l'idiot de ses amis - Film Rush</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>napoléon</Author>
+    <Language>French</Language>
+    <QuoteValue>Les hommes de génie sont des météors destinés à brûler pour éclairer leur siècle</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

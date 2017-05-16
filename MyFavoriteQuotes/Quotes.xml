@@ -2580,11 +2580,11 @@
     <Language>French</Language>
     <QuoteValue>Les hommes de génie sont des météors destinés à brûler pour éclairer leur siècle</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Gustave Parking</Author>
+    <Language>French</Language>
+    <QuoteValue>Certains s’aiment sans pouvoir vivre ensemble. D’autres vivent ensemble sans s’aimer… L’idéal étant d’aimer ceux avec qui tu vis</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

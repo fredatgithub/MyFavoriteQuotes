@@ -2590,11 +2590,11 @@
     <Language>French</Language>
     <QuoteValue>Le pessimisme et la prudence sont synonymes de stagnation, et donc d’être dépassés par nos ordinateurs. Nous avons besoin d’optimisme et d’ambition pour progresser et rester supérieurs</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Bill Gates</Author>
+    <Language>French</Language>
+    <QuoteValue>Entourez-vous de personnes qui vous challengent, vous enseignent, et vous poussent à donner le meilleur de vous-même</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

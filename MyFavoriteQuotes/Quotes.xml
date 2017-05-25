@@ -2271,7 +2271,7 @@
     <QuoteValue>De la joie chez les gens intelligents, est la chose la plus rare que je connaisse</QuoteValue>
   </Quote>
   <Quote>
-    <Author>Lewis Hamilton</Author>
+    <Author>Hamilton</Author>
     <Language>French</Language>
     <QuoteValue>L’esprit négatif ne rendra pas votre vie positive. Restez positifs et gardez éloigné le pessimisme. L’énergie est contagieuse !</QuoteValue>
   </Quote>
@@ -2595,16 +2595,16 @@
     <Language>French</Language>
     <QuoteValue>Entourez-vous de personnes qui vous challengent, vous enseignent, et vous poussent à donner le meilleur de vous-même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Clive Staples Lewis</Author>
+    <Language>French</Language>
+    <QuoteValue>Parmi toutes les formes de tyrannies, celle qui est sincèrement mise en place pour le bien de ses victimes peut être la plus oppressive qui soit</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Clive Staples Lewis</Author>
+    <Language>English</Language>
+    <QuoteValue>Of all tyrannies a tyranny sincerely exercised for the good of its victims may be the most oppressive</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

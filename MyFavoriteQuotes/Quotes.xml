@@ -2610,11 +2610,11 @@
     <Language>French</Language>
     <QuoteValue>Mon voyage a été terrible, ça grouillait de femelles qui jacassaient - Film Mr Turner</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jacques Attali</Author>
+    <Language>French</Language>
+    <QuoteValue>C’est en osant transgresser les règles qu’on fait avancer la société, le savoir et l’art</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

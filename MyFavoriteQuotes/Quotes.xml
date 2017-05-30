@@ -2615,11 +2615,11 @@
     <Language>French</Language>
     <QuoteValue>C’est en osant transgresser les règles qu’on fait avancer la société, le savoir et l’art</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Aldous Huxley</Author>
+    <Language>French</Language>
+    <QuoteValue>Des pages de formules ne fourniront pas un résultat fiable à partir de données imprécises</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

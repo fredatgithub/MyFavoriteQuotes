@@ -2620,11 +2620,11 @@
     <Language>French</Language>
     <QuoteValue>Des pages de formules ne fourniront pas un résultat fiable à partir de données imprécises</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>French</Language>
+    <QuoteValue>Comme Lord Kelvin est la plus haute autorité scientifique vivante, je pense que nous devons nous incliner et accepter ses vues</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

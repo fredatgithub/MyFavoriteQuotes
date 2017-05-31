@@ -2640,31 +2640,31 @@
     <Language>French</Language>
     <QuoteValue>Même si changer s’avère difficile, il est absolument indispensable d’essayer. Ce qui importe, c’est de faire de son mieux</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Henru Poincaré</Author>
+    <Language>French</Language>
+    <QuoteValue>Douter de tout ou tout croire, ce sont deux solutions également commodes, qui l'un et l'autre nous dispensent de réfléchir</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Henru Poincaré</Author>
+    <Language>French</Language>
+    <QuoteValue>La recherche de la vérité doit être le but de notre activité ; c'est la seule fin qui soit digne d'elle</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Henru Poincaré</Author>
+    <Language>French</Language>
+    <QuoteValue>Le savant doit ordonner ; on fait la science avec des faits comme une maison avec des pierres ; mais une accumulation de faits n'est pas plus une science qu'un tas de pierres n'est une maison</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Henru Poincaré</Author>
+    <Language>French</Language>
+    <QuoteValue>La mathématique est l'art de donner le même nom à des choses différentes</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Henru Poincaré</Author>
+    <Language>French</Language>
+    <QuoteValue>La faculté qui nous apprend à voir, c'est l'intuition. Sans elle, le géomètre serait comme un écrivain qui serait ferré sur la grammaire, mais qui n'aurait pas d'idées</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

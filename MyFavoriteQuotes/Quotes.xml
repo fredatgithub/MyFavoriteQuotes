@@ -2635,11 +2635,11 @@
     <Language>French</Language>
     <QuoteValue>La pensée est comme un éclair dans une longue nuit ; mais c'est cet éclair qui est tout</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Dalaï-lama</Author>
+    <Language>French</Language>
+    <QuoteValue>Même si changer s’avère difficile, il est absolument indispensable d’essayer. Ce qui importe, c’est de faire de son mieux</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2665,16 +2665,16 @@
     <Language>French</Language>
     <QuoteValue>La faculté qui nous apprend à voir, c'est l'intuition. Sans elle, le géomètre serait comme un écrivain qui serait ferré sur la grammaire, mais qui n'aurait pas d'idées</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>C’est incroyable tout ce que l’on sait sans le savoir</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Pape François</Author>
+    <Language>French</Language>
+    <QuoteValue>L’humilité et la tendresse ne sont pas les vertus des faibles, mais des forts</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

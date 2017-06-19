@@ -2685,11 +2685,11 @@
     <Language>French</Language>
     <QuoteValue>On a tous besoin de jouer à celui que l’on veut devenir, jusqu’à ce qu’on le devienne</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Jacques Deval</Author>
+    <Language>French</Language>
+    <QuoteValue>Une joie partagée est une double joie, un chagrin partagé est un demi-chagrin</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

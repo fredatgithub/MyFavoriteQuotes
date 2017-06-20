@@ -2695,11 +2695,11 @@
     <Language>French</Language>
     <QuoteValue>Celui qui ne perd pas sa racine peut durer</QuoteValue>
   </Quote>
-     <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+     <Quote>
+    <Author>Khalil Gibran</Author>
+    <Language>French</Language>
+    <QuoteValue>Si tu es blessé par autrui, tu peux oublier la blessure. Mais si tu le blesses, tu t’en souviendras toujours</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

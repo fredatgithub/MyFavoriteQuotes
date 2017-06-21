@@ -2700,11 +2700,11 @@
     <Language>French</Language>
     <QuoteValue>Si tu es blessé par autrui, tu peux oublier la blessure. Mais si tu le blesses, tu t’en souviendras toujours</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paris Hilton</Author>
+    <Language>French</Language>
+    <QuoteValue>Une fille devrait être comme un papillon. Magnifique à regarder, dure à prendre dans ses filets</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

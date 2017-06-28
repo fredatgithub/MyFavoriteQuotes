@@ -2715,11 +2715,11 @@
     <Language>French</Language>
     <QuoteValue>Immerge-toi dans l’énergie de ce que tu désires</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>L'homme sage apprend de ses erreurs, l'homme plus sage apprend des erreurs des autres</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -2720,16 +2720,16 @@
     <Language>French</Language>
     <QuoteValue>L'homme sage apprend de ses erreurs, l'homme plus sage apprend des erreurs des autres</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Montesquieu</Author>
+    <Language>French</Language>
+    <QuoteValue>Un homme n’est pas malheureux parce qu’il a de l’ambition, mais parce qu’il en est dévoré</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>George Orwell</Author>
+    <Language>French</Language>
+    <QuoteValue>Celui qui contrôle le passé contrôle le futur. Celui qui contrôle le présent contrôle le passé - Livre 1984</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

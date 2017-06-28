@@ -2730,11 +2730,11 @@
     <Language>French</Language>
     <QuoteValue>Celui qui contrôle le passé contrôle le futur. Celui qui contrôle le présent contrôle le passé - Livre 1984</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Mirabeau</Author>
+    <Language>French</Language>
+    <QuoteValue>Le cœur trouble la vue dans les moments où l'on aurait le plus besoin qu'elle fût nette</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

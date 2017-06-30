@@ -2735,11 +2735,11 @@
     <Language>French</Language>
     <QuoteValue>Le cœur trouble la vue dans les moments où l'on aurait le plus besoin qu'elle fût nette</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne te justifie pas. Tes amis n’en ont pas besoin, et tes ennemis ne te croiront pas</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

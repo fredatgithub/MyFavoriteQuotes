@@ -2745,16 +2745,16 @@
     <Language>French</Language>
     <QuoteValue>Le bonheur dans la vie, c'est gagner l'estime des autres</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Wesley Snipes</Author>
+    <Language>French</Language>
+    <QuoteValue>Certains ont tellement besoin d’attirer l’attention sur eux qu’ils passent plus de temps à casser les autres qu’à essayer de devenir quelqu’un</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Paulo Coelho</Author>
+    <Language>French</Language>
+    <QuoteValue>Rappelez-vous que si vous voulez connaître le succès, vous devez respecter une règle : ne jamais se mentir à soi-même</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

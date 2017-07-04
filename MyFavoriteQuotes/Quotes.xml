@@ -2755,16 +2755,16 @@
     <Language>French</Language>
     <QuoteValue>Rappelez-vous que si vous voulez connaître le succès, vous devez respecter une règle : ne jamais se mentir à soi-même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Confucius</Author>
+    <Language>French</Language>
+    <QuoteValue>Que l'on s'efforce d'être pleinement humain et il n'y aura plus de place pour le mal</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>David Hume</Author>
+    <Language>French</Language>
+    <QuoteValue>La beauté des choses existe dans l'esprit de celui qui les contemple</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

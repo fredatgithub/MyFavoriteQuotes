@@ -2765,11 +2765,11 @@
     <Language>French</Language>
     <QuoteValue>La beauté des choses existe dans l'esprit de celui qui les contemple</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Christian Vincent</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand on regarde quelqu'un, on n'en voit que la moitié</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

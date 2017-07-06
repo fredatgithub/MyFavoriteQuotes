@@ -2770,11 +2770,11 @@
     <Language>French</Language>
     <QuoteValue>Quand on regarde quelqu'un, on n'en voit que la moitié</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Russell Simmons</Author>
+    <Language>French</Language>
+    <QuoteValue>Un trait que partagent tous les grands artistes est la capacité à sortir de l’immobilisme</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

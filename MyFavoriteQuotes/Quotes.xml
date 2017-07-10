@@ -3665,16 +3665,16 @@
     <Language>French</Language>
     <QuoteValue>L'ennui est le malheur des gens heureux</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Edgar Morin</Author>
+    <Language>French</Language>
+    <QuoteValue>Il y a en nous des galaxies d’amour, des abîmes de malheur, des irruptions de haine, des égarements stupides, des éclairs de lucidité</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Katharine Hepburn</Author>
+    <Language>French</Language>
+    <QuoteValue>Si on respecte toutes les règles, on gâche tout le plaisir</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

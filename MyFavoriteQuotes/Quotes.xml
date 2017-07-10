@@ -3675,11 +3675,11 @@
     <Language>French</Language>
     <QuoteValue>Si on respecte toutes les règles, on gâche tout le plaisir</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Molière</Author>
+    <Language>French</Language>
+    <QuoteValue>Les commencements ont des charmes inexprimables</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

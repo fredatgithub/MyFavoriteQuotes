@@ -3680,11 +3680,11 @@
     <Language>French</Language>
     <QuoteValue>Les commencements ont des charmes inexprimables</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Galilée</Author>
+    <Language>French</Language>
+    <QuoteValue>Je n’ai jamais rencontré d’homme si ignorant qu’il n’eut quelque chose à m’apprendre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

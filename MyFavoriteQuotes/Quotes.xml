@@ -3695,11 +3695,11 @@
     <Language>French</Language>
     <QuoteValue>On se sert de l'avenir pour échapper au présent</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Miguel Angel Asturias</Author>
+    <Language>French</Language>
+    <QuoteValue>La poésie est mémoire baignée de larmes. La musique est mémoire de la mer</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

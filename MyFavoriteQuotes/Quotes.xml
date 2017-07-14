@@ -3700,11 +3700,11 @@
     <Language>French</Language>
     <QuoteValue>La poésie est mémoire baignée de larmes. La musique est mémoire de la mer</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Amedeo Modigliani</Author>
+    <Language>French</Language>
+    <QuoteValue>D’un oeil, observer le monde extérieur, de l’autre regarder au fond de soi-même</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

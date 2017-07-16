@@ -3710,16 +3710,16 @@
     <Language>French</Language>
     <QuoteValue>C'est dans l'extraordinaire que je me sens le plus naturel</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>william Shakespear</Author>
+    <Language>French</Language>
+    <QuoteValue>Les attentes font toujours males</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Fais les bons choix en silence et laisse ton succés faire du bruit</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -3705,11 +3705,11 @@
     <Language>French</Language>
     <QuoteValue>D’un oeil, observer le monde extérieur, de l’autre regarder au fond de soi-même</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>André Gide</Author>
+    <Language>French</Language>
+    <QuoteValue>C'est dans l'extraordinaire que je me sens le plus naturel</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

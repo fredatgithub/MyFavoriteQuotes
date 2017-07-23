@@ -3740,11 +3740,11 @@
     <Language>French</Language>
     <QuoteValue>Hâte-toi de bien vivre et songe que chaque jour est à lui seul une vie</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Brian Chippendale</Author>
+    <Language>English</Language>
+    <QuoteValue>Every artist is a small factory of culture</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

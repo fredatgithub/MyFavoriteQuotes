@@ -3755,11 +3755,11 @@
     <Language>English</Language>
     <QuoteValue>This is the precept by which I have lived: Prepare for the worst; expect the best; and take what comes</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Helen Rowland</Author>
+    <Language>French</Language>
+    <QuoteValue>You will never win if you never begin</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

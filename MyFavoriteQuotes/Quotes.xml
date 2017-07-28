@@ -3770,37 +3770,52 @@
     <Language>English</Language>
     <QuoteValue>Home is any four walls that enclose the right person</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
+  <Quote>
+    <Author>Anthony Trollope</Author>
+    <Language>English</Language>
+    <QuoteValue>A small daily task, it is be really daily, will beat the leabours of a spasmodic Hercules</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Ira Glass</Author>
+    <Language>English</Language>
+    <QuoteValue>The most important possible thing you can do, is a lot of work. It's only by going through a volume of work that you're going to close the gap</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>David Bowie</Author>
+    <Language>English</Language>
+    <QuoteValue>The only art I'll ever study is stuff that I can steal from</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Steve Jobs</Author>
+    <Language>English</Language>
+    <QuoteValue>Good artists copy, great artists steal. We have always been shameless about stealing great ideas</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Pablo Picasso</Author>
+    <Language>English</Language>
+    <QuoteValue>The bad artists imitate, the great artists steal</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Gary Panter</Author>
+    <Language>English</Language>
+    <QuoteValue>If you have one person you're influenced by, everyone will say you're the next whoever. But if you rip off a hundred people, everyone will say you're so original. The biggest waste of time is not being conscious of what you're doing. Or in other words doodling around</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Alex Alvarez</Author>
+    <Language>English</Language>
+    <QuoteValue>What separates the superstars from the average: they seek criticism and actually listen to it</QuoteValue>
+  </Quote>
+   <Quote>
+    <Author>Brian Eno</Author>
     <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+    <QuoteValue>My interest in making music has been to create something that does not exist that I would like to listen to</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-  <!--<Quote>
+   <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>

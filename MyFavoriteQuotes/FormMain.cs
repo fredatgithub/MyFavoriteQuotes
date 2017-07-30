@@ -2099,5 +2099,10 @@ namespace MyFavoriteQuotes
 
       return dico;
     }
+
+    private void buttonDuplicate_Click(object sender, EventArgs e)
+    {
+
+    }
   }
 }

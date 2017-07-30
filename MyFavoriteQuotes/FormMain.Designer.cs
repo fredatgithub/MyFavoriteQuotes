@@ -105,6 +105,9 @@
       this.buttonStatCount = new System.Windows.Forms.Button();
       this.textBoxStatQuotes = new System.Windows.Forms.TextBox();
       this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+      this.TabPageDuplicate = new System.Windows.Forms.TabPage();
+      this.buttonDuplicate = new System.Windows.Forms.Button();
+      this.textBoxDuplicate = new System.Windows.Forms.TextBox();
       this.menuStrip1.SuspendLayout();
       this.tabControlMain.SuspendLayout();
       this.tabPageSearch.SuspendLayout();
@@ -116,6 +119,7 @@
       this.groupBoxListAuthor.SuspendLayout();
       this.groupBoxListLanguage.SuspendLayout();
       this.tabPageStatistics.SuspendLayout();
+      this.TabPageDuplicate.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip1
@@ -386,9 +390,10 @@
       this.tabControlMain.Controls.Add(this.tabPageAdd);
       this.tabControlMain.Controls.Add(this.tabPageList);
       this.tabControlMain.Controls.Add(this.tabPageStatistics);
+      this.tabControlMain.Controls.Add(this.TabPageDuplicate);
       this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tabControlMain.Location = new System.Drawing.Point(0, 24);
-      this.tabControlMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabControlMain.Margin = new System.Windows.Forms.Padding(2);
       this.tabControlMain.Name = "tabControlMain";
       this.tabControlMain.SelectedIndex = 0;
       this.tabControlMain.Size = new System.Drawing.Size(683, 517);
@@ -406,9 +411,9 @@
       this.tabPageSearch.Controls.Add(this.buttonSearch);
       this.tabPageSearch.Controls.Add(this.textBoxSearch);
       this.tabPageSearch.Location = new System.Drawing.Point(4, 22);
-      this.tabPageSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageSearch.Margin = new System.Windows.Forms.Padding(2);
       this.tabPageSearch.Name = "tabPageSearch";
-      this.tabPageSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageSearch.Padding = new System.Windows.Forms.Padding(2);
       this.tabPageSearch.Size = new System.Drawing.Size(675, 491);
       this.tabPageSearch.TabIndex = 0;
       this.tabPageSearch.Text = "Search";
@@ -438,7 +443,7 @@
       // 
       this.checkBoxCaseSensitive.AutoSize = true;
       this.checkBoxCaseSensitive.Location = new System.Drawing.Point(79, 63);
-      this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxCaseSensitive.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxCaseSensitive.Name = "checkBoxCaseSensitive";
       this.checkBoxCaseSensitive.Size = new System.Drawing.Size(96, 17);
       this.checkBoxCaseSensitive.TabIndex = 3;
@@ -451,9 +456,9 @@
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageEnglish);
       this.groupBoxLanguage.Controls.Add(this.checkBoxLanguageAll);
       this.groupBoxLanguage.Location = new System.Drawing.Point(15, 146);
-      this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxLanguage.Margin = new System.Windows.Forms.Padding(2);
       this.groupBoxLanguage.Name = "groupBoxLanguage";
-      this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxLanguage.Padding = new System.Windows.Forms.Padding(2);
       this.groupBoxLanguage.Size = new System.Drawing.Size(316, 50);
       this.groupBoxLanguage.TabIndex = 6;
       this.groupBoxLanguage.TabStop = false;
@@ -463,7 +468,7 @@
       // 
       this.checkBoxLanguageFrench.AutoSize = true;
       this.checkBoxLanguageFrench.Location = new System.Drawing.Point(206, 18);
-      this.checkBoxLanguageFrench.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxLanguageFrench.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxLanguageFrench.Name = "checkBoxLanguageFrench";
       this.checkBoxLanguageFrench.Size = new System.Drawing.Size(66, 17);
       this.checkBoxLanguageFrench.TabIndex = 2;
@@ -475,7 +480,7 @@
       // 
       this.checkBoxLanguageEnglish.AutoSize = true;
       this.checkBoxLanguageEnglish.Location = new System.Drawing.Point(107, 18);
-      this.checkBoxLanguageEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxLanguageEnglish.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxLanguageEnglish.Name = "checkBoxLanguageEnglish";
       this.checkBoxLanguageEnglish.Size = new System.Drawing.Size(60, 17);
       this.checkBoxLanguageEnglish.TabIndex = 1;
@@ -489,7 +494,7 @@
       this.checkBoxLanguageAll.Checked = true;
       this.checkBoxLanguageAll.CheckState = System.Windows.Forms.CheckState.Checked;
       this.checkBoxLanguageAll.Location = new System.Drawing.Point(5, 18);
-      this.checkBoxLanguageAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxLanguageAll.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxLanguageAll.Name = "checkBoxLanguageAll";
       this.checkBoxLanguageAll.Size = new System.Drawing.Size(50, 17);
       this.checkBoxLanguageAll.TabIndex = 0;
@@ -503,9 +508,9 @@
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAuthor);
       this.groupBoxSearch.Controls.Add(this.checkBoxSearchAll);
       this.groupBoxSearch.Location = new System.Drawing.Point(15, 91);
-      this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(2);
       this.groupBoxSearch.Name = "groupBoxSearch";
-      this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(2);
       this.groupBoxSearch.Size = new System.Drawing.Size(316, 50);
       this.groupBoxSearch.TabIndex = 5;
       this.groupBoxSearch.TabStop = false;
@@ -515,7 +520,7 @@
       // 
       this.checkBoxSearchQuote.AutoSize = true;
       this.checkBoxSearchQuote.Location = new System.Drawing.Point(206, 18);
-      this.checkBoxSearchQuote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxSearchQuote.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxSearchQuote.Name = "checkBoxSearchQuote";
       this.checkBoxSearchQuote.Size = new System.Drawing.Size(61, 17);
       this.checkBoxSearchQuote.TabIndex = 2;
@@ -527,7 +532,7 @@
       // 
       this.checkBoxSearchAuthor.AutoSize = true;
       this.checkBoxSearchAuthor.Location = new System.Drawing.Point(107, 18);
-      this.checkBoxSearchAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxSearchAuthor.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxSearchAuthor.Name = "checkBoxSearchAuthor";
       this.checkBoxSearchAuthor.Size = new System.Drawing.Size(57, 17);
       this.checkBoxSearchAuthor.TabIndex = 1;
@@ -541,7 +546,7 @@
       this.checkBoxSearchAll.Checked = true;
       this.checkBoxSearchAll.CheckState = System.Windows.Forms.CheckState.Checked;
       this.checkBoxSearchAll.Location = new System.Drawing.Point(5, 18);
-      this.checkBoxSearchAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxSearchAll.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxSearchAll.Name = "checkBoxSearchAll";
       this.checkBoxSearchAll.Size = new System.Drawing.Size(60, 17);
       this.checkBoxSearchAll.TabIndex = 0;
@@ -556,7 +561,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.textBoxResult.Location = new System.Drawing.Point(15, 237);
-      this.textBoxResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.textBoxResult.Margin = new System.Windows.Forms.Padding(2);
       this.textBoxResult.Multiline = true;
       this.textBoxResult.Name = "textBoxResult";
       this.textBoxResult.Size = new System.Drawing.Size(647, 237);
@@ -576,7 +581,7 @@
       // 
       this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.buttonSearch.Location = new System.Drawing.Point(255, 63);
-      this.buttonSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.buttonSearch.Margin = new System.Windows.Forms.Padding(2);
       this.buttonSearch.Name = "buttonSearch";
       this.buttonSearch.Size = new System.Drawing.Size(76, 20);
       this.buttonSearch.TabIndex = 1;
@@ -589,7 +594,7 @@
       this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxSearch.Location = new System.Drawing.Point(79, 35);
-      this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2);
       this.textBoxSearch.Name = "textBoxSearch";
       this.textBoxSearch.Size = new System.Drawing.Size(583, 20);
       this.textBoxSearch.TabIndex = 0;
@@ -607,10 +612,10 @@
       this.tabPageAdd.Controls.Add(this.labelAddAuthor);
       this.tabPageAdd.Controls.Add(this.textBoxAddAuthor);
       this.tabPageAdd.Location = new System.Drawing.Point(4, 22);
-      this.tabPageAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageAdd.Margin = new System.Windows.Forms.Padding(2);
       this.tabPageAdd.Name = "tabPageAdd";
-      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-      this.tabPageAdd.Size = new System.Drawing.Size(675, 492);
+      this.tabPageAdd.Padding = new System.Windows.Forms.Padding(2);
+      this.tabPageAdd.Size = new System.Drawing.Size(675, 491);
       this.tabPageAdd.TabIndex = 1;
       this.tabPageAdd.Text = "Add";
       this.tabPageAdd.UseVisualStyleBackColor = true;
@@ -619,7 +624,7 @@
       // 
       this.checkBoxAdddisplayAfterAdding.AutoSize = true;
       this.checkBoxAdddisplayAfterAdding.Location = new System.Drawing.Point(268, 95);
-      this.checkBoxAdddisplayAfterAdding.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxAdddisplayAfterAdding.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxAdddisplayAfterAdding.Name = "checkBoxAdddisplayAfterAdding";
       this.checkBoxAdddisplayAfterAdding.Size = new System.Drawing.Size(119, 17);
       this.checkBoxAdddisplayAfterAdding.TabIndex = 14;
@@ -629,7 +634,7 @@
       // buttonAddCancel
       // 
       this.buttonAddCancel.Location = new System.Drawing.Point(390, 92);
-      this.buttonAddCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.buttonAddCancel.Margin = new System.Windows.Forms.Padding(2);
       this.buttonAddCancel.Name = "buttonAddCancel";
       this.buttonAddCancel.Size = new System.Drawing.Size(76, 21);
       this.buttonAddCancel.TabIndex = 13;
@@ -652,9 +657,9 @@
       this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageFrench);
       this.groupBoxAddLanguage.Controls.Add(this.radioButtonAddLanguageEnglish);
       this.groupBoxAddLanguage.Location = new System.Drawing.Point(100, 82);
-      this.groupBoxAddLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxAddLanguage.Margin = new System.Windows.Forms.Padding(2);
       this.groupBoxAddLanguage.Name = "groupBoxAddLanguage";
-      this.groupBoxAddLanguage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxAddLanguage.Padding = new System.Windows.Forms.Padding(2);
       this.groupBoxAddLanguage.Size = new System.Drawing.Size(154, 38);
       this.groupBoxAddLanguage.TabIndex = 11;
       this.groupBoxAddLanguage.TabStop = false;
@@ -663,7 +668,7 @@
       // 
       this.radioButtonAddLanguageFrench.AutoSize = true;
       this.radioButtonAddLanguageFrench.Location = new System.Drawing.Point(74, 16);
-      this.radioButtonAddLanguageFrench.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.radioButtonAddLanguageFrench.Margin = new System.Windows.Forms.Padding(2);
       this.radioButtonAddLanguageFrench.Name = "radioButtonAddLanguageFrench";
       this.radioButtonAddLanguageFrench.Size = new System.Drawing.Size(58, 17);
       this.radioButtonAddLanguageFrench.TabIndex = 1;
@@ -676,7 +681,7 @@
       this.radioButtonAddLanguageEnglish.AutoSize = true;
       this.radioButtonAddLanguageEnglish.Checked = true;
       this.radioButtonAddLanguageEnglish.Location = new System.Drawing.Point(5, 16);
-      this.radioButtonAddLanguageEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.radioButtonAddLanguageEnglish.Margin = new System.Windows.Forms.Padding(2);
       this.radioButtonAddLanguageEnglish.Name = "radioButtonAddLanguageEnglish";
       this.radioButtonAddLanguageEnglish.Size = new System.Drawing.Size(59, 17);
       this.radioButtonAddLanguageEnglish.TabIndex = 0;
@@ -697,7 +702,7 @@
       // buttonAdd
       // 
       this.buttonAdd.Location = new System.Drawing.Point(480, 92);
-      this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
       this.buttonAdd.Name = "buttonAdd";
       this.buttonAdd.Size = new System.Drawing.Size(76, 21);
       this.buttonAdd.TabIndex = 9;
@@ -712,7 +717,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxAddQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.textBoxAddQuote.Location = new System.Drawing.Point(100, 126);
-      this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.textBoxAddQuote.Margin = new System.Windows.Forms.Padding(2);
       this.textBoxAddQuote.Multiline = true;
       this.textBoxAddQuote.Name = "textBoxAddQuote";
       this.textBoxAddQuote.Size = new System.Drawing.Size(560, 243);
@@ -733,7 +738,7 @@
       this.textBoxAddAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxAddAuthor.Location = new System.Drawing.Point(100, 59);
-      this.textBoxAddAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.textBoxAddAuthor.Margin = new System.Windows.Forms.Padding(2);
       this.textBoxAddAuthor.Name = "textBoxAddAuthor";
       this.textBoxAddAuthor.Size = new System.Drawing.Size(560, 20);
       this.textBoxAddAuthor.TabIndex = 4;
@@ -746,7 +751,7 @@
       this.tabPageList.Controls.Add(this.groupBoxListLanguage);
       this.tabPageList.Controls.Add(this.textBoxListQuotes);
       this.tabPageList.Location = new System.Drawing.Point(4, 22);
-      this.tabPageList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageList.Margin = new System.Windows.Forms.Padding(2);
       this.tabPageList.Name = "tabPageList";
       this.tabPageList.Size = new System.Drawing.Size(675, 491);
       this.tabPageList.TabIndex = 2;
@@ -769,9 +774,9 @@
       this.groupBoxListAuthor.Controls.Add(this.labelListAuthor);
       this.groupBoxListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBoxListAuthor.Location = new System.Drawing.Point(340, 27);
-      this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxListAuthor.Margin = new System.Windows.Forms.Padding(2);
       this.groupBoxListAuthor.Name = "groupBoxListAuthor";
-      this.groupBoxListAuthor.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxListAuthor.Padding = new System.Windows.Forms.Padding(2);
       this.groupBoxListAuthor.Size = new System.Drawing.Size(320, 50);
       this.groupBoxListAuthor.TabIndex = 9;
       this.groupBoxListAuthor.TabStop = false;
@@ -782,7 +787,7 @@
       this.comboBoxListAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.comboBoxListAuthor.FormattingEnabled = true;
       this.comboBoxListAuthor.Location = new System.Drawing.Point(115, 16);
-      this.comboBoxListAuthor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.comboBoxListAuthor.Margin = new System.Windows.Forms.Padding(2);
       this.comboBoxListAuthor.Name = "comboBoxListAuthor";
       this.comboBoxListAuthor.Size = new System.Drawing.Size(196, 24);
       this.comboBoxListAuthor.Sorted = true;
@@ -804,7 +809,7 @@
       // 
       this.buttonListDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.buttonListDelete.Location = new System.Drawing.Point(341, 90);
-      this.buttonListDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.buttonListDelete.Margin = new System.Windows.Forms.Padding(2);
       this.buttonListDelete.Name = "buttonListDelete";
       this.buttonListDelete.Size = new System.Drawing.Size(104, 32);
       this.buttonListDelete.TabIndex = 9;
@@ -819,9 +824,9 @@
       this.groupBoxListLanguage.Controls.Add(this.checkBoxListAll);
       this.groupBoxListLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.groupBoxListLanguage.Location = new System.Drawing.Point(39, 27);
-      this.groupBoxListLanguage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxListLanguage.Margin = new System.Windows.Forms.Padding(2);
       this.groupBoxListLanguage.Name = "groupBoxListLanguage";
-      this.groupBoxListLanguage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.groupBoxListLanguage.Padding = new System.Windows.Forms.Padding(2);
       this.groupBoxListLanguage.Size = new System.Drawing.Size(289, 50);
       this.groupBoxListLanguage.TabIndex = 8;
       this.groupBoxListLanguage.TabStop = false;
@@ -832,7 +837,7 @@
       this.checkBoxListFrench.AutoSize = true;
       this.checkBoxListFrench.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.checkBoxListFrench.Location = new System.Drawing.Point(190, 18);
-      this.checkBoxListFrench.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxListFrench.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxListFrench.Name = "checkBoxListFrench";
       this.checkBoxListFrench.Size = new System.Drawing.Size(89, 21);
       this.checkBoxListFrench.TabIndex = 2;
@@ -845,7 +850,7 @@
       this.checkBoxListEnglish.AutoSize = true;
       this.checkBoxListEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.checkBoxListEnglish.Location = new System.Drawing.Point(94, 18);
-      this.checkBoxListEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxListEnglish.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxListEnglish.Name = "checkBoxListEnglish";
       this.checkBoxListEnglish.Size = new System.Drawing.Size(80, 21);
       this.checkBoxListEnglish.TabIndex = 1;
@@ -858,7 +863,7 @@
       this.checkBoxListAll.AutoSize = true;
       this.checkBoxListAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.checkBoxListAll.Location = new System.Drawing.Point(5, 18);
-      this.checkBoxListAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.checkBoxListAll.Margin = new System.Windows.Forms.Padding(2);
       this.checkBoxListAll.Name = "checkBoxListAll";
       this.checkBoxListAll.Size = new System.Drawing.Size(63, 21);
       this.checkBoxListAll.TabIndex = 0;
@@ -873,7 +878,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxListQuotes.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.textBoxListQuotes.Location = new System.Drawing.Point(39, 133);
-      this.textBoxListQuotes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.textBoxListQuotes.Margin = new System.Windows.Forms.Padding(2);
       this.textBoxListQuotes.Multiline = true;
       this.textBoxListQuotes.Name = "textBoxListQuotes";
       this.textBoxListQuotes.ReadOnly = true;
@@ -886,9 +891,9 @@
       this.tabPageStatistics.Controls.Add(this.buttonStatCount);
       this.tabPageStatistics.Controls.Add(this.textBoxStatQuotes);
       this.tabPageStatistics.Location = new System.Drawing.Point(4, 22);
-      this.tabPageStatistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.tabPageStatistics.Margin = new System.Windows.Forms.Padding(2);
       this.tabPageStatistics.Name = "tabPageStatistics";
-      this.tabPageStatistics.Size = new System.Drawing.Size(675, 492);
+      this.tabPageStatistics.Size = new System.Drawing.Size(675, 491);
       this.tabPageStatistics.TabIndex = 3;
       this.tabPageStatistics.Text = "Statistics";
       this.tabPageStatistics.UseVisualStyleBackColor = true;
@@ -897,7 +902,7 @@
       // 
       this.buttonStatCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.buttonStatCount.Location = new System.Drawing.Point(28, 25);
-      this.buttonStatCount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.buttonStatCount.Margin = new System.Windows.Forms.Padding(2);
       this.buttonStatCount.Name = "buttonStatCount";
       this.buttonStatCount.Size = new System.Drawing.Size(71, 24);
       this.buttonStatCount.TabIndex = 11;
@@ -912,13 +917,51 @@
             | System.Windows.Forms.AnchorStyles.Right)));
       this.textBoxStatQuotes.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.textBoxStatQuotes.Location = new System.Drawing.Point(28, 66);
-      this.textBoxStatQuotes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.textBoxStatQuotes.Margin = new System.Windows.Forms.Padding(2);
       this.textBoxStatQuotes.Multiline = true;
       this.textBoxStatQuotes.Name = "textBoxStatQuotes";
       this.textBoxStatQuotes.ReadOnly = true;
       this.textBoxStatQuotes.ScrollBars = System.Windows.Forms.ScrollBars.Both;
       this.textBoxStatQuotes.Size = new System.Drawing.Size(621, 381);
       this.textBoxStatQuotes.TabIndex = 10;
+      // 
+      // TabPageDuplicate
+      // 
+      this.TabPageDuplicate.Controls.Add(this.textBoxDuplicate);
+      this.TabPageDuplicate.Controls.Add(this.buttonDuplicate);
+      this.TabPageDuplicate.Location = new System.Drawing.Point(4, 22);
+      this.TabPageDuplicate.Name = "TabPageDuplicate";
+      this.TabPageDuplicate.Size = new System.Drawing.Size(675, 491);
+      this.TabPageDuplicate.TabIndex = 4;
+      this.TabPageDuplicate.Text = "Duplicate";
+      this.TabPageDuplicate.UseVisualStyleBackColor = true;
+      // 
+      // buttonDuplicate
+      // 
+      this.buttonDuplicate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.buttonDuplicate.Location = new System.Drawing.Point(19, 29);
+      this.buttonDuplicate.Margin = new System.Windows.Forms.Padding(2);
+      this.buttonDuplicate.Name = "buttonDuplicate";
+      this.buttonDuplicate.Size = new System.Drawing.Size(76, 20);
+      this.buttonDuplicate.TabIndex = 2;
+      this.buttonDuplicate.Text = "Search";
+      this.buttonDuplicate.UseVisualStyleBackColor = true;
+      this.buttonDuplicate.Click += new System.EventHandler(this.buttonDuplicate_Click);
+      // 
+      // textBoxDuplicate
+      // 
+      this.textBoxDuplicate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+      this.textBoxDuplicate.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.textBoxDuplicate.Location = new System.Drawing.Point(19, 53);
+      this.textBoxDuplicate.Margin = new System.Windows.Forms.Padding(2);
+      this.textBoxDuplicate.Multiline = true;
+      this.textBoxDuplicate.Name = "textBoxDuplicate";
+      this.textBoxDuplicate.ReadOnly = true;
+      this.textBoxDuplicate.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+      this.textBoxDuplicate.Size = new System.Drawing.Size(621, 381);
+      this.textBoxDuplicate.TabIndex = 11;
       // 
       // FormMain
       // 
@@ -928,7 +971,7 @@
       this.Controls.Add(this.tabControlMain);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
-      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.Margin = new System.Windows.Forms.Padding(2);
       this.Name = "FormMain";
       this.ShowIcon = false;
       this.Text = "My favorite quotes";
@@ -955,6 +998,8 @@
       this.groupBoxListLanguage.PerformLayout();
       this.tabPageStatistics.ResumeLayout(false);
       this.tabPageStatistics.PerformLayout();
+      this.TabPageDuplicate.ResumeLayout(false);
+      this.TabPageDuplicate.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -1039,5 +1084,8 @@
     private System.Windows.Forms.Label labelNbOfResultFound;
     private System.Windows.Forms.Button buttonStatCount;
     private System.Windows.Forms.TextBox textBoxStatQuotes;
+    private System.Windows.Forms.TabPage TabPageDuplicate;
+    private System.Windows.Forms.TextBox textBoxDuplicate;
+    private System.Windows.Forms.Button buttonDuplicate;
   }
 }

@@ -2107,13 +2107,29 @@ namespace MyFavoriteQuotes
       Quotes allQuotesWithoutDuplicate = new Quotes();
       foreach (Quote quote in _allQuotes.ToList())
       {
-        if (!allQuotesWithoutDuplicate.ListOfQuotes.Contains(quote))
+        //if (!allQuotesWithoutDuplicate.ListOfQuotes.Contains(quote))
+        //{
+        //  allQuotesWithoutDuplicate.Add(quote);
+        //}
+        if (true)
         {
-          allQuotesWithoutDuplicate.Add(quote);
+          // add code to check quote.sentence is already in
         }
       }
 
+      textBoxDuplicate.Text += Environment.NewLine;
       textBoxDuplicate.Text += $"New quotes.xml file without duplicate has {allQuotesWithoutDuplicate.ListOfQuotes.Count} quotes";
+      if (allQuotesWithoutDuplicate.ListOfQuotes.Count != _allQuotes.ListOfQuotes.Count)
+      {
+        //Delete old file and create a new one based on allQuotesWithoutDuplicate
+        const string fileName = "Quotes.xml";
+        if (File.Exists(fileName))
+        {
+          //File.Delete(fileName);
+        }
+
+        
+      }
     }
   }
 }

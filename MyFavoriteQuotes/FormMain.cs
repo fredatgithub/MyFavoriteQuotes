@@ -2113,7 +2113,7 @@ namespace MyFavoriteQuotes
         }
       }
 
-      textBoxDuplicate.Text += $"New quotes.xml file without duplicate has {_allQuotes.ListOfQuotes.Count} quotes";
+      textBoxDuplicate.Text += $"New quotes.xml file without duplicate has {allQuotesWithoutDuplicate.ListOfQuotes.Count} quotes";
     }
   }
 }

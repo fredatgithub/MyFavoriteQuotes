@@ -66,5 +66,19 @@ namespace MyFavoriteQuotes
     {
       return ListOfQuotes;
     }
+
+    public bool Contains(Quote oneQuote)
+    {
+      bool result = false;
+      foreach (Quote item in this.ListOfQuotes)
+      {
+        if (oneQuote.Sentence == item.Sentence)
+        {
+          return true;
+        }
+      }
+
+      return result;
+    }
   }
 }

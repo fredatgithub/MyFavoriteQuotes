@@ -2103,23 +2103,67 @@ namespace MyFavoriteQuotes
     private void buttonDuplicate_Click(object sender, EventArgs e)
     {
       textBoxDuplicate.Text = string.Empty;
-      textBoxDuplicate.Text += $"Actual quotes.xml file has {_allQuotes.ListOfQuotes.Count} quotes";
-      Quotes allQuotesWithoutDuplicate = new Quotes();
-      foreach (Quote quote in _allQuotes.ToList())
+      textBoxDuplicate.Text += $"All quotes from Quotes.xml file has {_allQuotes.ListOfQuotes.Count} quotes";
+      Quotes allQuotesWithDuplicate = new Quotes();
+      // loading all quotes from the file quotes.xml
+      if (!File.Exists(Settings.Default.QuoteFileName))
       {
-        //if (!allQuotesWithoutDuplicate.ListOfQuotes.Contains(quote))
-        //{
-        //  allQuotesWithoutDuplicate.Add(quote);
-        //}
-        if (true)
+        CreateQuotesFile();
+      }
+
+      XDocument xmlDoc;
+      try
+      {
+        xmlDoc = XDocument.Load(Settings.Default.QuoteFileName);
+      }
+      catch (Exception exception)
+      {
+        MessageBox.Show(Resources.Error_while_loading + Punctuation.OneSpace +
+          Settings.Default.QuoteFileName + Punctuation.OneSpace + Resources.XML_file +
+          Punctuation.OneSpace + exception.Message);
+        CreateQuotesFile();
+        return;
+      }
+
+      var result = from node in xmlDoc.Descendants("Quote")
+                   where node.HasElements
+                   let xElementAuthor = node.Element("Author")
+                   where xElementAuthor != null
+                   let xElementLanguage = node.Element("Language")
+                   where xElementLanguage != null
+                   let xElementQuote = node.Element("QuoteValue")
+                   where xElementQuote != null
+                   select new
+                   {
+                     authorValue = xElementAuthor.Value,
+                     languageValue = xElementLanguage.Value,
+                     sentenceValue = xElementQuote.Value
+                   };
+
+      foreach (var q in result)
+      {
+        if (!_allQuotes.ListOfQuotes.Contains(new Quote(q.authorValue, q.languageValue, q.sentenceValue)) &&
+          q.authorValue != string.Empty && q.languageValue != string.Empty && q.sentenceValue != string.Empty)
         {
-          // add code to check quote.sentence is already in
+          _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
+        }
+        else
+        {
+          allQuotesWithDuplicate.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
         }
       }
 
       textBoxDuplicate.Text += Environment.NewLine;
-      textBoxDuplicate.Text += $"New quotes.xml file without duplicate has {allQuotesWithoutDuplicate.ListOfQuotes.Count} quotes";
-      if (allQuotesWithoutDuplicate.ListOfQuotes.Count != _allQuotes.ListOfQuotes.Count)
+      textBoxDuplicate.Text += $"There are {allQuotesWithDuplicate.ListOfQuotes.Count} quotes which are duplicate";
+      textBoxDuplicate.Text += Environment.NewLine;
+      textBoxDuplicate.Text += "The duplicate are:";
+      foreach (Quote item in allQuotesWithDuplicate.ToList())
+      {
+        textBoxDuplicate.Text += $"{item.Author} - {item.Sentence}";
+        textBoxDuplicate.Text += Environment.NewLine;
+      }
+
+      if (allQuotesWithDuplicate.ListOfQuotes.Count > 0)
       {
         //Delete old file and create a new one based on allQuotesWithoutDuplicate
         const string fileName = "Quotes.xml";

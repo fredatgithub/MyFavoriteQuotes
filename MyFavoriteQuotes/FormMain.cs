@@ -2102,7 +2102,18 @@ namespace MyFavoriteQuotes
 
     private void buttonDuplicate_Click(object sender, EventArgs e)
     {
+      textBoxDuplicate.Text = string.Empty;
+      textBoxDuplicate.Text += $"Actual quotes.xml file has {_allQuotes.ListOfQuotes.Count} quotes";
+      Quotes allQuotesWithoutDuplicate = new Quotes();
+      foreach (Quote quote in _allQuotes.ToList())
+      {
+        if (!allQuotesWithoutDuplicate.ListOfQuotes.Contains(quote))
+        {
+          allQuotesWithoutDuplicate.Add(quote);
+        }
+      }
 
+      textBoxDuplicate.Text += $"New quotes.xml file without duplicate has {_allQuotes.ListOfQuotes.Count} quotes";
     }
   }
 }

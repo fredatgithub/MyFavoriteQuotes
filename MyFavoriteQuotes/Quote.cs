@@ -1,6 +1,6 @@
 ﻿namespace MyFavoriteQuotes
 {
-  class Quote
+  internal class Quote
   {
     public string Author { get; set; }
     public string Language { get; set; }

@@ -1740,4 +1740,19 @@
     <englishValue>Xml files</englishValue>
     <frenchValue>Fichier Xml</frenchValue>
   </term>
+  <term>
+    <name>You should clean the file</name>
+    <englishValue>You should clean the file</englishValue>
+    <frenchValue>Vous devriez nettoyer le fichier</frenchValue>
+  </term>
+  <term>
+    <name>Cleaning needed</name>
+    <englishValue>Cleaning needed</englishValue>
+    <frenchValue>Nettoyage nécessaire</frenchValue>
+  </term>
+   <term>
+    <name>Duplicate</name>
+    <englishValue>Duplicate</englishValue>
+    <frenchValue>Doublon</frenchValue>
+  </term>
 </terms>

@@ -1055,6 +1055,7 @@ namespace MyFavoriteQuotes
           labelSearchResultFound.Text = _languageDicoEn["Result found"];
           tabPageStatistics.Text = _languageDicoEn["Statistics"];
           buttonStatCount.Text = _languageDicoEn["Count"];
+          buttonRemoveDuplicate.Text = _languageDicoEn["Remove"];
           _currentLanguage = "english";
           break;
         case "French":
@@ -1117,6 +1118,7 @@ namespace MyFavoriteQuotes
           labelSearchResultFound.Text = _languageDicoFr["Result found"];
           tabPageStatistics.Text = _languageDicoFr["Statistics"];
           buttonStatCount.Text = _languageDicoFr["Count"];
+          buttonRemoveDuplicate.Text = _languageDicoFr["Remove"];
           _currentLanguage = "french";
           break;
       }

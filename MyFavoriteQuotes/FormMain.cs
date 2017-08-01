@@ -2168,14 +2168,7 @@ namespace MyFavoriteQuotes
 
       if (allQuotesWithDuplicate.ListOfQuotes.Count > 0)
       {
-        //Delete old file and create a new one based on allQuotesWithoutDuplicate
-        const string fileName = "Quotes.xml";
-        if (File.Exists(fileName))
-        {
-          //File.Delete(fileName);
-        }
-
-        
+        DisplayMessageOk($"{Translate("You should clean the file")}{Punctuation.OneSpace}{Settings.Default.QuoteFileName}", Translate("Cleaning needed"), MessageBoxButtons.OK);
       }
     }
   }

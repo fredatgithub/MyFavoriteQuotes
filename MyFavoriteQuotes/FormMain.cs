@@ -2157,6 +2157,7 @@ namespace MyFavoriteQuotes
       textBoxDuplicate.Text += $"There are {allQuotesWithDuplicate.ListOfQuotes.Count} quotes which are duplicate";
       textBoxDuplicate.Text += Environment.NewLine;
       textBoxDuplicate.Text += "The duplicate are:";
+      textBoxDuplicate.Text += Environment.NewLine;
       foreach (Quote item in allQuotesWithDuplicate.ToList())
       {
         textBoxDuplicate.Text += $"{item.Author} - {item.Sentence}";

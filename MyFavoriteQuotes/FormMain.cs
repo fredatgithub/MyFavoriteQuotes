@@ -2107,8 +2107,7 @@ namespace MyFavoriteQuotes
 
     private void buttonDuplicate_Click(object sender, EventArgs e)
     {
-      textBoxDuplicate.Text = string.Empty;
-      textBoxDuplicate.Text += $"All quotes from Quotes.xml file has {_allQuotes.ListOfQuotes.Count} quotes";
+      textBoxDuplicate.Text = $"The Quotes.xml file has {_allQuotes.ListOfQuotes.Count} quotes";
       Quotes allQuotesWithDuplicate = new Quotes();
       // loading all quotes from the file quotes.xml
       if (!File.Exists(Settings.Default.QuoteFileName))

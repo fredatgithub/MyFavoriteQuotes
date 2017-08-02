@@ -1960,13 +1960,13 @@ namespace MyFavoriteQuotes
       textBoxStatQuotes.Text = string.Empty;
 
       int totalQuotes = _allQuotes.ToList().Count();
-      textBoxStatQuotes.Text += $"{totalQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(totalQuotes)}{Punctuation.OneSpace}{Translate("in total")}{Environment.NewLine}";
+      textBoxStatQuotes.Text += $"{totalQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Pluralize(totalQuotes)}{Punctuation.OneSpace}{Translate("in total")}{Environment.NewLine}";
 
       int frenchQuotes = GetQuotesByLanguage(Language.French).Count();
-      textBoxStatQuotes.Text += $"{frenchQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(frenchQuotes)}{Punctuation.OneSpace}{Translate("in French")}{Environment.NewLine}";
+      textBoxStatQuotes.Text += $"{frenchQuotes}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Pluralize(frenchQuotes)}{Punctuation.OneSpace}{Translate("in French")}{Environment.NewLine}";
 
       int englishQuotesNumber = GetQuotesByLanguage().Count();
-      string tmpQuote = $"{englishQuotesNumber}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(englishQuotesNumber)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}";
+      string tmpQuote = $"{englishQuotesNumber}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Pluralize(englishQuotesNumber)}{Punctuation.OneSpace}{Translate("in English")}{Environment.NewLine}";
       textBoxStatQuotes.Text += tmpQuote;
       int tmpQuoteLenght = tmpQuote.Length;
 
@@ -1993,7 +1993,7 @@ namespace MyFavoriteQuotes
       foreach (KeyValuePair<string, int> quote in allQuotes)
       {
         lastQuote =
-          $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(quote.Value)}{Environment.NewLine}";
+          $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Pluralize(quote.Value)}{Environment.NewLine}";
         textBoxStatQuotes.Text += lastQuote;
       }
 
@@ -2006,7 +2006,7 @@ namespace MyFavoriteQuotes
       foreach (KeyValuePair<string, int> quote in allQuotes)
       {
         textBoxStatQuotes.Text +=
-          $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Plural(quote.Value)}{Environment.NewLine}";
+          $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Pluralize(quote.Value)}{Environment.NewLine}";
       }
     }
 
@@ -2156,20 +2156,20 @@ namespace MyFavoriteQuotes
           allQuotesWithDuplicate.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
         }
       }
-
+      //TODO add translate method for the following terms
       textBoxDuplicate.Text += Environment.NewLine;
-      textBoxDuplicate.Text += $"There are {allQuotesWithDuplicate.ListOfQuotes.Count} quotes which are duplicate";
+      textBoxDuplicate.Text += $"There are {allQuotesWithDuplicate.ListOfQuotes.Count} quote{Punctuation.Pluralize(allQuotesWithDuplicate.ListOfQuotes.Count)} which are duplicate";
       textBoxDuplicate.Text += Environment.NewLine;
-      textBoxDuplicate.Text += "The duplicate are:";
-      textBoxDuplicate.Text += Environment.NewLine;
-      foreach (Quote item in allQuotesWithDuplicate.ToList())
-      {
-        textBoxDuplicate.Text += $"{item.Author} - {item.Sentence}";
-        textBoxDuplicate.Text += Environment.NewLine;
-      }
-
       if (allQuotesWithDuplicate.ListOfQuotes.Count > 0)
       {
+        textBoxDuplicate.Text += "The duplicate are:";
+        textBoxDuplicate.Text += Environment.NewLine;
+        foreach (Quote item in allQuotesWithDuplicate.ToList())
+        {
+          textBoxDuplicate.Text += $"{item.Author} - {item.Sentence}";
+          textBoxDuplicate.Text += Environment.NewLine;
+        }
+
         DisplayMessageOk($"{Translate("You should clean the file")}{Punctuation.OneSpace}{Settings.Default.QuoteFileName}", Translate("Cleaning needed"), MessageBoxButtons.OK);
       }
     }

@@ -6,6 +6,7 @@
     AllLowerCase,
     AllUpperCase,
     StartWithUpperCaseOnly,
-    PascalCase
+    PascalCase,
+    CamelCase
   }
 }

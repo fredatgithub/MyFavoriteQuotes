@@ -28,6 +28,7 @@ namespace MyFavoriteQuotes
     private readonly Quotes _allQuotes = new Quotes();
     private string _currentLanguage = "english";
     private int _numberOfQuoteFiles = 0;
+    private List<string> ListOfQuoteFiles = new List<string>();
 
     private bool _searchAll;
     private bool _searchAuthor;
@@ -153,7 +154,8 @@ namespace MyFavoriteQuotes
 
     private void CountQuotefiles()
     {
-
+      // TODO count the number of files in Settings.Default.QuoteFileDirectoryName 
+      // and add them in a list
     }
 
     private void LoadQuotes()
@@ -218,7 +220,7 @@ namespace MyFavoriteQuotes
       }
       catch (Exception exception)
       {
-        DisplayMessageOk($"There was an error while trying to create the directory {Settings.Default.QuoteFileDirectoryName}. The exception is {exception.Message}", Translate("Error"), MessageBoxButtons.OK);
+        DisplayMessageOk($"There was an error while trying to create the directory {Settings.Default.QuoteFileDirectoryName}{Punctuation.Period} The exception is {exception.Message}", Translate("Error"), MessageBoxButtons.OK);
       }
     }
 

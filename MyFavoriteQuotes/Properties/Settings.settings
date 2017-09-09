@@ -77,5 +77,8 @@
     <Setting Name="UnknownAuthor" Type="System.String" Scope="User">
       <Value Profile="(Default)">unknown author</Value>
     </Setting>
+    <Setting Name="QuoteFileDirectoryName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Quote_files</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

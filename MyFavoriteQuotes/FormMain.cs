@@ -27,6 +27,7 @@ namespace MyFavoriteQuotes
     private string _lastSaveLocation = string.Empty;
     private readonly Quotes _allQuotes = new Quotes();
     private string _currentLanguage = "english";
+    private int _numberOfQuoteFiles = 0;
 
     private bool _searchAll;
     private bool _searchAuthor;
@@ -71,7 +72,7 @@ namespace MyFavoriteQuotes
       return result;
     }
 
-    private string Translate(string index)
+    private string Translate(string word)
     {
       string result = string.Empty;
       string language = frenchToolStripMenuItem.Checked ? "french" : "english";
@@ -79,10 +80,10 @@ namespace MyFavoriteQuotes
       switch (language.ToLower())
       {
         case "english":
-          result = _languageDicoEn[index];
+          result = _languageDicoEn[word];
           break;
         case "french":
-          result = _languageDicoFr[index];
+          result = _languageDicoFr[word];
           break;
       }
 
@@ -125,11 +126,12 @@ namespace MyFavoriteQuotes
       GeControlParametersValue();
       LoadLanguages();
       SetLanguage(Settings.Default.LastLanguageUsed);
+      CountQuotefiles();
       LoadQuotes();
       DisplayAllQuotes();
       EnableDisableMenu();
     }
-
+     
     private void EnableDisableMenu()
     {
       saveToolStripMenuItem.Enabled = !_allQuotes.QuoteFileSaved;
@@ -149,10 +151,15 @@ namespace MyFavoriteQuotes
       textBoxListQuotes.Select(0, 0);
     }
 
+    private void CountQuotefiles()
+    {
+
+    }
+
     private void LoadQuotes()
     {
       // loading all quotes from all the files quoteX.xml in the folder Quote_files
-      if (!Directory.Exists("Quote_files")) // put name in settings TODO
+      if (!Directory.Exists(Settings.Default.QuoteFileDirectoryName))
       {
         CreateQuoteDirectory();
       }
@@ -205,7 +212,14 @@ namespace MyFavoriteQuotes
 
     private void CreateQuoteDirectory()
     {
-      throw new NotImplementedException();
+      try
+      {
+        Directory.CreateDirectory(Settings.Default.QuoteFileDirectoryName);
+      }
+      catch (Exception exception)
+      {
+        DisplayMessageOk($"There was an error while trying to create the directory {Settings.Default.QuoteFileDirectoryName}. The exception is {exception.Message}", Translate("Error"), MessageBoxButtons.OK);
+      }
     }
 
     private void CreateQuotesFile()
@@ -700,6 +714,7 @@ namespace MyFavoriteQuotes
 
       sw.Close();
       _allQuotes.QuoteFileSaved = true;
+      _numberOfQuoteFiles = 1;
     }
 
     private void LoadLanguages()

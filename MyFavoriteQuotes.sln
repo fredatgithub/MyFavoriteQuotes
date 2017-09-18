@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestApplication", "Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAndAddQuotes", "SearchAndAddQuotes\SearchAndAddQuotes.csproj", "{12896B4C-9A86-4252-BE5A-97BF5ECA627E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitXmlFile", "SplitXmlFile\SplitXmlFile.csproj", "{40990B76-17B2-4C37-AB74-A426A626B82D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{12896B4C-9A86-4252-BE5A-97BF5ECA627E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12896B4C-9A86-4252-BE5A-97BF5ECA627E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12896B4C-9A86-4252-BE5A-97BF5ECA627E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40990B76-17B2-4C37-AB74-A426A626B82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40990B76-17B2-4C37-AB74-A426A626B82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40990B76-17B2-4C37-AB74-A426A626B82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40990B76-17B2-4C37-AB74-A426A626B82D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

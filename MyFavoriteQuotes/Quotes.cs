@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace MyFavoriteQuotes
 {
@@ -70,12 +71,9 @@ namespace MyFavoriteQuotes
     public bool Contains(Quote oneQuote)
     {
       bool result = false;
-      foreach (Quote item in this.ListOfQuotes)
+      if (ListOfQuotes.Any(item => oneQuote.Sentence == item.Sentence))
       {
-        if (oneQuote.Sentence == item.Sentence)
-        {
-          return true;
-        }
+        return true;
       }
 
       return result;

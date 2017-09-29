@@ -5,11 +5,11 @@
     <Language>French</Language>
     <QuoteValue>Dans la vie on ne fait pas ce que l'on veut mais on est responsable de ce que l'on est</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Il vaut mieux être ivre de bonheur qu'ivre de bonne heure</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

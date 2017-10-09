@@ -132,7 +132,7 @@ namespace MyFavoriteQuotes
       DisplayAllQuotes();
       EnableDisableMenu();
     }
-     
+
     private void EnableDisableMenu()
     {
       saveToolStripMenuItem.Enabled = !_allQuotes.QuoteFileSaved;
@@ -141,18 +141,19 @@ namespace MyFavoriteQuotes
 
     private void DisplayAllQuotes()
     {
-      checkBoxListAll.Checked = true;
+      //checkBoxListAll.Checked = true;
       textBoxListQuotes.Text = string.Empty;
+      string spaceDashSpace = Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace;
       foreach (var item in _allQuotes.ToList())
       {
-        textBoxListQuotes.Text += item.Sentence + Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace +
-          item.Author + Environment.NewLine;
+        textBoxListQuotes.Text += $"{item.Sentence}{spaceDashSpace}{item.Author}{Environment.NewLine}";
+        Application.DoEvents();
       }
 
       textBoxListQuotes.Select(0, 0);
     }
 
-    private void CountQuotefiles()
+    private static void CountQuotefiles()
     {
       // TODO count the number of files in Settings.Default.QuoteFileDirectoryName 
       // and add them in a list
@@ -166,7 +167,7 @@ namespace MyFavoriteQuotes
         CreateQuoteDirectory();
       }
 
-      if (!File.Exists(Settings.Default.QuoteFileName))
+      if (!File.Exists(Path.Combine(Settings.Default.QuoteFileDirectoryName, Settings.Default.QuoteFileName)))
       {
         CreateQuotesFile();
       }
@@ -174,7 +175,7 @@ namespace MyFavoriteQuotes
       XDocument xmlDoc;
       try
       {
-        xmlDoc = XDocument.Load(Settings.Default.QuoteFileName);
+        xmlDoc = XDocument.Load(Path.Combine(Settings.Default.QuoteFileDirectoryName, Settings.Default.QuoteFileName));
       }
       catch (Exception exception)
       {

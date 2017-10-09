@@ -133,7 +133,7 @@ namespace MyFavoriteQuotes.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Quotes.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Quote1.xml")]
         public string QuoteFileName {
             get {
                 return ((string)(this["QuoteFileName"]));

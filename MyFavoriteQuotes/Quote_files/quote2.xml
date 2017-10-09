@@ -10,6 +10,21 @@
     <Language>French</Language>
     <QuoteValue>Il vaut mieux être ivre de bonheur qu'ivre de bonne heure</QuoteValue>
   </Quote>
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Toutes les femmes ont besoin d'un homme ui ruine leur rouge à lèvres et non leur mascara</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Faute de vivre, on finit par mourir</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Mourir, c'est mal poli car c'est un manque de savoir vivre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>
@@ -130,24 +145,9 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
   <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->  
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->  
 </Quotes>

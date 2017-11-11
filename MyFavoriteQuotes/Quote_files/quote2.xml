@@ -70,11 +70,11 @@
     <Language>French</Language>
     <QuoteValue>L'honnnêteté dans les petites choses n'est pas une petite chose</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Le rire est le médicament le moins cher au monde, prenez-en de fortes doses</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

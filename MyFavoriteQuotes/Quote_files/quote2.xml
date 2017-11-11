@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Quotes>
   <Quote>
     <Author>Jean-Paul Sartre</Author>
@@ -55,21 +55,21 @@
     <Language>French</Language>
     <QuoteValue>Osez l'amour, osez les projets, osez l'aventure et osez la vie</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Qui a la simplicité dans le coeur a toujours un sourire à offrir</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Jacques Brel</Author>
+    <Language>French</Language>
+    <QuoteValue>je vous souhaite des rêves à n'en plus finir et l'envie furieuse d'en réaliser quelqu'uns</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>L'honnnêteté dans les petites choses n'est pas une petite chose</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

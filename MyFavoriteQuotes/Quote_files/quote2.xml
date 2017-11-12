@@ -75,16 +75,16 @@
     <Language>French</Language>
     <QuoteValue>Le rire est le médicament le moins cher au monde, prenez-en de fortes doses</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Friedrich Nietzsche</Author>
+    <Language>French</Language>
+    <QuoteValue>Il faut avoir une musique en soi pour faire danser le monde</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>English</Language>
+    <QuoteValue>Think, it is not illegal yet</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

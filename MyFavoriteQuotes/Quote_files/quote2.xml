@@ -85,11 +85,11 @@
     <Language>English</Language>
     <QuoteValue>Think, it is not illegal yet</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Je suis amoureux de la vie, marié avec le bonheur, amant de la joie, divorcé avec la tristesse, de temps en temps, je me permets un peu de folie</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -95,11 +95,11 @@
     <Language>Frenh</Language>
     <QuoteValue>L’ennui dans ce monde, c’est que les idiots sont sûrs d’eux et les gens sensés pleins de doutes</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>William Shakespeare</Author>
+    <Language>French</Language>
+    <QuoteValue>Avant tout, sois loyal envers toi-même ; et aussi infailliblement que la nuit suit le jour, tu ne pourras être déloyal envers personne</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

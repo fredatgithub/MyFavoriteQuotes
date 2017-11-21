@@ -100,11 +100,11 @@
     <Language>French</Language>
     <QuoteValue>Avant tout, sois loyal envers toi-même ; et aussi infailliblement que la nuit suit le jour, tu ne pourras être déloyal envers personne</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Lao Tseu</Author>
+    <Language>French</Language>
+    <QuoteValue>Connaitre les autres, c'est sagesse mais connaitre soi-même, c'est sagesse supérieure</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

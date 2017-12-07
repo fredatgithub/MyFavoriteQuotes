@@ -115,11 +115,11 @@
     <Language>French</Language>
     <QuoteValue>Don't be pushed by your problems, be led by your dreams</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand on pense négativement, on trouve des problèmes partout et quand on pense positivement, on trouve des solutions à tout</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

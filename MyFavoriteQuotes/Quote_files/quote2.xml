@@ -125,11 +125,11 @@
     <Language>French</Language>
     <QuoteValue>L'oreiller le plus confortable est une conscience tranquille</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>English</Language>
+    <QuoteValue>I'm independent, I'm unique, I'm goofy, I'm loyal, I'm me, no regrets</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

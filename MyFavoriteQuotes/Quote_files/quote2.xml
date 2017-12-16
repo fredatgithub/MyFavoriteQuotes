@@ -130,11 +130,11 @@
     <Language>English</Language>
     <QuoteValue>I'm independent, I'm unique, I'm goofy, I'm loyal, I'm me, no regrets</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Rester, c'est exister mais voyager, c'est vivre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

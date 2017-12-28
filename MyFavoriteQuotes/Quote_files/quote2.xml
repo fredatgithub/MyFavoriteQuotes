@@ -145,11 +145,11 @@
     <Language>French</Language>
     <QuoteValue>Il n'y a qu'une personne avec qui vous serez toute votre vie et c'est vous-même. Prenez-en soin.</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Lewis Caroll</Author>
+    <Language>French</Language>
+    <QuoteValue>Mais alors, dit Alice, si le monde n'a absolument aucun sens, qui nous empêche d'en inventer un ?</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

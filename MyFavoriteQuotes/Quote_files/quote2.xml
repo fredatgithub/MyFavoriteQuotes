@@ -150,11 +150,11 @@
     <Language>French</Language>
     <QuoteValue>Mais alors, dit Alice, si le monde n'a absolument aucun sens, qui nous empêche d'en inventer un ?</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Charlie Chaplin</Author>
+    <Language>French</Language>
+    <QuoteValue>Préoccupe-toi plus de ta conscience que de ta réputation. Parce que ta conscience est ce que tu es, alors que ta réputation est ce que les autres pensent de toi. Et ce que les autres pensent de toi, est leur problème</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

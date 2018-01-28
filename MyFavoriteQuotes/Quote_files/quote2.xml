@@ -180,11 +180,11 @@
     <Language>English</Language>
     <QuoteValue>Soon, when all is well, you're going to look back on this period of your life and be so glad that you never gave up</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Frédéric Bastiat</Author>
+    <Language>English</Language>
+    <QuoteValue>By virtue of exchange one's man prosperity is beneficial to all others</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

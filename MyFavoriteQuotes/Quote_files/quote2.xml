@@ -185,11 +185,11 @@
     <Language>English</Language>
     <QuoteValue>By virtue of exchange one's man prosperity is beneficial to all others</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Quand tu sais quelque chose, tu n'as pas besoin de reconnaissance</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

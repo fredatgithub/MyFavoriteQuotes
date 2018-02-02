@@ -190,16 +190,16 @@
     <Language>French</Language>
     <QuoteValue>Quand tu sais quelque chose, tu n'as pas besoin de reconnaissance</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Virginia Woolf</Author>
+    <Language>English</Language>
+    <QuoteValue>Once she knows how to read, there's only one thing you can teach her to believe in and that is herself</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Ursula K. Le Guin</Author>
+    <Language>English</Language>
+    <QuoteValue>You cannot buy the revolution, you cannot make the revolution, you can only be the revolution, it is in your spirit or it is nowhere</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

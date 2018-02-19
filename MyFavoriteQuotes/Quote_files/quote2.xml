@@ -205,11 +205,11 @@
     <Language>english</Language>
     <QuoteValue>Happiness depends on you, don't expect someone else to give it to you</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Washington Irving</Author>
+    <Language>English</Language>
+    <QuoteValue>Little minds are tamed and subdued by misfortune; but great minds rise above them</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

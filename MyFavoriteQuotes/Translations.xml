@@ -1755,4 +1755,9 @@
     <englishValue>Duplicate</englishValue>
     <frenchValue>Doublon</frenchValue>
   </term>
+  <term>
+    <name>Update</name>
+    <englishValue>Update</englishValue>
+    <frenchValue>Mise à jour</frenchValue>
+  </term>
 </terms>

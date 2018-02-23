@@ -210,11 +210,11 @@
     <Language>English</Language>
     <QuoteValue>Little minds are tamed and subdued by misfortune; but great minds rise above them</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Albert Camus</Author>
+    <Language>English</Language>
+    <QuoteValue>The only way to deal with an unfree world is to become so absolutely free that you very existence is an act of rebellion</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

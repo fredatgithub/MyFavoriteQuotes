@@ -220,11 +220,11 @@
     <Language>English</Language>
     <QuoteValue>The world of reality has its limits; the world of imagination is boundless</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jean-Jacques Rousseau</Author>
+    <Language>English</Language>
+    <QuoteValue>I have always said and felt that true enjoyment can not be described</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

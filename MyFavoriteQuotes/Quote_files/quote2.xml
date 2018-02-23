@@ -215,11 +215,11 @@
     <Language>English</Language>
     <QuoteValue>The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Jean-Jacques Rousseau</Author>
+    <Language>English</Language>
+    <QuoteValue>The world of reality has its limits; the world of imagination is boundless</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 namespace SplitXmlFile
 {
   [Serializable()]
-  class Quote
+  public class Quote
   {
     [XmlElement()]
     public string Author { get; set; }

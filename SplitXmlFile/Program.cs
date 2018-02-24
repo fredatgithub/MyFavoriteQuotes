@@ -19,24 +19,11 @@ namespace SplitXmlFile
       string fileName = "quote1.xml";
       int startNumber = 3;
       int numberOfQuotePerFile = 250;
-      StringBuilder xmlFile = new StringBuilder();
-      xmlFile.Append(@"<?xml version=""1.0"" encoding=""utf-8"" ?>");
-      xmlFile.Append("<Quotes>");
-      xmlFile.Append("<Quote>");
-
-      //try
-      //{
-      //  using (TextReader reader = new StreamReader(fileName))
-      //  {
-      //    XmlSerializer serializer = new XmlSerializer(typeof(Quotes));
-      //    var list = (Quotes)serializer.Deserialize(reader);
-      //  }
-      //}
-      //catch (Exception exception)
-      //{
-      //  Console.WriteLine(exception);
-      //}
-
+      StringBuilder xmlFileHeader = new StringBuilder();
+      xmlFileHeader.Append(@"<?xml version=""1.0"" encoding=""utf-8"" ?>");
+      xmlFileHeader.Append("<Quotes>");
+      //xmlFileHeader.Append("<Quote>");
+      
       XDocument xmlDoc;
       try
       {
@@ -74,6 +61,11 @@ namespace SplitXmlFile
         }
       }
 
+      int counter = 0;
+      for (int i = 0; i < _allQuotes.ListOfQuotes.Count; i++)
+      {
+        
+      }
 
       display("Press any key to exit:");
       Console.ReadKey();

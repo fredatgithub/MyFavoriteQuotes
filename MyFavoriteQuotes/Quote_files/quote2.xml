@@ -225,11 +225,11 @@
     <Language>English</Language>
     <QuoteValue>I have always said and felt that true enjoyment can not be described</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Gandhi</Author>
+    <Language>Français</Language>
+    <QuoteValue>le monde est assez grand pour satisfaire le besoin de tous mais sera toujours trop petit pour satisfaire l'avidité de quelqu'uns</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

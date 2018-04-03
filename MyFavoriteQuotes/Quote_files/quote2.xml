@@ -230,11 +230,11 @@
     <Language>Français</Language>
     <QuoteValue>le monde est assez grand pour satisfaire le besoin de tous mais sera toujours trop petit pour satisfaire l'avidité de quelqu'uns</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonyme</Author>
+    <Language>French</Language>
+    <QuoteValue>Faire des erreurs, c'est humain et pardonner, c'est divin</QuoteValue>
+  </Quote>
     <!--<Quote>
       <Author></Author>
       <Language></Language>

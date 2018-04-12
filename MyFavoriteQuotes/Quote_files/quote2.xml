@@ -235,11 +235,11 @@
     <Language>French</Language>
     <QuoteValue>Faire des erreurs, c'est humain et pardonner, c'est divin</QuoteValue>
   </Quote>
-    <!--<Quote>
-      <Author></Author>
-      <Language></Language>
-      <QuoteValue></QuoteValue>
-    </Quote>-->
+    <Quote>
+      <Author>Robert Kiyosaki</Author>
+      <Language>English</Language>
+      <QuoteValue>Don’t be addicted to money. Work to learn. Don’t work for money. Work for knowledge</QuoteValue>
+    </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

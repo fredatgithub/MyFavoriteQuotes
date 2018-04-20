@@ -22,7 +22,7 @@ namespace SplitXmlFile
       xmlFileHeaderStringBuilder.Append("<Quotes>");
       xmlFileHeaderStringBuilder.Append(Environment.NewLine);
       string xmlFileHeader = xmlFileHeaderStringBuilder.ToString();
-      string xmlFileFooter =$"</Quote>{Environment.NewLine}";
+      string xmlFileFooter =$"</Quotes>{Environment.NewLine}";
 
       XDocument xmlDoc;
       try
@@ -86,13 +86,14 @@ namespace SplitXmlFile
             sw.WriteLine($"{tempQuotefile}{xmlFileFooter}");
           }
 
+          display($"The file {ReplaceNumber(fileName, FileNumberCounter)} has been written");
           FileNumberCounter++;
           tempQuotefile = xmlFileHeader;
           quoteCounter = 0;
         }
       }
-      
 
+      display($"The separation of the file {fileName} has been done into {FileNumberCounter} files");
       display("Press any key to exit:");
       Console.ReadKey();
     }

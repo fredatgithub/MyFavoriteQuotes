@@ -2118,7 +2118,7 @@ namespace MyFavoriteQuotes
     {
       textBoxDuplicate.Text = $"The Quotes.xml file has {_allQuotes.ListOfQuotes.Count} quotes";
       Quotes allQuotesWithDuplicate = new Quotes();
-      // loading all quotes from the file quotes.xml
+      // loading all quotes from all the quote files in Quote_files directory
       if (!File.Exists(Settings.Default.QuoteFileName))
       {
         CreateQuotesFile();

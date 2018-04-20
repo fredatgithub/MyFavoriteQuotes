@@ -93,7 +93,7 @@ namespace SplitXmlFile
         }
       }
 
-      display($"The separation of the file {fileName} has been done into {FileNumberCounter} files");
+      display($"The separation of the file {fileName} has been done into {FileNumberCounter - 1} files");
       display("Press any key to exit:");
       Console.ReadKey();
     }

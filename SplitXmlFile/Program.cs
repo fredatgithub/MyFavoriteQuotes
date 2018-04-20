@@ -3,9 +3,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
-using System.Xml.Serialization;
-using MyFavoriteQuotes.Properties;
-using Tools;
 
 namespace SplitXmlFile
 {
@@ -16,14 +13,17 @@ namespace SplitXmlFile
       Action<string> display = Console.WriteLine;
       display("séparation d'un gros fichier xml en plusieurs petits");
       //string fileName = "Quote_files\\quote1.xml";
-      string fileName = "quote1.xml";
-      int startNumber = 3;
+      const string fileName = "quote1.xml";
+      const int startNumber = 3;
       int numberOfQuotePerFile = 250;
-      StringBuilder xmlFileHeader = new StringBuilder();
-      xmlFileHeader.Append(@"<?xml version=""1.0"" encoding=""utf-8"" ?>");
-      xmlFileHeader.Append("<Quotes>");
-      //xmlFileHeader.Append("<Quote>");
-      
+      StringBuilder xmlFileHeaderStringBuilder = new StringBuilder();
+      xmlFileHeaderStringBuilder.Append(@"<?xml version=""1.0"" encoding=""utf-8"" ?>");
+      xmlFileHeaderStringBuilder.Append(Environment.NewLine);
+      xmlFileHeaderStringBuilder.Append("<Quotes>");
+      xmlFileHeaderStringBuilder.Append(Environment.NewLine);
+      string xmlFileHeader = xmlFileHeaderStringBuilder.ToString();
+      string xmlFileFooter =$"</Quote>{Environment.NewLine}";
+
       XDocument xmlDoc;
       try
       {
@@ -52,6 +52,7 @@ namespace SplitXmlFile
 
       Quotes _allQuotes = new Quotes();
 
+      int duplicateQuote = 0;
       foreach (var q in result)
       {
         if (!_allQuotes.ListOfQuotes.Contains(new Quote(q.authorValue, q.languageValue, q.sentenceValue)) &&
@@ -59,16 +60,51 @@ namespace SplitXmlFile
         {
           _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
         }
+        else
+        {
+          duplicateQuote++;
+        }
       }
 
-      int counter = 0;
-      for (int i = 0; i < _allQuotes.ListOfQuotes.Count; i++)
+      display($"there is {duplicateQuote} duplicate quote{Plural(duplicateQuote)} found");
+
+      int quoteCounter = 0;
+      int FileNumberCounter = startNumber;
+      string tempQuotefile = xmlFileHeader;
+      foreach (Quote oneQuote in _allQuotes.ToList())
       {
-        
+        if (quoteCounter < numberOfQuotePerFile)
+        {
+          tempQuotefile += oneQuote.ToString();
+          quoteCounter++;
+        }
+        else
+        {
+          //write tempquote file and empty it
+          using (StreamWriter sw = new StreamWriter(ReplaceNumber(fileName, FileNumberCounter)))
+          {
+            sw.WriteLine($"{tempQuotefile}{xmlFileFooter}");
+          }
+
+          FileNumberCounter++;
+          tempQuotefile = xmlFileHeader;
+          quoteCounter = 0;
+        }
       }
+      
 
       display("Press any key to exit:");
       Console.ReadKey();
+    }
+
+    private static string ReplaceNumber(string fileName, int fileNumberCounter)
+    {
+      return fileName.Replace("1", fileNumberCounter.ToString());
+    }
+
+    private static string Plural(int duplicateQuote)
+    {
+      return duplicateQuote > 1 ? "s" : string.Empty;
     }
   }
 }

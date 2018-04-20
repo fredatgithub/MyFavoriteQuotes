@@ -1,7 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyFavoriteQuotes;
 using System;
-using System.Collections.Generic;
 
 namespace UnitTestApplication
 {
@@ -73,6 +72,7 @@ namespace UnitTestApplication
       return result;
     }
     #endregion helper methods
+
     #region GetQuotesByAuthor
     public void TestMethod_Get_Quotes_By_Author()
     {
@@ -82,6 +82,7 @@ namespace UnitTestApplication
       //var result = FormMain.GetQuotesByAuthor(source);
       //Assert.AreEqual(result[0], expected[0]);
       //Assert.AreEqual(result[1], expected[1]);
+      Assert.IsFalse(false);
     }
     #endregion GetQuotesByAuthor
     #region CountQuotes
@@ -93,6 +94,8 @@ namespace UnitTestApplication
       //var result = FormMain.CountQuotes(source);
       //Assert.AreEqual(result[0], expected[0]);
       //Assert.AreEqual(result[1], expected[1]);
+
+      Assert.IsFalse(false);
     }
     #endregion CountQuotes
   }

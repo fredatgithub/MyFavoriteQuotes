@@ -1,4 +1,7 @@
 ﻿#define DEBUG
+using MyFavoriteQuotes.Enums;
+using MyFavoriteQuotes.Properties;
+using Tools;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,9 +12,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
-using MyFavoriteQuotes.Enums;
-using MyFavoriteQuotes.Properties;
-using Tools;
 
 namespace MyFavoriteQuotes
 {

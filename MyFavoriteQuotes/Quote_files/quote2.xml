@@ -1,923 +1,1254 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Quotes>
-  <Quote>
-    <Author>Jean-Paul Sartre</Author>
-    <Language>French</Language>
-    <QuoteValue>Dans la vie on ne fait pas ce que l'on veut mais on est responsable de ce que l'on est</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Il vaut mieux être ivre de bonheur qu'ivre de bonne heure</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Toutes les femmes ont besoin d'un homme qui ruine leur rouge à lèvres et non leur mascara</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Faute de vivre, on finit par mourir</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Mourir, c'est mal poli car c'est un manque de savoir vivre</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>Where there is love, there is life</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Jean Cocteau</Author>
-    <Language>French</Language>
-    <QuoteValue>Qu'est-ce que vous direz quand vous arriverai au paradis ? Remboursez-moi, j'ai rien compris</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>quand vous avez de l'eau jusqu'au coup, qu'est-ce qu'il vous reste à faire ? chanter</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>LIFE is beautiful, break the RULES, FORGIVE quickly, KISS slowly, LOVE truly, LAUGH uncontrollably and NEVER REGRET anthing that made you SMILE</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>How to stop time: kiss. How to travel in time: read. How to escape time: music. How to feel time: write. How to release time: breath.</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Osez l'amour, osez les projets, osez l'aventure et osez la vie</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Qui a la simplicité dans le coeur a toujours un sourire à offrir</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Jacques Brel</Author>
-    <Language>French</Language>
-    <QuoteValue>je vous souhaite des rêves à n'en plus finir et l'envie furieuse d'en réaliser quelqu'uns</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>L'honnnêteté dans les petites choses n'est pas une petite chose</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Le rire est le médicament le moins cher au monde, prenez-en de fortes doses</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Friedrich Nietzsche</Author>
-    <Language>French</Language>
-    <QuoteValue>Il faut avoir une musique en soi pour faire danser le monde</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>Think, it is not illegal yet</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Je suis amoureux de la vie, marié avec le bonheur, amant de la joie, divorcé avec la tristesse, de temps en temps, je me permets un peu de folie</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Bertrand Russell</Author>
-    <Language>Frenh</Language>
-    <QuoteValue>L’ennui dans ce monde, c’est que les idiots sont sûrs d’eux et les gens sensés pleins de doutes</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>William Shakespeare</Author>
-    <Language>French</Language>
-    <QuoteValue>Avant tout, sois loyal envers toi-même ; et aussi infailliblement que la nuit suit le jour, tu ne pourras être déloyal envers personne</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Lao Tseu</Author>
-    <Language>French</Language>
-    <QuoteValue>Connaitre les autres, c'est sagesse mais connaitre soi-même, c'est sagesse supérieure</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>There is no cloud, it's just someone else's computer</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Don't be pushed by your problems, be led by your dreams</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Quand on pense négativement, on trouve des problèmes partout et quand on pense positivement, on trouve des solutions à tout</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>L'oreiller le plus confortable est une conscience tranquille</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>I'm independent, I'm unique, I'm goofy, I'm loyal, I'm me, no regrets</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Rester, c'est exister mais voyager, c'est vivre</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Le secret pour être heureux, c'est d'être chaque jour amoureux de la vie</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Il n'y a qu'une personne avec qui vous serez toute votre vie et c'est vous-même. Prenez-en soin.</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Lewis Caroll</Author>
-    <Language>French</Language>
-    <QuoteValue>Mais alors, dit Alice, si le monde n'a absolument aucun sens, qui nous empêche d'en inventer un ?</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Charlie Chaplin</Author>
-    <Language>French</Language>
-    <QuoteValue>Préoccupe-toi plus de ta conscience que de ta réputation. Parce que ta conscience est ce que tu es, alors que ta réputation est ce que les autres pensent de toi. Et ce que les autres pensent de toi, est leur problème</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Une pomme par jour peut éloigner n'importe qui ; si tu la lances assez fort</QuoteValue>
-  </Quote>
-    <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Une femme peut être ton bébé, ta princesse, ta vie, ton amour mais jamais ton jouet</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Frédéric Bastiat</Author>
-    <Language>English</Language>
-    <QuoteValue>By virtue of exchange, one man's prosperity is beneficial to all others</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Freddy Juhel</Author>
-    <Language>English</Language>
-    <QuoteValue>We are not made by history. We are makers of history</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>Soon, when all is well, you're going to look back on this period of your life and be so glad that you never gave up</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Frédéric Bastiat</Author>
-    <Language>English</Language>
-    <QuoteValue>By virtue of exchange one's man prosperity is beneficial to all others</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Quand tu sais quelque chose, tu n'as pas besoin de reconnaissance</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Virginia Woolf</Author>
-    <Language>English</Language>
-    <QuoteValue>Once she knows how to read, there's only one thing you can teach her to believe in and that is herself</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Ursula K. Le Guin</Author>
-    <Language>English</Language>
-    <QuoteValue>You cannot buy the revolution, you cannot make the revolution, you can only be the revolution, it is in your spirit or it is nowhere</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Deion</Author>
-    <Language>english</Language>
-    <QuoteValue>Happiness depends on you, don't expect someone else to give it to you</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Washington Irving</Author>
-    <Language>English</Language>
-    <QuoteValue>Little minds are tamed and subdued by misfortune; but great minds rise above them</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Albert Camus</Author>
-    <Language>English</Language>
-    <QuoteValue>The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Jean-Jacques Rousseau</Author>
-    <Language>English</Language>
-    <QuoteValue>The world of reality has its limits; the world of imagination is boundless</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Jean-Jacques Rousseau</Author>
-    <Language>English</Language>
-    <QuoteValue>I have always said and felt that true enjoyment can not be described</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Gandhi</Author>
-    <Language>Français</Language>
-    <QuoteValue>le monde est assez grand pour satisfaire le besoin de tous mais sera toujours trop petit pour satisfaire l'avidité de quelqu'uns</QuoteValue>
-  </Quote>
-  <Quote>
-    <Author>Anonyme</Author>
-    <Language>French</Language>
-    <QuoteValue>Faire des erreurs, c'est humain et pardonner, c'est divin</QuoteValue>
-  </Quote>
-    <Quote>
-      <Author>Robert Kiyosaki</Author>
-      <Language>English</Language>
-      <QuoteValue>Don’t be addicted to money. Work to learn. Don’t work for money. Work for knowledge</QuoteValue>
-    </Quote>
-  <Quote>
-    <Author>Anonymous</Author>
-    <Language>English</Language>
-    <QuoteValue>Well, the female body is a… work of art. The male body is utilitarian</QuoteValue>
-  </Quote>
-   <Quote>
-    <Author>Benjamin Jowett</Author>
-    <Language>English</Language>
-    <QuoteValue>Never retreat. Never explain. Get it done and let them howl</QuoteValue>
-  </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-    <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-    <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+<Quote>
+<Author>David Abiker</Author>
+<Language>French</Language>
+<QuoteValue>Il nous faudrait quelqu’un de la trempe de Ramsay Bolton (Game of Thrones) pour rétablir l’ordre, la sécurité et le patriarcat</QuoteValue>
+</Quote>
+<Quote>
+<Author>Albert Einstein</Author>
+<Language>French</Language>
+<QuoteValue>Je ne dors pas longtemps, mais je dors vite</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Je ne cherche pas à connaître les réponses, je cherche à comprendre les questions</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Nulle pierre ne peut être polie sans friction, nul homme ne peut parfaire son expérience sans épreuve</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>L'homme de bien ne demande rien qu'à lui-même ; l'homme de peu demande tout aux autres</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Notre plus grande gloire n'est point de tomber, mais de savoir nous relever chaque fois que nous tombons</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Pas trop d'isolement ; pas trop de relations ; le juste milieu, voilà la sagesse</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Examine si ce que tu promets est juste et possible, car la promesse est une dette</QuoteValue>
+</Quote>
+<Quote>
+<Author>Gore Vedal</Author>
+<Language>French</Language>
+<QuoteValue>Le style, c’est de savoir qui vous êtes, ce que vous voulez dire, et de se ficher de tout</QuoteValue>
+</Quote>
+<Quote>
+<Author>Léo Ferré</Author>
+<Language>French</Language>
+<QuoteValue>Quand il nous arrive de diverger dans nos élucubrations, on se tape dessus, à coup de plume, toujours. Léo Ferré à André Breton</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Si tu rencontres un homme de valeur, cherche à lui ressembler. Si tu rencontres un homme médiocre, cherche ses défauts en toi-même</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>L'expérience est une lanterne attachée dans notre dos, qui n'éclaire que le chemin parcouru</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Ne vous souciez pas de n'être pas remarqué ; cherchez plutôt à faire quelque chose de remarquable</QuoteValue>
+</Quote>
+<Quote>
+<Author>Joseph Staline</Author>
+<Language>French</Language>
+<QuoteValue>La pire erreur que vous puissiez faire, c'est de minimiser l'ennemi</QuoteValue>
+</Quote>
+<Quote>
+<Author>Etienne Jalenques</Author>
+<Language>French</Language>
+<QuoteValue>Au lieu de te plaindre du noir de la pièce, va donc chercher une bougie</QuoteValue>
+</Quote>
+<Quote>
+<Author>Alexandre Jardin</Author>
+<Language>French</Language>
+<QuoteValue>Définitivement, la joie est le baromètre de tout. Même la part de joie que contient toute colère</QuoteValue>
+</Quote>
+<Quote>
+<Author>Joseph Stalin</Author>
+<Language>English</Language>
+<QuoteValue>I believe in one thing only, the power of human will</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Nous sommes frères par la nature, mais étrangers par l'éducation</QuoteValue>
+</Quote>
+<Quote>
+<Author>Joseph Stalin</Author>
+<Language>English</Language>
+<QuoteValue>When we hang the capitalists they will sell us the rope we use</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Que l'on s'efforce d'être pleinement humain et il n'y aura plus de place pour le mal</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Celui qui ne progresse pas chaque jour, recule chaque jour</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>La conscience est la lumière de l'intelligence pour distinguer le bien du mal</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Quand on ne sait pas ce qu'est la vie, comment pourrait-on savoir ce qu'est la mort ?</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Ne vous souciez pas d'être sans emploi ; souciez-vous plutôt d'être digne d'un emploi</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Il faut se garder de trois fautes : parler sans y être invité, ce qui est impertinence ; ne pas parler quand on y est invité, ce qui est de la dissimulation ; parler sans observer les réactions de l'autre, ce qui est de l'aveuglement</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>Three things cannot be long hidden: the sun, the moon, and the truth</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>La vie de l'homme dépend de sa volonté ; sans volonté, elle serait abandonnée au hasard</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>You can search throughout the entire universe for someone who is more deserving of your love and affection than you are yourself, and that person is not to be found anywhere. You yourself, as much as anybody in the entire universe deserve your love and affection</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>No one saves us but ourselves. No one can and no one may. We ourselves must walk the path</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>You will not be punished for your anger, you will be punished by your anger</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Quand un homme a faim, mieux vaut lui apprendre à pêcher que de lui donner un poisson</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Le père qui n'enseigne pas ses devoirs à son fils est autant coupable que ce dernier s'il les néglige</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>To enjoy good health, to bring true happiness to one's family, to bring peace to all, one must first discipline and control one's own mind. If a man can control his mind he can find the way to Enlightenment, and all wisdom and virtue will naturally come to him</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>To keep the body in good health is a duty... otherwise we shall not be able to keep our mind strong and clear</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>Better than a thousand hollow words, is one word that brings peace</QuoteValue>
+</Quote>
+<Quote>
+<Author>Buddha</Author>
+<Language>English</Language>
+<QuoteValue>Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind. To walk safely through the maze of human life, one needs the light of wisdom and the guidance of virtue</QuoteValue>
+</Quote>
+<Quote>
+<Author>Dalaï Lama</Author>
+<Language>French</Language>
+<QuoteValue>Si vous avez l’impression d’être trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique et vous verrez lequel des deux empêche l’autre de dormir</QuoteValue>
+</Quote>
+<Quote>
+<Author>Michael Jordan</Author>
+<Language>French</Language>
+<QuoteValue>Je peux accepter l’échec, tout le monde peut échouer, mais je n’accepterai jamais de ne pas avoir essayé</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Ne t’inquiète plus des gens qui ont fait partie de ton passé. Il y a une raison pour laquelle ils ne feront pas partie de ton avenir</QuoteValue>
+</Quote>
+<Quote>
+<Author>John Caffey</Author>
+<Language>French</Language>
+<QuoteValue>On ne peut pas cacher ce qu’on a dans son coeur - La ligne verte</QuoteValue>
+</Quote>
+<Quote>
+<Author>Richard Branson</Author>
+<Language>French</Language>
+<QuoteValue>Les opportunités, c’est comme les autobus, il y en a toujours un autre qui arrive</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Dans la vie tu as 2 choix le matin. Soit tu te recouches pour continuer à rêver. Soit tu te lèves pour réaliser tes rêves</QuoteValue>
+</Quote>
+<Quote>
+<Author>Victor Frankl</Author>
+<Language>French</Language>
+<QuoteValue>On peut tout enlever à un homme excepté une chose, la dernière des libertés humaines : celle de décider de sa conduite, quelles que soient les circonstances dans lesquelles il se trouve</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>L’homme le plus important dans la vie d’une femme n’est pas le premier, mais c’est celui qui ne laissera pas exister le prochain</QuoteValue>
+</Quote>
+<Quote>
+<Author>Robin S. Sharma</Author>
+<Language>French</Language>
+<QuoteValue>Ne laissez jamais ce qui compte le moins l’emporter sur ce qui compte le plus</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anthony Hopkins</Author>
+<Language>French</Language>
+<QuoteValue>Ce qui est à la portée d’un homme est à la portée d’un autre - Extrait du film The Edge</QuoteValue>
+</Quote>
+<Quote>
+<Author>Wayne Gretzky</Author>
+<Language>French</Language>
+<QuoteValue>100% des choses qu’on ne tente pas échouent</QuoteValue>
+</Quote>
+<Quote>
+<Author>Johnny Depp</Author>
+<Language>French</Language>
+<QuoteValue>Si tu aimes deux personnes en même temps, choisis la deuxieme. Parce que si tu aimais vraiment la première, tu n’aurais jamais eu des sentiments pour la deuxième</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Celui qui aime à apprendre est bien près du savoir</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Le sage est calme et serein. L'homme de peu est toujours accablé de soucis</QuoteValue>
+</Quote>
+<Quote>
+<Author>Antoine Chuquet</Author>
+<Language>French</Language>
+<QuoteValue>Plusieurs personnes entrent et sortent de nos vies, seuls les vrais amis laissent une empreinte sur nos coeurs</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>L'expérience est une bougie qui n'éclaire que celui qui la porte</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Ne te crois point si important que les autres te paraissent insignifiants</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>L'homme supérieur c'est celui qui d'abord met ses paroles en pratique, et ensuite parle conformément à ses actions</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Apprendre sans réfléchir est vain. Réfléchir sans apprendre est dangereux</QuoteValue>
+</Quote>
+<Quote>
+<Author>Winston Churchill</Author>
+<Language>French</Language>
+<QuoteValue>Un peuple qui oubie son passé n'a pas d'avenir</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>La vraie faute est celle qu'on ne corrige pas</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Le problème des hommes, c'est qu'ils négligent leur propre champ pour aller ensemencer celui des autres</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Le sage a honte de ses défauts, mais n'a pas honte de s'en corriger</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Ecoutez beaucoup, afin de diminuer vos doutes ; soyez attentifs à ce que vous dites, afin de ne rien dire de superflu ; alors, vous commettrez rarement des fautes</QuoteValue>
+</Quote>
+<Quote>
+<Author>Jean-Baptiste Jules Bernadotte roi Charles XIV Jean de Suède</Author>
+<Language>French</Language>
+<QuoteValue>L'amour du peuple sera ma récomprense</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Rappelle-toi que ton fils n'est pas ton fils, mais le fils de son temps</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>On doit aimer son prochain comme soi-même ; ne pas lui faire ce que nous ne voudrions pas qu'il nous fît</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Ne parlez jamais de vous, ni en bien, car on ne vous croirait pas, ni en mal car on ne vous croirait que trop</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>L'archer a un point commun avec l'homme de bien : quand sa flèche n'atteint pas le centre de la cible, il en cherche la cause en lui-même</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Sans principes communs, ce n'est pas la peine de discuter</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>L'homme de bien est droit et juste, mais non raide et inflexible ; il sait se plier mais pas se courber</QuoteValue>
+</Quote>
+<Quote>
+<Author>Albert Einstein</Author>
+<Language>French</Language>
+<QuoteValue>Il ne faut pas compter sur ceux qui ont créé les problèmes pour les résoudre</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Agissez envers les autres comme vous aimeriez qu'ils agissent envers vous</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>L'homme supérieur ne demande rien qu'à lui-même ; l'homme vulgaire et sans mérite demande tout aux autres</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Le grave défaut est d'avoir des défauts et de ne pas s'efforcer de s'en corriger</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Rien n'est jamais sans conséquence. En conséquence, rien n'est jamais gratuit</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>La joie est en tout ; il faut savoir l'extraire</QuoteValue>
+</Quote>
+<Quote>
+<Author>Daniel Arsham</Author>
+<Language>French</Language>
+<QuoteValue>«Le travail d’un artiste, c’est de faire que les gens voient le monde qui les entoure d’une nouvelle façon</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Celui qui sait obéir saura ensuite commander</QuoteValue>
+</Quote>
+<Quote>
+<Author>William S. Burroughs</Author>
+<Language>English</Language>
+<QuoteValue>After one look at this planet any visitor from outer space would say I want to see the manager</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>On peut connaître la vertu d'un homme en observant ses défauts</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Rien ne sert de parler des choses qui sont déjà accomplies, ni de faire des remontrances sur celles qui sont déjà très avancées, ni de blâmer ce qui est passé</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Rendez le bien pour le bien et la justice pour le mal</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Quand vous êtes bon dans quelque chose, vous le dites à tout le monde. Quand vous êtes excellent, tout le monde vous le dit</QuoteValue>
+</Quote>
+<Quote>
+<Author>Russell Simmons</Author>
+<Language>French</Language>
+<QuoteValue>Plus on parvient à se connaître soi-même, plus on a envie d’améliorer cet être.</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Ce qu'on sait, savoir qu'on le sait ; ce qu'on ne sait pas, savoir qu'on ne le sait pas : c'est savoir véritablement</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Se regarder scrupuleusement soi-même, ne regarder que discrètement les autres</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>French</Language>
+<QuoteValue>Quiconque a entendu les cris d'un animal qu'on tue ne peut plus jamais manger de sa chair</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>America will never be destroyed from the outside. If we falter and lose our freedoms, it will be because we destroyed ourselves</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>In the end, it's not the years in your life that count. It's the life in your years</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paul Valery</Author>
+<Language>French</Language>
+<QuoteValue>C'est en copiant qu'on invente</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>No man has a good enough memory to be a successful liar</QuoteValue>
+</Quote>
+<Quote>
+<Author>Alexandre Jardin</Author>
+<Language>French</Language>
+<QuoteValue>Je crois en la force inarrêtable des gens dont l’action – même modeste – à un SENS pour eux</QuoteValue>
+</Quote>
+<Quote>
+<Author>Carlos Fuentes</Author>
+<Language>French</Language>
+<QuoteValue>La narration discute l’ordre des choses. Le silence le confirme</QuoteValue>
+</Quote>
+<Quote>
+<Author>Henry Moret</Author>
+<Language>French</Language>
+<QuoteValue>On ne peut jamais être neutre, le silence est une opinion</QuoteValue>
+</Quote>
+<Quote>
+<Author>Blaise Pascal</Author>
+<Language>French</Language>
+<QuoteValue>Il est bien plus beau de savoir quelque chose de tout que de savoir tout d'une chose</QuoteValue>
+</Quote>
+<Quote>
+<Author>Dwayne Johnson</Author>
+<Language>French</Language>
+<QuoteValue>Le sens de l’humour est le principal atout pour être sexy. Se prendre trop au sérieux = grosse déconvenue. L’humour dépasse toutes les autres qualités</QuoteValue>
+</Quote>
+<Quote>
+<Author>Nicolas Boileau-Despréaux</Author>
+<Language>French</Language>
+<QuoteValue>Ce qui se conçoit bien s'énonce clairement - Et les mots pour le dire arrivent aisément.(1674)</QuoteValue>
+</Quote>
+<Quote>
+<Author>Shailene Woodley</Author>
+<Language>French</Language>
+<QuoteValue>Le pardon est l’amant éternel de l’amour.</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paulo Coelho</Author>
+<Language>French</Language>
+<QuoteValue>Pardonnez, mais n’oubliez pas, ou vous serez blessé à nouveau. Le pardon permet de relativiser, tandis qu’oublier fait disparaître la leçon.</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paulo Coelho</Author>
+<Language>French</Language>
+<QuoteValue>Enseigner, c’est seulement démontrer qu’une chose est possible. Apprendre, c’est la rendre possible pour soi-même</QuoteValue>
+</Quote>
+<Quote>
+<Author>Louis Jouvet</Author>
+<Language>French</Language>
+<QuoteValue>Une pièce de théâtre est une conversation</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edgar Morin</Author>
+<Language>French</Language>
+<QuoteValue>Comme tout ce qui vient en dernier, la conscience est ce que nous avons de plus précieux, et à la fois de plus fragile</QuoteValue>
+</Quote>
+<Quote>
+<Author>Claire de Lamirande</Author>
+<Language>French</Language>
+<QuoteValue>Le sourire est d'abord une décision</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anatole France</Author>
+<Language>French</Language>
+<QuoteValue>C'est en croyant aux roses qu'on les fait éclore</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edgar Morin</Author>
+<Language>French</Language>
+<QuoteValue>Notre univers est à la fois en construction et en destruction, et nous de même</QuoteValue>
+</Quote>
+<Quote>
+<Author>Gustave Flaubert</Author>
+<Language>French</Language>
+<QuoteValue>Le meilleur de la vie se passe à dire “Il est trop tôt”, puis “Il est trop tard"</QuoteValue>
+</Quote>
+<Quote>
+<Author>Confucius</Author>
+<Language>English</Language>
+<QuoteValue>Life is really simple, but we insist on making it complicated</QuoteValue>
+</Quote>
+<Quote>
+<Author>Vladimir Nabokov</Author>
+<Language>French</Language>
+<QuoteValue>L'imagination n'est fertile que lorsqu'elle est futile</QuoteValue>
+</Quote>
+<Quote>
+<Author>Roger Vailland</Author>
+<Language>French</Language>
+<QuoteValue>L’homme ne sera libre que lorsque la notion même de sacré se sera effacée de son esprit</QuoteValue>
+</Quote>
+<Quote>
+<Author>Eminem</Author>
+<Language>english</Language>
+<QuoteValue>You can do anything you set your mind to</QuoteValue>
+</Quote>
+<Quote>
+<Author>Proverbe africain</Author>
+<Language>French</Language>
+<QuoteValue>L'homme jeune marche plus vite que l'ancien, mais l'ancien connait la route</QuoteValue>
+</Quote>
+<Quote>
+<Author>Theodore Roosevelt</Author>
+<Language>English</Language>
+<QuoteValue>With self-discipline most anything is possible</QuoteValue>
+</Quote>
+<Quote>
+<Author>Thomas Jefferson</Author>
+<Language>French</Language>
+<QuoteValue>Quand l'injustice devient loi, la résistance est un devoir</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Always bear in mind that your own resolution to succeed is more important than any other</QuoteValue>
+</Quote>
+<Quote>
+<Author>Jules Barbey d’Aurevilly</Author>
+<Language>French</Language>
+<QuoteValue>Le plaisir est le bonheur des fous, le bonheur est le plaisir des sages</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Better to remain silent and be thought a fool than to speak out and remove all doubt</QuoteValue>
+</Quote>
+<Quote>
+<Author>Publius Syrus</Author>
+<Language>French</Language>
+<QuoteValue>Vaincre la colère, c'est triompher de son plus grand ennemi</QuoteValue>
+</Quote>
+<Quote>
+<Author>Mark Twain</Author>
+<Language>English</Language>
+<QuoteValue>Do the right thing. It will gratify some people and astonish the rest</QuoteValue>
+</Quote>
+<Quote>
+<Author>Mark Twain</Author>
+<Language>Mark Twain</Language>
+<QuoteValue>If you tell the truth, you don't have to remember anything</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Give me six hours to chop down a tree and I will spend the first four sharpening the axe</QuoteValue>
+</Quote>
+<Quote>
+<Author>Oscar wilde</Author>
+<Language>French</Language>
+<QuoteValue>Aujourd'hui les gens savent le prix de tout, et ne connaissent la valeur de rien</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>You cannot escape the responsibility of tomorrow by evading it today</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paul Eluard</Author>
+<Language>French</Language>
+<QuoteValue>il ne faut pas de tout pour faire un monde. Il faut du bonheur et rien d'autre</QuoteValue>
+</Quote>
+<Quote>
+<Author>Proverbes chinois</Author>
+<Language>French</Language>
+<QuoteValue>Il faut faire vite ce qui ne presse pas pour pouvoir faire lentement ce qui presse</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edgar Morin</Author>
+<Language>French</Language>
+<QuoteValue>On ne peut se passer du oui ou du non dans l’action, mais il faut savoir pratiquer le oui et non dans la pensée</QuoteValue>
+</Quote>
+<Quote>
+<Author>Jesus Christ</Author>
+<Language>English</Language>
+<QuoteValue>And know that I am with you always; yes, to the end of time</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Don't worry when you are not recognized, but strive to be worthy of recognition</QuoteValue>
+</Quote>
+<Quote>
+<Author>Romain Gary</Author>
+<Language>French</Language>
+<QuoteValue>Aimer est une aventure sans carte et sans compas où seule la prudence égare</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Character is like a tree and reputation like a shadow. The shadow is what we think of it; the tree is the real thing</QuoteValue>
+</Quote>
+<Quote>
+<Author>Daniel Webster</Author>
+<Language>English</Language>
+<QuoteValue>If all my developer skills were taken from me with one exception, I would choose to keep the power of learning like a developer, for by it I would soon regain all the rest. Daniel Webster (American Statesman, 1782-1852)</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>I never had a policy; I have just tried to do my very best each and every day</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anatole France</Author>
+<Language>French</Language>
+<QuoteValue>L'avenir est un lieu commode pour y mettre des songes</QuoteValue>
+</Quote>
+<Quote>
+<Author>Mark Twain</Author>
+<Language>English</Language>
+<QuoteValue>Get your facts first, then you can distort them as you please</QuoteValue>
+</Quote>
+<Quote>
+<Author>Vincent Van Gogh</Author>
+<Language>French</Language>
+<QuoteValue>IL n'y a rien de plus réellement artistique que d'aimer les gens</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>A house divided against itself cannot stand</QuoteValue>
+</Quote>
+<Quote>
+<Author>Nick Vujicic</Author>
+<Language>French</Language>
+<QuoteValue>Le vrai handicap est de penser que c'est impossible quand rien ne l'est vraiment</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Whatever you are, be a good one</QuoteValue>
+</Quote>
+<Quote>
+<Author>Marc aurele</Author>
+<Language>French</Language>
+<QuoteValue>Donne moi la force de changer les choses que je peux, la sérénité d'accepter les choses qui sont, et la sagesse de distinguer l'une de l'autre</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>With Malice toward none, with charity for all, with firmness in the right, as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation's wounds</QuoteValue>
+</Quote>
+<Quote>
+<Author>Mark Twain</Author>
+<Language>English</Language>
+<QuoteValue>Go to Heaven for the climate, Hell for the company</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Important principles may, and must, be inflexible</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>I do the very best I know how - the very best I can; and I mean to keep on doing so until the end</QuoteValue>
+</Quote>
+<Quote>
+<Author>Jacques Prevert</Author>
+<Language>French</Language>
+<QuoteValue>Quand la vérité n'est pas libre, la liberté n'est pas vraie !</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>If this is coffee, please bring me some tea; but if this is tea, please bring me some coffee</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonymous</Author>
+<Language>English</Language>
+<QuoteValue>Mess with the best, die with the rest</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Do I not destroy my enemies when I make them my friends?</QuoteValue>
+</Quote>
+<Quote>
+<Author>Antoine de Saint-Exupéry</Author>
+<Language>French</Language>
+<QuoteValue>La vérité de demain se nourrit de l’erreur d’hier</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Don't interfere with anything in the Constitution. That must be maintained, for it is the only safeguard of our liberties</QuoteValue>
+</Quote>
+<Quote>
+<Author>Cicéron </Author>
+<Language>French</Language>
+<QuoteValue>L'arbre est deux fois plus utile que les fruits</QuoteValue>
+</Quote>
+<Quote>
+<Author>john Edgard Hoover</Author>
+<Language>French</Language>
+<QuoteValue>L'individu est handicapé de se retrouver face à une conspiration si monstrueuse qu'il ne peut croire qu'elle existe</QuoteValue>
+</Quote>
+<Quote>
+<Author>Zbinew Brzezinski</Author>
+<Language>French</Language>
+<QuoteValue>L'espace et le contrôle du climat ont remplacé Suez et Gibraltar comme éléments clé de la strarégie</QuoteValue>
+</Quote>
+<Quote>
+<Author>John Lenon</Author>
+<Language>French</Language>
+<QuoteValue>Si tout le monde demandait la paix au lieu d'un écran plat, on aurait la paix</QuoteValue>
+</Quote>
+<Quote>
+<Author>George Orwel</Author>
+<Language>French</Language>
+<QuoteValue>Un peuple qui élit des politiques corrompus n'est pas victime, il est complice</QuoteValue>
+</Quote>
+<Quote>
+<Author>Martin Luther King</Author>
+<Language>French</Language>
+<QuoteValue>Le moment viendra où le silence est une trahison</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Tact is the ability to describe others as they see themselves</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Standing as I do, with my hand upon this staff, and under the folds of the American flag, I ask you to stand by me so long as I stand by it</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paulo Coelho</Author>
+<Language>French</Language>
+<QuoteValue>La vie nous prend par surprise et nous ordonne d’avancer vers l’inconnu, alors même que l’on pense ne pas en avoir besoin</QuoteValue>
+</Quote>
+<Quote>
+<Author>Emmanuel Kant</Author>
+<Language>French</Language>
+<QuoteValue>L’inhumanité infligée à un autre détruit l’humanité en moi</QuoteValue>
+</Quote>
+<Quote>
+<Author>Henry Ford</Author>
+<Language>English</Language>
+<QuoteValue>Failure is the opportunity to begin again more intelligently</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>My great concern is not whether you have failed, but whether you are content with your failure</QuoteValue>
+</Quote>
+<Quote>
+<Author>Muhammad Ali</Author>
+<Language>French</Language>
+<QuoteValue>Les champions ne se sont pas faits dans les gymnases. Les champions sont faits de ce qu’ils ont au plus profond d’eux-mêmes. Un désir, un rêve, une vision</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live by the light that I have. I must stand with anybody that stands right, and stand with him while he is right, and part with him when he goes wrong</QuoteValue>
+</Quote>
+<Quote>
+<Author>Coluche</Author>
+<Language>French</Language>
+<QuoteValue>L'argent ne fait pas le bonheur des pauvres</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Discourage litigation. Persuade your neighbors to compromise whenever you can. As a peacemaker the lawyer has superior opportunity of being a good man. There will still be business enough</QuoteValue>
+</Quote>
+<Quote>
+<Author>Coluche</Author>
+<Language>French</Language>
+<QuoteValue>Je ne suis pas allé partout, mais je suis revenu de tout</QuoteValue>
+</Quote>
+<Quote>
+<Author>Coluche</Author>
+<Language>French</Language>
+<QuoteValue>Les portes de l'avenir sont ouvertes à ceux qui savent les pousser</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Our defense is in the preservation of the spirit which prizes liberty as a heritage of all men, in all lands, everywhere. Destroy this spirit and you have planted the seeds of despotism around your own doors</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>Everybody likes a compliment</QuoteValue>
+</Quote>
+<Quote>
+<Author>Russell Simmons</Author>
+<Language>French</Language>
+<QuoteValue>La tranquillité est un sol fertile dans lequel l’imagination est nourrie, et les idées peuvent s’y développer de façon incroyable</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>To the best of my judgment, I have labored for, and not against, the Union. As I have not felt, so I have not expressed any harsh sentiment towards our Southern brethren. I have constantly declared, as I really believed, the only difference between them and us is the difference of circumstances</QuoteValue>
+</Quote>
+<Quote>
+<Author>John Boyega</Author>
+<Language>French</Language>
+<QuoteValue>Vous n’avez pas besoin d’attendre de grandes réussites pour être fier de vous. Les petits exploits aident à en construire des plus gros</QuoteValue>
+</Quote>
+<Quote>
+<Author>Voltaire</Author>
+<Language>French</Language>
+<QuoteValue>Notre destinée est de faire toujours des sottises, et de nous relever</QuoteValue>
+</Quote>
+<Quote>
+<Author>Mark Twain</Author>
+<Language>English</Language>
+<QuoteValue>All you need in this life is ignorance and confidence, and then success is sure</QuoteValue>
+</Quote>
+<Quote>
+<Author>Jacques Chirac</Author>
+<Language>French</Language>
+<QuoteValue>La maison brûle et nous regardons ailleurs</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Cher sommeil, je suis désolé de téavoir détesté quand j'étais petit, mais maintenant tu me manques</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Dans mon enfance, je pleurais alors que rien ne me faisait vraiment mal, maintenant que je suis grand je souris alors que tout va mal</QuoteValue>
+</Quote>
+<Quote>
+<Author>Garry Kasparov</Author>
+<Language>French</Language>
+<QuoteValue>Je l’ai déjà dit plusieurs fois, mais l’inaction est aussi un choix, et tous les choix ont des conséquences</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paulo Coelho</Author>
+<Language>French</Language>
+<QuoteValue>Moins vous répondez aux personnes négatives et plus votre vie sera paisible</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>The shepherd drives the wolf from the sheep's for which the sheep thanks the shepherd as his liberator, while the wolf denounces him for the same act as the destroyer of liberty. Plainly, the sheep and the wolf are not agreed upon a definition of liberty</QuoteValue>
+</Quote>
+<Quote>
+<Author>Léonard De Vinci</Author>
+<Language>French</Language>
+<QuoteValue>Jamais le soleil ne voit l'ombre</QuoteValue>
+</Quote>
+<Quote>
+<Author>Baruch Spinoza</Author>
+<Language>French</Language>
+<QuoteValue>Si vous voulez que la vie vous sourie, apportez-lui d'abord votre bonne humeur</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>If I were two-faced, would I be wearing this one?</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>The probability that we may fail in the struggle ought not to deter us from the support of a cause we believe to be just</QuoteValue>
+</Quote>
+<Quote>
+<Author>Pierre Dac</Author>
+<Language>French</Language>
+<QuoteValue>S’il est bon de ne rien dire avant de parler, il est encore plus utile de réfléchir avant de penser</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paulo Coelho</Author>
+<Language>French</Language>
+<QuoteValue>Soyez brillant. Soyez brave. Soyez audacieux. Soyez beau. Soyez génial. SOYEZ VOUS.</QuoteValue>
+</Quote>
+<Quote>
+<Author>Alfred de Musset</Author>
+<Language>French</Language>
+<QuoteValue>On s'approche, on sourit, la main touche la main. Et nous nous souvenons que nous marchions ensemble. Que l'âme est immortelle, et qu'hier c'est demain</QuoteValue>
+</Quote>
+<Quote>
+<Author>Dalaï-lama</Author>
+<Language>French</Language>
+<QuoteValue>Soyez une personne bienveillante et compatissante. C’est la beauté intérieure qui est le facteur clé pour rendre le monde meilleur</QuoteValue>
+</Quote>
+<Quote>
+<Author>Khalil Gibran</Author>
+<Language>French</Language>
+<QuoteValue>Combien noble est celui qui ne veut être ni maître ni esclave</QuoteValue>
+</Quote>
+<Quote>
+<Author>Pierre Dac</Author>
+<Language>French</Language>
+<QuoteValue>Une erreur peut devenir exacte selon que celui qui l'a commise s'est trompé ou non</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>My dream is of a place and a time where America will once again be seen as the last best hope of earth</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>All that I am, or hope to be, I owe to my angel mother</QuoteValue>
+</Quote>
+<Quote>
+<Author>Victor Hugo</Author>
+<Language>French</Language>
+<QuoteValue>Aimer, c’est savoir dire je t’aime sans parler</QuoteValue>
+</Quote>
+<Quote>
+<Author>Albert Einstein</Author>
+<Language>French</Language>
+<QuoteValue>Nous ne pouvons pas désespérer des hommes, puisque nous sommes nous-mêmes des hommes</QuoteValue>
+</Quote>
+<Quote>
+<Author>Bruce Lee</Author>
+<Language>English</Language>
+<QuoteValue>Do not pray for an easy life, pray for the strengh to endure a difficult one</QuoteValue>
+</Quote>
+<Quote>
+<Author>Ernest Hemingway</Author>
+<Language>French</Language>
+<QuoteValue>De la joie chez les gens intelligents, est la chose la plus rare que je connaisse</QuoteValue>
+</Quote>
+<Quote>
+<Author>Hamilton</Author>
+<Language>French</Language>
+<QuoteValue>L’esprit négatif ne rendra pas votre vie positive. Restez positifs et gardez éloigné le pessimisme. L’énergie est contagieuse !</QuoteValue>
+</Quote>
+<Quote>
+<Author>Bryce Dallas Howard</Author>
+<Language>French</Language>
+<QuoteValue>N’essaie pas ! Fais-le ou ne le fais pas ! Il n’y a pas d’essai</QuoteValue>
+</Quote>
+<Quote>
+<Author>Lewis Caroll</Author>
+<Language>French</Language>
+<QuoteValue>Je ne peux pas revenir en arrière parce que j'étais une autre personne</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edgar Morin</Author>
+<Language>French</Language>
+<QuoteValue>Privilégier la vie des nôtres ne doit pas conduire à dévaluer la vie des autres</QuoteValue>
+</Quote>
+<Quote>
+<Author>Dwyane Wade</Author>
+<Language>French</Language>
+<QuoteValue>Je ne peux pas m’en empêcher. Je suis accro à cette chose qu’on appelle LA VIE !</QuoteValue>
+</Quote>
+<Quote>
+<Author>Peter Ustinov</Author>
+<Language>French</Language>
+<QuoteValue>Le rire est la musique la plus civilisée du monde</QuoteValue>
+</Quote>
+<Quote>
+<Author>Abraham Lincoln</Author>
+<Language>English</Language>
+<QuoteValue>I remember my mother's prayers and they have always followed me. They have clung to me all my life</QuoteValue>
+</Quote>
+<Quote>
+<Author>Aristote</Author>
+<Language>French</Language>
+<QuoteValue>Il n’y a point de génie sans un grain de folie</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Ne laissez rien s'interposer entre vous et votre rêve</QuoteValue>
+</Quote>
+<Quote>
+<Author>Alicia Keys</Author>
+<Language>French</Language>
+<QuoteValue>Petit rappel : nous sommes tous une oeuvre d’art. Ecrivez votre histoire ! Vous êtes un chef-d’oeuvre !</QuoteValue>
+</Quote>
+<Quote>
+<Author>Andy Warhol</Author>
+<Language>French</Language>
+<QuoteValue>Nous cherchons plus à durer que nous n’essayons de vivre</QuoteValue>
+</Quote>
+<Quote>
+<Author>Malala Yousafzai</Author>
+<Language>French</Language>
+<QuoteValue>N’attendez pas que quelqu’un parle en votre nom. Changez le monde vous-même</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edgar Morin</Author>
+<Language>French</Language>
+<QuoteValue>Tout s’oublie, mais la calomnie plus difficilement que le reste</QuoteValue>
+</Quote>
+<Quote>
+<Author>Pablo Picasso</Author>
+<Language>French</Language>
+<QuoteValue>On met longtemps à devenir jeune</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edward Snowden</Author>
+<Language>French</Language>
+<QuoteValue>Dans tous les cas, doutez de moi. Soyez suspicieux et vérifiez chacune de mes déclarations. C’est rationnel. Ensuite, faites la même chose pour ceux qui sont au pouvoir</QuoteValue>
+</Quote>
+<Quote>
+<Author>Pythagore</Author>
+<Language>French</Language>
+<QuoteValue>Qui parle sème ; qui écoute récolte</QuoteValue>
+</Quote>
+<Quote>
+<Author>Talleyrand</Author>
+<Language>French</Language>
+<QuoteValue>Quand on ne croit plus aux idées, il faut bien croire aux personnes</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Ce sont les détails qui font la perfection mais la perfection n'est pas un détail</QuoteValue>
+</Quote>
+<Quote>
+<Author>Dalaï-lama</Author>
+<Language>French</Language>
+<QuoteValue>Toutes les religions ont le potentiel de créer de meilleures personnes – mais aucune religion ne peut clamer sa suprématie au-dessus d’une autre</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paulo Coelho</Author>
+<Language>French</Language>
+<QuoteValue>Souvenez-vous : vous êtes libres de choisir. Prenez vos décisions avec courage, détachement et une pointe de folie</QuoteValue>
+</Quote>
+<Quote>
+<Author>S. C. Johnson</Author>
+<Language>English</Language>
+<QuoteValue>A successful [software] tool is one that was used to do something undreamed of by its author</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonymous</Author>
+<Language>French</Language>
+<QuoteValue>La différence est une beauté qu'il faut apprendre à voir</QuoteValue>
+</Quote>
+<Quote>
+<Author>Gustave Parking</Author>
+<Language>French</Language>
+<QuoteValue>Ceux qui veulent produire de la richesse oublient de la partager et ceux qui veulent partager oublient d’en produire</QuoteValue>
+</Quote>
+<Quote>
+<Author>Alexandre Jardin</Author>
+<Language>French</Language>
+<QuoteValue>Les hommes ont un mal fou à penser l’impensable. Pourtant, l’Histoire n’est faite que d’événements qui semblaient impensables…</QuoteValue>
+</Quote>
+<Quote>
+<Author>Mark Twain</Author>
+<Language>French</Language>
+<QuoteValue>Le courage, c’est la résistance à la peur, c’est surmonter sa peur. Pas l’absence de peur</QuoteValue>
+</Quote>
+<Quote>
+<Author>Albert Einstein</Author>
+<Language>French</Language>
+<QuoteValue>La seule chose absolue dans un monde comme le nôtre, c’est l’humour</QuoteValue>
+</Quote>
+<Quote>
+<Author>Andrée Chedid</Author>
+<Language>French</Language>
+<QuoteValue>La poésie suggère. En cela, elle est plus proche qu’on ne pense de la vie, qui est toujours en deçà de l’instant qui frappe</QuoteValue>
+</Quote>
+<Quote>
+<Author>Robert Bresson</Author>
+<Language>French</Language>
+<QuoteValue>Pour un acteur, la caméra est l'oeil du public</QuoteValue>
+</Quote>
+<Quote>
+<Author>Montaigne</Author>
+<Language>French</Language>
+<QuoteValue>Nous défendre quelque chose, c'est nous en donner envie</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edgar Morin</Author>
+<Language>French</Language>
+<QuoteValue>On s’indigne des images d’horreur pour enfants mais on nous a conté l’ogre, le grand méchant loup, Barbe bleue</QuoteValue>
+</Quote>
+<Quote>
+<Author>Sean Diddy Combs</Author>
+<Language>French</Language>
+<QuoteValue>Beaucoup de gens ont juste besoin d’amour. Rien ne sert d’essayer de les changer. Il faut juste leur donner de l’amour et les regarder guérir et se magnifier</QuoteValue>
+</Quote>
+<Quote>
+<Author>Platon</Author>
+<Language>French</Language>
+<QuoteValue>L'opinion est quelque chose d'intermédiaire entre la connaissance et l'ignorance</QuoteValue>
+</Quote>
+<Quote>
+<Author>Marcel Marceau</Author>
+<Language>French</Language>
+<QuoteValue>Avant de dire quelque chose, il faut s’assurer que le silence n’est pas plus important</QuoteValue>
+</Quote>
+<Quote>
+<Author>George Bernard Shaw</Author>
+<Language>French</Language>
+<QuoteValue>Il y a des fous partout, même dans les asiles</QuoteValue>
+</Quote>
+<Quote>
+<Author>Mark Twain</Author>
+<Language>French</Language>
+<QuoteValue>La gentillesse est le langage qu'un sourd peut entendre et qu'un aveugle peut voir</QuoteValue>
+</Quote>
+<Quote>
+<Author>Carl Sagan</Author>
+<Language>French</Language>
+<QuoteValue>Somewhere, something incredible is waiting to be known</QuoteValue>
+</Quote>
+<Quote>
+<Author>Paulo Coelho</Author>
+<Language>French</Language>
+<QuoteValue>Ce que les autres pensent de vous ne doit pas faire partie de vos préoccupations</QuoteValue>
+</Quote>
+<Quote>
+<Author>Pierre Dac</Author>
+<Language>French</Language>
+<QuoteValue>On peut rire de tout, mais pas pour rien</QuoteValue>
+</Quote>
+<Quote>
+<Author>Voltaire</Author>
+<Language>French</Language>
+<QuoteValue>La lecture agrandit l'âme, et un ami éclairé la console</QuoteValue>
+</Quote>
+<Quote>
+<Author>Robert Kennedy</Author>
+<Language>French</Language>
+<QuoteValue>Pardonnez à vos ennemis, n'oubliez jamais leurs noms</QuoteValue>
+</Quote>
+<Quote>
+<Author>Freddy Juhel</Author>
+<Language>English</Language>
+<QuoteValue>After Badminton training, I can say, it's a very good bad day</QuoteValue>
+</Quote>
+<Quote>
+<Author>Lord Byron</Author>
+<Language>English</Language>
+<QuoteValue>There is pleasure in the pathless woods, there is rapture in the lonely shore, there is society where none intrudes, by the deep sea, and music in its roar; I love not man the less, but nature more</QuoteValue>
+</Quote>
+<Quote>
+<Author>Friedrich Nietzsche</Author>
+<Language>French</Language>
+<QuoteValue>La musique a trop longtemps rêvé, nous voulons devenir des rêveurs éveillés et conscients</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue>Voter c'est gratuit, ne pas voter cela peut vous couter cher</QuoteValue>
+</Quote>
+<Quote>
+<Author>Michèle Laroque</Author>
+<Language>French</Language>
+<QuoteValue>Etre heureux ce n’est pas avoir tout, c’est n’avoir besoin de rien d’autre.</QuoteValue>
+</Quote>
+<Quote>
+<Author>Salvador Dali</Author>
+<Language>French</Language>
+<QuoteValue>Ne craignez pas d’atteindre la perfection, vous n’y arriverez jamais</QuoteValue>
+</Quote>
+<Quote>
+<Author>Bryce Dallas Howard</Author>
+<Language>French</Language>
+<QuoteValue>Ton état d’esprit déteint sur tout le reste. Il dicte tes pensées, ton énergie, et surtout, tes actes</QuoteValue>
+</Quote>
+<Quote>
+<Author>William Blake</Author>
+<Language>English</Language>
+<QuoteValue>The fool who persists in his folly will become wise</QuoteValue>
+</Quote>
+<Quote>
+<Author>Michèle Laroque</Author>
+<Language>French</Language>
+<QuoteValue>Le but de la vie est de garder espoir car il arrive souvent que les rêves se réalisent</QuoteValue>
+</Quote>
+<Quote>
+<Author>Edgar Morin</Author>
+<Language>French</Language>
+<QuoteValue>L’incapacité de tirer les leçons de l’expérience, de modifier ses schémas mentaux ainsi que la sélection de faux problèmes suscitent l’aveuglement</QuoteValue>
+</Quote>
+<Quote>
+<Author>Henry Miller</Author>
+<Language>French</Language>
+<QuoteValue>L’homme a ce choix : laisser entrer la lumière ou garder les volets fermés</QuoteValue>
+</Quote>
+<Quote>
+<Author>Robert Sabatier</Author>
+<Language>French</Language>
+<QuoteValue>Le racisme est une manière de déléguer à l'autre le dégout que l'on a de soi-même</QuoteValue>
+</Quote>
+<Quote>
+<Author>Martin Luther-King</Author>
+<Language>French</Language>
+<QuoteValue>Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots</QuoteValue>
+</Quote>
+<Quote>
+<Author>Anonyme</Author>
+<Language>French</Language>
+<QuoteValue> Ceux qui pensent que c’est impossible sont priés de ne pas déranger ceux qui essaient</QuoteValue>
+</Quote>
+<Quote>
+<Author>Voltaire</Author>
+<Language>French</Language>
+<QuoteValue>Ceux qui ne croient pas en l’impossible sont priés de ne pas déranger ceux qui sont en train de le faire</QuoteValue>
+</Quote>
+<Quote>
+<Author>Voltaire</Author>
+<Language>French</Language>
+<QuoteValue>J’ai décidé d’être heureux parce que c’est bon pour la santé</QuoteValue>
+</Quote>
 </Quotes>
+

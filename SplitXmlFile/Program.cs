@@ -13,8 +13,8 @@ namespace SplitXmlFile
       Action<string> display = Console.WriteLine;
       display("séparation d'un gros fichier xml en plusieurs petits");
       //string fileName = "Quote_files\\quote1.xml";
-      const string fileName = "quote1.xml";
-      const int startNumber = 3;
+      const string fileName = "quote0.xml";
+      const int startNumber = 1;
       int numberOfQuotePerFile = 250;
       StringBuilder xmlFileHeaderStringBuilder = new StringBuilder();
       xmlFileHeaderStringBuilder.Append(@"<?xml version=""1.0"" encoding=""utf-8"" ?>");

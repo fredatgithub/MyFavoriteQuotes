@@ -145,7 +145,7 @@
     <englishValue>to cut</englishValue>
     <frenchValue>à couper</frenchValue>
   </term>
-   <term>
+  <term>
     <name>to cut</name>
     <englishValue>to cut</englishValue>
     <frenchValue>à couper</frenchValue>
@@ -155,7 +155,7 @@
     <englishValue>No text has been selected</englishValue>
     <frenchValue>Pas de texte a été selectionné</frenchValue>
   </term>
-   <term>
+  <term>
     <name>No text has been selected</name>
     <englishValue>No text has been selected</englishValue>
     <frenchValue>Aucun texte n'a été selectionné</frenchValue>
@@ -780,7 +780,7 @@
     <englishValue>word</englishValue>
     <frenchValue>mot</frenchValue>
   </term>
-   <term>
+  <term>
     <name>Word</name>
     <englishValue>Word</englishValue>
     <frenchValue>Mot</frenchValue>
@@ -910,7 +910,7 @@
     <englishValue>Quote</englishValue>
     <frenchValue>Citation</frenchValue>
   </term>
-   <term>
+  <term>
     <name>quote</name>
     <englishValue>quote</englishValue>
     <frenchValue>citation</frenchValue>
@@ -1385,7 +1385,7 @@
     <englishValue>XML Files</englishValue>
     <frenchValue>Fichiers XML</frenchValue>
   </term>
-   <term>
+  <term>
     <name>XML File</name>
     <englishValue>XML File</englishValue>
     <frenchValue>Fichier XML</frenchValue>
@@ -1430,7 +1430,7 @@
     <englishValue>Last file processed</englishValue>
     <frenchValue>Dernier fichier traité</frenchValue>
   </term>
-   <term>
+  <term>
     <name>Number of quote</name>
     <englishValue>Number of quote</englishValue>
     <frenchValue>Nombre de citation</frenchValue>
@@ -1645,7 +1645,7 @@
     <englishValue>Shutdown when done</englishValue>
     <frenchValue>Arrêter PC quand fini</frenchValue>
   </term>
-   <term>
+  <term>
     <name>You must select a process first</name>
     <englishValue>You must select a process first</englishValue>
     <frenchValue>Vous devez sélectionner un process</frenchValue>
@@ -1660,17 +1660,17 @@
     <englishValue>Result found</englishValue>
     <frenchValue>Résultat trouvé</frenchValue>
   </term>
-   <term>
+  <term>
     <name>Quote found</name>
     <englishValue>Quote found</englishValue>
     <frenchValue>Citation trouvée</frenchValue>
   </term>
-   <term>
+  <term>
     <name>Statistics</name>
     <englishValue>Statistics</englishValue>
     <frenchValue>Statistiques</frenchValue>
   </term>
-   <term>
+  <term>
     <name>in total</name>
     <englishValue>in total</englishValue>
     <frenchValue>au total</frenchValue>
@@ -1695,7 +1695,7 @@
     <englishValue>List of author sorted by number of quotes descending</englishValue>
     <frenchValue>Liste des auteurs triée par nombre de citation par ordre décroissant</frenchValue>
   </term>
-   <term>
+  <term>
     <name>List of author sorted in alphabetical order</name>
     <englishValue>List of author sorted in alphabetical order</englishValue>
     <frenchValue>Liste des auteurs triée par ordre alphabétique</frenchValue>
@@ -1750,7 +1750,7 @@
     <englishValue>Cleaning needed</englishValue>
     <frenchValue>Nettoyage nécessaire</frenchValue>
   </term>
-   <term>
+  <term>
     <name>Duplicate</name>
     <englishValue>Duplicate</englishValue>
     <frenchValue>Doublon</frenchValue>

@@ -183,14 +183,14 @@
       this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
       this.saveToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.saveToolStripMenuItem.Text = "&Enregistrer";
-      this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+      this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItemClick);
       // 
       // saveasToolStripMenuItem
       // 
       this.saveasToolStripMenuItem.Name = "saveasToolStripMenuItem";
       this.saveasToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
       this.saveasToolStripMenuItem.Text = "Enregistrer &sous";
-      this.saveasToolStripMenuItem.Click += new System.EventHandler(this.saveasToolStripMenuItem_Click);
+      this.saveasToolStripMenuItem.Click += new System.EventHandler(this.SaveasToolStripMenuItemClick);
       // 
       // toolStripSeparator1
       // 
@@ -265,7 +265,7 @@
       this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
       this.cutToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.cutToolStripMenuItem.Text = "&Couper";
-      this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
+      this.cutToolStripMenuItem.Click += new System.EventHandler(this.CutToolStripMenuItemClick);
       // 
       // copyToolStripMenuItem
       // 
@@ -283,7 +283,7 @@
       this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
       this.pasteToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.pasteToolStripMenuItem.Text = "Co&ller";
-      this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
+      this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItemClick);
       // 
       // toolStripSeparator4
       // 
@@ -296,7 +296,7 @@
       this.selectAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
       this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
       this.selectAllToolStripMenuItem.Text = "Sélectio&nner tout";
-      this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
+      this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.SelectAllToolStripMenuItemClick);
       // 
       // toolsToolStripMenuItem
       // 
@@ -474,7 +474,7 @@
       this.checkBoxLanguageFrench.TabIndex = 2;
       this.checkBoxLanguageFrench.Text = "Français";
       this.checkBoxLanguageFrench.UseVisualStyleBackColor = true;
-      this.checkBoxLanguageFrench.CheckedChanged += new System.EventHandler(this.checkBoxLanguageFrench_CheckedChanged);
+      this.checkBoxLanguageFrench.CheckedChanged += new System.EventHandler(this.CheckBoxLanguageFrenchCheckedChanged);
       // 
       // checkBoxLanguageEnglish
       // 
@@ -486,7 +486,7 @@
       this.checkBoxLanguageEnglish.TabIndex = 1;
       this.checkBoxLanguageEnglish.Text = "Anglais";
       this.checkBoxLanguageEnglish.UseVisualStyleBackColor = true;
-      this.checkBoxLanguageEnglish.CheckedChanged += new System.EventHandler(this.checkBoxLanguageEnglish_CheckedChanged);
+      this.checkBoxLanguageEnglish.CheckedChanged += new System.EventHandler(this.CheckBoxLanguageEnglishCheckedChanged);
       // 
       // checkBoxLanguageAll
       // 
@@ -640,7 +640,7 @@
       this.buttonAddCancel.TabIndex = 13;
       this.buttonAddCancel.Text = "Cancel";
       this.buttonAddCancel.UseVisualStyleBackColor = true;
-      this.buttonAddCancel.Click += new System.EventHandler(this.buttonAddCancel_Click);
+      this.buttonAddCancel.Click += new System.EventHandler(this.ButtonAddCancelClick);
       // 
       // labelAddLanguage
       // 
@@ -792,7 +792,7 @@
       this.comboBoxListAuthor.Size = new System.Drawing.Size(196, 24);
       this.comboBoxListAuthor.Sorted = true;
       this.comboBoxListAuthor.TabIndex = 1;
-      this.comboBoxListAuthor.SelectedIndexChanged += new System.EventHandler(this.comboBoxListAuthor_SelectedIndexChanged);
+      this.comboBoxListAuthor.SelectedIndexChanged += new System.EventHandler(this.ComboBoxListAuthorSelectedIndexChanged);
       // 
       // labelListAuthor
       // 
@@ -815,7 +815,7 @@
       this.buttonListDelete.TabIndex = 9;
       this.buttonListDelete.Text = "Delete";
       this.buttonListDelete.UseVisualStyleBackColor = true;
-      this.buttonListDelete.Click += new System.EventHandler(this.buttonListDelete_Click);
+      this.buttonListDelete.Click += new System.EventHandler(this.ButtonListDeleteClick);
       // 
       // groupBoxListLanguage
       // 
@@ -843,7 +843,7 @@
       this.checkBoxListFrench.TabIndex = 2;
       this.checkBoxListFrench.Text = "Français";
       this.checkBoxListFrench.UseVisualStyleBackColor = true;
-      this.checkBoxListFrench.CheckedChanged += new System.EventHandler(this.checkBoxListFrench_CheckedChanged);
+      this.checkBoxListFrench.CheckedChanged += new System.EventHandler(this.CheckBoxListFrenchCheckedChanged);
       // 
       // checkBoxListEnglish
       // 
@@ -856,7 +856,7 @@
       this.checkBoxListEnglish.TabIndex = 1;
       this.checkBoxListEnglish.Text = "Anglais";
       this.checkBoxListEnglish.UseVisualStyleBackColor = true;
-      this.checkBoxListEnglish.CheckedChanged += new System.EventHandler(this.checkBoxListEnglish_CheckedChanged);
+      this.checkBoxListEnglish.CheckedChanged += new System.EventHandler(this.CheckBoxListEnglishCheckedChanged);
       // 
       // checkBoxListAll
       // 
@@ -908,7 +908,7 @@
       this.buttonStatCount.TabIndex = 11;
       this.buttonStatCount.Text = "Count";
       this.buttonStatCount.UseVisualStyleBackColor = true;
-      this.buttonStatCount.Click += new System.EventHandler(this.buttonStatCount_Click);
+      this.buttonStatCount.Click += new System.EventHandler(this.ButtonStatCountClick);
       // 
       // textBoxStatQuotes
       // 

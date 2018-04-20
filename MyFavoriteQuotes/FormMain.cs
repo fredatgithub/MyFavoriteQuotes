@@ -170,7 +170,7 @@ namespace MyFavoriteQuotes
     private static void CountQuotefiles()
     {
       // TODO count the number of files in Settings.Default.QuoteFileDirectoryName 
-      // and add them in a list
+      // and add them in a list _numberOfQuoteFiles
     }
 
     private void LoadQuotes()
@@ -197,7 +197,7 @@ namespace MyFavoriteQuotes
         string suffix = Path.GetExtension(filename);
         string fileNameHeader = filename.Substring(0, filename.Length - suffix.Length - 1);
         string tmpfileName = $"{fileNameHeader}{i}{suffix}";
-        
+
         XDocument xmlDoc;
         try
         {
@@ -1229,12 +1229,12 @@ namespace MyFavoriteQuotes
 
     private DialogResult DisplayMessage(string message, string title, MessageBoxButtons buttons)
     {
-      DialogResult result = MessageBox.Show(this, message, title, buttons);
-      return result;
+      return MessageBox.Show(this, message, title, buttons);
     }
 
     private void DisplayMessageOk(string message, string title, MessageBoxButtons buttons)
     {
+      // Generic method
       MessageBox.Show(this, message, title, buttons);
     }
 
@@ -1243,10 +1243,7 @@ namespace MyFavoriteQuotes
       textBoxResult.Text = string.Empty;
       if (textBoxSearch.Text == string.Empty)
       {
-        DisplayMessageOk(
-          frenchToolStripMenuItem.Checked ? Settings.Default.textBoxSearchFr : Settings.Default.textBoxSearchEn,
-          frenchToolStripMenuItem.Checked ? Settings.Default.SearchEmptyFr : Settings.Default.SearchEmptyEn,
-          MessageBoxButtons.OK);
+        DisplayMessageOk(frenchToolStripMenuItem.Checked ? Settings.Default.textBoxSearchFr : Settings.Default.textBoxSearchEn, frenchToolStripMenuItem.Checked ? Settings.Default.SearchEmptyFr : Settings.Default.SearchEmptyEn, MessageBoxButtons.OK);
       }
 
       if (!_searchAll && !_searchAuthor && !_searchQuote)
@@ -1302,7 +1299,7 @@ namespace MyFavoriteQuotes
       {
         foreach (string item in searchedResult)
         {
-          textBoxResult.Text += item + Environment.NewLine;
+          textBoxResult.Text += $"{item}{Environment.NewLine}";
         }
       }
       else
@@ -1314,9 +1311,7 @@ namespace MyFavoriteQuotes
       searchedResult = null;
     }
 
-    private List<string> SearchInMemory(string searchedString,
-      SearchedCriteria author = SearchedCriteria.AuthorAndQuote,
-      SearchedLanguage language = SearchedLanguage.FrenchAndEnglish)
+    private List<string> SearchInMemory(string searchedString, SearchedCriteria author = SearchedCriteria.AuthorAndQuote, SearchedLanguage language = SearchedLanguage.FrenchAndEnglish)
     {
       var result2 = new List<string>();
       // First we select them all and then we remove what's not selected
@@ -1509,16 +1504,19 @@ namespace MyFavoriteQuotes
     private void checkBoxSearchAll_CheckedChanged(object sender, EventArgs e)
     {
       _searchAll = checkBoxSearchAll.Checked;
-      if (checkBoxSearchAll.Checked)
+      if (!checkBoxSearchAll.Checked)
       {
-        checkBoxSearchAuthor.Checked = true;
-        checkBoxSearchQuote.Checked = true;
+        return;
       }
+
+      checkBoxSearchAuthor.Checked = true;
+      checkBoxSearchQuote.Checked = true;
     }
 
     private void checkBoxSearchAuthor_CheckedChanged(object sender, EventArgs e)
     {
       _searchAuthor = checkBoxSearchAuthor.Checked;
+
       if (checkBoxSearchAll.Checked && !checkBoxSearchAuthor.Checked)
       {
         checkBoxSearchAll.Checked = false;
@@ -1533,6 +1531,7 @@ namespace MyFavoriteQuotes
     private void checkBoxSearchQuote_CheckedChanged(object sender, EventArgs e)
     {
       _searchQuote = checkBoxSearchQuote.Checked;
+
       if (checkBoxSearchAll.Checked && !checkBoxSearchQuote.Checked)
       {
         checkBoxSearchAll.Checked = false;
@@ -1547,16 +1546,19 @@ namespace MyFavoriteQuotes
     private void checkBoxLanguageAll_CheckedChanged(object sender, EventArgs e)
     {
       _languageAll = checkBoxLanguageAll.Checked;
-      if (checkBoxLanguageAll.Checked)
+      if (!checkBoxLanguageAll.Checked)
       {
-        checkBoxLanguageEnglish.Checked = true;
-        checkBoxLanguageFrench.Checked = true;
+        return;
       }
+
+      checkBoxLanguageEnglish.Checked = true;
+      checkBoxLanguageFrench.Checked = true;
     }
 
-    private void checkBoxLanguageEnglish_CheckedChanged(object sender, EventArgs e)
+    private void CheckBoxLanguageEnglishCheckedChanged(object sender, EventArgs e)
     {
       _languageEnglish = checkBoxLanguageEnglish.Checked;
+
       if (checkBoxLanguageAll.Checked && !checkBoxLanguageEnglish.Checked)
       {
         checkBoxLanguageAll.Checked = false;
@@ -1568,7 +1570,7 @@ namespace MyFavoriteQuotes
       }
     }
 
-    private void checkBoxLanguageFrench_CheckedChanged(object sender, EventArgs e)
+    private void CheckBoxLanguageFrenchCheckedChanged(object sender, EventArgs e)
     {
       _languageFrench = checkBoxLanguageFrench.Checked;
       if (checkBoxLanguageAll.Checked && !checkBoxLanguageFrench.Checked)
@@ -1585,15 +1587,17 @@ namespace MyFavoriteQuotes
     private void checkBoxListAll_CheckedChanged(object sender, EventArgs e)
     {
       _listlanguageAll = checkBoxListAll.Checked;
-      if (checkBoxListAll.Checked)
+      if (!checkBoxListAll.Checked)
       {
-        checkBoxListEnglish.Checked = true;
-        checkBoxListFrench.Checked = true;
-        DisplayAllQuotes();
+        return;
       }
+
+      checkBoxListEnglish.Checked = true;
+      checkBoxListFrench.Checked = true;
+      DisplayAllQuotes();
     }
 
-    private void checkBoxListEnglish_CheckedChanged(object sender, EventArgs e)
+    private void CheckBoxListEnglishCheckedChanged(object sender, EventArgs e)
     {
       _listlanguageEnglish = checkBoxListEnglish.Checked;
       if (checkBoxListAll.Checked && !checkBoxListEnglish.Checked)
@@ -1649,20 +1653,21 @@ namespace MyFavoriteQuotes
       }
 
       textBoxListQuotes.Text = string.Empty;
+
       foreach (var quote in result3)
       {
         textBoxListQuotes.Text += quote.Sentence + Punctuation.OneSpace + Punctuation.Dash + Punctuation.OneSpace +
           quote.Author + Environment.NewLine;
       }
 
-      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) +
-        Punctuation.Colon + Punctuation.OneSpace + result3.Count();
+      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) + Punctuation.Colon + Punctuation.OneSpace + result3.Count();
     }
 
     private void DisplayQuotes(bool englishChecked, bool frenchChecked)
     {
       IEnumerable<Quote> result3 = from node in _allQuotes.ToList() select node;
       IEnumerable<Quote> result4 = result3;
+
       if (englishChecked && !frenchChecked)
       {
         result3 = from node in result4
@@ -1701,13 +1706,13 @@ namespace MyFavoriteQuotes
         }
       }
 
-      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) +
-        Punctuation.Colon + Punctuation.OneSpace + result3.Count();
+      labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) + Punctuation.Colon + Punctuation.OneSpace + result3.Count();
     }
 
-    private void checkBoxListFrench_CheckedChanged(object sender, EventArgs e)
+    private void CheckBoxListFrenchCheckedChanged(object sender, EventArgs e)
     {
       _listlanguageFrench = checkBoxListFrench.Checked;
+
       if (checkBoxListAll.Checked && !checkBoxListFrench.Checked)
       {
         checkBoxListAll.Checked = false;
@@ -1721,13 +1726,13 @@ namespace MyFavoriteQuotes
       DisplayQuotes(checkBoxListEnglish.Checked, checkBoxListFrench.Checked);
     }
 
-    private void buttonAddCancel_Click(object sender, EventArgs e)
+    private void ButtonAddCancelClick(object sender, EventArgs e)
     {
       textBoxAddQuote.Text = string.Empty;
       textBoxAddAuthor.Text = string.Empty;
     }
 
-    private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+    private void SaveToolStripMenuItemClick(object sender, EventArgs e)
     {
       XmlDocument doc = new XmlDocument();
       doc.Load(Settings.Default.QuoteFileName);
@@ -1749,7 +1754,7 @@ namespace MyFavoriteQuotes
       EnableDisableMenu();
     }
 
-    private void saveasToolStripMenuItem_Click(object sender, EventArgs e)
+    private void SaveasToolStripMenuItemClick(object sender, EventArgs e)
     {
       SaveFileDialog sfd = new SaveFileDialog
       {
@@ -1775,6 +1780,7 @@ namespace MyFavoriteQuotes
     private static string CreateFilterString(string extension)
     {
       var result = new StringBuilder();
+
       result.Append(Punctuation.OneSpace);
       result.Append(Punctuation.OpenParenthesis);
       result.Append(Punctuation.Multiply);
@@ -1785,6 +1791,7 @@ namespace MyFavoriteQuotes
       result.Append(Punctuation.Multiply);
       result.Append(Punctuation.Period);
       result.Append(extension);
+
       return result.ToString();
     }
 
@@ -1813,13 +1820,12 @@ namespace MyFavoriteQuotes
       }
 
       xmlDoc.Save(fileName);
-
       _allQuotes.QuoteFileSaved = true;
       EnableDisableMenu();
       _lastSaveLocation = fileName;
     }
 
-    private void buttonListDelete_Click(object sender, EventArgs e)
+    private void ButtonListDeleteClick(object sender, EventArgs e)
     {
       if (textBoxListQuotes.Text == string.Empty)
       {
@@ -1857,6 +1863,7 @@ namespace MyFavoriteQuotes
     public static string[] SeparateQuote(string wholeQuote)
     {
       var result = new string[2];
+
       if (wholeQuote.Length < 4)
       {
         return result;
@@ -1870,10 +1877,11 @@ namespace MyFavoriteQuotes
       var lastIndex = wholeQuote.LastIndexOf('-');
       result[0] = wholeQuote.Substring(0, lastIndex - 1);
       result[1] = wholeQuote.Substring(lastIndex + 2);
+
       return result;
     }
 
-    private void comboBoxListAuthor_SelectedIndexChanged(object sender, EventArgs e)
+    private void ComboBoxListAuthorSelectedIndexChanged(object sender, EventArgs e)
     {
       // display only selected author in all languages
       DisplayQuotes(comboBoxListAuthor.SelectedItem.ToString(), GetSelectedLanguage(checkBoxListAll, checkBoxListEnglish, checkBoxListFrench)); // add language selected in checkboxes
@@ -1910,11 +1918,10 @@ namespace MyFavoriteQuotes
         return childControl;
       }
 
-      return (from Control childControl in container.Controls
-              select FindFocusedControl(childControl)).FirstOrDefault(maybeFocusedControl => maybeFocusedControl != null);
+      return (from Control childControl in container.Controls select FindFocusedControl(childControl)).FirstOrDefault(maybeFocusedControl => maybeFocusedControl != null);
     }
 
-    private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+    private void CutToolStripMenuItemClick(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
       // if (focusedControl is TextBox)
@@ -1933,13 +1940,14 @@ namespace MyFavoriteQuotes
     private void copyToolStripMenuItem_Click(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
-      if (focusedControl is TextBox)
+      TextBox textBox = focusedControl as TextBox;
+      if (textBox != null)
       {
-        CopyToClipboard((TextBox)focusedControl);
+        CopyToClipboard(textBox);
       }
     }
 
-    private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+    private void PasteToolStripMenuItemClick(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
       // if (focusedControl is TextBox)
@@ -1952,7 +1960,11 @@ namespace MyFavoriteQuotes
 
     private void CutToClipboard(TextBoxBase tb, string errorMessage = "nothing")
     {
-      if (tb != ActiveControl) return;
+      if (tb != ActiveControl)
+      {
+        return;
+      }
+
       if (tb.Text == string.Empty)
       {
         DisplayMessageOk(Translate("ThereIs") + Punctuation.OneSpace +
@@ -1975,7 +1987,11 @@ namespace MyFavoriteQuotes
 
     private void CopyToClipboard(TextBoxBase tb, string message = "nothing")
     {
-      if (tb != ActiveControl) return;
+      if (tb != ActiveControl)
+      {
+        return;
+      }
+
       if (tb.Text == string.Empty)
       {
         DisplayMessageOk(Translate("ThereIsNothingToCopy") + Punctuation.OneSpace,
@@ -1995,13 +2011,17 @@ namespace MyFavoriteQuotes
 
     private void PasteFromClipboard(TextBoxBase tb)
     {
-      if (tb != ActiveControl) return;
+      if (tb != ActiveControl)
+      {
+        return;
+      }
+
       var selectionIndex = tb.SelectionStart;
       tb.SelectedText = Clipboard.GetText();
       tb.SelectionStart = selectionIndex + Clipboard.GetText().Length;
     }
 
-    private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
+    private void SelectAllToolStripMenuItemClick(object sender, EventArgs e)
     {
       Control focusedControl = FindFocusedControl(tabControlMain);
       TextBox box = focusedControl as TextBox;
@@ -2012,7 +2032,7 @@ namespace MyFavoriteQuotes
       }
     }
 
-    private void buttonStatCount_Click(object sender, EventArgs e)
+    private void ButtonStatCountClick(object sender, EventArgs e)
     {
       textBoxStatQuotes.Text = string.Empty;
 
@@ -2062,8 +2082,7 @@ namespace MyFavoriteQuotes
       allQuotes = SortDictionaryWithKey(allQuotes, false);
       foreach (KeyValuePair<string, int> quote in allQuotes)
       {
-        textBoxStatQuotes.Text +=
-          $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Pluralize(quote.Value)}{Environment.NewLine}";
+        textBoxStatQuotes.Text += $"{quote.Key}{Punctuation.OneSpace}{Translate("has")}{Punctuation.OneSpace}{quote.Value}{Punctuation.OneSpace}{Translate("quote")}{Punctuation.Pluralize(quote.Value)}{Environment.NewLine}";
       }
     }
 
@@ -2085,17 +2104,18 @@ namespace MyFavoriteQuotes
 
     private static IEnumerable<Quote> GetDuplicateQuotes(IEnumerable<Quote> allQuotes)
     {
-      var tmpDico = new Dictionary<string, int>();
+      var dictionary = new Dictionary<string, int>();
       var result = new List<Quote>();
+
       foreach (Quote quote in allQuotes)
       {
-        if (tmpDico.ContainsKey(quote.Sentence))
+        if (dictionary.ContainsKey(quote.Sentence))
         {
           result.Add(quote);
         }
         else
         {
-          tmpDico.Add(quote.Sentence, 1);
+          dictionary.Add(quote.Sentence, 1);
         }
       }
 
@@ -2112,13 +2132,13 @@ namespace MyFavoriteQuotes
 
     private static Dictionary<string, int> SortDictionaryWithValue(Dictionary<string, int> dico, bool descending = true)
     {
-      return @descending ? dico.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value) :
+      return descending ? dico.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value) :
         dico.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
     }
 
     private static Dictionary<string, int> SortDictionaryWithKey(Dictionary<string, int> dico, bool descending = true)
     {
-      return @descending ? dico.OrderByDescending(x => x.Key).ToDictionary(x => x.Key, x => x.Value) :
+      return descending ? dico.OrderByDescending(x => x.Key).ToDictionary(x => x.Key, x => x.Value) :
         dico.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
     }
 
@@ -2127,8 +2147,8 @@ namespace MyFavoriteQuotes
       var dico = new Dictionary<string, int>();
       if (language == Language.All)
       {
-        var result = from node in _allQuotes.ToList()
-                     select node;
+        var result = from node in _allQuotes.ToList() select node;
+
         foreach (Quote quote in result)
         {
           if (dico.ContainsKey(quote.Author))

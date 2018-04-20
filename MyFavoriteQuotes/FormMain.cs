@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
@@ -25,7 +26,7 @@ namespace MyFavoriteQuotes
     readonly Dictionary<string, string> _languageDicoEn = new Dictionary<string, string>();
     readonly Dictionary<string, string> _languageDicoFr = new Dictionary<string, string>();
     private string _lastSaveLocation = string.Empty;
-    private readonly Quotes _allQuotes = new Quotes();
+    private Quotes _allQuotes = new Quotes();
     private string _currentLanguage = "english";
     private int _numberOfQuoteFiles = 0;
     private List<string> ListOfQuoteFiles = new List<string>();
@@ -45,8 +46,7 @@ namespace MyFavoriteQuotes
       if (!_allQuotes.QuoteFileSaved)
       {
         string msg1 = Translate("QuoteAdded");
-        string msg2 = Translate("QuoteAdded");
-        var result = DisplayMessage(msg1, msg2, MessageBoxButtons.YesNo);
+        var result = DisplayMessage(msg1, msg1, MessageBoxButtons.YesNo);
         if (result == DialogResult.Yes)
         {
           // we save the xml file.
@@ -67,6 +67,9 @@ namespace MyFavoriteQuotes
           break;
         case "french":
           result = _languageDicoFr[index];
+          break;
+        default:
+          result = _languageDicoEn[index];
           break;
       }
 
@@ -102,7 +105,18 @@ namespace MyFavoriteQuotes
       {
         return WordCase.AllUpperCase;
       }
-      // TODO to be completed
+
+      if (myString[0].ToString().ToLower() == myString[0].ToString())//add the rest of words TODO
+      {
+        //With camelCase, the first letter of the first word in the identifier is lower case, while the first letter of every subsequent word is uppercase. 
+        return WordCase.CamelCase;
+      }
+
+      if (myString[0].ToString().ToUpper() == myString[0].ToString())//add the rest of words TODO
+      {
+        return WordCase.PascalCase;
+      }
+      // TODO to be completed, add any other cases
 
 
       return WordCase.Unknown;
@@ -161,6 +175,8 @@ namespace MyFavoriteQuotes
 
     private void LoadQuotes()
     {
+      //empty the list if any
+      _allQuotes = new Quotes();
       // loading all quotes from all the files quoteX.xml in the folder Quote_files
       if (!Directory.Exists(Settings.Default.QuoteFileDirectoryName))
       {
@@ -172,45 +188,69 @@ namespace MyFavoriteQuotes
         CreateQuotesFile();
       }
 
-      XDocument xmlDoc;
-      try
-      {
-        xmlDoc = XDocument.Load(Path.Combine(Settings.Default.QuoteFileDirectoryName, Settings.Default.QuoteFileName));
-      }
-      catch (Exception exception)
-      {
-        MessageBox.Show(Resources.Error_while_loading + Punctuation.OneSpace +
-          Settings.Default.QuoteFileName + Punctuation.OneSpace + Resources.XML_file +
-          Punctuation.OneSpace + exception.Message);
-        CreateQuotesFile();
-        return;
-      }
+      //Count the number of quote files
+      _numberOfQuoteFiles = CountNumberOfFiles(Settings.Default.QuoteFileDirectoryName, RemoveNumber(Settings.Default.QuoteFileName));
 
-      var result = from node in xmlDoc.Descendants("Quote")
-                   where node.HasElements
-                   let xElementAuthor = node.Element("Author")
-                   where xElementAuthor != null
-                   let xElementLanguage = node.Element("Language")
-                   where xElementLanguage != null
-                   let xElementQuote = node.Element("QuoteValue")
-                   where xElementQuote != null
-                   select new
-                   {
-                     authorValue = xElementAuthor.Value,
-                     languageValue = xElementLanguage.Value,
-                     sentenceValue = xElementQuote.Value
-                   };
-
-      foreach (var q in result)
+      for (int i = 1; i < _numberOfQuoteFiles; i++)
       {
-        if (!_allQuotes.ListOfQuotes.Contains(new Quote(q.authorValue, q.languageValue, q.sentenceValue)) &&
-          q.authorValue != string.Empty && q.languageValue != string.Empty && q.sentenceValue != string.Empty)
+        string filename = Settings.Default.QuoteFileName;
+        string suffix = Path.GetExtension(filename);
+        string fileNameHeader = filename.Substring(0, filename.Length - suffix.Length - 1);
+        string tmpfileName = $"{fileNameHeader}{i}{suffix}";
+        
+        XDocument xmlDoc;
+        try
         {
-          _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
+          xmlDoc = XDocument.Load(Path.Combine(Settings.Default.QuoteFileDirectoryName, tmpfileName));
+        }
+        catch (Exception exception)
+        {
+          MessageBox.Show(Resources.Error_while_loading + Punctuation.OneSpace +
+            Settings.Default.QuoteFileName + Punctuation.OneSpace + Resources.XML_file +
+            Punctuation.OneSpace + exception.Message);
+          CreateQuotesFile();
+          return;
+        }
+
+        var result = from node in xmlDoc.Descendants("Quote")
+                     where node.HasElements
+                     let xElementAuthor = node.Element("Author")
+                     where xElementAuthor != null
+                     let xElementLanguage = node.Element("Language")
+                     where xElementLanguage != null
+                     let xElementQuote = node.Element("QuoteValue")
+                     where xElementQuote != null
+                     select new
+                     {
+                       authorValue = xElementAuthor.Value,
+                       languageValue = xElementLanguage.Value,
+                       sentenceValue = xElementQuote.Value
+                     };
+
+        foreach (var q in result)
+        {
+          if (!_allQuotes.ListOfQuotes.Contains(new Quote(q.authorValue, q.languageValue, q.sentenceValue)) &&
+            q.authorValue != string.Empty && q.languageValue != string.Empty && q.sentenceValue != string.Empty)
+          {
+            _allQuotes.Add(new Quote(q.authorValue, q.languageValue, q.sentenceValue));
+          }
         }
       }
 
       _allQuotes.QuoteFileSaved = true;
+    }
+
+    public static string RemoveNumber(string fileName)
+    {
+      return Regex.Replace(fileName, @"[\d-]", string.Empty);
+    }
+
+    private static int CountNumberOfFiles(string directoryPath, string fileName)
+    {
+      string suffix = Path.GetExtension(fileName);
+      string fileNamePattern = fileName.Substring(0, fileName.Length - suffix.Length);
+      directoryPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, directoryPath);
+      return Directory.GetFiles(directoryPath, $"{fileNamePattern.ToLower()}*", SearchOption.TopDirectoryOnly).Length;
     }
 
     private void CreateQuoteDirectory()
@@ -709,15 +749,23 @@ namespace MyFavoriteQuotes
       "<Quotes>",
     "</Document>"
       };
-      StreamWriter sw = new StreamWriter(Settings.Default.QuoteFileName);
-      foreach (string item in minimumVersion)
+      try
       {
-        sw.WriteLine(item);
-      }
+        using (StreamWriter sw = new StreamWriter(Settings.Default.QuoteFileName))
+        {
+          foreach (string item in minimumVersion)
+          {
+            sw.WriteLine(item);
+          }
+        }
 
-      sw.Close();
-      _allQuotes.QuoteFileSaved = true;
-      _numberOfQuoteFiles = 1;
+        _allQuotes.QuoteFileSaved = true;
+        _numberOfQuoteFiles = 1;
+      }
+      catch (Exception exception)
+      {
+        DisplayMessageOk($"there was an error: {exception.Message}", "Error", MessageBoxButtons.OK);
+      }
     }
 
     private void LoadLanguages()

@@ -98,5 +98,43 @@ namespace UnitTestApplication
       Assert.IsFalse(false);
     }
     #endregion CountQuotes
+
+    [TestMethod]
+    public void TestMethod_RemoveNumber_no_figure()
+    {
+      const string source =   "A long long time ago in a galaxy far far away StarWars";
+      const string expected = "A long long time ago in a galaxy far far away StarWars";
+      string result = FormMain.RemoveNumber(source);
+      Assert.AreEqual(result, expected);
+    }
+
+    [TestMethod]
+    public void TestMethod_RemoveNumber_starting_figure()
+    {
+      const string source = "321A long long time ago in a galaxy far far away StarWars";
+      const string expected = "A long long time ago in a galaxy far far away StarWars";
+      string result = FormMain.RemoveNumber(source);
+      Assert.AreEqual(result, expected);
+    }
+
+
+    [TestMethod]
+    public void TestMethod_RemoveNumber_ending_figure()
+    {
+      const string source = "A long long time ago in a galaxy far far away StarWars321";
+      const string expected = "A long long time ago in a galaxy far far away StarWars";
+      string result = FormMain.RemoveNumber(source);
+      Assert.AreEqual(result, expected);
+    }
+
+
+    [TestMethod]
+    public void TestMethod_RemoveNumber_figures_any_place()
+    {
+      const string source = "321A long long time ago in a 33galaxy far far 1away 2StarWars2018";
+      const string expected = "A long long time ago in a galaxy far far away StarWars";
+      string result = FormMain.RemoveNumber(source);
+      Assert.AreEqual(result, expected);
+    }
   }
 }

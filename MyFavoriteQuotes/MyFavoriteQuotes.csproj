@@ -246,6 +246,9 @@
     <Content Include="Quote_files\quote141.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Quote_files\quote142.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Quote_files\quote15.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

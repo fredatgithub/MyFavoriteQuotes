@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Quotes>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Albert Einstein</Author>
+    <Language>English</Language>
+    <QuoteValue>Stay away from negative people, they have a problem for every solution</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

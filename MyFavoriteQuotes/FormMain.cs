@@ -238,6 +238,9 @@ namespace MyFavoriteQuotes
             }
 
             _allQuotes.QuoteFileSaved = true;
+            labelNumberOfQuotes.Text = Translate("Number of quote") + Punctuation.SpaceIfFrench(_currentLanguage) + Punctuation.Colon + Punctuation.OneSpace + _allQuotes.ToList().Count();
+            //labelNumberOfQuotes.Text = $@"{Translate("Number of quote")}{Punctuation.SpaceIfFrench(_currentLanguage)}{Punctuation.Colon }{Punctuation.OneSpace }{_allQuotes.ToList().Count()}";
+            checkBoxListAll.Checked = true;
         }
 
         public static string RemoveNumber(string fileName)

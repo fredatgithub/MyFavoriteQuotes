@@ -1932,7 +1932,7 @@ namespace MyFavoriteQuotes
             }
         }
 
-        private TextBox WhatTextBoxHasFocus()
+        private TextBox WhichTextBoxHasFocus()
         {
             return Controls.OfType<TextBox>().FirstOrDefault(control => control.Focused);
         }
@@ -2024,11 +2024,11 @@ namespace MyFavoriteQuotes
         private void SelectAllToolStripMenuItemClick(object sender, EventArgs e)
         {
             Control focusedControl = FindFocusedControl(tabControlMain);
-            TextBox box = focusedControl as TextBox;
-            // box?.SelectAll(); // null propagation
-            if (box != null)
+            TextBox textBox = focusedControl as TextBox;
+            // textBox?.SelectAll(); // null propagation
+            if (textBox != null)
             {
-                box.SelectAll();
+                textBox.SelectAll();
             }
         }
 

@@ -827,7 +827,7 @@
             this.checkBoxListAll.TabIndex = 0;
             this.checkBoxListAll.Text = "Tous";
             this.checkBoxListAll.UseVisualStyleBackColor = true;
-            this.checkBoxListAll.CheckedChanged += new System.EventHandler(this.checkBoxListAll_CheckedChanged);
+            this.checkBoxListAll.CheckedChanged += new System.EventHandler(this.CheckBoxListAllCheckedChanged);
             // 
             // textBoxListQuotes
             // 

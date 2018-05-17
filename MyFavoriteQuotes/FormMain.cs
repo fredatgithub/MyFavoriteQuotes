@@ -1584,7 +1584,7 @@ namespace MyFavoriteQuotes
             }
         }
 
-        private void checkBoxListAll_CheckedChanged(object sender, EventArgs e)
+        private void CheckBoxListAllCheckedChanged(object sender, EventArgs e)
         {
             _listlanguageAll = checkBoxListAll.Checked;
             if (!checkBoxListAll.Checked)
@@ -1758,7 +1758,7 @@ namespace MyFavoriteQuotes
         {
             SaveFileDialog sfd = new SaveFileDialog
             {
-                InitialDirectory = Settings.Default.LastSaveLocation == ""
+                InitialDirectory = Settings.Default.LastSaveLocation == string.Empty
                 ? Environment.SpecialFolder.MyDocuments.ToString()
                 : Settings.Default.LastSaveLocation,
                 CreatePrompt = false,

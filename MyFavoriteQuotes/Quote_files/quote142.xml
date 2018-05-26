@@ -30,11 +30,11 @@
     <Language>French</Language>
     <QuoteValue>La terre n'appartient pas aux hommes, c'est nous qui appartenons à la terre</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Michel Quoist</Author>
+    <Language>French</Language>
+    <QuoteValue>La science pourra peut-être expliquer le monde, mais elle ne pourra pas lui donner sa signification</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -35,11 +35,11 @@
     <Language>French</Language>
     <QuoteValue>La science pourra peut-être expliquer le monde, mais elle ne pourra pas lui donner sa signification</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Albert Einstein</Author>
+    <Language>French</Language>
+    <QuoteValue>On ne peut pas résoudre un problème avec le même mode de pensée qui celui qui a créé le problème</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -20,11 +20,11 @@
     <Language>French</Language>
     <QuoteValue>La terre peut subvenir aux besoins de tous mais pas à l'avidité d'un seul</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Giacomo Casanova</Author>
+    <Language>French</Language>
+    <QuoteValue>L'homme qui veut s'instruire doit lire d'abord, puis voyager pour rectifier ce qu'il a appris</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

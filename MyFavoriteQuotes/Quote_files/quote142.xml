@@ -40,11 +40,11 @@
     <Language>French</Language>
     <QuoteValue>On ne peut pas résoudre un problème avec le même mode de pensée qui celui qui a créé le problème</QuoteValue>
   </Quote>
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+   <Quote>
+    <Author>Victor Hugo</Author>
+    <Language>French</Language>
+    <QuoteValue>Rien ne peut arrêter une idée dont l'heure est venue</QuoteValue>
+  </Quote>
    <!--<Quote>
     <Author></Author>
     <Language></Language>

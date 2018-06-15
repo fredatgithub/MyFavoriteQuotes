@@ -10,27 +10,27 @@
     <Language>English</Language>
     <QuoteValue>If a law is unjust, a man is not only right to disobey it, he is obligated to do so</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Martin Luther King, junior</Author>
     <Language>English</Language>
     <QuoteValue>One has a moral responsibility to disobey unjust laws</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Mahatma Gandhi</Author>
     <Language>French</Language>
     <QuoteValue>La terre peut subvenir aux besoins de tous mais pas à l'avidité d'un seul</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Giacomo Casanova</Author>
     <Language>French</Language>
     <QuoteValue>L'homme qui veut s'instruire doit lire d'abord, puis voyager pour rectifier ce qu'il a appris</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Chef Seattle</Author>
     <Language>French</Language>
     <QuoteValue>La terre n'appartient pas aux hommes, c'est nous qui appartenons à la terre</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Michel Quoist</Author>
     <Language>French</Language>
     <QuoteValue>La science pourra peut-être expliquer le monde, mais elle ne pourra pas lui donner sa signification</QuoteValue>
@@ -40,32 +40,23 @@
     <Language>French</Language>
     <QuoteValue>On ne peut pas résoudre un problème avec le même mode de pensée qui celui qui a créé le problème</QuoteValue>
   </Quote>
-   <Quote>
+  <Quote>
     <Author>Victor Hugo</Author>
     <Language>French</Language>
     <QuoteValue>Rien ne peut arrêter une idée dont l'heure est venue</QuoteValue>
   </Quote>
-   <Quote>
-    <Author>Gustave Le Bon/Author>
-    <Language>French</Language>
-    <QuoteValue>Connaître l'art d'impressionner les foules, c'est connaître l'art de les gouverner</QuoteValue>
-  </Quote>
-   <!--<Quote>
+  <Quote>
+    <Author>
+      Gustave Le Bon/Author>
+      <Language>French</Language>
+      <QuoteValue>Connaître l'art d'impressionner les foules, c'est connaître l'art de les gouverner</QuoteValue>
+    </Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
@@ -80,57 +71,7 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-   <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
@@ -160,22 +101,22 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-     <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
@@ -200,87 +141,147 @@
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-   <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-       <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-       <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-       <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-       <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-       <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-       <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-       <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-     <!--<Quote>
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
   </Quote>-->
-      <!--<Quote>
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
+  </Quote>-->
+  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>

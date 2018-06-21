@@ -304,11 +304,16 @@
     <!--<Quote>
     <Author></Author>
     <Language></Language>
-    <QuoteValue></Q
+    <QuoteValue></QuoteValue>
+  </Quote>-->
  <!--<Quote>
     <Author></Author>
     <Language></Language>
     <QuoteValue></QuoteValue>
-  </Quote>-->uoteValue>
+  </Quote>-->
+    <!--<Quote>
+    <Author></Author>
+    <Language></Language>
+    <QuoteValue></QuoteValue>
   </Quote>-->
 </Quotes>

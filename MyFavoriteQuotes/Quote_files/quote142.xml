@@ -51,11 +51,11 @@
       <Language>French</Language>
       <QuoteValue>Connaître l'art d'impressionner les foules, c'est connaître l'art de les gouverner</QuoteValue>
     </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jacques Brel</Author>
+    <Language>French</Language>
+    <QuoteValue>Pour moi, dieu, ce sont les hommes et un jour, ils seront</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

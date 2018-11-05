@@ -61,11 +61,11 @@
     <Language>English</Language>
     <QuoteValue>Everything has beauty, but not everyone sees it</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Albert Einstein</Author>
+    <Language>French</Language>
+    <QuoteValue>Il ne faut pas compter sur ceux qui ont créé les problèmes pour les résoudre</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

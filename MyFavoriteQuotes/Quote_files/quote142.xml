@@ -71,11 +71,11 @@
     <Language>French</Language>
     <QuoteValue>Le futur m'intéresse beaucoup, car c'est là que j'ai l'intention de passer le reste de ma vie</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>French</Language>
+    <QuoteValue>La justice est l’ultime instance où se proclame et se rappelle la valeur des choses</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

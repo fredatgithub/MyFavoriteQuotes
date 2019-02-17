@@ -76,16 +76,16 @@
     <Language>French</Language>
     <QuoteValue>La justice est l’ultime instance où se proclame et se rappelle la valeur des choses</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>French</Language>
+    <QuoteValue>Comment est votre soif d'aventure ? insatiable, Tintin</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>French</Language>
+    <QuoteValue>Plus c'est mieux, moins c'est ennuyeux</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

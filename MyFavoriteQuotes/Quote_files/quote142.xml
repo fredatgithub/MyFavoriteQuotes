@@ -86,11 +86,11 @@
     <Language>French</Language>
     <QuoteValue>Plus c'est mieux, moins c'est ennuyeux</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Socrates</Author>
+    <Language>French</Language>
+    <QuoteValue>L’écriture ne peut saisir le savoir, car le savoir, contrairement à l’information, n’existe pas en dehors de l’homme</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

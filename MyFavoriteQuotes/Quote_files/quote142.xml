@@ -96,11 +96,11 @@
     <Language>English</Language>
     <QuoteValue>To expect the unexcepted shows a thoughly modern intellect</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mark Twain</Author>
+    <Language>French</Language>
+    <QuoteValue>Il ne savaient pas que c'était impossible donc ils l'ont fait</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

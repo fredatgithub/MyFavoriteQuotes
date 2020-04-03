@@ -106,16 +106,16 @@
     <Language>French</Language>
     <QuoteValue>Dieu a créé l'homme et Sammuel Colt les a rendu égaux - Film Miss Sloane</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Goethe</Author>
+    <Language>French</Language>
+    <QuoteValue>Parler est un besoin, écouter est un art</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Plutarque</Author>
+    <Language>French</Language>
+    <QuoteValue>Parler est le privilège de la connaissance, écouter est le privilège de la sagesse</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

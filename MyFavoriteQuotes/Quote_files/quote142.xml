@@ -126,11 +126,11 @@
     <Language>French</Language>
     <QuoteValue>Être soi-même permet de se respecter, et quand on se respecte on respecte généralement les autres</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Victor Hugo</Author>
+    <Language>French</Language>
+    <QuoteValue>La liberté d’aimer n’est pas moins sacrée que la liberté de penser</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

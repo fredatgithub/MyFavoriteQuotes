@@ -131,11 +131,11 @@
     <Language>French</Language>
     <QuoteValue>La liberté d’aimer n’est pas moins sacrée que la liberté de penser</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Françoise Sagan</Author>
+    <Language>French</Language>
+    <QuoteValue>Ce n'est pas parce que la vie n'est pas élégante qu'il faut se conduire comme elle</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

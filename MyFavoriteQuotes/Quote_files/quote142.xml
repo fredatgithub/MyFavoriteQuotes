@@ -136,11 +136,11 @@
     <Language>French</Language>
     <QuoteValue>Ce n'est pas parce que la vie n'est pas élégante qu'il faut se conduire comme elle</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Marcel Proust</Author>
+    <Language>French</Language>
+    <QuoteValue>Soyons reconnaissants aux personnes qui nous donnent du bonheur ; elles sont les charmants jardiniers par qui nos âmes sont fleuries</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -146,11 +146,11 @@
     <Language>French</Language>
     <QuoteValue>Il est temps d'instaurer la religion de l'amour</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Épictète</Author>
+    <Language>French</Language>
+    <QuoteValue>Il est impossible pour un homme d'apprendre ce qu'il croit déjà connaître</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

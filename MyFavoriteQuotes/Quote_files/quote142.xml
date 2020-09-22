@@ -151,11 +151,11 @@
     <Language>French</Language>
     <QuoteValue>Il est impossible pour un homme d'apprendre ce qu'il croit déjà connaître</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Voltaire</Author>
+    <Language>French</Language>
+    <QuoteValue>Le bonheur est souvent la seule chose qu'on puisse donner sans l'avoir et c'est en le donnant qu'on l'acquiert</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

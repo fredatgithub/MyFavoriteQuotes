@@ -186,11 +186,11 @@
     <Language>French</Language>
     <QuoteValue>La théorie, c'est quand on sait tout et que rien ne fonctionne. La pratique, c'est quand tout fonctionne et que personne ne sait pourquoi</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Jean Cocteau</Author>
+    <Language>French</Language>
+    <QuoteValue>Dans la vie on ne regrette que ce qu'on a pas fait</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

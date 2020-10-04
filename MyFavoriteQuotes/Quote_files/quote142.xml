@@ -171,16 +171,16 @@
     <Language>French</Language>
     <QuoteValue>J’aime la personne qui se bat en souriant</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Albert Einstein</Author>
+    <Language>French</Language>
+    <QuoteValue>Inventer c’est penser à côté</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Thoreau Henry David</Author>
+    <Language>French</Language>
+    <QuoteValue>Il n’y a qu’un remède à l’amour, aimer davantage</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -161,11 +161,11 @@
     <Language>French</Language>
     <QuoteValue>Si j'avais su que je l'aimais autant, je l'aurais aimé davantage</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Gérard Philipe</Author>
+    <Language>French</Language>
+    <QuoteValue>Il doit bien exister au monde quelque chose, un lieu qui ne soit pas un rapport de force avec autrui ou soi-même. La tendresse, peut-être<QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

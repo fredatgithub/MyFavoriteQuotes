@@ -206,11 +206,11 @@
     <Language>French</Language>
     <QuoteValue>C'est à partir de toi que j'ai dit oui au monde</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paul Eluard</Author>
+    <Language>French</Language>
+    <QuoteValue>Un coeur n'est juste que s'il bat au rythme des autres coeurs</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -201,11 +201,11 @@
     <Language>French</Language>
     <QuoteValue>La parole divise. La danse est union</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Paul Eluard</Author>
+    <Language>French</Language>
+    <QuoteValue>C'est à partir de toi que j'ai dit oui au monde</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

@@ -191,11 +191,11 @@
     <Language>French</Language>
     <QuoteValue>Dans la vie on ne regrette que ce qu'on a pas fait</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Michel Audiard</Author>
+    <Language>French</Language>
+    <QuoteValue>Bienheureux les fêlés, car ils laisseront passer la lumière</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

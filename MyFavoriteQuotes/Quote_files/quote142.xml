@@ -211,26 +211,26 @@
     <Language>French</Language>
     <QuoteValue>Un coeur n'est juste que s'il bat au rythme des autres coeurs</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Martin Luther King</Author>
+    <Language>French</Language>
+    <QuoteValue>Certaines personnes te rejetteront, car ta lumière est trop intense pour eux, c’est comme ça. Continue de rayonner</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Oscar Wilde</Author>
+    <Language>French</Language>
+    <QuoteValue>Chaque fois qu’on produit un effet, on se donne un ennemi. Il faut rester médiocre pour être populaire</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>French</Language>
+    <QuoteValue>Et plantes des graines d'amour de manière intensive, Tu récolteras du bonheur</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Anonymous</Author>
+    <Language>French</Language>
+    <QuoteValue> de toute façon, des qu'on a le courage, de dire tout haut, ce que d'autres pensent tout bas, ça déplaît, forcement. En même temps, être aimé par des cons, on doit pouvoir s'en passer, non ?</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

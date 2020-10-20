@@ -231,11 +231,11 @@
     <Language>French</Language>
     <QuoteValue> de toute façon, des qu'on a le courage, de dire tout haut, ce que d'autres pensent tout bas, ça déplaît, forcement. En même temps, être aimé par des cons, on doit pouvoir s'en passer, non ?</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Mohamed Ali</Author>
+    <Language>French</Language>
+    <QuoteValue>Ne comptez pas les jours, faites que les jours comptent</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>

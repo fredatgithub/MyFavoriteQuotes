@@ -241,16 +241,16 @@
     <Language>French</Language>
     <QuoteValue>C'est bien plus beau lorsque c'est inutile. - Cyrano de Bergerac</QuoteValue>
   </Quote>
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
-  <!--<Quote>
-    <Author></Author>
-    <Language></Language>
-    <QuoteValue></QuoteValue>
-  </Quote>-->
+  <Quote>
+    <Author>Winston Churchill</Author>
+    <Language>English</Language>
+    <QuoteValue>If you have to go through hell, don't stop, keep going</QuoteValue>
+  </Quote>
+  <Quote>
+    <Author>Winston Churchill</Author>
+    <Language>French</Language>
+    <QuoteValue>Si vous devez traverser l'enfer, ne vous arrêtez pas, continuez</QuoteValue>
+  </Quote>
   <!--<Quote>
     <Author></Author>
     <Language></Language>
